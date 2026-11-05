@@ -8,7 +8,7 @@ one set of vectors.
 
 © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. GPL-3.0-or-later; documents CC-BY-SA-4.0;
 schemas and data CC0-1.0. AyeAI®, AyeCNSe® and AyeAM® are registered trademarks of Abhishek Choudhary.
-Software DOI: __REPSYNTH_DOI__
+Software DOI: 10.5281/zenodo.23966369
 
 ## One command
 

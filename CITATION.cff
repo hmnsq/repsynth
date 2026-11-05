@@ -5,7 +5,7 @@ message: "If you use this software, please cite it as below."
 version: "0.3.0"
 license: GPL-3.0-or-later
 repository-code: "https://github.com/hmnsq/repsynth"
-doi: "__REPSYNTH_DOI__"
+doi: "10.5281/zenodo.23966369"
 authors:
   - family-names: Choudhary
     given-names: Abhishek
