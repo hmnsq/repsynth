@@ -1,0 +1,9 @@
+{
+  "packet": "P1.4",
+  "state": "done",
+  "evidence": [
+    "records/20261104T232448Z_P1.4_acceptance.json"
+  ],
+  "summary": "Packed decimal agrees with Python's decimal module on 33509124 cases (every signed 3-digit operand pair, boundary and 100000 seeded random per operation); the binary baseline agrees with Python integers on 16081284 cases.",
+  "blocked_by": []
+}

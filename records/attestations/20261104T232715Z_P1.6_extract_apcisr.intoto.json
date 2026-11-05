@@ -1,0 +1,36 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "python3 -m repsynth oracles extract apcisr",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:27:15Z",
+    "image_digests": {},
+    "inputs": {},
+    "packet": "P1.6",
+    "started_utc": "2026-11-04T23:27:15Z",
+    "state": "wired_unproven",
+    "step": "extract_apcisr",
+    "tool_versions": {}
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "02850203199ac9d76cf328a0a25c299d53399e47afb5b6944d5cbd210d8aecaa"
+      },
+      "name": "reports/readings/apcisr.json"
+    },
+    {
+      "digest": {
+        "sha256": "403872a4470214598de73585cbc96a78019003b2d0d6f7a0177df1397849cedd"
+      },
+      "name": "spec/reps/script/apcisr_devanagari.yaml"
+    },
+    {
+      "digest": {
+        "sha256": "8b303d6d2b5091b2f8418a2dec6daf014ae2b872c846b23b9bdce8f6ff7a3805"
+      },
+      "name": "records/20261104T232715Z_P1.6_extract_apcisr.json"
+    }
+  ]
+}

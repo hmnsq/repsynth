@@ -1,0 +1,31 @@
+{
+  "command": "python3 -m repsynth oracles extract apcisr",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:27:01Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Extraction only; acceptance is `oracles check`.",
+  "outputs": {
+    "reports/readings/apcisr.json": "7b925d6886a1d4b94e054ca3d033d3db793973b56cafbf349c915e42a90055bf",
+    "spec/reps/script/apcisr_devanagari.yaml": "9a3b697725866706b955d4cb722b70af8b72078ad36169ef8743c4f7a77452e2"
+  },
+  "packet": "P1.6",
+  "results": {
+    "corpus": [
+      {
+        "file": "APCISR/test.aci",
+        "grid_bits_present": 136,
+        "lines": 15,
+        "not_checked_rule_or_conjunct_context": 20,
+        "sha256": "00f9e6f2416d9c2b31a20bb07278e6b51ed5727d1475b940666123d6ba78d323",
+        "token_steps": 160
+      }
+    ],
+    "disagreements": 3,
+    "exit_codes": null
+  },
+  "started_utc": "2026-11-04T23:27:00Z",
+  "state": "wired_unproven",
+  "step": "extract_apcisr",
+  "tool_versions": {}
+}

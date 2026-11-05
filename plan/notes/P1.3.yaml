@@ -1,0 +1,14 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC-BY-SA-4.0
+produced:
+- spec/reps/numeric/balanced_ternary.yaml with both encodings (pair active, planes beside it)
+- spec/ref/balanced_ternary/balanced_ternary.{c,h} (restricted C11) and the generated bt_codec.h
+- repsynth/oracles_num/balanced_ternary.py (independent, arbitrary precision)
+- reports/numeric/balanced_ternary_reference_vs_oracle.json
+not_done:
+- Bounded proof of the C source itself (CBMC) is not run; the Z3 proof in P2.4 covers the trit-adder rule as a model.
+failed_first: The codec table mutant (code 01 read as 0) and the swapped-operand subtract mutant are caught by the vectors
+  (P2.5).
+questions:
+- Overflow wraps modulo 3^n, out-of-range conversion wraps the same way, invalid codes poison to the all-ones word, compare
+  returns 2 and to_int the most negative integer for invalid operands. These are working definitions under NUM-02; please
+  confirm or amend.

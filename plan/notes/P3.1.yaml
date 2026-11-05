@@ -1,0 +1,4 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC-BY-SA-4.0
+produced:
+- 'repsynth/accessor.py: the recording accessor; generators declare READS'
+failed_first: An undeclared read of balanced_ternary#/operations/0 is refused, naming the path (tests/test_graph.py).

@@ -1,0 +1,1 @@
+{"arity":2,"candidate":false,"meaning":"a * b modulo 2^w","name":"mul","reference":{"symbol_pattern":"bin_mul{width}"}}

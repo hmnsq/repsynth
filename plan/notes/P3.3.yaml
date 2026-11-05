@@ -1,0 +1,5 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC-BY-SA-4.0
+produced:
+- graph/edges.txt (seven edge types) and graph/edges.dot
+failed_first: 'The coverage test first failed: the glue artefacts had only depends_on edges. Implements edges were added and
+  the test passed.'

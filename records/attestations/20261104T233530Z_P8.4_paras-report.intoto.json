@@ -1,0 +1,39 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "paras report /home/user/build/repsynth/.cache/p84/src --local --langs arabic,aramaic,assamese,awadhi,balinese,balochi,batak,bengali,bhojpuri,bodo,buginese,bulgarian,burmese,chhattisgarhi,chinese,dari,dogri,dzongkha,gujarati,hausa_ajami,hebrew,hindi,japanese,javanese,kannada,kashmiri,kashmiri_dev,khmer,konkani,korean,kurdish_sorani,lao,lepcha,limbu,magahi,maithili,malay_jawi,malayalam,mandaic,manipuri_beng,marathi,marwari,nabataean,nepali,newari,odia,pali,pashto,persian,phoenician,prakrit,punjabi,punjabi_shahmukhi,rajasthani,russian,samaritan,sanskrit,santali,saraiki,serbian,shan,sindhi,sindhi_dev,sinhala,sundanese,syriac,tagalog,tamil,telugu,thai,tibetan,tulu,ukrainian,urdu,uyghur,vietnamese --work /home/user/build/repsynth/.cache/p84/pw",
+    "exit_code": 1,
+    "finished_utc": "2026-11-04T23:35:30Z",
+    "image_digests": {},
+    "inputs": {},
+    "packet": "P8.4",
+    "started_utc": "2026-11-04T23:35:05Z",
+    "state": "failed",
+    "step": "paras-report",
+    "tool_versions": {
+      "burp": "BURP 2026.10.1\n© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.\nLicen",
+      "paras": "paras 2026.10.2\n© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.\nLice"
+    }
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "18da7c438c473b2c77323f9d621de8ce35f8152aea245f2f39926170a0bb8aec"
+      },
+      "name": ".cache/p84/paras_report.log"
+    },
+    {
+      "digest": {
+        "sha256": "1a94db9cddce20e39b119fe34296d4483b9068faca02ab9d115ebbadfcc38fd5"
+      },
+      "name": "reports/paras_roundtrip.md"
+    },
+    {
+      "digest": {
+        "sha256": "0e9734ca2d81b7cb8a4867b631211a712268132fb7c38360720a22f5686b61e0"
+      },
+      "name": "records/20261104T233530Z_P8.4_paras-report.json"
+    }
+  ]
+}

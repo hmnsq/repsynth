@@ -1,0 +1,52 @@
+{
+  "command": "python3 -m repsynth intake clone",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:03:25Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Clones and their tree states before any other step.",
+  "outputs": {
+    "reports/asset_register.json": "6a15ae5bb7584025afd5ab0d69e0a69e3885096458cfcd8fac1f50464b7eab8f"
+  },
+  "packet": "P0.2",
+  "results": {
+    "clone_failures": 0,
+    "found": [
+      "Hindawi 2026.10",
+      "chintamani (Romenagri and APCISR folders)",
+      "Romenagri 2026.10",
+      "paras",
+      "Parashakti",
+      "BURP",
+      "chandah",
+      "tajziya",
+      "ILM registry",
+      "zamin",
+      "jugaad28",
+      "dhancha",
+      "PANINI family and PANIR",
+      "Tok DOI",
+      "misty-doi",
+      "satsneha",
+      "AyeVDI",
+      "Panini Q",
+      "PEDLER (qedler)"
+    ],
+    "not_found": [
+      "AyeHandSum",
+      "Machine-stack explainer",
+      "APCISR WebAssembly trace",
+      "zops",
+      "Candor",
+      "NI2A2",
+      "MSRR"
+    ]
+  },
+  "started_utc": "2026-11-04T23:01:54Z",
+  "state": "wired_unproven",
+  "step": "clone",
+  "tool_versions": {
+    "gh": "gh version 2.89.0 (2026-03-26)",
+    "git": "git version 2.43.0"
+  }
+}

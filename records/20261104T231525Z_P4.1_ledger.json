@@ -1,0 +1,72 @@
+{
+  "command": "python3 -m repsynth.lanes.tiera ledger",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:15:25Z",
+  "image_digests": {},
+  "inputs": {
+    "ledger/allocate.py": "b8f69f646e7c51947863ad05f4f8d6c65859ea77f9b713435ea3edef1796b3b6",
+    "spec/reps/numeric/balanced_ternary.yaml": "55f0f7dd9e79d62cc07537f7cf3f7f191d810876215f96b9131c662f96272cd8",
+    "spec/reps/numeric/binary_integer.yaml": "322191237cb8fddc33b65f0ac47f2c1c2013c8da0fc7e35171dba219ec8477b2",
+    "spec/reps/numeric/packed_decimal.yaml": "ef541ceb04d0443bb70a8eabd46e517c8819d6daee7b2ddb29dc7c5c6655d46c"
+  },
+  "notes": "Vendor overlaps are reported, not refused (ISA-04).",
+  "outputs": {
+    "ledger/allocations/balanced_ternary/add.yaml": "39e402654d449b1086c6bb48cbc064e18e45d858053f1ae2fb7fc501e0c7eaad",
+    "ledger/allocations/balanced_ternary/cmp.yaml": "4fc2291eb1b4f3787ad667ba67d2d569a333b77ff8d764954beef30a426751a5",
+    "ledger/allocations/balanced_ternary/from_int.yaml": "0a7fdeba314ff61dec548a0506828629f8e3f5c830abb725d8a1d604bf039535",
+    "ledger/allocations/balanced_ternary/mul.yaml": "7516a868dd777468d2c0616f516f783cd54bc2c15eb899a97a11cbacb0b32c70",
+    "ledger/allocations/balanced_ternary/neg.yaml": "62f8c03cf8574d7257dad24b6cbf3c28c5ae24d5d67906d91c5e6b518afcd99d",
+    "ledger/allocations/balanced_ternary/shl.yaml": "0a3f27e0b8e0f6a30261ae8aac3e09298cd3e6e029be8284cf62fcf30b9907bf",
+    "ledger/allocations/balanced_ternary/shr.yaml": "77c5a3f534f28092e4ff6efa939b83429c1bc421801d18d5881e16fb57236e04",
+    "ledger/allocations/balanced_ternary/sub.yaml": "f8ac33213c35621539b9a8f7822bb3134189705509cc44ad6219515d26dde225",
+    "ledger/allocations/balanced_ternary/to_int.yaml": "079dc02f7c6c421b9583d9b416279564288f50c39aab589efe07c1b0727914f1",
+    "ledger/allocations/packed_decimal/add.yaml": "07d122f34295995155f1ce717a9cdf1ab0da4d82af109376b3fcc833be85b1af",
+    "ledger/allocations/packed_decimal/cmp.yaml": "689b7f041ae14697f61f78c62715799eb1f46a4473fe99ac0cb6b9a7ed5e24e1",
+    "ledger/allocations/packed_decimal/from_int.yaml": "071546cb1fc379684f27cee33462eea0a251e9c0637901b97f5af80142d1fda2",
+    "ledger/allocations/packed_decimal/mul.yaml": "c7065002cbbc131bb9acd2623a1086113e779a705d191bd9d9f0fe98e95f8828",
+    "ledger/allocations/packed_decimal/neg.yaml": "69aec0699611498f7f979f318b7591aa23c1872722b825259f6c18f004182d56",
+    "ledger/allocations/packed_decimal/sub.yaml": "a46ca91be67937d5a18ba2d2d970fd4d5ba42c45c670c7832102b0384af15d9b",
+    "ledger/allocations/packed_decimal/to_int.yaml": "bf0bbd871e025540ac9c814f78855d78cca3485812d96050408bcbde3bfda16a",
+    "ledger/collisions.json": "ed547035ab38847b214e96f9f959f7774d2a03d9b2be277371a928656e26d39f",
+    "ledger/extensions.yaml": "3d40c68fdcf67cdcd5dae43d44cf96c3a9dc854fc5ddb176c97132b102478f18"
+  },
+  "packet": "P4.1",
+  "results": {
+    "allocate_exit": 0,
+    "entries": 16,
+    "planted_moved_exit": 3,
+    "planted_moved_refusal": [
+      "aye.bt.mul: funct7 moved from 63 to 3"
+    ],
+    "planted_standard_collision_exit": 2,
+    "planted_standard_collision_refusal": [
+      "aye.bt.add: collides with standard add (rv_i)",
+      "aye.bt.add: collides with standard ntl_p1 (rv_zihintntl)",
+      "aye.bt.add: collides with standard ntl_pall (rv_zihintntl)",
+      "aye.bt.add: collides with standard ntl_s1 (rv_zihintntl)",
+      "aye.bt.add: collides with standard ntl_all (rv_zihintntl)"
+    ],
+    "regenerate_exit": 0,
+    "regeneration_unchanged": true,
+    "vendor_collision_reported": true,
+    "vendor_overlaps_reported": 9,
+    "vendor_summary": [
+      "aye.bt.add ~ INSN_CLASS_XCVBI",
+      "aye.bt.cmp ~ INSN_CLASS_XCVBI",
+      "aye.bt.fromint ~ INSN_CLASS_XCVBI",
+      "aye.bt.mul ~ INSN_CLASS_XCVBI",
+      "aye.bt.neg ~ INSN_CLASS_XCVBI",
+      "aye.bt.shl ~ INSN_CLASS_XCVBI",
+      "aye.bt.shr ~ INSN_CLASS_XCVBI",
+      "aye.bt.sub ~ INSN_CLASS_XCVBI",
+      "aye.bt.toint ~ INSN_CLASS_XCVBI"
+    ]
+  },
+  "started_utc": "2026-11-04T23:15:19Z",
+  "state": "done",
+  "step": "ledger",
+  "tool_versions": {
+    "binutils": "binutils 2.47 release tarball (binutils_2.47.orig.tar.xz from archive.ubuntu.com, sha256 154ab23b60070e8f27013c22977f1129425d67d1e8acd6e13010e617811e4cff); github.com/bminor/binutils-gdb and hmnsq/binutils-gdb were not reachable",
+    "riscv-opcodes": "https://github.com/riscv/riscv-opcodes commit f24ac23ec9fa947011781a09cd6fd25a7c36dc45"
+  }
+}

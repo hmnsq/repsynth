@@ -1,0 +1,15 @@
+id,milestone,repository,prerequisites,closes_with
+M0,Intake and baseline,hmnsq/repsynth,None,Asset register; oracle logs
+M1,Specifications,hmnsq/repsynth,M0 for the legacy specifications,Specifications validate
+M2,Software conformance,hmnsq/repsynth,M1,D1
+M3,Dependency and impact,hmnsq/repsynth,M2,D2 over software
+M4,Tier A,hmnsq/repsynth,M3,"D3, D5; binary baseline counts"
+M5,Hardware,hmnsq/repsynth,M4,D4; D2 again; D14
+M6,Script lane,hmnsq/repsynth,M0,D6
+M7,Tier B: binary and balanced ternary machines,hmnsq/repsynth,M4,D7
+M8,Applications and release readiness,hmnsq/repsynth,"M3, M4 and every lane",Release readiness
+M9,Substrate foundations,hmnsq/subcore,None,BURP probe; core parity and accuracy
+M10,Mechanical simulator,hmnsq/mechsim,M9,D8
+M11,Analogue simulator,hmnsq/anasim,M9,D9
+M12,Cross-substrate compilation and quantum,hmnsq/repsynth,"M4, M10, M11","D10, D11"
+M13,Optical (later),hmnsq/optisim,M12,D13

@@ -1,0 +1,237 @@
+{
+  "command": "repsynth hdl mutate",
+  "exit_code": 1,
+  "finished_utc": "2026-11-04T23:24:13Z",
+  "image_digests": {},
+  "inputs": {
+    "gen/hdl/units/balanced_ternary/sv/bt_add16.sv": "b01fbc622ca36a81dc88375c365a873b5b10705963bbd41d4e5c11273b018c08",
+    "gen/hdl/units/balanced_ternary/sv/bt_add32.sv": "7e1baf27b085b626c9336b27d8b2d9b7db7dbf36dfcaaa66a2c9dc5584fb7f38",
+    "gen/hdl/units/balanced_ternary/sv/bt_cmp16.sv": "7fa940d3dda436f7052e2ba43ff1987c96289ef2cabe106443657b9732e2d781",
+    "gen/hdl/units/balanced_ternary/sv/bt_cmp32.sv": "b9c9ae904fe1604f76f0edb61beebfb02def88d5937ff1787ce3ce402ef4af68",
+    "gen/hdl/units/balanced_ternary/sv/bt_mul16.sv": "d4565d7e42e1482ce706fb7908f481f62035323953a0ac29c7fc97b2f5804d24",
+    "gen/hdl/units/balanced_ternary/sv/bt_mul32.sv": "5ef94dc92182050887e626945f2b62ba6c300b75e034f35e925aedbb99000461",
+    "gen/hdl/units/balanced_ternary/sv/bt_neg16.sv": "714524dfc3dc343d6818f5252ec61647ddf86dfc2f245c976f6e1daf11d89326",
+    "gen/hdl/units/balanced_ternary/sv/bt_neg32.sv": "82ff58305a05ff6f18465a8ac85e7dd0f592256eb8e33551f34e4f3b0237d5a2",
+    "gen/hdl/units/balanced_ternary/sv/bt_sub16.sv": "2c40b4d370f9357f8ac67986a5a0f00c73910bea76deae480f61ea666892b110",
+    "gen/hdl/units/balanced_ternary/sv/bt_sub32.sv": "37d6e08f11180082fc8dd9c6af356df9e662f616d4b1b242fc46b995948a32cf",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_add16.vhd": "ba118af8e30754419b27019bf83521eeb53fc4acd63c4b7ae99bf25707955f0d",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_add32.vhd": "d76470aa8f66f6bdb10b1c3c260959a057603fe70d4c3a7c8beb6ab9c5648737",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_cmp16.vhd": "624b28d1f6b953c4d220c87de05928ea423b85efc9d7c160fd48566551e9bed5",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_cmp32.vhd": "2380512da2911a381fa642c4b5574767e6876a70696824f2bce70afaf33adf95",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_mul16.vhd": "0576aa747055782e1f8b9f25e04b3ea43fb8e8f2b2c2d79ed409e1200fc63160",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_mul32.vhd": "af4bc01e38b8c796d9073f6a11c775b6efe86bef914073293a238b166a641db4",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_neg16.vhd": "791afe1d0add815094e3ccc1b0abed7a15e8e9e68b22052b92bc7ad07024c2a8",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_neg32.vhd": "1a6218db63717c33cf8a806aa4c608c5cebad8f321e0cabad56b24202e35eddf",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_sub16.vhd": "64b6d845c56d7693cd9c014134e71dcffe8ce151b3f802e5abd6f54a1da51900",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_sub32.vhd": "cbb569be8aa306cf99122dffa3bf00a954a640e858508158d72ca02cc479ad0b",
+    "gen/hdl/units/binary_integer/sv/bin_add32.sv": "4a41f3e67ab4f296c518e4156115ccc6cb40acc1542d5bb0188784b932038776",
+    "gen/hdl/units/binary_integer/sv/bin_add64.sv": "8bddbe83e44dc7bb39a014a0adff48e8584a31fcb9086d26150bd8b6383d4b22",
+    "gen/hdl/units/binary_integer/sv/bin_mul32.sv": "9f58ad4e33bdcca0cbe711d683bbcdff347ea65440db6b3856e2c9126670ca83",
+    "gen/hdl/units/binary_integer/sv/bin_mul64.sv": "bc8857649a7b0cb32d37e30d9dc39934478c019591e900b4a326dc0db46f0a0c",
+    "gen/hdl/units/binary_integer/vhdl/bin_add32.vhd": "200aa4e39ec65f945c9380212320e9856fedfd63c467d7b5f4e7bd20614bcfdc",
+    "gen/hdl/units/binary_integer/vhdl/bin_add64.vhd": "5c219dee8a8aea769470ad9226afc827b41951fb9208230dd67bd10d2a0f4f79",
+    "gen/hdl/units/binary_integer/vhdl/bin_mul32.vhd": "3b117c97a8dfd52a45e82ee338a1d0577b5ea6206f71dc4ec29f7a1efd54db05",
+    "gen/hdl/units/binary_integer/vhdl/bin_mul64.vhd": "95d18b91c9d22955f0d64fbe28b4abe12bb4a08080e7bb5aa7d611902dc6481c",
+    "repsynth/lanes/selftest_hdl.py": "677fea87d62aaee0b766aad4beab8316dc4385ca7bc0e3ed9ffab34e74cc2e82"
+  },
+  "notes": "Mutants are copies under .cache/hdl/mutants; each runs the same cocotb test and vectors as the clean unit.",
+  "outputs": {},
+  "packet": "P5.8",
+  "results": {
+    "caught": 0,
+    "equivalent_not_planted": [
+      {
+        "id": "swap-add-operands",
+        "reason": "bt_add16, bt_add32, bin_add32, bin_add64: a + b = b + a"
+      },
+      {
+        "id": "swap-mul-operands",
+        "reason": "bt_mul16, bt_mul32, bin_mul32, bin_mul64: a * b = b * a"
+      }
+    ],
+    "mutants": {
+      "flip-add-cell [flipped bit] bt_add16 sv on verilator": {
+        "cases": 4321,
+        "caught": false,
+        "edit": [
+          "6'b101000: tadd = 4'b0110;",
+          "6'b101000: tadd = 4'b0100;"
+        ],
+        "failures": 3219,
+        "log": ".cache/hdl/mutants/flip-add-cell.sv/work/run.log",
+        "mutant": ".cache/hdl/mutants/flip-add-cell.sv/bt_add16.sv",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/balanced_ternary/add.16.vec', 'cases': 4321, 'failures': 3219, 'first_failures': [{'inputs': ['1', '1'], 'expected': '6', 'got': '2'}, {'inputs': ['1', '9'], 'expected': '2', 'got': 'a'}, {'inputs': ['1', '55555555'], 'expected': 'aaaaaaaa', 'got': '55555556'}, {'inputs': ['1', '15555555'], 'expected': '6aaaaaaa', 'got': '15555556'}, {'inputs': ['6', '55555555'], 'expected': 'aaaaaaa8', 'got': '55555558'}], 'cocotb': '1.9.2', 'simulator': 'Verilator', 'simulator_version': '5.020 2024-01-01', 'toplevel': 'bt_add16'})"
+      },
+      "flip-add-cell [flipped bit] bt_add16 vhdl on ghdl": {
+        "cases": 4321,
+        "caught": false,
+        "edit": [
+          "when \"101000\" => return \"0110\";",
+          "when \"101000\" => return \"0100\";"
+        ],
+        "failures": 3219,
+        "log": ".cache/hdl/mutants/flip-add-cell.vhdl/work/run.log",
+        "mutant": ".cache/hdl/mutants/flip-add-cell.vhdl/bt_add16.vhd",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/balanced_ternary/add.16.vec', 'cases': 4321, 'failures': 3219, 'first_failures': [{'inputs': ['1', '1'], 'expected': '6', 'got': '2'}, {'inputs': ['1', '9'], 'expected': '2', 'got': 'a'}, {'inputs': ['1', '55555555'], 'expected': 'aaaaaaaa', 'got': '55555556'}, {'inputs': ['1', '15555555'], 'expected': '6aaaaaaa', 'got': '15555556'}, {'inputs': ['6', '55555555'], 'expected': 'aaaaaaa8', 'got': '55555558'}], 'cocotb': '1.9.2', 'simulator': 'GHDL', 'simulator_version': '4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]', 'toplevel': 'bt_add16'})"
+      },
+      "flip-bin-add-result [flipped bit] bin_add32 sv on verilator": {
+        "cases": 4196,
+        "caught": false,
+        "edit": [
+          "assign r = a + b;",
+          "assign r = (a + b) ^ 32'h00010000;"
+        ],
+        "failures": 4196,
+        "log": ".cache/hdl/mutants/flip-bin-add-result.sv/work/run.log",
+        "mutant": ".cache/hdl/mutants/flip-bin-add-result.sv/bin_add32.sv",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/binary_integer/add.32.vec', 'cases': 4196, 'failures': 4196, 'first_failures': [{'inputs': ['0', '0'], 'expected': '0', 'got': '10000'}, {'inputs': ['0', '1'], 'expected': '1', 'got': '10001'}, {'inputs': ['0', 'ffffffff'], 'expected': 'ffffffff', 'got': 'fffeffff'}, {'inputs': ['0', '80000000'], 'expected': '80000000', 'got': '80010000'}, {'inputs': ['0', '7fffffff'], 'expected': '7fffffff', 'got': '7ffeffff'}], 'cocotb': '1.9.2', 'simulator': 'Verilator', 'simulator_version': '5.020 2024-01-01', 'toplevel': 'bin_add32'})"
+      },
+      "flip-bin-add-result [flipped bit] bin_add32 vhdl on ghdl": {
+        "cases": 4196,
+        "caught": false,
+        "edit": [
+          "r <= std_logic_vector(unsigned(a) + unsigned(b));",
+          "r <= std_logic_vector(unsigned(a) + unsigned(b)) xor x\"00010000\";"
+        ],
+        "failures": 4196,
+        "log": ".cache/hdl/mutants/flip-bin-add-result.vhdl/work/run.log",
+        "mutant": ".cache/hdl/mutants/flip-bin-add-result.vhdl/bin_add32.vhd",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/binary_integer/add.32.vec', 'cases': 4196, 'failures': 4196, 'first_failures': [{'inputs': ['0', '0'], 'expected': '0', 'got': '10000'}, {'inputs': ['0', '1'], 'expected': '1', 'got': '10001'}, {'inputs': ['0', 'ffffffff'], 'expected': 'ffffffff', 'got': 'fffeffff'}, {'inputs': ['0', '80000000'], 'expected': '80000000', 'got': '80010000'}, {'inputs': ['0', '7fffffff'], 'expected': '7fffffff', 'got': '7ffeffff'}], 'cocotb': '1.9.2', 'simulator': 'GHDL', 'simulator_version': '4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]', 'toplevel': 'bin_add32'})"
+      },
+      "flip-cmp-cell [flipped bit] bt_cmp16 sv on verilator": {
+        "cases": 4321,
+        "caught": false,
+        "edit": [
+          "4'b1001: tcmp = 2'b10;",
+          "4'b1001: tcmp = 2'b00;"
+        ],
+        "failures": 403,
+        "log": ".cache/hdl/mutants/flip-cmp-cell.sv/work/run.log",
+        "mutant": ".cache/hdl/mutants/flip-cmp-cell.sv/bt_cmp16.sv",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/balanced_ternary/cmp.16.vec', 'cases': 4321, 'failures': 403, 'first_failures': [{'inputs': ['1', '2'], 'expected': '1', 'got': '0'}, {'inputs': ['6', '9'], 'expected': '1', 'got': 'ffffffff'}, {'inputs': ['55555555', 'aaaaaaaa'], 'expected': '1', 'got': '0'}, {'inputs': ['55555554', 'aaaaaaa8'], 'expected': '1', 'got': '0'}, {'inputs': ['15555555', '2aaaaaaa'], 'expected': '1', 'got': '0'}], 'cocotb': '1.9.2', 'simulator': 'Verilator', 'simulator_version': '5.020 2024-01-01', 'toplevel': 'bt_cmp16'})"
+      },
+      "flip-cmp-cell [flipped bit] bt_cmp16 vhdl on ghdl": {
+        "cases": 4321,
+        "caught": false,
+        "edit": [
+          "when \"1001\" => return \"10\";",
+          "when \"1001\" => return \"00\";"
+        ],
+        "failures": 403,
+        "log": ".cache/hdl/mutants/flip-cmp-cell.vhdl/work/run.log",
+        "mutant": ".cache/hdl/mutants/flip-cmp-cell.vhdl/bt_cmp16.vhd",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/balanced_ternary/cmp.16.vec', 'cases': 4321, 'failures': 403, 'first_failures': [{'inputs': ['1', '2'], 'expected': '1', 'got': '0'}, {'inputs': ['6', '9'], 'expected': '1', 'got': 'ffffffff'}, {'inputs': ['55555555', 'aaaaaaaa'], 'expected': '1', 'got': '0'}, {'inputs': ['55555554', 'aaaaaaa8'], 'expected': '1', 'got': '0'}, {'inputs': ['15555555', '2aaaaaaa'], 'expected': '1', 'got': '0'}], 'cocotb': '1.9.2', 'simulator': 'GHDL', 'simulator_version': '4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]', 'toplevel': 'bt_cmp16'})"
+      },
+      "flip-mul-result [flipped bit] bt_mul32 sv on verilator": {
+        "cases": 4321,
+        "caught": false,
+        "edit": [
+          "    if (invalid) r = {64{1'b1}};",
+          "    r[17] = ~r[17];\n    if (invalid) r = {64{1'b1}};"
+        ],
+        "failures": 4240,
+        "log": ".cache/hdl/mutants/flip-mul-result.sv/work/run.log",
+        "mutant": ".cache/hdl/mutants/flip-mul-result.sv/bt_mul32.sv",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/balanced_ternary/mul.32.vec', 'cases': 4321, 'failures': 4240, 'first_failures': [{'inputs': ['0', '0'], 'expected': '0', 'got': '20000'}, {'inputs': ['0', '1'], 'expected': '0', 'got': '20000'}, {'inputs': ['0', '2'], 'expected': '0', 'got': '20000'}, {'inputs': ['0', '6'], 'expected': '0', 'got': '20000'}, {'inputs': ['0', '9'], 'expected': '0', 'got': '20000'}], 'cocotb': '1.9.2', 'simulator': 'Verilator', 'simulator_version': '5.020 2024-01-01', 'toplevel': 'bt_mul32'})"
+      },
+      "flip-mul-result [flipped bit] bt_mul32 vhdl on ghdl": {
+        "cases": 4321,
+        "caught": false,
+        "edit": [
+          "    if invalid = '1' then w := (others => '1'); end if;",
+          "    w(17) := not w(17);\n    if invalid = '1' then w := (others => '1'); end if;"
+        ],
+        "failures": 4240,
+        "log": ".cache/hdl/mutants/flip-mul-result.vhdl/work/run.log",
+        "mutant": ".cache/hdl/mutants/flip-mul-result.vhdl/bt_mul32.vhd",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/balanced_ternary/mul.32.vec', 'cases': 4321, 'failures': 4240, 'first_failures': [{'inputs': ['0', '0'], 'expected': '0', 'got': '20000'}, {'inputs': ['0', '1'], 'expected': '0', 'got': '20000'}, {'inputs': ['0', '2'], 'expected': '0', 'got': '20000'}, {'inputs': ['0', '6'], 'expected': '0', 'got': '20000'}, {'inputs': ['0', '9'], 'expected': '0', 'got': '20000'}], 'cocotb': '1.9.2', 'simulator': 'GHDL', 'simulator_version': '4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]', 'toplevel': 'bt_mul32'})"
+      },
+      "swap-cmp-operands [swapped ports] bt_cmp32 sv on verilator": {
+        "cases": 4321,
+        "caught": false,
+        "edit": [
+          "= dec({a[2*i+1], a[2*i]});",
+          "= dec({b[2*i+1], b[2*i]}); // a"
+        ],
+        "failures": 4264,
+        "log": ".cache/hdl/mutants/swap-cmp-operands.sv/work/run.log",
+        "mutant": ".cache/hdl/mutants/swap-cmp-operands.sv/bt_cmp32.sv",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/balanced_ternary/cmp.32.vec', 'cases': 4321, 'failures': 4264, 'first_failures': [{'inputs': ['0', '1'], 'expected': 'ffffffffffffffff', 'got': '0'}, {'inputs': ['0', '2'], 'expected': '1', 'got': '0'}, {'inputs': ['0', '6'], 'expected': 'ffffffffffffffff', 'got': '0'}, {'inputs': ['0', '9'], 'expected': '1', 'got': '0'}, {'inputs': ['0', '5555555555555555'], 'expected': 'ffffffffffffffff', 'got': '0'}], 'cocotb': '1.9.2', 'simulator': 'Verilator', 'simulator_version': '5.020 2024-01-01', 'toplevel': 'bt_cmp32'})"
+      },
+      "swap-cmp-operands [swapped ports] bt_cmp32 vhdl on ghdl": {
+        "cases": 4321,
+        "caught": false,
+        "edit": [
+          "d := dec(a(2*i+1) & a(2*i));",
+          "d := dec(b(2*i+1) & b(2*i)); -- a"
+        ],
+        "failures": 4264,
+        "log": ".cache/hdl/mutants/swap-cmp-operands.vhdl/work/run.log",
+        "mutant": ".cache/hdl/mutants/swap-cmp-operands.vhdl/bt_cmp32.vhd",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/balanced_ternary/cmp.32.vec', 'cases': 4321, 'failures': 4264, 'first_failures': [{'inputs': ['0', '1'], 'expected': 'ffffffffffffffff', 'got': '0'}, {'inputs': ['0', '2'], 'expected': '1', 'got': '0'}, {'inputs': ['0', '6'], 'expected': 'ffffffffffffffff', 'got': '0'}, {'inputs': ['0', '9'], 'expected': '1', 'got': '0'}, {'inputs': ['0', '5555555555555555'], 'expected': 'ffffffffffffffff', 'got': '0'}], 'cocotb': '1.9.2', 'simulator': 'GHDL', 'simulator_version': '4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]', 'toplevel': 'bt_cmp32'})"
+      },
+      "swap-neg-code-bits [swapped ports] bt_neg16 sv on verilator": {
+        "cases": 4111,
+        "caught": false,
+        "edit": [
+          "{r[2*i+1], r[2*i]} = enc(",
+          "{r[2*i], r[2*i+1]} = enc("
+        ],
+        "failures": 4107,
+        "log": ".cache/hdl/mutants/swap-neg-code-bits.sv/work/run.log",
+        "mutant": ".cache/hdl/mutants/swap-neg-code-bits.sv/bt_neg16.sv",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/balanced_ternary/neg.16.vec', 'cases': 4111, 'failures': 4107, 'first_failures': [{'inputs': ['1'], 'expected': '2', 'got': '1'}, {'inputs': ['2'], 'expected': '1', 'got': '2'}, {'inputs': ['6'], 'expected': '9', 'got': '6'}, {'inputs': ['9'], 'expected': '6', 'got': '9'}, {'inputs': ['55555555'], 'expected': 'aaaaaaaa', 'got': '55555555'}], 'cocotb': '1.9.2', 'simulator': 'Verilator', 'simulator_version': '5.020 2024-01-01', 'toplevel': 'bt_neg16'})"
+      },
+      "swap-neg-code-bits [swapped ports] bt_neg16 vhdl on ghdl": {
+        "cases": 4111,
+        "caught": false,
+        "edit": [
+          "w(2*i+1) := c(1); w(2*i) := c(0);",
+          "w(2*i+1) := c(0); w(2*i) := c(1);"
+        ],
+        "failures": 4107,
+        "log": ".cache/hdl/mutants/swap-neg-code-bits.vhdl/work/run.log",
+        "mutant": ".cache/hdl/mutants/swap-neg-code-bits.vhdl/bt_neg16.vhd",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/balanced_ternary/neg.16.vec', 'cases': 4111, 'failures': 4107, 'first_failures': [{'inputs': ['1'], 'expected': '2', 'got': '1'}, {'inputs': ['2'], 'expected': '1', 'got': '2'}, {'inputs': ['6'], 'expected': '9', 'got': '6'}, {'inputs': ['9'], 'expected': '6', 'got': '9'}, {'inputs': ['55555555'], 'expected': 'aaaaaaaa', 'got': '55555555'}], 'cocotb': '1.9.2', 'simulator': 'GHDL', 'simulator_version': '4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]', 'toplevel': 'bt_neg16'})"
+      },
+      "swap-sub-operands [swapped ports] bt_sub16 sv on verilator": {
+        "cases": 4321,
+        "caught": false,
+        "edit": [
+          "= dec({a[2*i+1], a[2*i]});",
+          "= dec({b[2*i+1], b[2*i]}); // a"
+        ],
+        "failures": 4264,
+        "log": ".cache/hdl/mutants/swap-sub-operands.sv/work/run.log",
+        "mutant": ".cache/hdl/mutants/swap-sub-operands.sv/bt_sub16.sv",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/balanced_ternary/sub.16.vec', 'cases': 4321, 'failures': 4264, 'first_failures': [{'inputs': ['0', '1'], 'expected': '2', 'got': '0'}, {'inputs': ['0', '2'], 'expected': '1', 'got': '0'}, {'inputs': ['0', '6'], 'expected': '9', 'got': '0'}, {'inputs': ['0', '9'], 'expected': '6', 'got': '0'}, {'inputs': ['0', '55555555'], 'expected': 'aaaaaaaa', 'got': '0'}], 'cocotb': '1.9.2', 'simulator': 'Verilator', 'simulator_version': '5.020 2024-01-01', 'toplevel': 'bt_sub16'})"
+      },
+      "swap-sub-operands [swapped ports] bt_sub16 vhdl on ghdl": {
+        "cases": 4321,
+        "caught": false,
+        "edit": [
+          "d := dec(a(2*i+1) & a(2*i));",
+          "d := dec(b(2*i+1) & b(2*i)); -- a"
+        ],
+        "failures": 4264,
+        "log": ".cache/hdl/mutants/swap-sub-operands.vhdl/work/run.log",
+        "mutant": ".cache/hdl/mutants/swap-sub-operands.vhdl/bt_sub16.vhd",
+        "refusal": "NOT caught (exit 0, summary {'vectors': '/home/user/build/repsynth/conformance/vectors/balanced_ternary/sub.16.vec', 'cases': 4321, 'failures': 4264, 'first_failures': [{'inputs': ['0', '1'], 'expected': '2', 'got': '0'}, {'inputs': ['0', '2'], 'expected': '1', 'got': '0'}, {'inputs': ['0', '6'], 'expected': '9', 'got': '0'}, {'inputs': ['0', '9'], 'expected': '6', 'got': '0'}, {'inputs': ['0', '55555555'], 'expected': 'aaaaaaaa', 'got': '0'}], 'cocotb': '1.9.2', 'simulator': 'GHDL', 'simulator_version': '4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]', 'toplevel': 'bt_sub16'})"
+      }
+    },
+    "planted": 14
+  },
+  "started_utc": "2026-11-04T23:21:04Z",
+  "state": "failed",
+  "step": "mutate",
+  "tool_versions": {
+    "cocotb(host)": "2.1.0",
+    "cocotb(lane)": "1.9.2",
+    "ghdl": "GHDL 4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]",
+    "icepack": "fpga-icestorm 0~20230218gitd20a5e9-1",
+    "nextpnr-ice40": "\"nextpnr-ice40\" -- Next Generation Place and Route (Version 0.6-3build5)",
+    "python": "3.13.18",
+    "verilator": "Verilator 5.020 2024-01-01 rev (Debian 5.020-1)",
+    "yosys": "Yosys 0.33 (git sha1 2584903a060)"
+  }
+}

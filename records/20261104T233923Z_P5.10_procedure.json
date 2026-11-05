@@ -1,0 +1,17 @@
+{
+  "command": "written procedure reports/hardware/onboard_procedure.md (no command run on a board)",
+  "exit_code": 1,
+  "finished_utc": "2026-11-04T23:39:23Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Human packet: no board at hand. Procedure written; the host front end (UART or SPI) for the serial wrapper is not built.",
+  "outputs": {
+    "reports/hardware/onboard_procedure.md": "427bcd1a40b111d1eb1ee20781d0d5be01d80ed9d0980ffc6c138dc02322f1fe"
+  },
+  "packet": "P5.10",
+  "results": {},
+  "started_utc": "2026-11-04T23:39:23Z",
+  "state": "not_built",
+  "step": "procedure",
+  "tool_versions": {}
+}

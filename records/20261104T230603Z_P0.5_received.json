@@ -1,0 +1,38 @@
+{
+  "command": "python3 -m repsynth intake received",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:06:03Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "R1, R2 and R3 were not received with the package; the code was exercised on the package's own documents.",
+  "outputs": {
+    "sources/package_0.3.0_test/SHA256SUMS": "ee56343ba7b3f224e7b9e0eabf8fe1be00cb7d2bf0fe57e1c0d29ce13b873e12",
+    "sources/package_0.3.0_test/invisible_report.json": "3e4ec95cdecd2638cbe9a137e86db851c8caa46ce05777e471c25e0fa1c2ed5f",
+    "sources/package_0.3.0_test/invisible_report.md": "d051919de00f6cc68dd1680f182970138594bed7c9a1ae4ee984f8f935dd605f",
+    "sources/received_search.json": "47c485fad5d72bc0358bdff20b2b037da2b7a49f07f75846fd3fb6386f47de9d"
+  },
+  "packet": "P0.5",
+  "results": {
+    "package_files_searched": 24,
+    "package_test": {
+      "all_byte_identical": true,
+      "documents": 16,
+      "invisible_total": 0,
+      "manifest_mismatches": [],
+      "not_in_manifest": [
+        "00_Sovereignty_Architecture_v0.3.0.md",
+        "01_MRD_repsynth_v0.3.0.md",
+        "02_Implementation_Guidelines_v0.3.0.md",
+        "03_Repository_Map_v0.3.0.md",
+        "04_Build_Plan_v0.3.0.md",
+        "05_Test_Plan_v0.3.0.md"
+      ],
+      "remaining_after_clean": 0
+    },
+    "r_documents_in_package": "none: R1, R2 and R3 are not in the package"
+  },
+  "started_utc": "2026-11-04T23:06:02Z",
+  "state": "wired_unproven",
+  "step": "received",
+  "tool_versions": {}
+}

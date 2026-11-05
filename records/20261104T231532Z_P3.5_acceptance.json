@@ -1,0 +1,21 @@
+{
+  "command": "repsynth impact c|d --confirm (in a clone)",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:15:32Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/impact/dep05c_new_operation.json": "c369a289344b78e0c55a2190edf5db6d54079d8685b902b7bb4915a377070232",
+    "reports/impact/dep05d_trit_encoding.json": "7e9a29a30c9ceed17967def1c3d666ac9f5e4cacf1aed203ecac5bb10831ad48"
+  },
+  "packet": "P3.5",
+  "results": {
+    "c": 0,
+    "d": 0
+  },
+  "started_utc": "2026-11-04T23:15:10Z",
+  "state": "wired_unproven",
+  "step": "acceptance",
+  "tool_versions": {}
+}

@@ -1,0 +1,18 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "purpose": "P4.6 derived build of xv6-riscv: the Tier A test programs as user programs, and room in the file system for the vector files",
+  "copy": [
+    {"from": "gen/insn/out/balanced_ternary", "to": "user/xaye/balanced_ternary", "pattern": "**/*"},
+    {"from": "gen/insn/out/packed_decimal", "to": "user/xaye/packed_decimal", "pattern": "**/*"},
+    {"from": "lanes/os/xv6", "to": "user/xaye/balanced_ternary", "pattern": "repsynth_platform.h"},
+    {"from": "lanes/os/xv6", "to": "user/xaye/packed_decimal", "pattern": "repsynth_platform.h"},
+    {"from": "lanes/os/xv6", "to": "user", "pattern": "xaye*.c"}
+  ],
+  "anchors": [
+    {"file": "kernel/param.h", "where": "after",
+     "anchor": "#define FSSIZE      2000              // size of file system in blocks\n",
+     "text": "#undef FSSIZE\n#define FSSIZE      20000             // repsynth: room for the vector files\n"},
+    {"file": "Makefile", "where": "after", "anchor": "UPROGS=\\\n",
+     "text": "\t$U/_xayebt\\\n\t$U/_xayepd\\\n"}
+  ]
+}

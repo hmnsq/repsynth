@@ -1,0 +1,64 @@
+_notice: "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0"
+identity:
+  id: binary_integer
+  version: 0.3.0
+  family: numeric
+  title: Two's complement binary integers, the performance baseline (NUM-01, NUM-06, RD5)
+  equality: Bitwise equality of the register.
+  canonical_form: The register's bits; for the 32-bit width the result occupies the low 32 bits and the rest are zero.
+domain:
+  description: Integers from -2^(w-1) to 2^(w-1) - 1 for w bits.
+  finite: true
+  enumerator: Every bit pattern of width w; runners restrict operands to the low 20 bits (unary) or the low 10 bits (binary) and sign-extend half of them.
+  widths:
+    - {digits: 64, register_bits: 64}
+    - {digits: 32, register_bits: 32}
+structure:
+  digits: Bit i has weight 2^i; bit w-1 has weight -2^(w-1).
+encoding:
+  active: twos_complement
+  encodings:
+    twos_complement: {description: "Standard two's complement", bits_per_digit: 1}
+decoding:
+  rule: Every bit pattern is valid.
+semantics:
+  statement: Integer arithmetic modulo 2^w; comparison is signed; right shift is arithmetic; shift amounts are taken modulo w.
+  reference_sources: [spec/ref/binary_integer/binary_integer.c]
+  oracle: Python arbitrary-precision integers, repsynth/oracles_num/binary_integer.py (NUM-04).
+operations:
+  - {name: neg, arity: 1, meaning: "-a modulo 2^w", reference: {symbol_pattern: "bin_neg{width}"}, candidate: false}
+  - {name: add, arity: 2, meaning: "a + b modulo 2^w", reference: {symbol_pattern: "bin_add{width}"}, candidate: false}
+  - {name: sub, arity: 2, meaning: "a - b modulo 2^w", reference: {symbol_pattern: "bin_sub{width}"}, candidate: false}
+  - {name: mul, arity: 2, meaning: "a * b modulo 2^w", reference: {symbol_pattern: "bin_mul{width}"}, candidate: false}
+  - {name: cmp, arity: 2, meaning: "-1, 0 or +1 by signed comparison", reference: {symbol_pattern: "bin_cmp{width}"}, candidate: false}
+  - {name: shl, arity: 2, meaning: "a shifted left by b modulo w", reference: {symbol_pattern: "bin_shl{width}"}, candidate: false}
+  - {name: shr, arity: 2, meaning: "a shifted right arithmetically by b modulo w", reference: {symbol_pattern: "bin_shr{width}"}, candidate: false}
+composition:
+  words: Not composed in the first build.
+transformations:
+  - {name: to_balanced_ternary, to: balanced_ternary, preserves: "value modulo 3^n"}
+constraints:
+  - {name: valid, statement: Every pattern is valid.}
+substrate:
+  logical: binary
+  register_widths:
+    - {digits: 64, register_bits: 64}
+    - {digits: 32, register_bits: 32}
+interfaces:
+  exports: [balanced_ternary conversions, packed_decimal conversions]
+verification:
+  properties:
+    - {name: homomorphism, method: "equal to Python integers reduced modulo 2^w"}
+  exhaustive: {unary_low_digits: 20, binary_low_digits: 10, bound: 1048576}
+  random: {seed: 20261104, stored_cases: 4096, working_value: 100000, note: "As balanced_ternary."}
+generation:
+  software: {targets: [native, wasm32, python]}
+  tier_a: {base_isa: "RV64GC and RV32IMAC base instructions; no extension (baseline)"}
+evolution:
+  changes:
+    - {version: 0.3.0, class: initial, summary: "Baseline specification (RD5)"}
+provenance:
+  oracle: {value: "Python integers", evidence: decided, source: "NUM-04"}
+  extraction: Written from NUM-01 and NUM-06.
+  evidence_state: decided
+  decided_by: RD5, 4 November 2026

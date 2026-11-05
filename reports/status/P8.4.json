@@ -1,0 +1,9 @@
+{
+  "packet": "P8.4",
+  "state": "failed",
+  "evidence": [
+    "records/20261104T233739Z_P8.4_burp-check.json"
+  ],
+  "summary": "BURP ingests the harness's tracked sources into 76 languages and 75 convert back byte for byte; paras report over the same folder: no summary line (finding recorded for paras).",
+  "blocked_by": []
+}

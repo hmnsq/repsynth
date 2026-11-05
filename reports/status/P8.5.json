@@ -1,0 +1,9 @@
+{
+  "packet": "P8.5",
+  "state": "wired_unproven",
+  "evidence": [
+    "ops/ayevdi/repsynth.wiring.yaml"
+  ],
+  "summary": "A wiring description of the kept containers by inputs and outputs is written. Loading it into AyeVDI was not run: AyeVDI activates by fetching its initialiser from bit.ly (README), a network act on the author's machine; the description's form is not yet read from AyeVDI's sources (GOV-15) and may need adapting.",
+  "blocked_by": []
+}

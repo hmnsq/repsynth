@@ -1,0 +1,482 @@
+# What is still missing
+
+1 languages. Each line says in how many languages it is missing.
+
+## Files in languages BURP cannot read yet
+
+- `.sv`: 24 files
+- `.sh`: 5 files
+- `.mjs`: 1 files
+
+## Keywords with no word in a language's table
+
+- soochee:def: 1
+- soochee:out: 1
+- soochee:int: 1
+- soochee:None: 1
+- soochee:join: 1
+- soochee:print: 1
+- soochee:len: 1
+- soochee:args: 1
+- guru:unsigned: 1
+- soochee:run: 1
+- soochee:replace: 1
+- soochee:is: 1
+- guru:long: 1
+- soochee:range: 1
+- soochee:clone: 1
+- guru:#define: 1
+- soochee:util: 1
+- shraeni:long: 1
+- shraeni:unsigned: 1
+- guru:printf: 1
+- soochee:update: 1
+- guru:#endif: 1
+- soochee:final: 1
+- soochee:with: 1
+- guru:#ifndef: 1
+- shraeni:fprintf: 1
+- shraeni:auto: 1
+- shraeni:FILE: 1
+- shraeni:nullptr: 1
+- shraeni:true: 1
+- soochee:pass: 1
+- shraeni:fopen: 1
+- shraeni:fclose: 1
+- shraeni:stderr: 1
+- soochee:native: 1
+- guru:fprintf: 1
+- guru:stderr: 1
+- soochee:start: 1
+- soochee:short: 1
+- shraeni:size_t: 1
+- shraeni:strcmp: 1
+- soochee:resume: 1
+- guru:fgets: 1
+- guru:strstr: 1
+- guru:sscanf: 1
+- shraeni:fgetc: 1
+- shraeni:EOF: 1
+- shraeni:strtoul: 1
+- guru:_exit: 1
+- soochee:close: 1
+- soochee:wait: 1
+- guru:FILE: 1
+- guru:fopen: 1
+- guru:perror: 1
+- guru:fclose: 1
+- shraeni:fputc: 1
+- shraeni:fread: 1
+- shraeni:memcmp: 1
+- shraeni:get: 1
+- guru:#ifdef: 1
+- guru:stdin: 1
+- guru:strcspn: 1
+- guru:strtol: 1
+- soochee:del: 1
+
+## Names with no dictionary entry (the most common first)
+
+- `f`: 1
+- `r`: 1
+- `a`: 1
+- `str`: 1
+- `i`: 1
+- `b`: 1
+- `n`: 1
+- `d`: 1
+- `k`: 1
+- `p`: 1
+- `c`: 1
+- `w`: 1
+- `Path`: 1
+- `sid`: 1
+- `v`: 1
+- `std_logic_vector`: 1
+- `out`: 1
+- `append`: 1
+- `dict`: 1
+- `s`: 1
+- `m`: 1
+- `spec`: 1
+- `name`: 1
+- `o`: 1
+- `op`: 1
+- `e`: 1
+- `text`: 1
+- `get`: 1
+- `list`: 1
+- `t`: 1
+- `L`: 1
+- `results`: 1
+- `res`: 1
+- `ctx`: 1
+- `path`: 1
+- `ok`: 1
+- `read_text`: 1
+- `join`: 1
+- `re`: 1
+- `ap`: 1
+- `json`: 1
+- `rows`: 1
+- `N`: 1
+- `bad`: 1
+- `args`: 1
+- `y`: 1
+- `sys`: 1
+- `exists`: 1
+- `write_text`: 1
+- `row`: 1
+- `cmd`: 1
+- `strip`: 1
+- `subprocess`: 1
+- `sorted`: 1
+- `tv`: 1
+- `work`: 1
+- `returncode`: 1
+- `u`: 1
+- `mkdir`: 1
+- `prof`: 1
+- `check`: 1
+- `ieee`: 1
+- `acc`: 1
+- `rc`: 1
+- `encoding`: 1
+- `parents`: 1
+- `enc`: 1
+- `utc_now`: 1
+- `h`: 1
+- `invalid`: 1
+- `argv`: 1
+- `_gh`: 1
+- `rep`: 1
+- `run`: 1
+- `cp`: 1
+- `rec`: 1
+- `reg`: 1
+- `split`: 1
+- `parent`: 1
+- `replace`: 1
+- `files`: 1
+- `encode`: 1
+- `ext`: 1
+- `shutil`: 1
+- `exist_ok`: 1
+- `dec`: 1
+- `timeout`: 1
+- `env`: 1
+- `st`: 1
+- `_`: 1
+- `t0`: 1
+- `kind`: 1
+- `g`: 1
+- `base`: 1
+- `rp`: 1
+- `splitlines`: 1
+- `add`: 1
+- `src`: 1
+- `am`: 1
+- `rm`: 1
+- `add_argument`: 1
+- `direct`: 1
+- `ai`: 1
+- `outputs`: 1
+- `started`: 1
+- `log`: 1
+- `sub`: 1
+- `sha256_file`: 1
+- `startswith`: 1
+- `cwd`: 1
+- `parts`: 1
+- `yaml`: 1
+- `help`: 1
+- `CACHE`: 1
+- `NOTICE`: 1
+- `sm`: 1
+- `got`: 1
+- `repsynth`: 1
+- `annotations`: 1
+- `capture_output`: 1
+- `table`: 1
+- `rel`: 1
+- `nodes`: 1
+- `decode`: 1
+- `word`: 1
+- `mp`: 1
+- `sp`: 1
+- `write_record`: 1
+- `started_utc`: 1
+- `inputs`: 1
+- `os`: 1
+- `ins`: 1
+- `cm`: 1
+- `ops`: 1
+- `sh`: 1
+- `slug`: 1
+- `nid`: 1
+- `dumps`: 1
+- `lang`: 1
+- `reads`: 1
+- `planted`: 1
+- `pathlib`: 1
+- `oracle`: 1
+- `names`: 1
+- `set`: 1
+- `loads`: 1
+- `REPORTS`: 1
+- `indent`: 1
+- `j`: 1
+- `run_cmd`: 1
+- `argparse`: 1
+- `isa`: 1
+- `cases`: 1
+- `val`: 1
+- `spec_of`: 1
+- `unary`: 1
+- `digits`: 1
+- `code`: 1
+- `dest`: 1
+- `tool_versions`: 1
+- `lo`: 1
+- `tuple`: 1
+- `fn`: 1
+- `q`: 1
+- `group`: 1
+- `only`: 1
+- `bp`: 1
+- `bm`: 1
+- `std_logic`: 1
+- `old`: 1
+- `vec`: 1
+- `fam`: 1
+- `ptr`: 1
+- `add_parser`: 1
+- `notes`: 1
+- `head`: 1
+- `hi`: 1
+- `entries`: 1
+- `bi`: 1
+- `hashlib`: 1
+- `relative_to`: 1
+- `sum`: 1
+- `_head`: 1
+- `packet`: 1
+- `importlib`: 1
+- `found`: 1
+- `clone`: 1
+- `W`: 1
+- `std_logic_1164`: 1
+- `numeric_std`: 1
+- `natural`: 1
+- `prop`: 1
+- `SystemExit`: 1
+- `entry`: 1
+- `records`: 1
+- `before`: 1
+- `rmtree`: 1
+- `all`: 1
+- `pointer`: 1
+- `isinstance`: 1
+- `repo`: 1
+- `outs`: 1
+- `caught`: 1
+- `LANES`: 1
+- `environ`: 1
+- `resolve`: 1
+- `M64`: 1
+- `enumerate`: 1
+- `load_spec`: 1
+- `buf`: 1
+- `step`: 1
+- `SpecError`: 1
+- `set_defaults`: 1
+- `word_mask`: 1
+- `srcs`: 1
+- `sym`: 1
+- `ref`: 1
+- `lanes`: 1
+- `build`: 1
+- `edges`: 1
+- `tail`: 1
+- `steps`: 1
+- `alloc`: 1
+- `so`: 1
+- `fmt`: 1
+- `rng`: 1
+- `H`: 1
+- `GENERATOR`: 1
+- `action`: 1
+- `mbox`: 1
+- `a0`: 1
+- `ch`: 1
+- `exe`: 1
+- `time`: 1
+- `cells`: 1
+- `PROFILES`: 1
+- `gen`: 1
+- `target`: 1
+- `raw`: 1
+- `reading`: 1
+- `want`: 1
+- `BT`: 1
+- `lib`: 1
+- `digest`: 1
+- `any`: 1
+- `is_file`: 1
+- `after`: 1
+- `util`: 1
+- `sources`: 1
+- `executable`: 1
+- `tadd`: 1
+- `decode_a`: 1
+- `read_bytes`: 1
+- `a7`: 1
+- `SPECS`: 1
+- `us`: 1
+- `r3`: 1
+- `obj`: 1
+- `_write_json`: 1
+- `zip`: 1
+- `first`: 1
+- `numeric`: 1
+- `getattr`: 1
+- `what`: 1
+- `inv`: 1
+- `units`: 1
+- `safe_load`: 1
+- `write_status`: 1
+- `software`: 1
+- `changed`: 1
+- `extra`: 1
+- `md`: 1
+- `QEMU_PATCHED`: 1
+- `rb`: 1
+- `arity`: 1
+- `ensure_ascii`: 1
+- `width`: 1
+- `a2`: 1
+- `update`: 1
+- `copy`: 1
+- `Accessor`: 1
+- `spec_path`: 1
+- `OUT`: 1
+- `lower`: 1
+- `lr`: 1
+- `_deb`: 1
+- `obs`: 1
+- `valid`: 1
+- `ctypes`: 1
+- `r2`: 1
+- `codes`: 1
+- `glob`: 1
+- `data`: 1
+- `a1`: 1
+- `ONE`: 1
+- `refused`: 1
+- `seen`: 1
+- `written`: 1
+- `PY`: 1
+- `_sh`: 1
+
+## Comments with no translation
+
+- noqa: E402: 1
+- noqa: E731: 1
+- repository-relative files: 1
+- unresolved bits (X or Z) count as a failure: 1
+- (1) derivation: 1
+- (2) encoding round trip: 1
+- (3) homomorphism: 1
+- Operations this generator can build. Which of them are built is the lane's promoted set.: 1
+- ---------------------------------------------------------------- tables derived from integer arithme: 1
+- ---------------------------------------------------------------- SystemVerilog: 1
+- b is a two's complement shift count, not a trit word: 1
+- sub: a + (-b), -b swaps plus and minus: 1
+- ---------------------------------------------------------------- VHDL-2008: 1
+- ---------------------------------------------------------------- entry point: 1
+- val and word: the numeric specification's conversions when it has them, else the identity: 1
+- (its words are two's complement integers of the register width).: 1
+- Machine semantic functions every instance has, beside its ALU operations: (name, arity, meaning).: 1
+- ---------------------------------------------------------------- encoding: 1
+- code bit string "hl": h is the high bit (bit 2i+1 or minus-plane bit), l the low bit.: 1
+- Harness for the Verilated co-simulation platform (P5.5, P5.11). It loads a static RV32 ELF exactly a: 1
+- a Linux loader would (every PT_LOAD segment at its address, .bss zeroed), places the trap stub at: 1
+- mtvec, starts the core at the ELF entry, and serves the program's write and exit system calls throug: 1
+- the stub's mailbox, so the same binary that runs in QEMU user mode runs here unchanged.: 1
+- Usage: rs_tb <elf> <trap.bin> <stdout-file> <summary.json> <max-cycles> <start_pc|-> <stop_pc|-> [--: 1
+- The initial stack is laid out as Linux lays it out for a static program: argc, argv[], NULL, an empt: 1
+- environment, an empty auxiliary vector, then the strings. A boot stub at BOOT (also outside the: 1
+- program) loads sp and jumps to the ELF entry, as exec does. System calls served: openat (read only,: 1
+- host path), read, close, write, exit, exit_group.: 1
+- Counts: cycles from reset release to exit; retired instructions (the core's minstret event, which: 1
+- excludes trapping instructions such as ecall); and, when trigger addresses are given, the cycles and: 1
+- retired instructions between the first retirement of start_pc and the first retirement of stop_pc.: 1
+- 4 KiB pages, created on first touch: 1
+- 0 a0, 1 a1, 2 a2, 3 a7 (trigger), 4 return, 5 t5 save, 6 mcause, 7 mepc, 8 sp, 9 entry: 1
+- 11: environment call from M-mode: 1
+- write(fd, buf, len): fd 1 and 2 go to the stdout file: 1
+- openat(dirfd, path, flags, mode): read-only: 1
+- -ENOENT: 1
+- read(fd, buf, n): 1
+- -EBADF: 1
+- close(fd): 1
+- exit, exit_group: 1
+- namespace: 1
+- The stub file holds the boot stub at offset 0 and the trap stub at offset MTVEC - BOOT.: 1
+- Program arguments: argv[0] is the ELF path, then everything after "--".: 1
+- end of argv: 1
+- empty environment: 1
+- AT_NULL: 1
+- the harness places this image at 0x800, outside the: 1
+- round(h/6): 1
+- Writes v as `digits` lower-case hexadecimal digits.: 1
+- AT_FDCWD: 1
+- O_RDONLY: 1
+- Running as /init of a booted kernel: report the exit code, then power off (reboot(2)).: 1
+- LINUX_REBOOT_CMD_POWER_OFF: 1
+- Extension name and mnemonic stem per specification (vendor prefix xaye, RD3).: 1
+- funct7, funct3, opcode: 1
+- ---------------------------------------------------------------- databases: 1
+- type: ignore: 1
+- ---------------------------------------------------------------- allocation: 1
+- P3.4 rides on the same runs: predicted equals observed for every case run: 1
+- recorded, not hidden: 1
+- run from the repository root: 1
+- software | vectors | qemu | intrinsics | hardware | script | ...: 1
+- (type, from, to): 1
+- ---------------------------------------------------------------- the software lane's generators: 1
+- a lane that fails stops itself; the others carry on: 1
+- ---------------------------------------------------------------- generator execution (gen-one): 1
+- ---------------------------------------------------------------- slices, Ninja, edges (P3.2, P3.3): 1
+- a path that does not exist yet is a slice whose value is absent: 1
+- an artefact may be covered by an implements/validates edge of its producing node: 1
+- ---------------------------------------------------------------- impact (P3.4): 1
+- source edits (new reference functions) predict the builds that take those sources: 1
+- restore the baseline build: 1
+- (path, old, new) or (path, None, appended): 1
+- Operations are addressed by index (JSON Pointer), so the evolution rule appends new ones.: 1
+- reported, never hidden: 1
+- stock build of the pinned tree, copied out: 1
+- name: (march, mabi, qemu user binary): 1
+- ---------------------------------------------------------------- CMS-03 models: 1
+- ---------------------------------------------------------------- tools: 1
+- Embench main returns !verify_benchmark(): 1
+- The promoted set is read from P4.4's promotion report (reports/promotion/promotion.json): every: 1
+- balanced ternary operation whose "promoted" is true gets units. If that report is absent the lane fa: 1
+- back to the provisional working set it was first built with (add, sub, neg, mul, cmp) and says so.: 1
+- Binary add and mul are the baseline units of P5.11 (binary_integer has no candidates by design). A: 1
+- not a subcommand of its own; present so the registry entry is uniform: 1
+- ---------------------------------------------------------------- running one node: 1
+- ---------------------------------------------------------------- helpers: 1
+- ---------------------------------------------------------------- setup and P5.1: 1
+- The gate is shown refusing a planted defect before it is trusted.: 1
+- ---------------------------------------------------------------- P5.3 unit simulation: 1
+- ---------------------------------------------------------------- P5.8 mutation self-test: 1
+- ---------------------------------------------------------------- P5.4 synthesis reports: 1
+- the target given to nextpnr; the measured figure is its reported maximum frequency: 1
+- Pins of the UP5K SG48 package for the serial test wrapper (the 12 MHz clock pin of common boards is : 1
+- 1. the bare unit: resources: 1
+- 2. the wrapped unit: place and route, timing: 1
+- ---------------------------------------------------------------- dispatcher: 1
+- Words that must not reach a report (a proxy's exclusion list may carry vendor host names).: 1
+- Product names of the build host's tooling that may appear in a proxy's refusal message, and: 1

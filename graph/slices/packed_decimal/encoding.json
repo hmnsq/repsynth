@@ -1,0 +1,1 @@
+{"active":"bcd_trailing_sign","encodings":{"bcd_trailing_sign":{"description":"Low nibble sign (C plus, D minus), digits above, least significant first","digit_codes":"0000 to 1001","sign_codes":{"minus":"1101","plus":"1100"}}},"invalid_word":"All bits of the word set (the low 4(d+1) bits)."}

@@ -1,0 +1,9 @@
+{
+  "packet": "P3.1",
+  "state": "done",
+  "evidence": [
+    "records/20261104T231451Z_P3.1_acceptance.json"
+  ],
+  "summary": "A generator reading an undeclared path fails, naming specification#path; generators refuse not_established values, naming them.",
+  "blocked_by": []
+}

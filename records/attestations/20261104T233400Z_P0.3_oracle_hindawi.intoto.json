@@ -1,0 +1,43 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "python3 -m repsynth oracles run hindawi",
+    "exit_code": 1,
+    "finished_utc": "2026-11-04T23:34:00Z",
+    "image_digests": {},
+    "inputs": {},
+    "packet": "P0.3",
+    "started_utc": "2026-11-04T23:31:49Z",
+    "state": "wired_unproven",
+    "step": "oracle_hindawi",
+    "tool_versions": {
+      "awk": "GNU Awk 5.2.1, API 3.2, PMA Avon 8-g1, (GNU MPFR 4.2.1, GNU MP 6.3.0)",
+      "bash": "GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)",
+      "flex": "flex 2.6.4",
+      "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+      "make": "GNU Make 4.3",
+      "python": "3.13.18"
+    }
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "60ca701dda237d15ae18b6d88a835e51383b09593dbc10d39a7ffdcbecb8ae12"
+      },
+      "name": "reports/oracles/hindawi.json"
+    },
+    {
+      "digest": {
+        "sha256": "315f4383a8a007e5fd2588cca5631c65205e18634770fc8858c369fca9377210"
+      },
+      "name": "reports/oracles/hindawi.md"
+    },
+    {
+      "digest": {
+        "sha256": "d43a47f83714ae65144200c5001d750cb0960957c3ac2d56b3803923d35be20d"
+      },
+      "name": "records/20261104T233400Z_P0.3_oracle_hindawi.json"
+    }
+  ]
+}

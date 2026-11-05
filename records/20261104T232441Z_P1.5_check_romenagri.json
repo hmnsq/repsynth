@@ -1,0 +1,37 @@
+{
+  "command": "python3 -m repsynth oracles check romenagri",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:24:41Z",
+  "image_digests": {},
+  "inputs": {
+    "spec/reps/transliteration/romenagri_devanagari.yaml": "e0b75b131bf41b6af51f67cccbf02b8b43144891395652578099d0c93cf28493"
+  },
+  "notes": "Acceptance run: oracle executed on every extracted mapping.",
+  "outputs": {},
+  "packet": "P1.5",
+  "results": {
+    "mappings_checked": 362,
+    "mismatches": [],
+    "oracle_exit_codes": {
+      "acii2rmn": 0,
+      "acii2uni": 0,
+      "rmn2acii": 0,
+      "uni2acii": 0
+    },
+    "planted_defect": "encoding.unicode_to_acii[0].acii changed to b4",
+    "planted_mismatches": [
+      "uni2acii U+0915: spec b4, oracle b3",
+      "acii2uni b3: spec 'क\\r', oracle 'ख\\r'"
+    ],
+    "planted_refused": true,
+    "spec_check": {
+      "command": "/usr/local/bin/python3 -m repsynth spec check /home/user/build/repsynth/spec/reps/transliteration/romenagri_devanagari.yaml",
+      "exit_code": 0,
+      "output": "VALID /home/user/build/repsynth/spec/reps/transliteration/romenagri_devanagari.yaml"
+    }
+  },
+  "started_utc": "2026-11-04T23:24:40Z",
+  "state": "done",
+  "step": "check_romenagri",
+  "tool_versions": {}
+}

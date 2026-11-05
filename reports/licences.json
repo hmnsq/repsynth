@@ -1,0 +1,2643 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "generator": "repsynth.lanes.intake 0.3.0",
+  "method": "Each tool's licence files are read from its upstream repository at the commit recorded (a tree-less shallow clone, then git show of the root licence files), from the Debian copyright file of the installed package, or from the installed Python distribution's licence files. Identifiers are established only from the text of those files (classify_licence).",
+  "tools": [
+    {
+      "tool": "QEMU",
+      "drafter_entry": "GPL-2.0 for the whole; file licences vary",
+      "sources": [
+        {
+          "source": "https://github.com/qemu/qemu",
+          "commit": "f29ccc287a6cfdd51d3a4fd17fbe9af3310a0ac5",
+          "state": "fetched",
+          "root_entries": 133,
+          "files": [
+            {
+              "path": "COPYING",
+              "sha256": "dd3ce02338c3a48abb6ba59b48809f7108a8bd242cb0cc8be90daafa30707c28",
+              "bytes": 17880,
+              "spdx": [
+                {
+                  "id": "GPL-2.0 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "GPL v2 text"
+                }
+              ]
+            },
+            {
+              "path": "COPYING.LIB",
+              "sha256": "31c90ce76b6f5aab90a205851e71d5c27e31c0aa3d7017a4383b98a6fe3f1faa",
+              "bytes": 26415,
+              "spdx": [
+                {
+                  "id": "LGPL-2.1 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "LGPL v2.1 text"
+                }
+              ]
+            },
+            {
+              "path": "LICENSE",
+              "sha256": "139c64b7a9ae62858ff969aae622ecfcf4f1519655bd92d2e70a1a2fb615690e",
+              "bytes": 1177,
+              "spdx": []
+            }
+          ]
+        },
+        {
+          "source": "/usr/share/doc/qemu-system-misc/copyright",
+          "state": "read",
+          "package_version": "1:8.2.2+ds-0ubuntu1.18",
+          "files": [
+            {
+              "path": "/usr/share/doc/qemu-system-misc/copyright",
+              "sha256": "38ed9e4ca12a9c52ff69079d7098672b2c9eb5a1f728cae402b57b268ec49767",
+              "bytes": 31159,
+              "spdx": [
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                },
+                {
+                  "id": "BSD-2-Clause",
+                  "basis": "BSD text without the non-endorsement clause"
+                },
+                {
+                  "id": "QEMU as a whole is released under the GNU General Public License version 2.",
+                  "basis": "Debian copyright, Files: * stanza, License: QEMU as a whole is released under the GNU General Public License version 2."
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-2-Clause",
+        "GPL-2.0 (version from the text; -only or -or-later not established from this file)",
+        "LGPL-2.1 (version from the text; -only or -or-later not established from this file)",
+        "MIT",
+        "QEMU as a whole is released under the GNU General Public License version 2."
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "GPL-2.0: agrees"
+    },
+    {
+      "tool": "GNU binutils",
+      "drafter_entry": "GPL-3.0-or-later",
+      "sources": [
+        {
+          "source": "https://github.com/bminor/binutils-gdb",
+          "command": "git -c credential.helper= -c clone -q --depth 1 --filter=tree:0 --no-checkout https://github.com/bminor/binutils-gdb /home/user/build/repsynth/.cache/licences/GNU_binutils/bminor__binutils-gdb",
+          "exit_code": 128,
+          "state": "not fetched",
+          "stderr_tail": "remote: Invalid username or token. Password authentication is not supported for Git operations.\nfatal: Authentication failed for 'https://github.com/bminor/binutils-gdb/'",
+          "files": []
+        },
+        {
+          "source": "/usr/share/doc/binutils/copyright",
+          "state": "read",
+          "package_version": "2.42-4ubuntu2.10",
+          "files": [
+            {
+              "path": "/usr/share/doc/binutils/copyright",
+              "sha256": "a81bdd422c2c015deca84bf6ad249bf0d7d19885fc01d1894463291b0b7313e1",
+              "bytes": 1795,
+              "spdx": [
+                {
+                  "id": "GPL-3.0-or-later",
+                  "basis": "GNU notice: 'either version N ... or (at your option) any later version'"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "GPL-3.0-or-later"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "GPL-3.0-or-later: agrees"
+    },
+    {
+      "tool": "GCC",
+      "drafter_entry": "GPL-3.0-or-later with the GCC Runtime Library Exception",
+      "sources": [
+        {
+          "source": "https://github.com/gcc-mirror/gcc",
+          "commit": "3a721dc0238851e1d58d1cbf74c1164ca1aa21fa",
+          "state": "fetched",
+          "root_entries": 87,
+          "files": [
+            {
+              "path": "COPYING",
+              "sha256": "231f7edcc7352d7734a96eef0b8030f77982678c516876fcb81e25b32d68564c",
+              "bytes": 18002,
+              "spdx": [
+                {
+                  "id": "GPL-2.0 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "GPL v2 text"
+                }
+              ]
+            },
+            {
+              "path": "COPYING.LIB",
+              "sha256": "a9bdde5616ecdd1e980b44f360600ee8783b1f99b8cc83a2beb163a0a390e861",
+              "bytes": 26527,
+              "spdx": [
+                {
+                  "id": "LGPL-2.1 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "LGPL v2.1 text"
+                }
+              ]
+            },
+            {
+              "path": "COPYING.RUNTIME",
+              "sha256": "9d6b43ce4d8de0c878bf16b54d8e7a10d9bd42b75178153e3af6a815bdc90f74",
+              "bytes": 3324,
+              "spdx": [
+                {
+                  "id": "GCC-exception-3.1",
+                  "basis": "GCC Runtime Library Exception text"
+                }
+              ]
+            },
+            {
+              "path": "COPYING3",
+              "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+              "bytes": 35147,
+              "spdx": [
+                {
+                  "id": "GPL-3.0 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "GPL v3 text"
+                }
+              ]
+            },
+            {
+              "path": "COPYING3.LIB",
+              "sha256": "a853c2ffec17057872340eee242ae4d96cbf2b520ae27d903e1b2fef1a5f9d1c",
+              "bytes": 7639,
+              "spdx": [
+                {
+                  "id": "LGPL-3.0 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "LGPL v3 text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": "/usr/share/doc/gcc-13-base/copyright",
+          "state": "read",
+          "package_version": "13.3.0-6ubuntu2~24.04.1",
+          "files": [
+            {
+              "path": "/usr/share/doc/gcc-13-base/copyright",
+              "sha256": "08c6f3dee4c19aa1e57eb7d4ad45829b2e99656313bd07fa0922e2553f500be5",
+              "bytes": 69100,
+              "spdx": [
+                {
+                  "id": "GCC-exception-3.1",
+                  "basis": "GCC Runtime Library Exception text"
+                },
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                },
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                },
+                {
+                  "id": "Unicode-DFS-2016",
+                  "basis": "Unicode data files and software licence agreement"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause",
+        "GCC-exception-3.1",
+        "GPL-2.0 (version from the text; -only or -or-later not established from this file)",
+        "GPL-3.0 (version from the text; -only or -or-later not established from this file)",
+        "LGPL-2.1 (version from the text; -only or -or-later not established from this file)",
+        "LGPL-3.0 (version from the text; -only or -or-later not established from this file)",
+        "MIT",
+        "Unicode-DFS-2016"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "GCC-exception-3.1: agrees; GPL-3.0-or-later: version agrees; -only or -or-later not established from the file"
+    },
+    {
+      "tool": "LLVM",
+      "drafter_entry": "Apache-2.0 with LLVM exception",
+      "sources": [
+        {
+          "source": "https://github.com/llvm/llvm-project",
+          "commit": "55f4d89f14279a8f8587676616058030d64ae023",
+          "state": "fetched",
+          "root_entries": 41,
+          "files": [
+            {
+              "path": "LICENSE.TXT",
+              "sha256": "8d85c1057d742e597985c7d4e6320b015a9139385cff4cbae06ffc0ebe89afee",
+              "bytes": 15141,
+              "spdx": [
+                {
+                  "id": "Apache-2.0 WITH LLVM-exception",
+                  "basis": "Apache License Version 2.0 text"
+                },
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                },
+                {
+                  "id": "NCSA",
+                  "basis": "University of Illinois/NCSA Open Source License text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0 WITH LLVM-exception",
+        "MIT",
+        "NCSA"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Apache-2.0 WITH LLVM-exception: agrees"
+    },
+    {
+      "tool": "riscv-opcodes",
+      "drafter_entry": "Per project",
+      "sources": [
+        {
+          "source": "https://github.com/riscv/riscv-opcodes",
+          "commit": "f24ac23ec9fa947011781a09cd6fd25a7c36dc45",
+          "state": "fetched",
+          "root_entries": 19,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "1b24700313c5720c31e52f914d80c3e652f4b0abd4410d37755165d73d79acc4",
+              "bytes": 1481,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "the MRD gives no identifier; the file's identifiers are recorded"
+    },
+    {
+      "tool": "RISC-V unified database",
+      "drafter_entry": "Per project",
+      "sources": [
+        {
+          "source": "https://github.com/riscv-software-src/riscv-unified-db",
+          "commit": "cadd46e22487a2002cead3883b34e72766103cdf",
+          "state": "fetched",
+          "root_entries": 46,
+          "files": [
+            {
+              "path": "LICENSE-BSD-3-Clause-Clear.txt",
+              "sha256": "e3f4d72ac78db3ee135dc76442e165e75f644ed93dfc4103acce65e9d7af8f4d",
+              "bytes": 1700,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause-Clear",
+                  "basis": "SPDX-License-Identifier line"
+                },
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            },
+            {
+              "path": "LICENSE-CC-BY.txt",
+              "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661",
+              "bytes": 18650,
+              "spdx": []
+            },
+            {
+              "path": "LICENSE-CC0-1.0.txt",
+              "sha256": "a2010f343487d3f7618affe54f789f5487602331c0a8d03f49e9a7c547cf0499",
+              "bytes": 7048,
+              "spdx": []
+            },
+            {
+              "path": "LICENSE-MIT.txt",
+              "sha256": "b05785f9f18e6716bab63424b11454513b9943a222595b70411009202fc592b5",
+              "bytes": 1078,
+              "spdx": [
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause",
+        "BSD-3-Clause-Clear",
+        "MIT"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "the MRD gives no identifier; the file's identifiers are recorded"
+    },
+    {
+      "tool": "Sail RISC-V model",
+      "drafter_entry": "BSD-2-Clause",
+      "sources": [
+        {
+          "source": "https://github.com/riscv/sail-riscv",
+          "commit": "dc286e66aecf4f6cc2dd6b2716be1067d1664f99",
+          "state": "fetched",
+          "root_entries": 26,
+          "files": [
+            {
+              "path": "LICENCE",
+              "sha256": "14cfdf5bfb57ba19f57f31c4a79b3712ede0fda06b1674cb40dec393f8694185",
+              "bytes": 3363,
+              "spdx": [
+                {
+                  "id": "BSD-2-Clause",
+                  "basis": "BSD text without the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-2-Clause"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "BSD-2-Clause: agrees"
+    },
+    {
+      "tool": "xv6-riscv",
+      "drafter_entry": "MIT",
+      "sources": [
+        {
+          "source": "https://github.com/mit-pdos/xv6-riscv",
+          "commit": "3cffe45b84308847bdd61d563a69a2ec04dc8ad3",
+          "state": "fetched",
+          "root_entries": 13,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "677302f30c9882c1f81b9be8ceda6efd4edff5576b9e02963b6114cf70c3162c",
+              "bytes": 1174,
+              "spdx": [
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MIT"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MIT: agrees"
+    },
+    {
+      "tool": "Linux",
+      "drafter_entry": "GPL-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/torvalds/linux",
+          "commit": "05441d697f7f9a927264f4058cbbc6a03dfcac9d",
+          "state": "fetched",
+          "root_entries": 42,
+          "files": [
+            {
+              "path": "COPYING",
+              "sha256": "fb5a425bd3b3cd6071a3a9aff9909a859e7c1158d54d32e07658398cd67eb6a0",
+              "bytes": 496,
+              "spdx": [
+                {
+                  "id": "GPL-2.0 WITH Linux-syscall-note",
+                  "basis": "SPDX-License-Identifier line"
+                },
+                {
+                  "id": "Linux-syscall-note",
+                  "basis": "named in the file"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "GPL-2.0 WITH Linux-syscall-note",
+        "Linux-syscall-note"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "GPL-2.0: agrees in part (GPL-2.0 WITH Linux-syscall-note)"
+    },
+    {
+      "tool": "BusyBox",
+      "drafter_entry": "GPL-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/mirror/busybox",
+          "commit": "371fe9f71d445d18be28c82a2a6d82115c8af19d",
+          "state": "fetched",
+          "root_entries": 51,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "bbfc9843646d483c334664f651c208b9839626891d8f17604db2146962f43548",
+              "bytes": 18348,
+              "spdx": [
+                {
+                  "id": "GPL-2.0 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "GPL v2 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "GPL-2.0 (version from the text; -only or -or-later not established from this file)"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "GPL-2.0: agrees"
+    },
+    {
+      "tool": "OpenSBI",
+      "drafter_entry": "BSD-2-Clause",
+      "sources": [
+        {
+          "source": "https://github.com/riscv-software-src/opensbi",
+          "commit": "332798211e7232da60158b0545b23c61b5338516",
+          "state": "fetched",
+          "root_entries": 16,
+          "files": [
+            {
+              "path": "COPYING.BSD",
+              "sha256": "82d13fb1bf6bb162629deeea9eb9c117e74548d3b707e478967691fe79a68e21",
+              "bytes": 1396,
+              "spdx": [
+                {
+                  "id": "BSD-2-Clause",
+                  "basis": "SPDX identifier named in the file"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-2-Clause"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "BSD-2-Clause: agrees"
+    },
+    {
+      "tool": "customasm",
+      "drafter_entry": "Apache-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/hlorenzi/customasm",
+          "commit": "a45db8ff315ef29eca4fe766d5082408bb6d9903",
+          "state": "fetched",
+          "root_entries": 19,
+          "files": [
+            {
+              "path": "LICENSE.txt",
+              "sha256": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+              "bytes": 11356,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Apache-2.0: agrees"
+    },
+    {
+      "tool": "Verilator",
+      "drafter_entry": "LGPL-3.0 or Artistic-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/verilator/verilator",
+          "commit": "57bbb293d2d41274233674be0d866183de4fa224",
+          "state": "fetched",
+          "root_entries": 37,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "996af0513df21f7496288951c41428a03c174e9e4a9d63665c57d670f845ccb1",
+              "bytes": 42098,
+              "spdx": [
+                {
+                  "id": "LGPL-3.0 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "LGPL v3 text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": "/usr/share/doc/verilator/copyright",
+          "state": "read",
+          "package_version": "5.020-1",
+          "files": [
+            {
+              "path": "/usr/share/doc/verilator/copyright",
+              "sha256": "87dfb7c7cf9880193f02a6200f28b32158b268daf549c7bf21488088413684a7",
+              "bytes": 9783,
+              "spdx": [
+                {
+                  "id": "Artistic-2.0 or LGPL-3.0-only",
+                  "basis": "Debian copyright, Files: * stanza, License: Artistic-2.0 or LGPL-3"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Artistic-2.0 or LGPL-3.0-only",
+        "LGPL-3.0 (version from the text; -only or -or-later not established from this file)"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Artistic-2.0: agrees in part (Artistic-2.0 or LGPL-3.0-only); LGPL-3.0: agrees"
+    },
+    {
+      "tool": "GHDL",
+      "drafter_entry": "GPL-2.0-or-later",
+      "sources": [
+        {
+          "source": "https://github.com/ghdl/ghdl",
+          "commit": "42d3f16e385d74de7923ce718bf9887f92af0e5c",
+          "state": "fetched",
+          "root_entries": 26,
+          "files": [
+            {
+              "path": "COPYING.md",
+              "sha256": "aef8b4222b79d0dbf6bf17cfff71c90a6a6bb8917a4162abe417b469ed22da2e",
+              "bytes": 17895,
+              "spdx": [
+                {
+                  "id": "GPL-2.0 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "GPL v2 text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": "/usr/share/doc/ghdl/copyright",
+          "state": "read",
+          "package_version": "4.1.0+dfsg-0ubuntu2.1",
+          "files": [
+            {
+              "path": "/usr/share/doc/ghdl/copyright",
+              "sha256": "16e85ed11ee816da4dbff9491771f5525f244577c6b492a22b5ada0620e4bc6f",
+              "bytes": 33380,
+              "spdx": [
+                {
+                  "id": "CERN-OHL-W-2.0",
+                  "basis": "SPDX-License-Identifier line"
+                },
+                {
+                  "id": "MPL-2.0",
+                  "basis": "SPDX identifier named in the file"
+                },
+                {
+                  "id": "Apache-2.0",
+                  "basis": "SPDX identifier named in the file"
+                },
+                {
+                  "id": "GPL-2.0-or-later",
+                  "basis": "GNU notice: 'either version N ... or (at your option) any later version'"
+                },
+                {
+                  "id": "LGPL-2.1-or-later",
+                  "basis": "GNU notice: 'either version N ... or (at your option) any later version'"
+                },
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                },
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0",
+        "BSD-3-Clause",
+        "CERN-OHL-W-2.0",
+        "GPL-2.0 (version from the text; -only or -or-later not established from this file)",
+        "GPL-2.0-or-later",
+        "LGPL-2.1-or-later",
+        "MIT",
+        "MPL-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "GPL-2.0-or-later: agrees"
+    },
+    {
+      "tool": "cocotb",
+      "drafter_entry": "BSD-3-Clause",
+      "sources": [
+        {
+          "source": "https://github.com/cocotb/cocotb",
+          "commit": "30268e2630213298ffde9936bbe315c40d07213b",
+          "state": "fetched",
+          "root_entries": 26,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "de942dcc37409f373b9261dae1c602602c56f89120e58b0b355335234d780d07",
+              "bytes": 1572,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": "pip:cocotb 2.1.0",
+          "state": "read",
+          "metadata_licence_fields": {
+            "License-Expression": "BSD-3-Clause"
+          },
+          "files": [
+            {
+              "path": "/usr/local/lib/python3.13/site-packages/cocotb-2.1.0.dist-info/licenses/LICENSE",
+              "sha256": "de942dcc37409f373b9261dae1c602602c56f89120e58b0b355335234d780d07",
+              "bytes": 1572,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "BSD-3-Clause: agrees"
+    },
+    {
+      "tool": "Yosys",
+      "drafter_entry": "ISC",
+      "sources": [
+        {
+          "source": "https://github.com/YosysHQ/yosys",
+          "commit": "8f3cc3d0c2a2f2adbe6ffe92824f324dbc0b9c38",
+          "state": "fetched",
+          "root_entries": 39,
+          "files": [
+            {
+              "path": "COPYING",
+              "sha256": "6998b5724d4cb3f459d1c12b6bd0cdbfa9c949ef14d0fb6d7d97d97404e5b5f3",
+              "bytes": 777,
+              "spdx": [
+                {
+                  "id": "ISC",
+                  "basis": "ISC permission grant"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": "/usr/share/doc/yosys/copyright",
+          "state": "read",
+          "package_version": "0.33-5build2",
+          "files": [
+            {
+              "path": "/usr/share/doc/yosys/copyright",
+              "sha256": "c84b7de4e8193fb1e1dc247990d2ef3cec6c1ce82a64458a3280f7cfca856fff",
+              "bytes": 20986,
+              "spdx": [
+                {
+                  "id": "BSD-2-Clause",
+                  "basis": "SPDX identifier named in the file"
+                },
+                {
+                  "id": "GPL-2.0-or-later",
+                  "basis": "GNU notice: 'either version N ... or (at your option) any later version'"
+                },
+                {
+                  "id": "GPL-3.0-or-later",
+                  "basis": "GNU notice: 'either version N ... or (at your option) any later version'"
+                },
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                },
+                {
+                  "id": "MIT-Modern-Variant",
+                  "basis": "the 'without written agreement and without license or royalty fees' grant"
+                },
+                {
+                  "id": "ISC",
+                  "basis": "ISC permission grant"
+                },
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-2-Clause",
+        "BSD-3-Clause",
+        "GPL-2.0-or-later",
+        "GPL-3.0-or-later",
+        "ISC",
+        "MIT",
+        "MIT-Modern-Variant"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "ISC: agrees"
+    },
+    {
+      "tool": "SymbiYosys",
+      "drafter_entry": "ISC",
+      "sources": [
+        {
+          "source": "https://github.com/YosysHQ/sby",
+          "commit": "79fc9eddca5e33a28cc2f2cd19c9825efd9a7255",
+          "state": "fetched",
+          "root_entries": 14,
+          "files": [
+            {
+              "path": "COPYING",
+              "sha256": "6fca2f7a0a28abfb6aa97ad591d82ce3298fef9f80f0f584298b5b3cb1ed5dd2",
+              "bytes": 830,
+              "spdx": [
+                {
+                  "id": "ISC",
+                  "basis": "ISC permission grant"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "ISC"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "ISC: agrees"
+    },
+    {
+      "tool": "nextpnr",
+      "drafter_entry": "ISC",
+      "sources": [
+        {
+          "source": "https://github.com/YosysHQ/nextpnr",
+          "commit": "937c770c2a619ebc842755436b566095e7500b8f",
+          "state": "fetched",
+          "root_entries": 27,
+          "files": [
+            {
+              "path": "COPYING",
+              "sha256": "0b02f8f87d2db2b5cb3612f9a73295f0e15eb6e3464cb77d2b1a18b1d505aa24",
+              "bytes": 1043,
+              "spdx": [
+                {
+                  "id": "ISC",
+                  "basis": "ISC permission grant"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": "/usr/share/doc/nextpnr-ice40/copyright",
+          "state": "read",
+          "package_version": "0.6-3build5",
+          "files": [
+            {
+              "path": "/usr/share/doc/nextpnr-ice40/copyright",
+              "sha256": "83d71335fd6fe1d8cd21720f5ea980a5bb7efdca8a7e67ee576e1138624377cf",
+              "bytes": 16274,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "SPDX identifier named in the file"
+                },
+                {
+                  "id": "Apache-2.0",
+                  "basis": "SPDX identifier named in the file"
+                },
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                },
+                {
+                  "id": "ISC",
+                  "basis": "ISC permission grant"
+                },
+                {
+                  "id": "OFL-1.1",
+                  "basis": "SIL Open Font License 1.1 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0",
+        "BSD-3-Clause",
+        "ISC",
+        "MIT",
+        "OFL-1.1"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "ISC: agrees"
+    },
+    {
+      "tool": "PandA Bambu",
+      "drafter_entry": "GPL-3.0",
+      "sources": [
+        {
+          "source": "https://github.com/ferrandi/PandA-bambu",
+          "commit": "cda4db2e724df357f749c0c41b12bdc065462ced",
+          "state": "fetched",
+          "root_entries": 22,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "0215e6124207528b284e1e72146c1a4fad5ad395fe11fdcce34fbb07795e1362",
+              "bytes": 12495,
+              "spdx": [
+                {
+                  "id": "Apache-2.0 WITH LLVM-exception",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0 WITH LLVM-exception"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "GPL-3.0: not in the file; the file's identifiers replace the entry"
+    },
+    {
+      "tool": "OpenHW CV-X-IF",
+      "drafter_entry": "Solderpad Hardware Licence 0.51",
+      "sources": [
+        {
+          "source": "https://github.com/openhwgroup/core-v-xif",
+          "commit": "d26eeab305270dd6462126b775cdbe28fb989477",
+          "state": "fetched",
+          "root_entries": 7,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "880d67664a15e0877cae52cf494a6e6a836d2d50b40f440687cc57e65f0c5481",
+              "bytes": 3797,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                },
+                {
+                  "id": "SHL-2.1",
+                  "basis": "Solderpad Hardware Licence text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0",
+        "SHL-2.1"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "SHL-0.51: not in the file; the file's identifiers replace the entry"
+    },
+    {
+      "tool": "CV32E40X",
+      "drafter_entry": "Solderpad Hardware Licence 0.51",
+      "sources": [
+        {
+          "source": "https://github.com/openhwgroup/cv32e40x",
+          "commit": "d952cd63bc1b4eb58cd893c28ef8283c781e345e",
+          "state": "fetched",
+          "root_entries": 15,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "6527a46225891b976fa94f634f6ee0cd22e1c7129d6f11c5c98c997627625fc7",
+              "bytes": 10329,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                },
+                {
+                  "id": "SHL-0.51",
+                  "basis": "Solderpad Hardware Licence text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0",
+        "SHL-0.51"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "SHL-0.51: agrees"
+    },
+    {
+      "tool": "CVA6",
+      "drafter_entry": "Solderpad Hardware Licence 0.51",
+      "sources": [
+        {
+          "source": "https://github.com/openhwgroup/cva6",
+          "commit": "742dc82a0c706e0a3bfb98b709fd3ee06d50d12a",
+          "state": "fetched",
+          "root_entries": 37,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "b41106a9d0de1cf6ab4ea56bedf677503085c0570248f37fe2cdf657a5e72601",
+              "bytes": 10397,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                },
+                {
+                  "id": "SHL-0.51",
+                  "basis": "Solderpad Hardware Licence text"
+                }
+              ]
+            },
+            {
+              "path": "LICENSE.Berkeley",
+              "sha256": "54c5a8c0be80052cb17867634ec02ec06700b7bb4517ae189cc780aba2cc7c9c",
+              "bytes": 1567,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            },
+            {
+              "path": "LICENSE.SiFive",
+              "sha256": "63b453c2c3f5e5d31007f55eaacc2b72e8b7a40e6ab33eae6972ba010fa7acc4",
+              "bytes": 11348,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0",
+        "BSD-3-Clause",
+        "SHL-0.51"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "SHL-0.51: agrees"
+    },
+    {
+      "tool": "OpenROAD",
+      "drafter_entry": "BSD-3-Clause",
+      "sources": [
+        {
+          "source": "https://github.com/The-OpenROAD-Project/OpenROAD",
+          "commit": "0e0e8129819e2fe1df8a2155a26b397cd158b84b",
+          "state": "fetched",
+          "root_entries": 46,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "28cfc93cb2b552192bc316259d2c2a1aa5a980018cda1c5cd9b1143c9151aebb",
+              "bytes": 1542,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "BSD-3-Clause: agrees"
+    },
+    {
+      "tool": "Unicode Character Database",
+      "drafter_entry": "Unicode-3.0",
+      "sources": [
+        {
+          "source": "/usr/share/doc/unicode-data/copyright",
+          "state": "read",
+          "package_version": "15.1.0-1",
+          "files": [
+            {
+              "path": "/usr/share/doc/unicode-data/copyright",
+              "sha256": "9c2d400b7b6065235f656936ee86fefe66b75d93158a7630b28ee567dd7bf3e8",
+              "bytes": 3517,
+              "spdx": [
+                {
+                  "id": "Unicode-DFS-2016",
+                  "basis": "Unicode data files and software licence agreement"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Unicode-DFS-2016"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Unicode-3.0: not in the file; the file's identifiers replace the entry"
+    },
+    {
+      "tool": "CLDR",
+      "drafter_entry": "Unicode-3.0",
+      "sources": [
+        {
+          "source": "https://github.com/unicode-org/cldr",
+          "commit": "f69257926c43f1cb22cf3fcd93e709a2ca994bb7",
+          "state": "fetched",
+          "root_entries": 17,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "65eb33419e22a297550a811b5b535f5e532f9a7e0114b516c0ea18afd53c3804",
+              "bytes": 3193,
+              "spdx": [
+                {
+                  "id": "Unicode-3.0",
+                  "basis": "SPDX-License-Identifier line"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Unicode-3.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Unicode-3.0: agrees"
+    },
+    {
+      "tool": "ICU",
+      "drafter_entry": "Unicode-3.0",
+      "sources": [
+        {
+          "source": "https://github.com/unicode-org/icu",
+          "commit": "82b9da69f7cc555d8ab0262390e99a08e09fb77a",
+          "state": "fetched",
+          "root_entries": 20,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "e09827667e0bb3c808b2a463548ba814a5e6249b67353234d70c8dfc2bcc417d",
+              "bytes": 27718,
+              "spdx": [
+                {
+                  "id": "Unicode-3.0",
+                  "basis": "SPDX-License-Identifier line"
+                },
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                },
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause",
+        "MIT",
+        "Unicode-3.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Unicode-3.0: agrees"
+    },
+    {
+      "tool": "HarfBuzz",
+      "drafter_entry": "MIT",
+      "sources": [
+        {
+          "source": "https://github.com/harfbuzz/harfbuzz",
+          "commit": "2823aad36cc5ff4a0cee3dd1750f627160110ef8",
+          "state": "fetched",
+          "root_entries": 34,
+          "files": [
+            {
+              "path": "COPYING",
+              "sha256": "ba8f810f2455c2f08e2d56bb49b72f37fcf68f1f4fade38977cfd7372050ad64",
+              "bytes": 1971,
+              "spdx": [
+                {
+                  "id": "MIT-Modern-Variant",
+                  "basis": "the 'without written agreement and without license or royalty fees' grant"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MIT-Modern-Variant"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MIT: agrees in part (MIT-Modern-Variant)"
+    },
+    {
+      "tool": "FreeType",
+      "drafter_entry": "FTL or GPL-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/freetype/freetype",
+          "commit": "c4a3c188e82bc5b457390a87630ac782316421a1",
+          "state": "fetched",
+          "root_entries": 27,
+          "files": [
+            {
+              "path": "LICENSE.TXT",
+              "sha256": "bd36c8b474855fa294c2ec5c184544478ef3720aad37d65a6296a4f264fd2d3b",
+              "bytes": 2149,
+              "spdx": []
+            },
+            {
+              "path": "docs/FTL.TXT",
+              "sha256": "5a5ee54c5001bbad1cdc1a57cc3dd4c42199b2da09d39c7ee41fab002d02967f",
+              "bytes": 6743,
+              "spdx": [
+                {
+                  "id": "FTL",
+                  "basis": "FreeType Project License text"
+                }
+              ]
+            },
+            {
+              "path": "docs/GPLv2.TXT",
+              "sha256": "c4120c6752c910c299e3bd9cb3a46ff262c268303ca2069b61f92f10a5656c18",
+              "bytes": 17994,
+              "spdx": [
+                {
+                  "id": "GPL-2.0 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "GPL v2 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "FTL",
+        "GPL-2.0 (version from the text; -only or -or-later not established from this file)"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "FTL: agrees; GPL-2.0: agrees"
+    },
+    {
+      "tool": "Noto fonts",
+      "drafter_entry": "OFL-1.1",
+      "sources": [
+        {
+          "source": "https://github.com/notofonts/latin-greek-cyrillic",
+          "commit": "0ef94805d19e98ed658543a7c48c0a4f19cc0ac0",
+          "state": "fetched",
+          "root_entries": 15,
+          "files": [
+            {
+              "path": "OFL.txt",
+              "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a",
+              "bytes": 4396,
+              "spdx": [
+                {
+                  "id": "OFL-1.1",
+                  "basis": "SIL Open Font License 1.1 text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": "https://github.com/notofonts/devanagari",
+          "commit": "7810f785f3e530048852cd14c226e8b3d3b4654f",
+          "state": "fetched",
+          "root_entries": 15,
+          "files": [
+            {
+              "path": "OFL.txt",
+              "sha256": "a216f6f8d85c7228093e0ee5e258d9d377e6671f68acb4db1930b29583d0f331",
+              "bytes": 4386,
+              "spdx": [
+                {
+                  "id": "OFL-1.1",
+                  "basis": "SIL Open Font License 1.1 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "OFL-1.1"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "OFL-1.1: agrees"
+    },
+    {
+      "tool": "SoftFloat",
+      "drafter_entry": "BSD-3-Clause",
+      "sources": [
+        {
+          "source": "https://github.com/ucb-bar/berkeley-softfloat-3",
+          "commit": "07ebd29db0cfb55723a79fbbffe99103ef38e305",
+          "state": "fetched",
+          "root_entries": 9,
+          "files": [
+            {
+              "path": "COPYING.txt",
+              "sha256": "145ea96b4a4a04a1a7738d2a2bf9e830f861971e69606187b018d9e8fc0b95c7",
+              "bytes": 1738,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "BSD-3-Clause: agrees"
+    },
+    {
+      "tool": "TestFloat",
+      "drafter_entry": "BSD-3-Clause",
+      "sources": [
+        {
+          "source": "https://github.com/ucb-bar/berkeley-testfloat-3",
+          "commit": "a9c849f1b0eb0264b626d9686ffae167d996e3be",
+          "state": "fetched",
+          "root_entries": 8,
+          "files": [
+            {
+              "path": "COPYING.txt",
+              "sha256": "862c7f1238c07addea5e7af00ae4a9b6e59150029091c4261c896bcdce02a059",
+              "bytes": 1738,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "BSD-3-Clause: agrees"
+    },
+    {
+      "tool": "GMP",
+      "drafter_entry": "LGPL-3.0-or-later or GPL-2.0-or-later",
+      "sources": [
+        {
+          "source": "/usr/share/doc/libgmp10/copyright",
+          "state": "read",
+          "package_version": "2:6.3.0+dfsg-2ubuntu6.1",
+          "files": [
+            {
+              "path": "/usr/share/doc/libgmp10/copyright",
+              "sha256": "7d366aef5ba325150246de1d7820c4c9926cd27ca61a69948492b26cd3b61601",
+              "bytes": 4153,
+              "spdx": [
+                {
+                  "id": "LGPL-3.0-or-later",
+                  "basis": "GNU notice: 'either version N ... or (at your option) any later version'"
+                },
+                {
+                  "id": "GPL-2.0-or-later",
+                  "basis": "GNU notice: 'either version N ... or (at your option) any later version'"
+                },
+                {
+                  "id": "GPL-3.0-or-later",
+                  "basis": "GNU notice: 'either version N ... or (at your option) any later version'"
+                },
+                {
+                  "id": "GPL-2.0-or-later or LGPL-3.0-or-later",
+                  "basis": "Debian copyright, Files: * stanza, License: GPL-2+ or LGPL-3+"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "GPL-2.0-or-later",
+        "GPL-2.0-or-later or LGPL-3.0-or-later",
+        "GPL-3.0-or-later",
+        "LGPL-3.0-or-later"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "LGPL-3.0-or-later: agrees; GPL-2.0-or-later: agrees"
+    },
+    {
+      "tool": "MPFR",
+      "drafter_entry": "LGPL-3.0-or-later",
+      "sources": [
+        {
+          "source": "/usr/share/doc/libmpfr6/copyright",
+          "state": "read",
+          "package_version": "4.2.1-1build1.1",
+          "files": [
+            {
+              "path": "/usr/share/doc/libmpfr6/copyright",
+              "sha256": "c434a44e656a89e72b5cee13bba6719011e0899bfc626ab9c08205010ab2dbbe",
+              "bytes": 953,
+              "spdx": [
+                {
+                  "id": "LGPL-3.0-or-later",
+                  "basis": "GNU notice: 'either version N ... or (at your option) any later version'"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "LGPL-3.0-or-later"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "LGPL-3.0-or-later: agrees"
+    },
+    {
+      "tool": "libdecnumber",
+      "drafter_entry": "per distribution",
+      "sources": [
+        {
+          "source": "https://github.com/gcc-mirror/gcc",
+          "commit": "3a721dc0238851e1d58d1cbf74c1164ca1aa21fa",
+          "state": "fetched",
+          "root_entries": 87,
+          "files": [
+            {
+              "path": "libdecnumber/decNumber.c",
+              "sha256": "a1bbe2a36531bbd6667e486015b340447bd7e81fbaf57db54c1d5f538634adf2",
+              "bytes": 1446,
+              "spdx": [
+                {
+                  "id": "GPL-3.0-or-later",
+                  "basis": "GNU notice: 'either version N ... or (at your option) any later version'"
+                },
+                {
+                  "id": "GCC-exception-3.1",
+                  "basis": "GCC Runtime Library Exception text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "GCC-exception-3.1",
+        "GPL-3.0-or-later"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "the MRD gives no identifier; the file's identifiers are recorded"
+    },
+    {
+      "tool": "Hypothesis",
+      "drafter_entry": "MPL-2.0",
+      "sources": [
+        {
+          "source": "pip:hypothesis 6.170.14",
+          "state": "read",
+          "metadata_licence_fields": {
+            "License-Expression": "MPL-2.0"
+          },
+          "files": [
+            {
+              "path": "/usr/local/lib/python3.13/site-packages/hypothesis-6.170.14.dist-info/licenses/LICENSE.txt",
+              "sha256": "ac89037bac63550644dce8cf32c6765e5fab9dc1a1ce94b89f8a805f341a6750",
+              "bytes": 17141,
+              "spdx": [
+                {
+                  "id": "MPL-2.0",
+                  "basis": "Mozilla Public License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": "https://github.com/HypothesisWorks/hypothesis",
+          "commit": "535f94db57d2248d4c0f799f319563c5c7fbbdbb",
+          "state": "fetched",
+          "root_entries": 21,
+          "files": [
+            {
+              "path": "LICENSE.txt",
+              "sha256": "df2ca456f6cda1226620ee99f16bafb6345241040996734d3a46e3afe414c056",
+              "bytes": 414,
+              "spdx": []
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MPL-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MPL-2.0: agrees"
+    },
+    {
+      "tool": "Z3",
+      "drafter_entry": "MIT",
+      "sources": [
+        {
+          "source": "pip:z3-solver 5.3.3.0",
+          "state": "installed; no licence file in its record",
+          "metadata_licence_fields": {
+            "License": "MIT License"
+          },
+          "files": []
+        },
+        {
+          "source": "https://github.com/Z3Prover/z3",
+          "commit": "c79e8787949d31c3559371ba307f2dda2d2b3018",
+          "state": "fetched",
+          "root_entries": 32,
+          "files": [
+            {
+              "path": "LICENSE.txt",
+              "sha256": "e617cad2ab9347e3129c2b171e87909332174e17961c5c3412d0799469111337",
+              "bytes": 1096,
+              "spdx": [
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MIT"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MIT: agrees"
+    },
+    {
+      "tool": "Ninja",
+      "drafter_entry": "Apache-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/ninja-build/ninja",
+          "commit": "1a8fee23135e57cda12d47aedb19f795353fa13c",
+          "state": "fetched",
+          "root_entries": 18,
+          "files": [
+            {
+              "path": "COPYING",
+              "sha256": "eb7e9ab9690124c5c9f42bdc81383d886a3dede26345b6ed15bbad7caf81f7ea",
+              "bytes": 11358,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": "/usr/share/doc/ninja-build/copyright",
+          "state": "read",
+          "package_version": "1.11.1-2",
+          "files": [
+            {
+              "path": "/usr/share/doc/ninja-build/copyright",
+              "sha256": "1134fe05b5a52ce2a81fb233e421655bb45e5f5db74164478ea85343baf52b86",
+              "bytes": 1350,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "SPDX identifier named in the file"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Apache-2.0: agrees"
+    },
+    {
+      "tool": "wasi-sdk",
+      "drafter_entry": "Apache-2.0 with LLVM exception",
+      "sources": [
+        {
+          "source": "https://github.com/WebAssembly/wasi-sdk",
+          "commit": "5cee163fac4b56089fb32b35a972e0a80a7bf49b",
+          "state": "fetched",
+          "root_entries": 25,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "268872b9816f90fd8e85db5a28d33f8150ebb8dd016653fb39ef1f94f2686bc5",
+              "bytes": 12243,
+              "spdx": [
+                {
+                  "id": "Apache-2.0 WITH LLVM-exception",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0 WITH LLVM-exception"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Apache-2.0 WITH LLVM-exception: agrees"
+    },
+    {
+      "tool": "Emscripten",
+      "drafter_entry": "MIT or NCSA",
+      "sources": [
+        {
+          "source": "https://github.com/emscripten-core/emscripten",
+          "commit": "70a8d2b0312f5d967b043e14030ec671c0c69857",
+          "state": "fetched",
+          "root_entries": 50,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "620a78084fc7ca97c0b5dea9abf891f3ffcadfdbf305276f099c9c4e12fc1d86",
+              "bytes": 5093,
+              "spdx": [
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                },
+                {
+                  "id": "NCSA",
+                  "basis": "University of Illinois/NCSA Open Source License text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MIT",
+        "NCSA"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "NCSA: agrees; MIT: agrees"
+    },
+    {
+      "tool": "cffi",
+      "drafter_entry": "MIT",
+      "sources": [
+        {
+          "source": "pip:cffi 2.1.1",
+          "state": "read",
+          "metadata_licence_fields": {
+            "License-Expression": "MIT-0"
+          },
+          "files": [
+            {
+              "path": "/usr/local/lib/python3.13/site-packages/cffi-2.1.1.dist-info/licenses/LICENSE",
+              "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63",
+              "bytes": 1123,
+              "spdx": [
+                {
+                  "id": "MIT-0",
+                  "basis": "MIT No Attribution text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MIT-0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MIT: agrees in part (MIT-0)"
+    },
+    {
+      "tool": "Docker",
+      "drafter_entry": "Per project",
+      "sources": [
+        {
+          "source": "https://github.com/moby/moby",
+          "commit": "43ffffd38753fdb004ff3b1b501b455187651593",
+          "state": "fetched",
+          "root_entries": 45,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "7c87873291f289713ac5df48b1f2010eb6963752bbd6b530416ab99fc37914a8",
+              "bytes": 10765,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            },
+            {
+              "path": "NOTICE",
+              "sha256": "a249c4197359eee43031d16cecb172326f92ee7b6701af99dfe5c3e5b3d5eca9",
+              "bytes": 1030,
+              "spdx": []
+            }
+          ]
+        },
+        {
+          "source": "/usr/share/doc/docker-ce/copyright",
+          "state": "not installed here",
+          "files": []
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "the MRD gives no identifier; the file's identifiers are recorded"
+    },
+    {
+      "tool": "in-toto",
+      "drafter_entry": "Per project",
+      "sources": [
+        {
+          "source": "https://github.com/in-toto/in-toto",
+          "commit": "e352b43ad7cb8915d84c36d791aa61346152a0a3",
+          "state": "fetched",
+          "root_entries": 30,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "b5c26c8a2ad6dd7cac6646e470a32ee42d23c36124caac4e66c989b6545b2a44",
+              "bytes": 560,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "the MRD gives no identifier; the file's identifiers are recorded"
+    },
+    {
+      "tool": "OpenTimestamps",
+      "drafter_entry": "Per project",
+      "sources": [
+        {
+          "source": "https://github.com/opentimestamps/opentimestamps-client",
+          "commit": "f3a9e92e4dcb89ed93396d71ec808b3290a438c4",
+          "state": "fetched",
+          "root_entries": 12,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "877c470874fa92e5609a1396b1188ffa3e539d83ec2748a7cb6fb2d4430d45a2",
+              "bytes": 8175,
+              "spdx": [
+                {
+                  "id": "LGPL-3.0-or-later",
+                  "basis": "GNU notice: 'either version N ... or (at your option) any later version'"
+                },
+                {
+                  "id": "LGPL-3.0 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "LGPL v3 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "LGPL-3.0 (version from the text; -only or -or-later not established from this file)",
+        "LGPL-3.0-or-later"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "the MRD gives no identifier; the file's identifiers are recorded"
+    },
+    {
+      "tool": "math.js",
+      "drafter_entry": "Apache-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/josdejong/mathjs",
+          "commit": "2f97b8c4cc51c6d16ab64929373266e150d65d70",
+          "state": "fetched",
+          "root_entries": 30,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "3b0f65a9308588e12b619b2f05c788b4a5f41220006ce563b826b0feb489fd26",
+              "bytes": 10172,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            },
+            {
+              "path": "NOTICE",
+              "sha256": "40e0c8aac7a769ef524e089b8ef75f81325ab7deca50def443b9b20d425e65b5",
+              "bytes": 629,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Apache-2.0: agrees"
+    },
+    {
+      "tool": "js-yaml",
+      "drafter_entry": "MIT",
+      "sources": [
+        {
+          "source": "https://github.com/nodeca/js-yaml",
+          "commit": "3edb91fbc78a10a8ddc15d2e82c8f6d0baa1c3d3",
+          "state": "fetched",
+          "root_entries": 18,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "a07bc24468b9654ce76a547d47a2db282d07733b715db4c73a98bd63961f9550",
+              "bytes": 1084,
+              "spdx": [
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MIT"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MIT: agrees"
+    },
+    {
+      "tool": "three.js",
+      "drafter_entry": "MIT",
+      "sources": [
+        {
+          "source": "https://github.com/mrdoob/three.js",
+          "commit": "7e26babbbe69f411112193d04a41baeafb6ebb3b",
+          "state": "fetched",
+          "root_entries": 23,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+              "bytes": 1081,
+              "spdx": [
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MIT"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MIT: agrees"
+    },
+    {
+      "tool": "JSCAD",
+      "drafter_entry": "MIT",
+      "sources": [
+        {
+          "source": "https://github.com/jscad/OpenJSCAD.org",
+          "commit": "60d9fbbac6a982b447a03b72aea7366cc886568f",
+          "state": "fetched",
+          "root_entries": 16,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "bf0a7136796ab8f4573a7a77783d7dfebca4d35a595f0ad160d70a855d4c0cbb",
+              "bytes": 1091,
+              "spdx": [
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MIT"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MIT: agrees"
+    },
+    {
+      "tool": "planck.js",
+      "drafter_entry": "MIT",
+      "sources": [
+        {
+          "source": "https://github.com/piqnt/planck.js",
+          "commit": "e50e078c5859ef91214064442caa39c34c23963a",
+          "state": "fetched",
+          "root_entries": 27,
+          "files": [
+            {
+              "path": "LICENSE.txt",
+              "sha256": "49fd3df949edd5f294edafb22e8905263dd7560b514bee6df2f17538069aafca",
+              "bytes": 1078,
+              "spdx": [
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MIT"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MIT: agrees"
+    },
+    {
+      "tool": "uPlot",
+      "drafter_entry": "MIT",
+      "sources": [
+        {
+          "source": "https://github.com/leeoniya/uPlot",
+          "commit": "e9066c18f29593bf60e7b635fe08d271b434b42d",
+          "state": "fetched",
+          "root_entries": 22,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "8f989229699b4fe2f1a0432d0e9edc338a8a911e250e2d1b01ecd770a5f5b1bd",
+              "bytes": 1078,
+              "spdx": [
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MIT"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MIT: agrees"
+    },
+    {
+      "tool": "quantum-circuit",
+      "drafter_entry": "MIT",
+      "sources": [
+        {
+          "source": "https://github.com/quantastica/quantum-circuit",
+          "commit": "302aa573c886e36570386697a0e148b3e3bf98aa",
+          "state": "fetched",
+          "root_entries": 12,
+          "files": [
+            {
+              "path": "LICENSE.txt",
+              "sha256": "7abe4c48cf0b5cdd1657b219b2da8ef19ba3c294f12affe84b2c64aca34b4ab1",
+              "bytes": 1068,
+              "spdx": [
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MIT"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MIT: agrees"
+    },
+    {
+      "tool": "Quirk",
+      "drafter_entry": "Apache-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/Strilanc/Quirk",
+          "commit": "8833791294e642795c8717038e84940a74b19a64",
+          "state": "fetched",
+          "root_entries": 17,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "999316cb266a5e6d356ae6b654f46f508c77b4265f760a2a3ea65d6150ff4474",
+              "bytes": 11341,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Apache-2.0: agrees"
+    },
+    {
+      "tool": "OpenModelica",
+      "drafter_entry": "OSMC-PL or GPL-3.0",
+      "sources": [
+        {
+          "source": "https://github.com/OpenModelica/OpenModelica",
+          "commit": "32415cf29bb9f797eadca7c9f357f76697cbd1f1",
+          "state": "fetched",
+          "root_entries": 35,
+          "files": [
+            {
+              "path": "OSMC-License.txt",
+              "sha256": "0839c8f6294b5082f6d04374e8d67f54a94f91db0dd1d97a1f81339b7283ab76",
+              "bytes": 13296,
+              "spdx": [
+                {
+                  "id": "LicenseRef-OSMC-PL",
+                  "basis": "OSMC Public License text (no SPDX identifier exists for it)"
+                }
+              ]
+            },
+            {
+              "path": "OSMC-Runtime-License.txt",
+              "sha256": "43735d6c2648f9020e809d295e4197289ab7cf66fdd2ec100e2de5178c78d61a",
+              "bytes": 1659,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "SPDX identifier named in the file"
+                },
+                {
+                  "id": "LicenseRef-OSMC-PL",
+                  "basis": "OSMC Public License text (no SPDX identifier exists for it)"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause",
+        "LicenseRef-OSMC-PL"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "LicenseRef-OSMC-PL: agrees; GPL-3.0: not in the file; the file's identifiers replace the entry"
+    },
+    {
+      "tool": "Modelica Standard Library",
+      "drafter_entry": "BSD-3-Clause",
+      "sources": [
+        {
+          "source": "https://github.com/modelica/ModelicaStandardLibrary",
+          "commit": "1625240ba3034459ad1bdbe245d157b2e58cb183",
+          "state": "fetched",
+          "root_entries": 18,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "4f708e2d4bdebaeb13896d3796ebf9f4eac0ddc31dc6cd391dff4aa76c63e2eb",
+              "bytes": 1542,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "BSD-3-Clause: agrees"
+    },
+    {
+      "tool": "ngspice",
+      "drafter_entry": "BSD-3-Clause with exceptions",
+      "sources": [
+        {
+          "source": "/usr/share/doc/ngspice/copyright",
+          "state": "read",
+          "package_version": "42+ds-3build1",
+          "files": [
+            {
+              "path": "/usr/share/doc/ngspice/copyright",
+              "sha256": "8b090a2d141248677a9be30b4311379f158162d3b60c45e3bb2a8fa483bcbc4a",
+              "bytes": 48954,
+              "spdx": [
+                {
+                  "id": "CC-BY-SA-4.0",
+                  "basis": "SPDX identifier named in the file"
+                },
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                },
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause",
+        "CC-BY-SA-4.0",
+        "MIT"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "BSD-3-Clause: agrees"
+    },
+    {
+      "tool": "Xyce",
+      "drafter_entry": "GPL-3.0",
+      "sources": [
+        {
+          "source": "https://github.com/Xyce/Xyce",
+          "commit": "e5b7b9bb5b221630c66654c059fc2d33524f5b21",
+          "state": "fetched",
+          "root_entries": 16,
+          "files": [
+            {
+              "path": "COPYING",
+              "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+              "bytes": 35147,
+              "spdx": [
+                {
+                  "id": "GPL-3.0 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "GPL v3 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "GPL-3.0 (version from the text; -only or -or-later not established from this file)"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "GPL-3.0: agrees"
+    },
+    {
+      "tool": "Project Chrono",
+      "drafter_entry": "BSD-3-Clause",
+      "sources": [
+        {
+          "source": "https://github.com/projectchrono/chrono",
+          "commit": "25739c0ada6955264968e146144a59721061f6f5",
+          "state": "fetched",
+          "root_entries": 25,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "5f625eb4c9e0ddf86db9d1ed9b6adb5b30296ea81919282b2f38c977136bf079",
+              "bytes": 1485,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "BSD-3-Clause: agrees"
+    },
+    {
+      "tool": "Qiskit",
+      "drafter_entry": "Apache-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/Qiskit/qiskit",
+          "commit": "cf46ab8dca2cbb79946d92b741b250fcc25dc2f6",
+          "state": "fetched",
+          "root_entries": 39,
+          "files": [
+            {
+              "path": "LICENSE.txt",
+              "sha256": "0a7558bc0c5a5bcac5e2bdc5e5367f3550b0c3b45b7e6f5a81b4f9fde6693374",
+              "bytes": 11418,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Apache-2.0: agrees"
+    },
+    {
+      "tool": "Qiskit Aer",
+      "drafter_entry": "Apache-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/Qiskit/qiskit-aer",
+          "commit": "f6e7bd3822f2fa572c8d8a70331e9766aa59db79",
+          "state": "fetched",
+          "root_entries": 29,
+          "files": [
+            {
+              "path": "LICENSE.txt",
+              "sha256": "62110f3e60f594c861674f74d007283a8ed8dfee449859132e11d28e5c2b0d96",
+              "bytes": 11416,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Apache-2.0: agrees"
+    },
+    {
+      "tool": "QuTiP",
+      "drafter_entry": "BSD-3-Clause",
+      "sources": [
+        {
+          "source": "https://github.com/qutip/qutip",
+          "commit": "2d2e35dea213db28ba85f737e80f64034c43786d",
+          "state": "fetched",
+          "root_entries": 19,
+          "files": [
+            {
+              "path": "LICENSE.txt",
+              "sha256": "7bb5cf18e69c6321d9283f5fa390480417466d03344bf30190ef15303eb8fd39",
+              "bytes": 1538,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "BSD-3-Clause: agrees"
+    },
+    {
+      "tool": "OpenQASM 3",
+      "drafter_entry": "Apache-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/openqasm/openqasm",
+          "commit": "7fbf9e9eb3692a1288c014d6efd43523701886c6",
+          "state": "fetched",
+          "root_entries": 25,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "ebc659bca13f3e21142b73c1da286a2cb7db57879c7d2a068e48f62612f1fd5c",
+              "bytes": 11358,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Apache-2.0: agrees"
+    },
+    {
+      "tool": "Perceval",
+      "drafter_entry": "MIT",
+      "sources": [
+        {
+          "source": "https://github.com/Quandela/Perceval",
+          "commit": "64ed82f9c5e65f43d5092c92a8e218b255cde41d",
+          "state": "fetched",
+          "root_entries": 18,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "97f04d9661ce968d6b10eec07a38edd85fb3b0add7a6e31640bb93c3bdfbba29",
+              "bytes": 1505,
+              "spdx": [
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "MIT"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MIT: agrees"
+    },
+    {
+      "tool": "Strawberry Fields",
+      "drafter_entry": "Apache-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/XanaduAI/strawberryfields",
+          "commit": "162125d8ad5fd5488322a30c520253189596adf5",
+          "state": "fetched",
+          "root_entries": 20,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "a43f34f6b21a358aca8db22e004aea3c1c6b8f73f9abbe69908ac21cd0104b6c",
+              "bytes": 11748,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Apache-2.0: agrees"
+    },
+    {
+      "tool": "mpmath",
+      "drafter_entry": "BSD-3-Clause",
+      "sources": [
+        {
+          "source": "pip:mpmath 1.4.1",
+          "state": "read",
+          "metadata_licence_fields": {
+            "License-Expression": "BSD-3-Clause"
+          },
+          "files": [
+            {
+              "path": "/usr/local/lib/python3.13/site-packages/mpmath-1.4.1.dist-info/licenses/LICENSE",
+              "sha256": "01cb9dc26c9afd5804c2ebf72f9ef03b5fd48972875ed59a483a45f441971f1e",
+              "bytes": 1537,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": "https://github.com/mpmath/mpmath",
+          "commit": "758e736b9ebacb730febd34940372db6efaedb92",
+          "state": "fetched",
+          "root_entries": 15,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "01cb9dc26c9afd5804c2ebf72f9ef03b5fd48972875ed59a483a45f441971f1e",
+              "bytes": 1537,
+              "spdx": [
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "BSD-3-Clause"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "BSD-3-Clause: agrees"
+    },
+    {
+      "tool": "Embench-IoT",
+      "drafter_entry": "GPL-3.0",
+      "sources": [
+        {
+          "source": "https://github.com/embench/embench-iot",
+          "commit": "09c2ed8c3b7008c95d08b038de4a3f6dc103ed70",
+          "state": "fetched",
+          "root_entries": 16,
+          "files": [
+            {
+              "path": "COPYING",
+              "sha256": "3c3099e7c092d71a81f14eae5322365afdb2aae1f3d84ff23a41e4ec0b74176a",
+              "bytes": 34541,
+              "spdx": [
+                {
+                  "id": "GPL-3.0-or-later",
+                  "basis": "SPDX-License-Identifier line"
+                },
+                {
+                  "id": "GPL-3.0 (version from the text; -only or -or-later not established from this file)",
+                  "basis": "GPL v3 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "GPL-3.0 (version from the text; -only or -or-later not established from this file)",
+        "GPL-3.0-or-later"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "GPL-3.0: agrees"
+    },
+    {
+      "tool": "Node.js",
+      "drafter_entry": "MIT",
+      "sources": [
+        {
+          "source": "https://github.com/nodejs/node",
+          "commit": "9365fff7b5087ee72919be3ef0133e5f4f163a29",
+          "state": "fetched",
+          "root_entries": 51,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "3ebb7123f4d2b9b916338e11748380972d4339d66f54cb3258270f99bb62faf5",
+              "bytes": 154607,
+              "spdx": [
+                {
+                  "id": "Unicode-3.0",
+                  "basis": "SPDX-License-Identifier line"
+                },
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                },
+                {
+                  "id": "MIT",
+                  "basis": "MIT permission grant"
+                },
+                {
+                  "id": "ISC",
+                  "basis": "ISC permission grant"
+                },
+                {
+                  "id": "BSD-3-Clause",
+                  "basis": "BSD text with the non-endorsement clause"
+                },
+                {
+                  "id": "Artistic-2.0",
+                  "basis": "Artistic License 2.0 text"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0",
+        "Artistic-2.0",
+        "BSD-3-Clause",
+        "ISC",
+        "MIT",
+        "Unicode-3.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "MIT: agrees"
+    },
+    {
+      "tool": "Playwright",
+      "drafter_entry": "Apache-2.0",
+      "sources": [
+        {
+          "source": "https://github.com/microsoft/playwright",
+          "commit": "b434048f461895056416628de0fa6fcd614386cf",
+          "state": "fetched",
+          "root_entries": 25,
+          "files": [
+            {
+              "path": "LICENSE",
+              "sha256": "7fab1461b41970ff376f1c9303a637076bfaaeb71cd12dd3a1c44aaf59a1a2b9",
+              "bytes": 11399,
+              "spdx": [
+                {
+                  "id": "Apache-2.0",
+                  "basis": "Apache License Version 2.0 text"
+                }
+              ]
+            },
+            {
+              "path": "NOTICE",
+              "sha256": "6d602191187b35b9b01d2cffa01c8469c2c8d9de8a96f1bf868e0f264f51c81d",
+              "bytes": 254,
+              "spdx": []
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "Apache-2.0"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "Apache-2.0: agrees"
+    },
+    {
+      "tool": "Candor",
+      "drafter_entry": "Per project",
+      "sources": [],
+      "spdx_from_files": [],
+      "state": "not established: no source could be fetched",
+      "comparison": "not established"
+    },
+    {
+      "tool": "Tok DOI",
+      "drafter_entry": "Per project",
+      "sources": [
+        {
+          "source": "project-ilm/tok-doi",
+          "state": "read from the intake clone",
+          "files": [
+            {
+              "path": "project-ilm/tok-doi:LICENSE",
+              "sha256": "0e78a0d43d0eef3fdc742cd6900d6700f6783715afb1e555db912cce8db94cf5",
+              "bytes": 1176,
+              "spdx": [
+                {
+                  "id": "GPL-3.0-or-later",
+                  "basis": "SPDX identifier named in the file"
+                },
+                {
+                  "id": "CC-BY-SA-4.0",
+                  "basis": "SPDX identifier named in the file"
+                },
+                {
+                  "id": "CC0-1.0",
+                  "basis": "SPDX identifier named in the file"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "spdx_from_files": [
+        "CC-BY-SA-4.0",
+        "CC0-1.0",
+        "GPL-3.0-or-later"
+      ],
+      "state": "established from the tool's own licence file",
+      "comparison": "the MRD gives no identifier; the file's identifiers are recorded"
+    }
+  ]
+}

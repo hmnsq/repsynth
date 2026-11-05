@@ -1,0 +1,428 @@
+_notice: '© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0'
+identity:
+  id: bwm
+  version: 0.3.0
+  family: machine
+  title: 'Binary word machine: 64-bit two''s complement words'
+  equality: Two machine states are equal when the program counter, every register's host bits and every memory byte are equal.
+  canonical_form: Register 0 reads as the all-zero host word, which is the numeric zero of every instance's representation.
+domain:
+  description: 'Machine states of bwm: sixteen 64-bit registers holding binary_integer words of 64 digits, a byte-addressed
+    memory and a program counter.'
+  finite: true
+  widths:
+  - digits: 64
+    register_bits: 64
+structure:
+  instance_of: word_machine_family
+  derived_from:
+    family: spec/reps/machine/word_machine_family.yaml
+    family_sha256: 82b5aab4b4799de50bace51dda0b16aa2d5e05f0ef0e09f98251c38e1b30a55e
+    numeric: spec/reps/numeric/binary_integer.yaml
+    numeric_sha256: 926ec5e76305866e9a69ded82defaf89cf4cd8ad420dd74e4e6637351f0f2f1b
+    generator: repsynth.gen.isb.instantiate 0.3.0
+  parameters:
+    numeric: binary_integer
+    digits: 64
+    register_bits: 64
+  registers:
+    count: 16
+    names: r0 to r15
+    zero_register: r0
+    width: register_bits
+  program_counter:
+    unit: byte
+    alignment: 4
+    reset: 0
+  memory:
+    addressing: byte
+    byte_order: little
+    word_bytes: 8
+  data_encoding: twos_complement
+encoding:
+  active: fixed32
+  encodings:
+    fixed32:
+      description: Every instruction is one 32-bit little-endian binary word; field positions are bit ranges [high, low].
+      word_bits: 32
+      byte_order: little
+      formats:
+        R:
+          op:
+          - 31
+          - 26
+          rd:
+          - 25
+          - 22
+          ra:
+          - 21
+          - 18
+          rb:
+          - 17
+          - 14
+          zero:
+          - 13
+          - 0
+        U:
+          op:
+          - 31
+          - 26
+          rd:
+          - 25
+          - 22
+          ra:
+          - 21
+          - 18
+          zero:
+          - 17
+          - 0
+        I:
+          op:
+          - 31
+          - 26
+          rd:
+          - 25
+          - 22
+          ra:
+          - 21
+          - 18
+          imm:
+          - 17
+          - 0
+          - signed
+        B:
+          op:
+          - 31
+          - 26
+          ra:
+          - 25
+          - 22
+          rb:
+          - 21
+          - 18
+          imm:
+          - 17
+          - 0
+          - signed
+        J:
+          op:
+          - 31
+          - 26
+          rd:
+          - 25
+          - 22
+          imm:
+          - 21
+          - 0
+          - signed
+      instructions:
+      - name: neg
+        opcode: 1
+        format: U
+        syntax: neg rd, ra
+        semantics: rd = neg(ra)
+        uses:
+        - neg
+      - name: add
+        opcode: 2
+        format: R
+        syntax: add rd, ra, rb
+        semantics: rd = add(ra, rb)
+        uses:
+        - add
+      - name: sub
+        opcode: 3
+        format: R
+        syntax: sub rd, ra, rb
+        semantics: rd = sub(ra, rb)
+        uses:
+        - sub
+      - name: mul
+        opcode: 4
+        format: R
+        syntax: mul rd, ra, rb
+        semantics: rd = mul(ra, rb)
+        uses:
+        - mul
+      - name: cmp
+        opcode: 5
+        format: R
+        syntax: cmp rd, ra, rb
+        semantics: rd = cmp(ra, rb)
+        uses:
+        - cmp
+      - name: shl
+        opcode: 6
+        format: R
+        syntax: shl rd, ra, rb
+        semantics: rd = shl(ra, rb)
+        uses:
+        - shl
+      - name: shr
+        opcode: 7
+        format: R
+        syntax: shr rd, ra, rb
+        semantics: rd = shr(ra, rb)
+        uses:
+        - shr
+      - name: li
+        opcode: 32
+        format: J
+        syntax: li rd, imm
+        semantics: rd = imm(sext(imm))
+        uses:
+        - imm
+      - name: ld
+        opcode: 33
+        format: I
+        syntax: ld rd, imm(ra)
+        semantics: rd = mem64[ea(ra, imm)]
+        uses:
+        - ea
+      - name: st
+        opcode: 34
+        format: I
+        syntax: st rd, imm(ra)
+        semantics: mem64[ea(ra, imm)] = rd
+        uses:
+        - ea
+      - name: sb
+        opcode: 35
+        format: I
+        syntax: sb rd, imm(ra)
+        semantics: mem8[ea(ra, imm)] = val(rd) modulo 2^8
+        uses:
+        - ea
+        - val
+      - name: sw
+        opcode: 36
+        format: I
+        syntax: sw rd, imm(ra)
+        semantics: mem32[ea(ra, imm)] = val(rd) modulo 2^32
+        uses:
+        - ea
+        - val
+      - name: lb
+        opcode: 37
+        format: I
+        syntax: lb rd, imm(ra)
+        semantics: rd = word(mem8[ea(ra, imm)])
+        uses:
+        - ea
+        - word
+      - name: beq
+        opcode: 40
+        format: B
+        syntax: beq ra, rb, target
+        semantics: if beq(ra, rb) then pc = pc + 4 imm
+        uses:
+        - beq
+      - name: bne
+        opcode: 41
+        format: B
+        syntax: bne ra, rb, target
+        semantics: if bne(ra, rb) then pc = pc + 4 imm
+        uses:
+        - bne
+      - name: blt
+        opcode: 42
+        format: B
+        syntax: blt ra, rb, target
+        semantics: if blt(ra, rb) then pc = pc + 4 imm
+        uses:
+        - blt
+      - name: bge
+        opcode: 43
+        format: B
+        syntax: bge ra, rb, target
+        semantics: if bge(ra, rb) then pc = pc + 4 imm
+        uses:
+        - bge
+      - name: jal
+        opcode: 48
+        format: J
+        syntax: jal rd, target
+        semantics: rd = word(pc + 4); pc = pc + 4 imm
+        uses:
+        - word
+      - name: jalr
+        opcode: 49
+        format: I
+        syntax: jalr rd, imm(ra)
+        semantics: t = ea(ra, imm); rd = word(pc + 4); pc = t
+        uses:
+        - ea
+        - word
+decoding:
+  rule: The opcode field selects the instruction. A word whose opcode is unassigned, or whose zero field is not zero, is illegal.
+    An illegal instruction, a misaligned jump target or an access outside the memory map stops the machine with exit code
+    99 (the fault rule).
+  register_zero: Writes to r0 are discarded.
+semantics:
+  statement: 'Every instruction''s data effect is one of the instance''s semantic functions, each a reference function with
+    the uniform signature uint64_t f(uint64_t a, uint64_t b). The arithmetic functions call the numeric specification''s reference
+    functions unchanged. The machine functions are: imm(a) the word of the sign-extended immediate a; ea(a, b) the address
+    val(a) + b modulo 2^64; val(a) the two''s complement integer of word a; word(a) the word of the host integer a; beq and
+    bne host-bit identity of the two registers (the numeric specification''s equality); blt(a, b) taken when cmp(a, b) is
+    -1; bge(a, b) taken when cmp(a, b) is not -1.'
+  reference_sources:
+  - spec/ref/machine_bwm/bwm.c
+  oracle: The binary_integer vectors (independent Python oracle, NUM-04) for the ALU functions; Python integers for the machine
+    functions.
+operations:
+- name: neg
+  arity: 1
+  meaning: -a modulo 2^w; calls bin_neg64 of binary_integer unchanged
+  reference:
+    symbol_pattern: bwm_neg{width}
+  candidate: false
+- name: add
+  arity: 2
+  meaning: a + b modulo 2^w; calls bin_add64 of binary_integer unchanged
+  reference:
+    symbol_pattern: bwm_add{width}
+  candidate: false
+- name: sub
+  arity: 2
+  meaning: a - b modulo 2^w; calls bin_sub64 of binary_integer unchanged
+  reference:
+    symbol_pattern: bwm_sub{width}
+  candidate: false
+- name: mul
+  arity: 2
+  meaning: a * b modulo 2^w; calls bin_mul64 of binary_integer unchanged
+  reference:
+    symbol_pattern: bwm_mul{width}
+  candidate: false
+- name: cmp
+  arity: 2
+  meaning: -1, 0 or +1 by signed comparison; calls bin_cmp64 of binary_integer unchanged
+  reference:
+    symbol_pattern: bwm_cmp{width}
+  candidate: false
+- name: shl
+  arity: 2
+  meaning: a shifted left by b modulo w; calls bin_shl64 of binary_integer unchanged
+  reference:
+    symbol_pattern: bwm_shl{width}
+  candidate: false
+- name: shr
+  arity: 2
+  meaning: a shifted right arithmetically by b modulo w; calls bin_shr64 of binary_integer unchanged
+  reference:
+    symbol_pattern: bwm_shr{width}
+  candidate: false
+- name: imm
+  arity: 1
+  meaning: the word of the sign-extended immediate a (li)
+  reference:
+    symbol_pattern: bwm_imm{width}
+  candidate: false
+- name: ea
+  arity: 2
+  meaning: the address val(a) + b modulo 2^64 (loads, stores, jalr)
+  reference:
+    symbol_pattern: bwm_ea{width}
+  candidate: false
+- name: val
+  arity: 1
+  meaning: the two's complement host integer of word a (sb, sw)
+  reference:
+    symbol_pattern: bwm_val{width}
+  candidate: false
+- name: word
+  arity: 1
+  meaning: the word of the host integer a (lb, jal and jalr links)
+  reference:
+    symbol_pattern: bwm_word{width}
+  candidate: false
+- name: beq
+  arity: 2
+  meaning: 1 when the host bits of a and b are identical, else 0
+  reference:
+    symbol_pattern: bwm_beq{width}
+  candidate: false
+- name: bne
+  arity: 2
+  meaning: 1 when the host bits of a and b differ, else 0
+  reference:
+    symbol_pattern: bwm_bne{width}
+  candidate: false
+- name: blt
+  arity: 2
+  meaning: 1 when cmp(a, b) is -1, else 0
+  reference:
+    symbol_pattern: bwm_blt{width}
+  candidate: false
+- name: bge
+  arity: 2
+  meaning: 1 when cmp(a, b) is not -1, else 0
+  reference:
+    symbol_pattern: bwm_bge{width}
+  candidate: false
+composition:
+  words: One data word per register; no multi-word arithmetic in the first build.
+transformations:
+- name: assemble
+  to: customasm instruction definition
+  preserves: encodings
+- name: translate
+  to: QEMU target
+  preserves: semantics through the reference functions
+constraints:
+- name: zero_word
+  statement: The all-zero host word is numeric zero in every instance's encoding, so r0 is zero in every instance
+- name: word_fits
+  statement: 2 digits fit in register_bits for balanced ternary (two bits per trit) and digits = register_bits for binary
+substrate:
+  logical: binary
+  register_widths:
+  - digits: 64
+    register_bits: 64
+interfaces:
+  memory_map:
+    ram:
+      base: 0
+      size: 16777216
+      note: 16 MiB; the image is loaded at 0 and execution starts at 0
+    uart:
+      base: 268435456
+      device: 16550 compatible UART of the pinned QEMU (serial-mm), register shift 0, byte access
+      chardev: serial 0
+    exit:
+      base: 269484032
+      device: sifive_test finisher of the pinned QEMU
+      pass: 32-bit write of 0x5555 exits 0
+      fail: 32-bit write of 0x3333 + (code << 16) exits with code
+  fault_exit_code: 99
+  boot: Raw binary image given with -kernel, loaded at 0.
+verification:
+  properties:
+  - name: instance_derivation
+    method: every instance specification equals the derivation from this family and its parameters (gen/isb/instantiate.py
+      --check)
+  - name: encoding_round_trip
+    method: encode then decode every instruction over every register and boundary immediates, and decode then encode random
+      words; customasm output decoded against the table
+  - name: homomorphism
+    method: every ALU semantic function of an instance equals the numeric reference function on every stored vector case;
+      val, word, imm, ea and branch functions checked against Python integers and the numeric oracle
+generation:
+  isb:
+    qemu_target: bwm-softmmu
+    customasm: gen/isb/targets/bwm/bwm.cpu.asm
+    reference: spec/ref/machine_bwm
+evolution:
+  changes:
+  - version: 0.3.0
+    class: initial
+    summary: Family with two instances, binary and balanced ternary (RD5)
+  ordering: Instructions and opcodes are appended; an opcode is never reassigned.
+provenance:
+  oracle:
+    value: binary_integer vectors and Python integers
+    evidence: derived
+    source: spec/reps/numeric/binary_integer.yaml
+  extraction: Derived from spec/reps/machine/word_machine_family.yaml by gen/isb/instantiate.py; do not edit.
+  evidence_state: decided
+  decided_by: RD5, 4 November 2026 (both machines run); the machine shape is a working decision of the Tier B lane

@@ -1,0 +1,1 @@
+{"arity":2,"candidate":true,"meaning":"a + b, truncated to d digits","name":"add","reference":{"symbol_pattern":"pd_add{width}"}}

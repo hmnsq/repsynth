@@ -1,0 +1,34 @@
+{
+  "command": "python3 -m repsynth oracles run apcisr",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:11:41Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Exit codes are the oracle's own; a non-zero code is reported with its output, not interpreted.",
+  "outputs": {
+    "reports/oracles/apcisr.json": "ee7f7467daa01f4d0b8ffdb58e044db2e4d2d27d87018bcdf5bd1ae83a52cb62",
+    "reports/oracles/apcisr.md": "d57238bb2d9c8baac4af7291cde5b5dae54aa07c8b93c6b9845d8f44ecf4bcb8"
+  },
+  "packet": "P0.3",
+  "results": {
+    "clones_unchanged": {
+      "hindawiai/chintamani": true
+    },
+    "commit": "cf614ff2dd8da9e23f2f98c49686640e2ec2e181",
+    "steps": {
+      "make_all": 0,
+      "render_test_aci": 0
+    }
+  },
+  "started_utc": "2026-11-04T23:11:40Z",
+  "state": "wired_unproven",
+  "step": "oracle_apcisr",
+  "tool_versions": {
+    "awk": "GNU Awk 5.2.1, API 3.2, PMA Avon 8-g1, (GNU MPFR 4.2.1, GNU MP 6.3.0)",
+    "bash": "GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)",
+    "flex": "flex 2.6.4",
+    "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "make": "GNU Make 4.3",
+    "python": "3.13.18"
+  }
+}

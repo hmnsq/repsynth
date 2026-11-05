@@ -1,0 +1,26 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "python3 -m repsynth oracles check ayehandsum",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:29:37Z",
+    "image_digests": {},
+    "inputs": {
+      "spec/reps/numeric/ayehandsum.yaml": "b3ea6d7d6537e6c3cd0307f66cdbaade8a64e840dbf1db78e3c60e6802d083db"
+    },
+    "packet": "P1.7",
+    "started_utc": "2026-11-04T23:29:35Z",
+    "state": "done",
+    "step": "check_ayehandsum",
+    "tool_versions": {}
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "4d001aa9681e3983360ee8a98b812e1e310031231cdb66303a7c14295d74a5fa"
+      },
+      "name": "records/20261104T232937Z_P1.7_check_ayehandsum.json"
+    }
+  ]
+}

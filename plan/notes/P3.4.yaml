@@ -1,0 +1,5 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC-BY-SA-4.0
+produced:
+- repsynth impact <change> [--confirm]
+failed_first: 'The first run of change (c) reported observed not equal to expected: inserting the operation shifted to_int''s
+  index path, so its vectors regenerated. Fixed by an evolution rule (operations are appended) recorded in the specification.'

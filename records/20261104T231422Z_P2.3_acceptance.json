@@ -1,0 +1,17 @@
+{
+  "command": "repsynth conform --lane software",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:14:22Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {},
+  "packet": "P2.3",
+  "results": {
+    "tail": "_integer    shl.32  native=0 wasm=0 python=0 oracle=0\nPASS binary_integer    shr.32  native=0 wasm=0 python=0 oracle=0\n+ gcc -std=c11 -O2 -Wall -Wextra -Werror -pedantic -fno-strict-aliasing -fPIC -shared -I/home/user/build/repsynth/spec/ref/packed_decimal /home/user/build/repsynth/spec/ref/packed_decimal/packed_decimal.c -o /home/user/build/repsynth/out/software/packed_decimal/libpacked_decimal.so\n+ gcc -std=c11 -O2 -Wall -Wextra -Werror -pedantic -fno-strict-aliasing -c -I/home/user/build/repsynth/spec/ref/packed_decimal /home/user/build/repsynth/spec/ref/packed_decimal/packed_decimal.c -o /home/user/build/repsynth/out/software/packed_decimal/packed_decimal.o\n+ clang --target=wasm32 -nostdlib -std=c11 -O2 -Wall -Wextra -Werror -pedantic -fno-strict-aliasing -I/home/user/build/repsynth/spec/ref/packed_decimal -Wl,--no-entry -Wl,--export-all -Wl,--strip-debug /home/user/build/repsynth/spec/ref/packed_decimal/packed_decimal.c -o /home/user/build/repsynth/out/software/packed_decimal/packed_decimal.wasm\nPASS packed_decimal    neg.15  native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    add.15  native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    sub.15  native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    mul.15  native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    cmp.15  native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    from_int.15  native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    to_int.15  native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    neg.7   native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    add.7   native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    sub.7   native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    mul.7   native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    cmp.7   native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    from_int.7   native=0 wasm=0 python=0 oracle=0\nPASS packed_decimal    to_int.7   native=0 wasm=0 python=0 oracle=0\nsoftware conformance: 46 cells, 0 runner failures, exit 0\n"
+  },
+  "started_utc": "2026-11-04T23:14:14Z",
+  "state": "done",
+  "step": "acceptance",
+  "tool_versions": {}
+}

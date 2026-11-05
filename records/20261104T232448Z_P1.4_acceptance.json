@@ -1,0 +1,21 @@
+{
+  "command": "repsynth.numeric.verify_reference('packed_decimal'); ...('binary_integer')",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:24:48Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/numeric/binary_integer_reference_vs_oracle.json": "ffb11ec6bd4eb66cce46303293575f3bcab579f8bc91a834d40f642d202aa09c",
+    "reports/numeric/packed_decimal_reference_vs_oracle.json": "183bb8ecc406b3c205f17a052fe80589ce7e1de21ac7418ea3b85c3f6222a233"
+  },
+  "packet": "P1.4",
+  "results": {
+    "cases": 49590408,
+    "disagreements": 0
+  },
+  "started_utc": "2026-11-04T23:18:26Z",
+  "state": "done",
+  "step": "acceptance",
+  "tool_versions": {}
+}

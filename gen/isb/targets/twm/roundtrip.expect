@@ -1,0 +1,84 @@
+04000000 neg ra=0 rd=0
+04480000 neg ra=2 rd=1
+07f80000 neg ra=14 rd=15
+05e00000 neg ra=8 rd=7
+08000000 add ra=0 rb=0 rd=0
+0848c000 add ra=2 rb=3 rd=1
+0bfb4000 add ra=14 rb=13 rd=15
+09e24000 add ra=8 rb=9 rd=7
+0c000000 sub ra=0 rb=0 rd=0
+0c48c000 sub ra=2 rb=3 rd=1
+0ffb4000 sub ra=14 rb=13 rd=15
+0de24000 sub ra=8 rb=9 rd=7
+10000000 mul ra=0 rb=0 rd=0
+1048c000 mul ra=2 rb=3 rd=1
+13fb4000 mul ra=14 rb=13 rd=15
+11e24000 mul ra=8 rb=9 rd=7
+14000000 cmp ra=0 rb=0 rd=0
+1448c000 cmp ra=2 rb=3 rd=1
+17fb4000 cmp ra=14 rb=13 rd=15
+15e24000 cmp ra=8 rb=9 rd=7
+18000000 shl ra=0 rb=0 rd=0
+1848c000 shl ra=2 rb=3 rd=1
+1bfb4000 shl ra=14 rb=13 rd=15
+19e24000 shl ra=8 rb=9 rd=7
+1c000000 shr ra=0 rb=0 rd=0
+1c48c000 shr ra=2 rb=3 rd=1
+1ffb4000 shr ra=14 rb=13 rd=15
+1de24000 shr ra=8 rb=9 rd=7
+20000000 from_int ra=0 rd=0
+20480000 from_int ra=2 rd=1
+23f80000 from_int ra=14 rd=15
+21e00000 from_int ra=8 rd=7
+24000000 to_int ra=0 rd=0
+24480000 to_int ra=2 rd=1
+27f80000 to_int ra=14 rd=15
+25e00000 to_int ra=8 rd=7
+80000000 li imm=0 rd=0
+807fffff li imm=-1 rd=1
+83dfffff li imm=2097151 rd=15
+81e00000 li imm=-2097152 rd=7
+84000000 ld imm=0 ra=0 rd=0
+844bfff8 ld imm=-8 ra=2 rd=1
+87f9ffff ld imm=131071 ra=14 rd=15
+85e20000 ld imm=-131072 ra=8 rd=7
+88000000 st imm=0 ra=0 rd=0
+884bfff8 st imm=-8 ra=2 rd=1
+8bf9ffff st imm=131071 ra=14 rd=15
+89e20000 st imm=-131072 ra=8 rd=7
+8c000000 sb imm=0 ra=0 rd=0
+8c4bfff8 sb imm=-8 ra=2 rd=1
+8ff9ffff sb imm=131071 ra=14 rd=15
+8de20000 sb imm=-131072 ra=8 rd=7
+90000000 sw imm=0 ra=0 rd=0
+904bfff8 sw imm=-8 ra=2 rd=1
+93f9ffff sw imm=131071 ra=14 rd=15
+91e20000 sw imm=-131072 ra=8 rd=7
+94000000 lb imm=0 ra=0 rd=0
+944bfff8 lb imm=-8 ra=2 rd=1
+97f9ffff lb imm=131071 ra=14 rd=15
+95e20000 lb imm=-131072 ra=8 rd=7
+a0000000 beq imm=0 ra=0 rb=0
+a08fffff beq imm=-1 ra=2 rb=3
+a3b40003 beq imm=3 ra=14 rb=13
+a227ffc1 beq imm=-63 ra=8 rb=9
+a4000000 bne imm=0 ra=0 rb=0
+a48fffff bne imm=-1 ra=2 rb=3
+a7b40003 bne imm=3 ra=14 rb=13
+a627ffbd bne imm=-67 ra=8 rb=9
+a8000000 blt imm=0 ra=0 rb=0
+a88fffff blt imm=-1 ra=2 rb=3
+abb40003 blt imm=3 ra=14 rb=13
+aa27ffb9 blt imm=-71 ra=8 rb=9
+ac000000 bge imm=0 ra=0 rb=0
+ac8fffff bge imm=-1 ra=2 rb=3
+afb40003 bge imm=3 ra=14 rb=13
+ae27ffb5 bge imm=-75 ra=8 rb=9
+c0000000 jal imm=0 rd=0
+c0400001 jal imm=1 rd=1
+c3fffffe jal imm=-2 rd=15
+c1c00005 jal imm=5 rd=7
+c4000000 jalr imm=0 ra=0 rd=0
+c44bfff8 jalr imm=-8 ra=2 rd=1
+c7f9ffff jalr imm=131071 ra=14 rd=15
+c5e20000 jalr imm=-131072 ra=8 rd=7

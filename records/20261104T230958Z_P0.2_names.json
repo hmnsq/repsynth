@@ -1,0 +1,20 @@
+{
+  "command": "python3 -m repsynth intake names",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:09:58Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/asset_register.json": "d4da5c7afd463f2dbfe9bcd93314902a65845a8a94c2c8bc256f9dfad37bd42b"
+  },
+  "packet": "P0.2",
+  "results": {
+    "checks": 55,
+    "collisions": []
+  },
+  "started_utc": "2026-11-04T23:09:41Z",
+  "state": "wired_unproven",
+  "step": "names",
+  "tool_versions": {}
+}

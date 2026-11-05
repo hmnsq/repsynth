@@ -1,0 +1,37 @@
+{
+  "command": "python3 -m repsynth oracles check romenagri",
+  "exit_code": 1,
+  "finished_utc": "2026-11-04T23:24:26Z",
+  "image_digests": {},
+  "inputs": {
+    "spec/reps/transliteration/romenagri_devanagari.yaml": "091532744e77c9da366fd777b4a6557c4f5285caaa78a13324c3e1ce5c13778a"
+  },
+  "notes": "Acceptance run: oracle executed on every extracted mapping.",
+  "outputs": {},
+  "packet": "P1.5",
+  "results": {
+    "mappings_checked": 362,
+    "mismatches": [],
+    "oracle_exit_codes": {
+      "acii2rmn": 0,
+      "acii2uni": 0,
+      "rmn2acii": 0,
+      "uni2acii": 0
+    },
+    "planted_defect": "encoding.unicode_to_acii[0].acii changed to b4",
+    "planted_mismatches": [
+      "uni2acii U+0915: spec b4, oracle b3",
+      "acii2uni b3: spec 'क\\r', oracle 'ख\\r'"
+    ],
+    "planted_refused": true,
+    "spec_check": {
+      "command": "/usr/local/bin/python3 -m repsynth spec check /home/user/build/repsynth/spec/reps/transliteration/romenagri_devanagari.yaml",
+      "exit_code": 1,
+      "output": "REFUSED /home/user/build/repsynth/spec/reps/transliteration/romenagri_devanagari.yaml at /semantics/reference_sources/0: reference source /home/user/build/repsynth/project-ilm/romenagri2026.10@e9d762804feb0159c6739f242378d58286dbd3f0:Romenagri/uni2acii.c does not exist\nREFUSED /home/user/build/repsynth/spec/reps/transliteration/romenagri_devanagari.yaml at /semantics/reference_sources/1: reference source /home/user/build/repsynth/project-ilm/romenagri2026.10@e9d762804feb0159c6739f242378d58286dbd3f0:Romenagri/acii2uni.c does not exist\nREFUSED /home/user/build/repsynth/spec/reps/transliteration/romenagri_devanagari.yaml at /semantics/reference_sources/2: reference source /home/user/build/repsynth/project-ilm/romenagri2026.10@e9d762804feb0159c6739f242378d58286dbd3f0:Romenagri/acii2rmn.c does not exist\nREFUSED /home/user/build/repsynth/spec/reps/transliteration/romenagri_devanagari.yaml at /semantics/reference_sources/3: reference source /home/user/build/repsynth/project-ilm/romenagri2026.10@e9d762804feb0159c6739f242378d58286dbd3f0:Romenagri/rmn2acii.c does not exist"
+    }
+  },
+  "started_utc": "2026-11-04T23:24:26Z",
+  "state": "failed",
+  "step": "check_romenagri",
+  "tool_versions": {}
+}

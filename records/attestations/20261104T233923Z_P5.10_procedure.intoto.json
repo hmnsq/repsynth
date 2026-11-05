@@ -1,0 +1,30 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "written procedure reports/hardware/onboard_procedure.md (no command run on a board)",
+    "exit_code": 1,
+    "finished_utc": "2026-11-04T23:39:23Z",
+    "image_digests": {},
+    "inputs": {},
+    "packet": "P5.10",
+    "started_utc": "2026-11-04T23:39:23Z",
+    "state": "not_built",
+    "step": "procedure",
+    "tool_versions": {}
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "427bcd1a40b111d1eb1ee20781d0d5be01d80ed9d0980ffc6c138dc02322f1fe"
+      },
+      "name": "reports/hardware/onboard_procedure.md"
+    },
+    {
+      "digest": {
+        "sha256": "14de173b15c1ba7251723a1d582c2ee257bf86e7e07c4c8b01f4732468ba13ff"
+      },
+      "name": "records/20261104T233923Z_P5.10_procedure.json"
+    }
+  ]
+}

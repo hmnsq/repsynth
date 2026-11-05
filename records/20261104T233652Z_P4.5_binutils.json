@@ -1,0 +1,134 @@
+{
+  "command": "python3 -m repsynth.lanes.tiera binutils",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:36:52Z",
+  "image_digests": {},
+  "inputs": {
+    "gen/binutils/out/balanced_ternary/patches.json": "54f585e03f1b3969887302a6e2b9074ae489c149a36c58cc2ec35539bb004c0b",
+    "gen/binutils/out/packed_decimal/patches.json": "1454d4f751aeb42ebb06ab9a77a039774261a4aab6f32b3be60f4c20c53bbf4f"
+  },
+  "notes": "Built natively; the repsynth-gnu container definition is written but was not built here.",
+  "outputs": {
+    ".cache/binutils-build/binutils/objdump": "8c17bfd65e3fdc8f5e93e63c01c5b99d8a93e9d44ca1cadca20e7fa1f93e44fa",
+    ".cache/binutils-build/gas/as-new": "bfce5371ee62c9101c072b8f0e5a5af60c7668ce472dd72167f61fe1d942faeb"
+  },
+  "packet": "P4.5",
+  "results": {
+    "gas_check": {
+      "exit": 0,
+      "summary": "# of expected passes\t\t362",
+      "tier_a_tests": [
+        "PASS: gas/riscv/x-xayebt",
+        "PASS: gas/riscv/x-xayepd"
+      ]
+    },
+    "make": {
+      "exit": 0,
+      "peak_rss_kb": 4696
+    },
+    "patch": {
+      "exit": 0,
+      "tail": "present bfd/elfxx-riscv.c: {\"xayepd\",\t\tISA_SPEC_CLASS_DRAFT,\t1, 0, 0 },\npresent bfd/elfxx-riscv.c: case INSN_CLASS_XAYEPD: |       return riscv_subset_supports (rps, \"xayepd\");\npresent bfd/elfxx-riscv.c: case INSN_CLASS_XAYEPD: |       return \"xayepd\";\npresent gas/testsuite/gas/riscv/march-help.l: xayepd                                  1.0"
+    },
+    "planted_wrong_word": {
+      "exit": 2,
+      "line": [
+        "FAIL: gas/riscv/x-mutant-wrong-word"
+      ]
+    },
+    "round_trip": {
+      "xayebt/rv32i": {
+        "as_exit": 0,
+        "disassembled": {
+          "aye.bt.add": 3,
+          "aye.bt.cmp": 3,
+          "aye.bt.fromint": 3,
+          "aye.bt.mul": 3,
+          "aye.bt.neg": 3,
+          "aye.bt.shl": 3,
+          "aye.bt.shr": 3,
+          "aye.bt.sub": 3,
+          "aye.bt.toint": 3
+        },
+        "objdump_exit": 0,
+        "ok": true
+      },
+      "xayebt/rv32i/without_extension": {
+        "as_exit": 1,
+        "first_error": [
+          "/home/user/build/repsynth/gen/binutils/out/balanced_ternary/gas/xayebt.s:9: Error: unrecognized opcode `aye.bt.neg a0,a1', extension `xayebt' required"
+        ]
+      },
+      "xayebt/rv64i": {
+        "as_exit": 0,
+        "disassembled": {
+          "aye.bt.add": 3,
+          "aye.bt.cmp": 3,
+          "aye.bt.fromint": 3,
+          "aye.bt.mul": 3,
+          "aye.bt.neg": 3,
+          "aye.bt.shl": 3,
+          "aye.bt.shr": 3,
+          "aye.bt.sub": 3,
+          "aye.bt.toint": 3
+        },
+        "objdump_exit": 0,
+        "ok": true
+      },
+      "xayebt/rv64i/without_extension": {
+        "as_exit": 1,
+        "first_error": [
+          "/home/user/build/repsynth/gen/binutils/out/balanced_ternary/gas/xayebt.s:9: Error: unrecognized opcode `aye.bt.neg a0,a1', extension `xayebt' required"
+        ]
+      },
+      "xayepd/rv32i": {
+        "as_exit": 0,
+        "disassembled": {
+          "aye.pd.add": 3,
+          "aye.pd.cmp": 3,
+          "aye.pd.fromint": 3,
+          "aye.pd.mul": 3,
+          "aye.pd.neg": 3,
+          "aye.pd.sub": 3,
+          "aye.pd.toint": 3
+        },
+        "objdump_exit": 0,
+        "ok": true
+      },
+      "xayepd/rv32i/without_extension": {
+        "as_exit": 1,
+        "first_error": [
+          "/home/user/build/repsynth/gen/binutils/out/packed_decimal/gas/xayepd.s:9: Error: unrecognized opcode `aye.pd.neg a0,a1', extension `xayepd' required"
+        ]
+      },
+      "xayepd/rv64i": {
+        "as_exit": 0,
+        "disassembled": {
+          "aye.pd.add": 3,
+          "aye.pd.cmp": 3,
+          "aye.pd.fromint": 3,
+          "aye.pd.mul": 3,
+          "aye.pd.neg": 3,
+          "aye.pd.sub": 3,
+          "aye.pd.toint": 3
+        },
+        "objdump_exit": 0,
+        "ok": true
+      },
+      "xayepd/rv64i/without_extension": {
+        "as_exit": 1,
+        "first_error": [
+          "/home/user/build/repsynth/gen/binutils/out/packed_decimal/gas/xayepd.s:9: Error: unrecognized opcode `aye.pd.neg a0,a1', extension `xayepd' required"
+        ]
+      }
+    }
+  },
+  "started_utc": "2026-11-04T23:36:26Z",
+  "state": "done",
+  "step": "binutils",
+  "tool_versions": {
+    "binutils": "2.47 release tarball binutils_2.47.orig.tar.xz (archive.ubuntu.com), sha256 154ab23b60070e8f27013c22977f1129425d67d1e8acd6e13010e617811e4cff; bminor/binutils-gdb and hmnsq/binutils-gdb not reachable from here",
+    "dejagnu": "DejaGnu version\t1.6.3",
+    "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  }
+}

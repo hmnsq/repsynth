@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hmnsq.github.io/repsynth/spec/schema/representation.schema.json",
+  "title": "repsynth representation specification meta-model (MRD section 9.3, SPC-01)",
+  "$comment": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "type": "object",
+  "required": ["identity", "domain", "structure", "encoding", "decoding", "semantics", "operations",
+               "composition", "transformations", "constraints", "substrate", "interfaces",
+               "verification", "generation", "evolution", "provenance"],
+  "additionalProperties": false,
+  "properties": {
+    "_notice": {"type": "string"},
+    "identity": {
+      "type": "object",
+      "required": ["id", "version", "family", "title", "equality"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+        "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
+        "family": {"enum": ["numeric", "script_structure", "transliteration", "symbolic_pipeline", "machine"]},
+        "title": {"type": "string", "minLength": 1},
+        "equality": {"$ref": "#/$defs/textOrUnknown"},
+        "canonical_form": {"$ref": "#/$defs/textOrUnknown"}
+      }
+    },
+    "domain": {
+      "type": "object",
+      "required": ["description"],
+      "properties": {
+        "description": {"type": "string"},
+        "finite": {"type": "boolean"},
+        "enumerator": {"$ref": "#/$defs/textOrUnknown"},
+        "widths": {"type": "array", "items": {"$ref": "#/$defs/width"}}
+      }
+    },
+    "structure": {"$ref": "#/$defs/section"},
+    "encoding": {"$ref": "#/$defs/section"},
+    "decoding": {"$ref": "#/$defs/section"},
+    "semantics": {
+      "type": "object",
+      "required": ["statement", "reference_sources"],
+      "properties": {
+        "statement": {"type": "string"},
+        "reference_sources": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "oracle": {"$ref": "#/$defs/textOrUnknown"}
+      }
+    },
+    "operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "arity", "meaning", "reference", "candidate"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {"type": "string", "pattern": "^[a-z][a-z0-9_]*$"},
+          "arity": {"enum": [1, 2]},
+          "meaning": {"type": "string"},
+          "operand_classes": {"type": "array", "items": {"type": "string"}},
+          "result_class": {"type": "string"},
+          "reference": {
+            "type": "object",
+            "required": ["symbol_pattern"],
+            "additionalProperties": false,
+            "properties": {
+              "symbol_pattern": {"type": "string", "pattern": "^[a-z][a-z0-9_]*\\{width\\}$"}
+            }
+          },
+          "candidate": {"type": "boolean"},
+          "vectors": {"type": "object"}
+        }
+      }
+    },
+    "composition": {"$ref": "#/$defs/section"},
+    "transformations": {"type": "array", "items": {"type": "object", "required": ["name", "to", "preserves"]}},
+    "constraints": {"type": "array", "items": {"type": "object", "required": ["name", "statement"]}},
+    "substrate": {
+      "type": "object",
+      "required": ["logical", "register_widths"],
+      "properties": {
+        "logical": {"enum": ["binary", "ternary", "decimal", "other"]},
+        "register_widths": {"type": "array", "items": {"$ref": "#/$defs/width"}},
+        "limits": {"type": "object", "additionalProperties": {"$ref": "#/$defs/evidenced"}}
+      }
+    },
+    "interfaces": {"$ref": "#/$defs/section"},
+    "verification": {
+      "type": "object",
+      "required": ["properties"],
+      "properties": {
+        "properties": {"type": "array", "items": {"type": "object", "required": ["name", "method"]}},
+        "exhaustive": {"type": "object"},
+        "random": {"type": "object"}
+      }
+    },
+    "generation": {"$ref": "#/$defs/section"},
+    "evolution": {
+      "type": "object",
+      "required": ["changes"],
+      "properties": {
+        "changes": {"type": "array", "items": {"type": "object", "required": ["version", "class", "summary"],
+          "properties": {"class": {"enum": ["initial", "compatible", "breaking"]}}}},
+        "retirement": {"type": "string"}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["oracle", "extraction", "evidence_state"],
+      "properties": {
+        "oracle": {"$ref": "#/$defs/evidenced"},
+        "extraction": {"type": "string"},
+        "evidence_state": {"enum": ["established", "decided", "extracted", "proposed", "not_established"]},
+        "decided_by": {"type": "string"}
+      }
+    }
+  },
+  "$defs": {
+    "notEstablished": {
+      "type": "object",
+      "required": ["not_established"],
+      "additionalProperties": false,
+      "properties": {"not_established": {"type": "string", "minLength": 8}}
+    },
+    "textOrUnknown": {"oneOf": [{"type": "string", "minLength": 1}, {"$ref": "#/$defs/notEstablished"}]},
+    "evidenced": {
+      "oneOf": [
+        {"$ref": "#/$defs/notEstablished"},
+        {
+          "type": "object",
+          "required": ["value", "evidence", "source"],
+          "additionalProperties": false,
+          "properties": {
+            "value": {},
+            "evidence": {"enum": ["measured", "sourced", "decided", "derived"]},
+            "source": {"type": "string", "minLength": 1},
+            "unit": {"type": "string"}
+          }
+        }
+      ]
+    },
+    "width": {
+      "type": "object",
+      "required": ["digits", "register_bits"],
+      "additionalProperties": false,
+      "properties": {
+        "digits": {"type": "integer", "minimum": 1},
+        "register_bits": {"enum": [32, 64]}
+      }
+    },
+    "section": {
+      "oneOf": [
+        {"$ref": "#/$defs/notEstablished"},
+        {"type": "object", "minProperties": 1}
+      ]
+    }
+  }
+}

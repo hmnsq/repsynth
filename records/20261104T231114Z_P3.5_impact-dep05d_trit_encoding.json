@@ -1,0 +1,21 @@
+{
+  "command": "repsynth impact d --confirm",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:11:14Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/impact/dep05d_trit_encoding.json": "7e9a29a30c9ceed17967def1c3d666ac9f5e4cacf1aed203ecac5bb10831ad48"
+  },
+  "packet": "P3.5",
+  "results": {
+    "build_exit": 0,
+    "equal": true,
+    "restored_equal_to_baseline": true
+  },
+  "started_utc": "2026-11-04T23:11:07Z",
+  "state": "done",
+  "step": "impact-dep05d_trit_encoding",
+  "tool_versions": {}
+}

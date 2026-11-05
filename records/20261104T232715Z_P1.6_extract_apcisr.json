@@ -1,0 +1,190 @@
+{
+  "command": "python3 -m repsynth oracles extract apcisr",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:27:15Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Extraction only; acceptance is `oracles check`.",
+  "outputs": {
+    "reports/readings/apcisr.json": "02850203199ac9d76cf328a0a25c299d53399e47afb5b6944d5cbd210d8aecaa",
+    "spec/reps/script/apcisr_devanagari.yaml": "403872a4470214598de73585cbc96a78019003b2d0d6f7a0177df1397849cedd"
+  },
+  "packet": "P1.6",
+  "results": {
+    "corpus": [
+      {
+        "absent_steps": [
+          {
+            "cells_at_cursors": [
+              [
+                1,
+                0,
+                0
+              ],
+              [
+                138,
+                7,
+                129
+              ],
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "cursors": [
+              46,
+              48,
+              49
+            ],
+            "entry": 21,
+            "grid": [
+              1,
+              2,
+              0,
+              8,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "input": "c220c320c42020c520c620202020202020202020202020b3df2020202020202020b8b3e8b3db20c8b3e8b3dc",
+            "romenagri": "^i",
+            "step": 38
+          },
+          {
+            "cells_at_cursors": [
+              [
+                1,
+                18,
+                0
+              ],
+              [
+                136,
+                39,
+                160
+              ],
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "cursors": [
+              56,
+              57,
+              58
+            ],
+            "entry": 76,
+            "grid": [
+              0,
+              0,
+              16,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "input": "c820c920ca20cb20cc20202020202020202020202020b3e120b3e22020202020bae9ddcadac62dac2dd8dba2c420d8dba2c4d4dc",
+            "romenagri": "_m",
+            "step": 44
+          },
+          {
+            "cells_at_cursors": [
+              [
+                1,
+                18,
+                0
+              ],
+              [
+                136,
+                39,
+                160
+              ],
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "cursors": [
+              62,
+              63,
+              64
+            ],
+            "entry": 76,
+            "grid": [
+              0,
+              0,
+              16,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "input": "c820c920ca20cb20cc20202020202020202020202020b3e120b3e22020202020bae9ddcadac62dac2dd8dba2c420d8dba2c4d4dc",
+            "romenagri": "_m",
+            "step": 49
+          },
+          {
+            "cells_at_cursors": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                130,
+                0,
+                128
+              ],
+              [
+                0,
+                0,
+                0
+              ]
+            ],
+            "cursors": [
+              53,
+              54,
+              55
+            ],
+            "entry": 14,
+            "grid": [
+              0,
+              0,
+              0,
+              0,
+              33,
+              32,
+              0,
+              64,
+              0
+            ],
+            "input": "cd20cf2020d120d420d520202020202020202020202020b3e520b3e62020202020c8b3e8d6db20cacfe8c920b3e8cfcc",
+            "romenagri": "r",
+            "step": 39
+          }
+        ],
+        "file": "APCISR/test.aci",
+        "grid_bits_absent": 4,
+        "grid_bits_present": 136,
+        "lines": 15,
+        "not_checked_rule_or_conjunct_context": 20,
+        "sha256": "00f9e6f2416d9c2b31a20bb07278e6b51ed5727d1475b940666123d6ba78d323",
+        "token_steps": 160
+      }
+    ],
+    "disagreements": 3,
+    "exit_codes": null
+  },
+  "started_utc": "2026-11-04T23:27:15Z",
+  "state": "wired_unproven",
+  "step": "extract_apcisr",
+  "tool_versions": {}
+}

@@ -1,0 +1,9 @@
+{
+  "packet": "P2.3",
+  "state": "done",
+  "evidence": [
+    "records/20261104T231422Z_P2.3_acceptance.json"
+  ],
+  "summary": "repsynth conform --lane software exits 0: native C, WebAssembly (Node.js), Python (cffi) and the oracle agree on every vector of 46 cells. Legacy runners join when P2.2's legacy builds exist.",
+  "blocked_by": []
+}

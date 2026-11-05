@@ -1,0 +1,2 @@
+cms03_decay decay y=0037328c
+cms03_oscillator oscillator x=200003fb v=000fd256

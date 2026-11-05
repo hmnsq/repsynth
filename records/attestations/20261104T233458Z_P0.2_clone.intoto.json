@@ -1,0 +1,33 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "python3 -m repsynth intake clone",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:34:58Z",
+    "image_digests": {},
+    "inputs": {},
+    "packet": "P0.2",
+    "started_utc": "2026-11-04T23:32:21Z",
+    "state": "wired_unproven",
+    "step": "clone",
+    "tool_versions": {
+      "gh": "gh version 2.89.0 (2026-03-26)",
+      "git": "git version 2.43.0"
+    }
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "bc8be20c18ef3a10a8b1eb032d8128a9715e25784bcfd20405e61e0a5101d4de"
+      },
+      "name": "reports/asset_register.json"
+    },
+    {
+      "digest": {
+        "sha256": "866f74c2bb84002a3c3fdc76b34f44e2d9869455d411c6fdfcf0020ede74c88c"
+      },
+      "name": "records/20261104T233458Z_P0.2_clone.json"
+    }
+  ]
+}

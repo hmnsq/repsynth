@@ -1,0 +1,1 @@
+{"arity":1,"candidate":true,"meaning":"the value as a two's complement integer of the register width (always representable); invalid gives the most negative integer","name":"to_int","reference":{"symbol_pattern":"bt_to_int{width}"}}

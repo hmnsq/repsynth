@@ -1,0 +1,36 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "python3 -m repsynth intake verify",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:36:46Z",
+    "image_digests": {},
+    "inputs": {},
+    "packet": "P0.2",
+    "started_utc": "2026-11-04T23:36:30Z",
+    "state": "wired_unproven",
+    "step": "verify",
+    "tool_versions": {}
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "e868a1dfe0bc8fe1cf1d2a44fccde626e47a2fed3aaed2902d945aeeea3cde05"
+      },
+      "name": "reports/asset_register.json"
+    },
+    {
+      "digest": {
+        "sha256": "3c4ee0db724e61a88e345cfdaef900c863cf3775d0d3b7e0d3fa302befa6f310"
+      },
+      "name": "reports/asset_register.md"
+    },
+    {
+      "digest": {
+        "sha256": "aa0bc85c6c0cc246ca50951e4ea75233ffdc46ad8355b21b48022420aa661a4a"
+      },
+      "name": "records/20261104T233646Z_P0.2_verify.json"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "generator": "repsynth.gen.isb.gen_qemu 0.3.0",
+  "qemu": "v10.2.4",
+  "specs": {
+    "bwm": {
+      "family_sha256": "82b5aab4b4799de50bace51dda0b16aa2d5e05f0ef0e09f98251c38e1b30a55e",
+      "numeric_sha256": "926ec5e76305866e9a69ded82defaf89cf4cd8ad420dd74e4e6637351f0f2f1b"
+    },
+    "twm": {
+      "family_sha256": "82b5aab4b4799de50bace51dda0b16aa2d5e05f0ef0e09f98251c38e1b30a55e",
+      "numeric_sha256": "6ca3c09c3d3564705290b4856036e0cb396ae857359d82ec8092a4f13c0e73f6"
+    }
+  },
+  "anchors": [
+    {
+      "file": "target/meson.build",
+      "anchor": "subdir('avr')\n",
+      "where": "after",
+      "text": "subdir('bwm')\nsubdir('twm')\n"
+    },
+    {
+      "file": "target/Kconfig",
+      "anchor": "source avr/Kconfig\n",
+      "where": "after",
+      "text": "source bwm/Kconfig\nsource twm/Kconfig\n"
+    },
+    {
+      "file": "hw/meson.build",
+      "anchor": "subdir('avr')\n",
+      "where": "after",
+      "text": "subdir('bwm')\nsubdir('twm')\n"
+    },
+    {
+      "file": "hw/Kconfig",
+      "anchor": "source avr/Kconfig\n",
+      "where": "after",
+      "text": "source bwm/Kconfig\nsource twm/Kconfig\n"
+    },
+    {
+      "file": "include/system/arch_init.h",
+      "anchor": "    QEMU_ARCH_LOONGARCH = (1 << 23),\n",
+      "where": "after",
+      "text": "    QEMU_ARCH_BWM = (1 << 24),\n    QEMU_ARCH_TWM = (1 << 25),\n"
+    },
+    {
+      "file": "qapi/machine.json",
+      "anchor": "  'data' : [ 'aarch64', 'alpha', 'arm', 'avr', ",
+      "where": "after",
+      "text": "'bwm', 'twm', "
+    }
+  ],
+  "copy": [
+    {
+      "from": "gen/isb/targets/bwm/qemu",
+      "to": ".",
+      "pattern": "**/*"
+    },
+    {
+      "from": "spec/ref/machine_bwm",
+      "to": "target/bwm/ref",
+      "pattern": "*.[ch]"
+    },
+    {
+      "from": "spec/ref/binary_integer",
+      "to": "target/bwm/ref",
+      "pattern": "*.[ch]"
+    },
+    {
+      "from": "gen/isb/targets/twm/qemu",
+      "to": ".",
+      "pattern": "**/*"
+    },
+    {
+      "from": "spec/ref/machine_twm",
+      "to": "target/twm/ref",
+      "pattern": "*.[ch]"
+    },
+    {
+      "from": "spec/ref/balanced_ternary",
+      "to": "target/twm/ref",
+      "pattern": "*.[ch]"
+    }
+  ]
+}

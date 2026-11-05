@@ -1,0 +1,22 @@
+{
+  "command": "python3 -m repsynth oracles extract ayehandsum",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:29:35Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Extraction only; acceptance is `oracles check`.",
+  "outputs": {
+    "reports/readings/ayehandsum.json": "0cfe480f488e3da15c8ea5eaf61897e1eefaa8b6f3de8775c32763ebc0dd6d6c",
+    "spec/reps/numeric/ayehandsum.yaml": "b3ea6d7d6537e6c3cd0307f66cdbaade8a64e840dbf1db78e3c60e6802d083db"
+  },
+  "packet": "P1.7",
+  "results": {
+    "corpus": [],
+    "disagreements": 0,
+    "exit_codes": {}
+  },
+  "started_utc": "2026-11-04T23:29:33Z",
+  "state": "wired_unproven",
+  "step": "extract_ayehandsum",
+  "tool_versions": {}
+}

@@ -1,0 +1,17 @@
+{
+  "command": "pytest tests/test_graph.py",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:14:51Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {},
+  "packet": "P3.1",
+  "results": {
+    "tail": "....                                                                     [100%]\n4 passed in 7.91s\n"
+  },
+  "started_utc": "2026-11-04T23:14:42Z",
+  "state": "done",
+  "step": "acceptance",
+  "tool_versions": {}
+}

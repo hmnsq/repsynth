@@ -1,0 +1,46 @@
+{
+  "_notice": "\u00a9 1993\u20132026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "lane": "Tier A (P4.12, T-21)",
+  "planted": 6,
+  "caught": 6,
+  "results": {
+    "clean_before": {
+      "passed": true,
+      "detail": "exit 0; RESULT PASS"
+    },
+    "wrong_funct3/rv64": {
+      "caught": true,
+      "detail": "exit -4; "
+    },
+    "wrong_funct3/rv32": {
+      "caught": true,
+      "detail": "exit -4; "
+    },
+    "swapped_operands/rv64": {
+      "caught": true,
+      "detail": "exit 1; MISMATCH sub a=0000000000000000 b=0000000000000001 want=0000000000000002 got=0000000000000001 | MISMATCH sub a=0000000000000000 b=0000000000000002 want=0000000000000001 got=0000000000000002 | MISMATCH sub a=0000000000000000 b=0000000000000006 want=0000000000000009 got=0000000000000006 | MISMATCH sub a=0000000000000000 b=0000000000000009 want=0000000000000006 got=0000000000000009"
+    },
+    "swapped_operands/rv32": {
+      "caught": true,
+      "detail": "exit 1; MISMATCH sub a=00000000 b=00000001 want=00000002 got=00000001 | MISMATCH sub a=00000000 b=00000002 want=00000001 got=00000002 | MISMATCH sub a=00000000 b=00000006 want=00000009 got=00000006 | MISMATCH sub a=00000000 b=00000009 want=00000006 got=00000009"
+    },
+    "wrong_helper/build_exit": 0,
+    "wrong_helper/rv64": {
+      "caught": true,
+      "detail": "exit 1; MISMATCH add a=0000000000000000 b=0000000000000001 want=0000000000000001 got=0000000000000002 | MISMATCH add a=0000000000000000 b=0000000000000002 want=0000000000000002 got=0000000000000001 | MISMATCH add a=0000000000000000 b=0000000000000006 want=0000000000000006 got=0000000000000009 | MISMATCH add a=0000000000000000 b=0000000000000009 want=0000000000000009 got=0000000000000006"
+    },
+    "wrong_helper/rv32": {
+      "caught": true,
+      "detail": "exit 1; MISMATCH add a=00000000 b=00000001 want=00000001 got=00000002 | MISMATCH add a=00000000 b=00000002 want=00000002 got=00000001 | MISMATCH add a=00000000 b=00000006 want=00000006 got=00000009 | MISMATCH add a=00000000 b=00000009 want=00000009 got=00000006"
+    },
+    "restored_build_exit": 0,
+    "clean_after/rv64": {
+      "passed": true,
+      "detail": "exit 0; RESULT PASS"
+    },
+    "clean_after/rv32": {
+      "passed": true,
+      "detail": "exit 0; RESULT PASS"
+    }
+  }
+}

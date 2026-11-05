@@ -1,0 +1,9 @@
+{
+  "packet": "P1.1",
+  "state": "done",
+  "evidence": [
+    "records/20261104T231408Z_P1.1_acceptance.json"
+  ],
+  "summary": "The three numeric specifications validate; five planted defects (missing section, guessed value, bare not_established, undefined reference function, duplicate operation) are each refused with the path named.",
+  "blocked_by": []
+}

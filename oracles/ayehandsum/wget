@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Stand-in for wget, used only by the AyeHandSum oracle runner. AyeVDI fetches its scripts at run time from
+# bit.ly short links and from the master branches of ayevdi/ayevdi and ayehandsum/ayehandsum. To run the pinned
+# commits offline and reproducibly, this serves each such URL from the exported pinned tree:
+#   https://bit.ly/<name>                                         -> the target listed in AyeVDI's README.md table;
+#                                                                    if absent there, the one file of that exact name
+#                                                                    in the pinned AyeVDI tree (logged as such)
+#   https://raw.githubusercontent.com/ayevdi/ayevdi/master/<p>    -> $ORACLE_DEP_AYEVDI/<p>
+#   https://raw.githubusercontent.com/ayehandsum/ayehandsum/master/<p> -> $ORACLE_WORK/<p>
+# Any other URL is refused with wget's server-error exit code 8. Every request is logged.
+set -u
+url=""; out="-"
+while [ $# -gt 0 ]; do
+  case "$1" in
+    -O) out="$2"; shift 2 ;;
+    -O*) out="${1#-O}"; shift ;;
+    -q|-nv) shift ;;
+    http*://*) url="$1"; shift ;;
+    *) shift ;;
+  esac
+done
+LOG="${ORACLE_SCRATCH:?}/wget_shim.log"
+resolve() {
+  local u="$1"
+  case "$u" in
+    https://bit.ly/*)
+      local t; t=$(grep -m1 "^${u}," "${ORACLE_DEP_AYEVDI:?}/README.md" | cut -d, -f2 | tr -d '\r')
+      if [ -z "$t" ]; then
+        local hits; hits=$(cd "${ORACLE_DEP_AYEVDI:?}" && find . -type f -name "${u#https://bit.ly/}")
+        [ "$(printf '%s\n' "$hits" | grep -c .)" = 1 ] || return 1
+        echo "note $u is not in README.md's table; resolved by file name to ${hits#./}" >> "$LOG"
+        echo "${ORACLE_DEP_AYEVDI}/${hits#./}"; return 0
+      fi
+      resolve "$t" ;;
+    https://raw.githubusercontent.com/ayevdi/ayevdi/master/*) echo "${ORACLE_DEP_AYEVDI:?}/${u#https://raw.githubusercontent.com/ayevdi/ayevdi/master/}" ;;
+    https://raw.githubusercontent.com/ayehandsum/ayehandsum/master/*) echo "${ORACLE_WORK:?}/${u#https://raw.githubusercontent.com/ayehandsum/ayehandsum/master/}" ;;
+    *) return 1 ;;
+  esac
+}
+if f=$(resolve "$url") && [ -f "$f" ]; then
+  echo "served $url -> ${f#${ORACLE_SCRATCH%/*}/}" >> "$LOG"
+  if [ "$out" = "-" ]; then cat "$f"; else cat "$f" > "$out"; fi
+  exit 0
+fi
+echo "refused $url (not in a pinned tree)" >> "$LOG"
+echo "wget (oracle stand-in): $url is not served from a pinned tree" >&2
+exit 8

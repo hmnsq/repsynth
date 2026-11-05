@@ -1,0 +1,6 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC-BY-SA-4.0
+produced:
+- tests/test_properties.py (Hypothesis, 2000 examples per property)
+- tests/prove_bounded.py (Z3)
+failed_first: 'Each suite failed against a planted mutant of its specification''s library: balanced ternary (4 of 6 failed),
+  binary (1), packed decimal (1).'

@@ -1,0 +1,115 @@
+{
+  "command": "repsynth hdl handoff",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:38:31Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Descriptors validated by jugaad28's own ops/jugaad28.py from a read-only clone; its catalogue check run in a derived copy. Native ternary circuits are routed to zamin by the boundary statement.",
+  "outputs": {
+    "handoff/jugaad28/j28_101.json": "07781722176fcc505fc60abc6edf59c0aa1cd946a1f98e65f92fa4f1ca9b98a1",
+    "handoff/jugaad28/j28_101.json.license": "99af5a991e59f17323e456a06de13fc8ea48f1db51afec9b597a0f38bf5b4f4e",
+    "handoff/jugaad28/j28_102.json": "ba4b95ba7b99af2f57c1acad44b475eb0ae688b5cf8841766a97ee6b6d35ff44",
+    "handoff/jugaad28/j28_102.json.license": "99af5a991e59f17323e456a06de13fc8ea48f1db51afec9b597a0f38bf5b4f4e",
+    "handoff/zamin/BOUNDARY.md": "e440febf6860e3e012966d98ce03d4addc50b39c2e4d83821bb679c7092fbb2a"
+  },
+  "packet": "P5.7",
+  "results": {
+    "catalogue_check": {
+      "command": "python3 ops/jugaad28.py check (derived copy with the descriptors added)",
+      "exit_code": 0,
+      "output": [
+        "descriptors: 16",
+        "OWED  J28-004 -> zistgah/zamin far end is another repo: OWED",
+        "OWED  J28-010 -> zistgah/asab far end is another repo: OWED",
+        "OWED  J28-014 -> zistgah/zamin far end is another repo: OWED",
+        "OWED  J28-101 -> zistgah/zamin far end is another repo: OWED",
+        "",
+        "all invariants hold (4 OWED edge(s), which is not a failure)"
+      ]
+    },
+    "clones_after": {
+      "jugaad28": {
+        "commit": "105edbfa5dcad04eaf1bafa89f6130591e0f775d",
+        "status_clean": true,
+        "tree": "861ed996bf409e143652392103311b02a4e0fb76"
+      },
+      "zamin": {
+        "commit": "b0ac0ebd27addc6214dc8afe31e6516be5ed22a9",
+        "status_clean": true,
+        "tree": "2fe68ae7b3bb700f44dce85c27f6f60edd5e5a84"
+      }
+    },
+    "clones_before": {
+      "jugaad28": {
+        "commit": "105edbfa5dcad04eaf1bafa89f6130591e0f775d",
+        "status_clean": true,
+        "tree": "861ed996bf409e143652392103311b02a4e0fb76",
+        "url": "https://github.com/zistgah/jugaad28.git"
+      },
+      "zamin": {
+        "commit": "b0ac0ebd27addc6214dc8afe31e6516be5ed22a9",
+        "status_clean": true,
+        "tree": "2fe68ae7b3bb700f44dce85c27f6f60edd5e5a84",
+        "url": "https://github.com/zistgah/zamin.git"
+      }
+    },
+    "planted_defects": {
+      "J1 a metric without evidence": {
+        "output": [
+          "FAIL  J28-101 J1 metric fmax_mhz has a value and no evidence",
+          "1 failure(s)"
+        ],
+        "refused": true
+      },
+      "J3 rung VERIFIED without testbench evidence": {
+        "output": [
+          "FAIL  J28-101 J3 claims VERIFIED without testbench evidence",
+          "1 failure(s)"
+        ],
+        "refused": true
+      },
+      "J4 ternary substrate on the 28 nm path": {
+        "output": [
+          "FAIL  J28-101 J4 substrate 'ternary MTCMOS on 28 nm' cannot come off the 28nm bulk CMOS flow",
+          "1 failure(s)"
+        ],
+        "refused": true
+      },
+      "J5 zamin vocabulary without the edge": {
+        "output": [
+          "FAIL  J28-101 J5 uses zistgah/zamin vocabulary with no declared edge",
+          "1 failure(s)"
+        ],
+        "refused": true
+      }
+    },
+    "rungs": {
+      "J28-101": "VERIFIED",
+      "J28-102": "VERIFIED"
+    },
+    "validate": {
+      "J28-101": {
+        "command": "python3 ops/jugaad28.py validate handoff/jugaad28/j28_101.json",
+        "exit_code": 0,
+        "output": [
+          "ok"
+        ]
+      },
+      "J28-102": {
+        "command": "python3 ops/jugaad28.py validate handoff/jugaad28/j28_102.json",
+        "exit_code": 0,
+        "output": [
+          "ok"
+        ]
+      }
+    }
+  },
+  "started_utc": "2026-11-04T23:38:30Z",
+  "state": "done",
+  "step": "handoff",
+  "tool_versions": {
+    "jugaad28": "105edbfa5dcad04eaf1bafa89f6130591e0f775d tree 861ed996bf409e143652392103311b02a4e0fb76",
+    "python": "3.13.18",
+    "zamin": "b0ac0ebd27addc6214dc8afe31e6516be5ed22a9 tree 2fe68ae7b3bb700f44dce85c27f6f60edd5e5a84"
+  }
+}

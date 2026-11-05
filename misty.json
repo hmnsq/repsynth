@@ -1,0 +1,18 @@
+{
+  "upload_type": "software",
+  "title": "repsynth: representation synthesis harness",
+  "version": "0.3.0",
+  "language": "eng",
+  "creators": [
+    {
+      "name": "Choudhary, Abhishek",
+      "affiliation": "AyeAI",
+      "orcid": "0009-0002-0684-8320"
+    }
+  ],
+  "description": "A specification-driven representation synthesis harness. It generates and checks software, instruction, hardware and simulator artefacts against shared vectors. Software is GPL-3.0-or-later; documents are CC-BY-SA-4.0; schemas and data are CC0-1.0.",
+  "keywords": ["representation synthesis", "balanced ternary", "conformance", "simulation"],
+  "license": "gpl-3.0-or-later",
+  "access_right": "open",
+  "notes": "Copyright (c) 1993-2026 Abhishek Choudhary. All rights reserved. AyeAI."
+}

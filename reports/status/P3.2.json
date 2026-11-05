@@ -1,0 +1,9 @@
+{
+  "packet": "P3.2",
+  "state": "done",
+  "evidence": [
+    "records/20261104T231459Z_P3.2_acceptance.json"
+  ],
+  "summary": "Slices are written on change only and Ninja restats outputs: changing one operation's slice regenerates exactly that operation's two vector files, judged by output hashes.",
+  "blocked_by": []
+}

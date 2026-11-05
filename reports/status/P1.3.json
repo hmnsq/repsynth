@@ -1,0 +1,9 @@
+{
+  "packet": "P1.3",
+  "state": "done",
+  "evidence": [
+    "records/20261104T231826Z_P1.3_acceptance.json"
+  ],
+  "summary": "Every reference function agrees with the arbitrary-precision oracle on 11403780 cases: exhaustive over the low 12 trits (unary) and low 6 trits (binary) with invalid codes, boundary cases and 100000 seeded random cases per operation at full width, both widths.",
+  "blocked_by": []
+}

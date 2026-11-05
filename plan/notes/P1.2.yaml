@@ -1,0 +1,8 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC-BY-SA-4.0
+produced:
+- canonical(), resolve() (RFC 6901), slice_hash(), stable_path() in repsynth/spec.py
+- tests/test_canonical.py (Hypothesis)
+failed_first: 'The property test for value changes is shown discriminating: every generated change of value at every path
+  changed the slice hash; no example passed vacuously (equal values are skipped explicitly).'
+reused:
+- Hypothesis

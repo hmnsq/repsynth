@@ -1,0 +1,26 @@
+{
+  "command": "python3 -m repsynth intake licences",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:22:05Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/licences.json": "79a2a81ce1cf53810b0ab94649aa4f5bffbedece8f80aedda7e4e0d2cc00141b",
+    "reports/licences.md": "1759e0ca8e4813fea17dc0b02d9de704ca3e6dde640f21f5b6ada822eba3df68"
+  },
+  "packet": "P0.4",
+  "results": {
+    "established": 67,
+    "not_established": [
+      "Candor"
+    ],
+    "tools": 68
+  },
+  "started_utc": "2026-11-04T23:22:01Z",
+  "state": "wired_unproven",
+  "step": "licences",
+  "tool_versions": {
+    "git": "git version 2.43.0"
+  }
+}

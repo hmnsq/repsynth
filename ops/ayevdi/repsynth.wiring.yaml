@@ -1,0 +1,12 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0
+# P8.5 (MAY): wiring of repsynth's kept containers by their inputs and outputs, for AyeVDI.
+# Every container mounts the repository at /work; each reads and writes only the paths named here.
+containers:
+  repsynth-base:   {reads: [spec/, gen/software/, conformance/], writes: [out/software/, conformance/vectors/, graph/, records/, reports/]}
+  repsynth-cross:  {reads: [gen/insn/, conformance/vectors/, ledger/], writes: [records/, reports/]}
+  repsynth-qemu:   {reads: [gen/qemu/, spec/ref/], writes: [.cache/qemu-build/, records/]}
+  repsynth-gnu:    {reads: [gen/binutils/, gen/gcc/], writes: [.cache/binutils-build/, records/]}
+  repsynth-os:     {reads: [lanes/os/, .cache/qemu-build/], writes: [reports/compatibility.md, records/]}
+  repsynth-hdl:    {reads: [gen/hdl/, conformance/vectors/], writes: [reports/hardware/, handoff/, records/]}
+  repsynth-script: {reads: [spec/reps/script/, gen/script/], writes: [reports/scripts/, records/]}
+order: [repsynth-base, repsynth-cross, repsynth-qemu, repsynth-gnu, repsynth-os, repsynth-hdl, repsynth-script]

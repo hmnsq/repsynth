@@ -1,0 +1,103 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "package": "/home/user/build/orchestration/package",
+  "files": [
+    {
+      "path": "00_Sovereignty_Architecture_v0.3.0.docx",
+      "name_matches": false
+    },
+    {
+      "path": "00_Sovereignty_Architecture_v0.3.0.md",
+      "name_matches": false
+    },
+    {
+      "path": "01_MRD_repsynth_v0.3.0.docx",
+      "name_matches": false
+    },
+    {
+      "path": "01_MRD_repsynth_v0.3.0.md",
+      "name_matches": false
+    },
+    {
+      "path": "02_Implementation_Guidelines_v0.3.0.docx",
+      "name_matches": false
+    },
+    {
+      "path": "02_Implementation_Guidelines_v0.3.0.md",
+      "name_matches": false
+    },
+    {
+      "path": "03_Repository_Map_v0.3.0.docx",
+      "name_matches": false
+    },
+    {
+      "path": "03_Repository_Map_v0.3.0.md",
+      "name_matches": false
+    },
+    {
+      "path": "04_Build_Plan_v0.3.0.docx",
+      "name_matches": false
+    },
+    {
+      "path": "04_Build_Plan_v0.3.0.md",
+      "name_matches": false
+    },
+    {
+      "path": "05_Test_Plan_v0.3.0.docx",
+      "name_matches": false
+    },
+    {
+      "path": "05_Test_Plan_v0.3.0.md",
+      "name_matches": false
+    },
+    {
+      "path": "INDEX.md",
+      "name_matches": false
+    },
+    {
+      "path": "MANIFEST.sha256",
+      "name_matches": false
+    },
+    {
+      "path": "WORKING_NOTES.md",
+      "name_matches": false
+    },
+    {
+      "path": "briefs/brief_track_H_iteration_I1.md",
+      "name_matches": false
+    },
+    {
+      "path": "briefs/brief_track_S_iteration_S1.md",
+      "name_matches": false
+    },
+    {
+      "path": "data/iterations.csv",
+      "name_matches": false
+    },
+    {
+      "path": "data/milestones.csv",
+      "name_matches": false
+    },
+    {
+      "path": "data/packets.csv",
+      "name_matches": false
+    },
+    {
+      "path": "data/repositories.csv",
+      "name_matches": false
+    },
+    {
+      "path": "data/requirements.csv",
+      "name_matches": false
+    },
+    {
+      "path": "data/tests.csv",
+      "name_matches": false
+    },
+    {
+      "path": "data/traceability.csv",
+      "name_matches": false
+    }
+  ],
+  "found": []
+}

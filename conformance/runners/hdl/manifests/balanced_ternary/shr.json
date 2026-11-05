@@ -1,0 +1,24 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "generator": "repsynth.lanes.graph_hdl 0.3.0",
+  "spec": "balanced_ternary",
+  "version": "0.3.0",
+  "slice_sha256": "2c41d68e080bf492084eb8e1dbd3edf9f64228d08c4cb920f6018b9162cc4291",
+  "op": "shr",
+  "units": [
+    {
+      "unit": "bt_shr32",
+      "digits": 32,
+      "register_bits": 64,
+      "arity": 2,
+      "vectors": "conformance/vectors/balanced_ternary/shr.32.vec"
+    },
+    {
+      "unit": "bt_shr16",
+      "digits": 16,
+      "register_bits": 32,
+      "arity": 2,
+      "vectors": "conformance/vectors/balanced_ternary/shr.16.vec"
+    }
+  ]
+}

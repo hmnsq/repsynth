@@ -1,0 +1,44 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "python3 -m repsynth.lanes.tiera linux",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:39:15Z",
+    "image_digests": {},
+    "inputs": {
+      ".cache/linux-build/.config": "7daed55d02a843d12f92f5b6ffc7f4f9212a8eb03819d894f17503527ccc5054",
+      "lanes/os/linux/repsynth-tiny.config": "c59a991e18b03bcf76fc12ad1d03622cc145eecd8121bf1b4b30007bbb577809"
+    },
+    "packet": "P4.7",
+    "started_utc": "2026-11-04T23:39:11Z",
+    "state": "done",
+    "step": "linux",
+    "tool_versions": {
+      "firmware": "OpenSBI bundled with the pinned QEMU v10.2.4 (pc-bios/opensbi-riscv64-generic-fw_dynamic.bin, sha256 49bdf7b939bda11321132d1042bf99d7324fb190f1feef423171fed3573f8705); no Parashakti firmware available here",
+      "linux": "https://github.com/hmnsq/linux tag v6.12 commit adc218676eef25575469234709c2d87185ca223a (paras fork)",
+      "qemu": "hmnsq/qemu tag v10.2.4 commit 3e0bcba1ca7d6607ca49a988d165f052a3a53323 tree e0af1c7de4b0c7979bab82927f61d7c28e6f1964 (fork tag object b4263afc equals upstream qemu/qemu v10.2.4); stock build, configure --target-list=riscv64-linux-user,riscv32-linux-user,riscv64-softmmu,riscv32-softmmu --enable-plugins; patched with gen/qemu/out/balanced_ternary/patches.json, gen/qemu/out/packed_decimal/patches.json",
+      "riscv64-linux-gnu-gcc": "riscv64-linux-gnu-gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+    }
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "2481699a2f4b21a158568318b4b9e672a1fa920ccc33490d5b725471225fe584"
+      },
+      "name": ".cache/linux-build/arch/riscv/boot/Image"
+    },
+    {
+      "digest": {
+        "sha256": "cb368892c1de140e493a75ce7a244c54996dd1e508fc77dd0d75d863fa1a8c01"
+      },
+      "name": ".cache/tiera/linux/initramfs.cpio"
+    },
+    {
+      "digest": {
+        "sha256": "7ee4dccdbbb232da3dbb0a4b1876af2289db48c1badddc81da85113702addef5"
+      },
+      "name": "records/20261104T233915Z_P4.7_linux.json"
+    }
+  ]
+}

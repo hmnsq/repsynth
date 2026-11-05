@@ -1,0 +1,9 @@
+{
+  "packet": "P5.1",
+  "state": "done",
+  "evidence": [
+    "records/20261104T233302Z_P5.1_lint.json"
+  ],
+  "summary": "22 units in SystemVerilog and VHDL-2008 (18 balanced ternary, 4 binary baseline); lint clean. Promoted set from reports/promotion/promotion.json (sha256 458950f35335df33e0e95a714e8357af2b434ebf2655b719263744e87b29294d).",
+  "blocked_by": []
+}

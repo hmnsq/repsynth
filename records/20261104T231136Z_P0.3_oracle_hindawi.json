@@ -1,0 +1,34 @@
+{
+  "command": "python3 -m repsynth oracles run hindawi --only install doctor",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:11:36Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Exit codes are the oracle's own; a non-zero code is reported with its output, not interpreted.",
+  "outputs": {
+    "reports/oracles/hindawi.json": "026f93c2d4f897440b0dfde398508c1c818a50e07876f1543f1127d75bd7093f",
+    "reports/oracles/hindawi.md": "f37a2339ea0bb0d8c2155efeee7c1b07ec96e35e9d644711f5a22997f10dbcfc"
+  },
+  "packet": "P0.3",
+  "results": {
+    "clones_unchanged": {
+      "hindawiai/hindawi2026.10": true
+    },
+    "commit": "b53530f624a0dd3065f9370ff439223a43d49994",
+    "steps": {
+      "doctor": 0,
+      "install": 0
+    }
+  },
+  "started_utc": "2026-11-04T23:11:13Z",
+  "state": "wired_unproven",
+  "step": "oracle_hindawi",
+  "tool_versions": {
+    "awk": "GNU Awk 5.2.1, API 3.2, PMA Avon 8-g1, (GNU MPFR 4.2.1, GNU MP 6.3.0)",
+    "bash": "GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)",
+    "flex": "flex 2.6.4",
+    "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "make": "GNU Make 4.3",
+    "python": "3.13.18"
+  }
+}

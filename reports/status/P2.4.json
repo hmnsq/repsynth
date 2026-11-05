@@ -1,0 +1,9 @@
+{
+  "packet": "P2.4",
+  "state": "done",
+  "evidence": [
+    "records/20261104T231441Z_P2.4_acceptance.json"
+  ],
+  "summary": "Hypothesis suites pass for all three specifications; a defect planted in each specification's software is found by its suite; Z3 proves the pair-encoded ripple adder homomorphic with integer addition modulo 3^n for n = 1 to 6 (a model of the trit rule, not of the C source).",
+  "blocked_by": []
+}

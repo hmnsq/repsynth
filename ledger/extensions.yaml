@@ -1,0 +1,24 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
+# SPDX-License-Identifier: CC0-1.0
+# Extension slots of the allocation ledger (ISA-04). Written once by ledger/allocate.py.
+_notice: '© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0'
+generator: repsynth.ledger.allocate 0.3.0
+extensions:
+  balanced_ternary:
+    extension: xayebt
+    mnemonic_stem: aye.bt
+    cpu_property: x-xayebt
+    opcode_space: custom-0
+    opcode: 11
+    funct3: 7
+    funct7_rule: the operation's index in the specification's operations list (operations are appended, never reordered);
+      fixed once written
+  packed_decimal:
+    extension: xayepd
+    mnemonic_stem: aye.pd
+    cpu_property: x-xayepd
+    opcode_space: custom-1
+    opcode: 43
+    funct3: 4
+    funct7_rule: the operation's index in the specification's operations list (operations are appended, never reordered);
+      fixed once written

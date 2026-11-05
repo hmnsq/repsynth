@@ -1,0 +1,33 @@
+{
+  "command": "python3 -m repsynth oracles run hindawi --only test",
+  "exit_code": 1,
+  "finished_utc": "2026-11-04T23:15:19Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Exit codes are the oracle's own; a non-zero code is reported with its output, not interpreted.",
+  "outputs": {
+    "reports/oracles/hindawi.json": "89338db73702281123e44aed47762b1d1d0b51a8ff55a3e327cda65c25b6f585",
+    "reports/oracles/hindawi.md": "b571e7a14e3a3cfb47312f0072fd163782b72ffb7022c8882f21701cdba4e164"
+  },
+  "packet": "P0.3",
+  "results": {
+    "clones_unchanged": {
+      "hindawiai/hindawi2026.10": true
+    },
+    "commit": "b53530f624a0dd3065f9370ff439223a43d49994",
+    "steps": {
+      "test": 1
+    }
+  },
+  "started_utc": "2026-11-04T23:14:07Z",
+  "state": "wired_unproven",
+  "step": "oracle_hindawi",
+  "tool_versions": {
+    "awk": "GNU Awk 5.2.1, API 3.2, PMA Avon 8-g1, (GNU MPFR 4.2.1, GNU MP 6.3.0)",
+    "bash": "GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)",
+    "flex": "flex 2.6.4",
+    "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "make": "GNU Make 4.3",
+    "python": "3.13.18"
+  }
+}

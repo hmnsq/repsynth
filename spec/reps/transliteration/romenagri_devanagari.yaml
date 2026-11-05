@@ -1,0 +1,995 @@
+_notice: '© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0'
+identity:
+  id: romenagri_devanagari
+  version: 0.3.0
+  family: transliteration
+  title: 'Romenagri: Devanagari through ACII to ASCII-7 Romenagri, as the 2026.10 oracle behaves'
+  equality: Two texts are equal when their byte sequences in the stated form (UTF-8, ACII or Romenagri) are equal.
+  canonical_form: Unicode text in NFC is not assumed; the oracle's input is UTF-16 from iconv, as the Hindawi drivers feed
+    it.
+domain:
+  description: The 85 Unicode code points of Romenagri/unicode.h and the 96 Romenagri keys of Romenagri/acii.h.
+  finite: true
+  enumerator: The rows of encoding.unicode_to_acii and encoding.acii_to_romenagri, in table order.
+structure:
+  chain:
+  - UTF-8 text
+  - UTF-16 (iconv)
+  - ACII bytes (uni2acii)
+  - Romenagri ASCII (acii2rmn)
+  inverse_chain:
+  - Romenagri ASCII
+  - ACII bytes (rmn2acii, a recursive-descent parser)
+  - UTF-16 (acii2uni)
+  - UTF-8 text (iconv)
+  tables:
+    unicode.h: code point to ACII byte
+    acii.h: Romenagri key to ACII bytes
+    aciihin.h: ACII to saral rendering (not used by this specification)
+encoding:
+  unicode_to_acii:
+  - unicode: U+0915
+    name: DEVANAGARI LETTER KA
+    acii: b3
+  - unicode: U+0916
+    name: DEVANAGARI LETTER KHA
+    acii: b4
+  - unicode: U+0917
+    name: DEVANAGARI LETTER GA
+    acii: b5
+  - unicode: U+0918
+    name: DEVANAGARI LETTER GHA
+    acii: b6
+  - unicode: U+0919
+    name: DEVANAGARI LETTER NGA
+    acii: b7
+  - unicode: U+091A
+    name: DEVANAGARI LETTER CA
+    acii: b8
+  - unicode: U+091B
+    name: DEVANAGARI LETTER CHA
+    acii: b9
+  - unicode: U+091C
+    name: DEVANAGARI LETTER JA
+    acii: ba
+  - unicode: U+091D
+    name: DEVANAGARI LETTER JHA
+    acii: bb
+  - unicode: U+091E
+    name: DEVANAGARI LETTER NYA
+    acii: bc
+  - unicode: U+091F
+    name: DEVANAGARI LETTER TTA
+    acii: bd
+  - unicode: U+0920
+    name: DEVANAGARI LETTER TTHA
+    acii: be
+  - unicode: U+0921
+    name: DEVANAGARI LETTER DDA
+    acii: bf
+  - unicode: U+0922
+    name: DEVANAGARI LETTER DDHA
+    acii: c0
+  - unicode: U+0923
+    name: DEVANAGARI LETTER NNA
+    acii: c1
+  - unicode: U+0924
+    name: DEVANAGARI LETTER TA
+    acii: c2
+  - unicode: U+0925
+    name: DEVANAGARI LETTER THA
+    acii: c3
+  - unicode: U+0926
+    name: DEVANAGARI LETTER DA
+    acii: c4
+  - unicode: U+0927
+    name: DEVANAGARI LETTER DHA
+    acii: c5
+  - unicode: U+0928
+    name: DEVANAGARI LETTER NA
+    acii: c6
+  - unicode: U+0929
+    name: DEVANAGARI LETTER NNNA
+    acii: c7
+  - unicode: U+092A
+    name: DEVANAGARI LETTER PA
+    acii: c8
+  - unicode: U+092B
+    name: DEVANAGARI LETTER PHA
+    acii: c9
+  - unicode: U+092C
+    name: DEVANAGARI LETTER BA
+    acii: ca
+  - unicode: U+092D
+    name: DEVANAGARI LETTER BHA
+    acii: cb
+  - unicode: U+092E
+    name: DEVANAGARI LETTER MA
+    acii: cc
+  - unicode: U+092F
+    name: DEVANAGARI LETTER YA
+    acii: cd
+  - unicode: U+0930
+    name: DEVANAGARI LETTER RA
+    acii: cf
+  - unicode: U+0932
+    name: DEVANAGARI LETTER LA
+    acii: d1
+  - unicode: U+0935
+    name: DEVANAGARI LETTER VA
+    acii: d4
+  - unicode: U+0936
+    name: DEVANAGARI LETTER SHA
+    acii: d5
+  - unicode: U+0937
+    name: DEVANAGARI LETTER SSA
+    acii: d6
+  - unicode: U+0938
+    name: DEVANAGARI LETTER SA
+    acii: d7
+  - unicode: U+0939
+    name: DEVANAGARI LETTER HA
+    acii: d8
+  - unicode: U+0902
+    name: DEVANAGARI SIGN ANUSVARA
+    acii: a2
+  - unicode: U+0903
+    name: DEVANAGARI SIGN VISARGA
+    acii: a3
+  - unicode: U+0901
+    name: DEVANAGARI SIGN CANDRABINDU
+    acii: a1
+  - unicode: U+093C
+    name: DEVANAGARI SIGN NUKTA
+    acii: e9
+  - unicode: U+0905
+    name: DEVANAGARI LETTER A
+    acii: a4
+  - unicode: U+094D
+    name: DEVANAGARI SIGN VIRAMA
+    acii: e8
+  - unicode: U+0906
+    name: DEVANAGARI LETTER AA
+    acii: a5
+  - unicode: U+093E
+    name: DEVANAGARI VOWEL SIGN AA
+    acii: da
+  - unicode: U+0907
+    name: DEVANAGARI LETTER I
+    acii: a6
+  - unicode: U+093F
+    name: DEVANAGARI VOWEL SIGN I
+    acii: db
+  - unicode: U+0908
+    name: DEVANAGARI LETTER II
+    acii: a7
+  - unicode: U+0940
+    name: DEVANAGARI VOWEL SIGN II
+    acii: dc
+  - unicode: U+0909
+    name: DEVANAGARI LETTER U
+    acii: a8
+  - unicode: U+0941
+    name: DEVANAGARI VOWEL SIGN U
+    acii: dd
+  - unicode: U+090A
+    name: DEVANAGARI LETTER UU
+    acii: a9
+  - unicode: U+0942
+    name: DEVANAGARI VOWEL SIGN UU
+    acii: de
+  - unicode: U+090B
+    name: DEVANAGARI LETTER VOCALIC R
+    acii: aa
+  - unicode: U+0943
+    name: DEVANAGARI VOWEL SIGN VOCALIC R
+    acii: df
+  - unicode: U+090E
+    name: DEVANAGARI LETTER SHORT E
+    acii: ab
+  - unicode: U+0946
+    name: DEVANAGARI VOWEL SIGN SHORT E
+    acii: e0
+  - unicode: U+090F
+    name: DEVANAGARI LETTER E
+    acii: ac
+  - unicode: U+0947
+    name: DEVANAGARI VOWEL SIGN E
+    acii: e1
+  - unicode: U+0910
+    name: DEVANAGARI LETTER AI
+    acii: ad
+  - unicode: U+0948
+    name: DEVANAGARI VOWEL SIGN AI
+    acii: e2
+  - unicode: U+0913
+    name: DEVANAGARI LETTER O
+    acii: b0
+  - unicode: U+094B
+    name: DEVANAGARI VOWEL SIGN O
+    acii: e5
+  - unicode: U+0914
+    name: DEVANAGARI LETTER AU
+    acii: b1
+  - unicode: U+094C
+    name: DEVANAGARI VOWEL SIGN AU
+    acii: e6
+  - unicode: U+090D
+    name: DEVANAGARI LETTER CANDRA E
+    acii: ae
+  - unicode: U+0945
+    name: DEVANAGARI VOWEL SIGN CANDRA E
+    acii: e3
+  - unicode: U+0911
+    name: DEVANAGARI LETTER CANDRA O
+    acii: b2
+  - unicode: U+0949
+    name: DEVANAGARI VOWEL SIGN CANDRA O
+    acii: e7
+  - unicode: U+0933
+    name: DEVANAGARI LETTER LLA
+    acii: d2
+  - unicode: U+0964
+    name: DEVANAGARI DANDA
+    acii: ea
+  - unicode: U+0979
+    name: DEVANAGARI LETTER ZHA
+    acii: '80'
+  - unicode: U+093D
+    name: DEVANAGARI SIGN AVAGRAHA
+    acii: eb
+  - unicode: U+0912
+    name: DEVANAGARI LETTER SHORT O
+    acii: af
+  - unicode: U+094A
+    name: DEVANAGARI VOWEL SIGN SHORT O
+    acii: e4
+  - unicode: U+0931
+    name: DEVANAGARI LETTER RRA
+    acii: d0
+  - unicode: U+090C
+    name: DEVANAGARI LETTER VOCALIC L
+    acii: '81'
+  - unicode: U+0961
+    name: DEVANAGARI LETTER VOCALIC LL
+    acii: '82'
+  - unicode: U+0960
+    name: DEVANAGARI LETTER VOCALIC RR
+    acii: '83'
+  - unicode: U+0962
+    name: DEVANAGARI VOWEL SIGN VOCALIC L
+    acii: '84'
+  - unicode: U+0963
+    name: DEVANAGARI VOWEL SIGN VOCALIC LL
+    acii: '85'
+  - unicode: U+0944
+    name: DEVANAGARI VOWEL SIGN VOCALIC RR
+    acii: '86'
+  - unicode: U+0965
+    name: DEVANAGARI DOUBLE DANDA
+    acii: '87'
+  - unicode: U+0951
+    name: DEVANAGARI STRESS SIGN UDATTA
+    acii: '88'
+  - unicode: U+0952
+    name: DEVANAGARI STRESS SIGN ANUDATTA
+    acii: '89'
+  - unicode: U+0953
+    name: DEVANAGARI GRAVE ACCENT
+    acii: 8a
+  - unicode: U+0954
+    name: DEVANAGARI ACUTE ACCENT
+    acii: 8b
+  - unicode: U+0950
+    name: DEVANAGARI OM
+    acii: 8c
+  acii_to_romenagri:
+  - acii: ef42
+    table_key: ''
+    oracle_acii2rmn: '"e_B"'
+  - acii: 5f
+    table_key: __
+    oracle_acii2rmn: '"e__"'
+  - acii: a4
+    table_key: _a
+    oracle_acii2rmn: _a
+  - acii: ''
+    table_key: ^a
+    oracle_acii2rmn: ''
+  - acii: a5
+    table_key: _aa
+    oracle_acii2rmn: _aa
+  - acii: da
+    table_key: ^aa
+    oracle_acii2rmn: ^aa
+  - acii: a6
+    table_key: _i
+    oracle_acii2rmn: _i
+  - acii: db
+    table_key: ^i
+    oracle_acii2rmn: ^i
+  - acii: a7
+    table_key: _ee
+    oracle_acii2rmn: _ee
+  - acii: dc
+    table_key: ^ee
+    oracle_acii2rmn: ^ee
+  - acii: a8
+    table_key: _u
+    oracle_acii2rmn: _u
+  - acii: dd
+    table_key: ^u
+    oracle_acii2rmn: ^u
+  - acii: a9
+    table_key: _oo
+    oracle_acii2rmn: _oo
+  - acii: de
+    table_key: ^oo
+    oracle_acii2rmn: ^oo
+  - acii: aa
+    table_key: _ri
+    oracle_acii2rmn: _ri
+  - acii: df
+    table_key: ^_ri
+    oracle_acii2rmn: ^_ri
+  - acii: ab
+    table_key: _ae
+    oracle_acii2rmn: _ae
+  - acii: e0
+    table_key: ^ae
+    oracle_acii2rmn: ^ae
+  - acii: ac
+    table_key: _aee
+    oracle_acii2rmn: _aee
+  - acii: e1
+    table_key: ^aee
+    oracle_acii2rmn: ^aee
+  - acii: ad
+    table_key: _ai
+    oracle_acii2rmn: _ai
+  - acii: e2
+    table_key: ^ai
+    oracle_acii2rmn: ^ai
+  - acii: af
+    table_key: _ow
+    oracle_acii2rmn: _ow
+  - acii: e4
+    table_key: ^ow
+    oracle_acii2rmn: ^ow
+  - acii: b0
+    table_key: _oa
+    oracle_acii2rmn: _oa
+  - acii: e5
+    table_key: ^oa
+    oracle_acii2rmn: ^oa
+  - acii: b1
+    table_key: _ou
+    oracle_acii2rmn: _ou
+  - acii: e6
+    table_key: ^ou
+    oracle_acii2rmn: ^ou
+  - acii: b2
+    table_key: _au
+    oracle_acii2rmn: _au
+  - acii: e7
+    table_key: ^au
+    oracle_acii2rmn: ^au
+  - acii: ae
+    table_key: _ao
+    oracle_acii2rmn: _ao
+  - acii: e3
+    table_key: ^ao
+    oracle_acii2rmn: ^ao
+  - acii: b3
+    table_key: ka
+    oracle_acii2rmn: ka
+  - acii: b4
+    table_key: kha
+    oracle_acii2rmn: kha
+  - acii: b5
+    table_key: ga
+    oracle_acii2rmn: ga
+  - acii: b6
+    table_key: gha
+    oracle_acii2rmn: gha
+  - acii: b7
+    table_key: _nga
+    oracle_acii2rmn: _nga
+  - acii: b8
+    table_key: cha
+    oracle_acii2rmn: cha
+  - acii: b9
+    table_key: chha
+    oracle_acii2rmn: chha
+  - acii: ba
+    table_key: ja
+    oracle_acii2rmn: ja
+  - acii: bb
+    table_key: jha
+    oracle_acii2rmn: jha
+  - acii: bc
+    table_key: _yna
+    oracle_acii2rmn: _yna
+  - acii: bd
+    table_key: ta
+    oracle_acii2rmn: ta
+  - acii: be
+    table_key: tha
+    oracle_acii2rmn: tha
+  - acii: bf
+    table_key: da
+    oracle_acii2rmn: da
+  - acii: c0
+    table_key: dha
+    oracle_acii2rmn: dha
+  - acii: c1
+    table_key: _nna
+    oracle_acii2rmn: _nna
+  - acii: c2
+    table_key: _ta
+    oracle_acii2rmn: _ta
+  - acii: c3
+    table_key: _tha
+    oracle_acii2rmn: _tha
+  - acii: c4
+    table_key: _da
+    oracle_acii2rmn: _da
+  - acii: c5
+    table_key: _dha
+    oracle_acii2rmn: _dha
+  - acii: c6
+    table_key: na
+    oracle_acii2rmn: na
+  - acii: c8
+    table_key: pa
+    oracle_acii2rmn: pa
+  - acii: c9
+    table_key: pha
+    oracle_acii2rmn: pha
+  - acii: ca
+    table_key: ba
+    oracle_acii2rmn: ba
+  - acii: cb
+    table_key: bha
+    oracle_acii2rmn: bha
+  - acii: cc
+    table_key: ma
+    oracle_acii2rmn: ma
+  - acii: cd
+    table_key: ya
+    oracle_acii2rmn: ya
+  - acii: cf
+    table_key: ra
+    oracle_acii2rmn: ra
+  - acii: d0
+    table_key: _rra
+    oracle_acii2rmn: _rra
+  - acii: d1
+    table_key: la
+    oracle_acii2rmn: la
+  - acii: d4
+    table_key: wa
+    oracle_acii2rmn: wa
+  - acii: d2
+    table_key: lvra
+    oracle_acii2rmn: lvra
+  - acii: d5
+    table_key: sha
+    oracle_acii2rmn: sha
+  - acii: d6
+    table_key: xa
+    oracle_acii2rmn: xa
+  - acii: d7
+    table_key: sa
+    oracle_acii2rmn: sa
+  - acii: d8
+    table_key: _ha
+    oracle_acii2rmn: _ha
+  - acii: a2
+    table_key: _m
+    oracle_acii2rmn: _m
+  - acii: a3
+    table_key: _hh
+    oracle_acii2rmn: _hh
+  - acii: a1
+    table_key: _na
+    oracle_acii2rmn: _na
+  - acii: e9
+    table_key: ^za
+    oracle_acii2rmn: ^za
+  - acii: ea
+    table_key: '|'
+    oracle_acii2rmn: '|'
+  - acii: e8
+    table_key: ^
+    oracle_acii2rmn: ^
+  - acii: bfe9
+    table_key: _rda
+    oracle_acii2rmn: _rda
+  - acii: c0e9
+    table_key: _rdha
+    oracle_acii2rmn: _rdha
+  - acii: e8cf
+    table_key: ^ra
+    oracle_acii2rmn: ^ra
+  - acii: cfe8
+    table_key: r
+    oracle_acii2rmn: r
+  - acii: b3e8d6
+    table_key: kxa
+    oracle_acii2rmn: kxa
+  - acii: c2e8cf
+    table_key: _tra
+    oracle_acii2rmn: _tra
+  - acii: bae8bc
+    table_key: j_yna
+    oracle_acii2rmn: j_yna
+  - acii: d5e8cf
+    table_key: shra
+    oracle_acii2rmn: shra
+  - acii: '80'
+    table_key: _jza
+    oracle_acii2rmn: _jza
+  - acii: c7
+    table_key: _nza
+    oracle_acii2rmn: _nza
+  - acii: eb
+    table_key: _s
+    oracle_acii2rmn: _s
+  - acii: '81'
+    table_key: _li
+    oracle_acii2rmn: _li
+  - acii: '82'
+    table_key: _lee
+    oracle_acii2rmn: _lee
+  - acii: '83'
+    table_key: _ree
+    oracle_acii2rmn: _ree
+  - acii: '84'
+    table_key: ^_li
+    oracle_acii2rmn: ^_li
+  - acii: '85'
+    table_key: ^_lee
+    oracle_acii2rmn: ^_lee
+  - acii: '86'
+    table_key: ^_ree
+    oracle_acii2rmn: ^_ree
+  - acii: '87'
+    table_key: _vd
+    oracle_acii2rmn: _vd
+  - acii: '88'
+    table_key: _vua
+    oracle_acii2rmn: _vua
+  - acii: '89'
+    table_key: _vna
+    oracle_acii2rmn: _vna
+  - acii: 8a
+    table_key: _vga
+    oracle_acii2rmn: _vga
+  - acii: 8b
+    table_key: _vca
+    oracle_acii2rmn: _vca
+  - acii: 8c
+    table_key: _om
+    oracle_acii2rmn: _om
+decoding:
+  romenagri_to_acii:
+  - romenagri: ''
+    oracle_rmn2acii: ''
+  - romenagri: __
+    oracle_rmn2acii: 5f
+  - romenagri: _a
+    oracle_rmn2acii: a4
+  - romenagri: ^a
+    oracle_rmn2acii: 5e61
+  - romenagri: _aa
+    oracle_rmn2acii: a5
+  - romenagri: ^aa
+    oracle_rmn2acii: 5e6161
+  - romenagri: _i
+    oracle_rmn2acii: a6
+  - romenagri: ^i
+    oracle_rmn2acii: 5e69
+  - romenagri: _ee
+    oracle_rmn2acii: a7
+  - romenagri: ^ee
+    oracle_rmn2acii: 5e6565
+  - romenagri: _u
+    oracle_rmn2acii: a8
+  - romenagri: ^u
+    oracle_rmn2acii: 5e75
+  - romenagri: _oo
+    oracle_rmn2acii: a9
+  - romenagri: ^oo
+    oracle_rmn2acii: 5e6f6f
+  - romenagri: _ri
+    oracle_rmn2acii: aa
+  - romenagri: ^_ri
+    oracle_rmn2acii: 5eaa
+  - romenagri: _ae
+    oracle_rmn2acii: ab
+  - romenagri: ^ae
+    oracle_rmn2acii: 5e6165
+  - romenagri: _aee
+    oracle_rmn2acii: ac
+  - romenagri: ^aee
+    oracle_rmn2acii: 5e616565
+  - romenagri: _ai
+    oracle_rmn2acii: ad
+  - romenagri: ^ai
+    oracle_rmn2acii: 5e6169
+  - romenagri: _ow
+    oracle_rmn2acii: af
+  - romenagri: ^ow
+    oracle_rmn2acii: 5e6fd4e8
+  - romenagri: _oa
+    oracle_rmn2acii: b0
+  - romenagri: ^oa
+    oracle_rmn2acii: 5e6f61
+  - romenagri: _ou
+    oracle_rmn2acii: b1
+  - romenagri: ^ou
+    oracle_rmn2acii: 5e6f75
+  - romenagri: _au
+    oracle_rmn2acii: b2
+  - romenagri: ^au
+    oracle_rmn2acii: 5e6175
+  - romenagri: _ao
+    oracle_rmn2acii: ae
+  - romenagri: ^ao
+    oracle_rmn2acii: 5e616f
+  - romenagri: ka
+    oracle_rmn2acii: b3
+  - romenagri: kha
+    oracle_rmn2acii: b4
+  - romenagri: ga
+    oracle_rmn2acii: b5
+  - romenagri: gha
+    oracle_rmn2acii: b6
+  - romenagri: _nga
+    oracle_rmn2acii: b7
+  - romenagri: cha
+    oracle_rmn2acii: b8
+  - romenagri: chha
+    oracle_rmn2acii: b9
+  - romenagri: ja
+    oracle_rmn2acii: ba
+  - romenagri: jha
+    oracle_rmn2acii: bb
+  - romenagri: _yna
+    oracle_rmn2acii: bc
+  - romenagri: ta
+    oracle_rmn2acii: bd
+  - romenagri: tha
+    oracle_rmn2acii: be
+  - romenagri: da
+    oracle_rmn2acii: bf
+  - romenagri: dha
+    oracle_rmn2acii: c0
+  - romenagri: _nna
+    oracle_rmn2acii: c1
+  - romenagri: _ta
+    oracle_rmn2acii: c2
+  - romenagri: _tha
+    oracle_rmn2acii: c3
+  - romenagri: _da
+    oracle_rmn2acii: c4
+  - romenagri: _dha
+    oracle_rmn2acii: c5
+  - romenagri: na
+    oracle_rmn2acii: c6
+  - romenagri: pa
+    oracle_rmn2acii: c8
+  - romenagri: pha
+    oracle_rmn2acii: c9
+  - romenagri: ba
+    oracle_rmn2acii: ca
+  - romenagri: bha
+    oracle_rmn2acii: cb
+  - romenagri: ma
+    oracle_rmn2acii: cc
+  - romenagri: ya
+    oracle_rmn2acii: cd
+  - romenagri: ra
+    oracle_rmn2acii: cf
+  - romenagri: _rra
+    oracle_rmn2acii: d0
+  - romenagri: la
+    oracle_rmn2acii: d1
+  - romenagri: wa
+    oracle_rmn2acii: d4
+  - romenagri: lvra
+    oracle_rmn2acii: d2
+  - romenagri: sha
+    oracle_rmn2acii: d5
+  - romenagri: xa
+    oracle_rmn2acii: d6
+  - romenagri: sa
+    oracle_rmn2acii: d7
+  - romenagri: _ha
+    oracle_rmn2acii: d8
+  - romenagri: _m
+    oracle_rmn2acii: a2
+  - romenagri: _hh
+    oracle_rmn2acii: a3
+  - romenagri: _na
+    oracle_rmn2acii: a1
+  - romenagri: ^za
+    oracle_rmn2acii: 5e7a61
+  - romenagri: '|'
+    oracle_rmn2acii: 7c
+  - romenagri: ^
+    oracle_rmn2acii: 5e
+  - romenagri: _rda
+    oracle_rmn2acii: bfe9
+  - romenagri: _rdha
+    oracle_rmn2acii: c0e9
+  - romenagri: ^ra
+    oracle_rmn2acii: 5ecf
+  - romenagri: r
+    oracle_rmn2acii: cfe8
+  - romenagri: kxa
+    oracle_rmn2acii: b3e8d6
+  - romenagri: _tra
+    oracle_rmn2acii: c2e8cf
+  - romenagri: j_yna
+    oracle_rmn2acii: bae8bc
+  - romenagri: shra
+    oracle_rmn2acii: d5e8cf
+  - romenagri: _jza
+    oracle_rmn2acii: '80'
+  - romenagri: _nza
+    oracle_rmn2acii: c7
+  - romenagri: _s
+    oracle_rmn2acii: eb
+  - romenagri: _li
+    oracle_rmn2acii: '81'
+  - romenagri: _lee
+    oracle_rmn2acii: '82'
+  - romenagri: _ree
+    oracle_rmn2acii: '83'
+  - romenagri: ^_li
+    oracle_rmn2acii: 5e81
+  - romenagri: ^_lee
+    oracle_rmn2acii: 5e82
+  - romenagri: ^_ree
+    oracle_rmn2acii: 5e83
+  - romenagri: _vd
+    oracle_rmn2acii: '87'
+  - romenagri: _vua
+    oracle_rmn2acii: '88'
+  - romenagri: _vna
+    oracle_rmn2acii: '89'
+  - romenagri: _vga
+    oracle_rmn2acii: 8a
+  - romenagri: _vca
+    oracle_rmn2acii: 8b
+  - romenagri: _om
+    oracle_rmn2acii: 8c
+  acii_to_unicode:
+  - acii: b3
+    oracle_acii2uni: "क\r"
+  - acii: b4
+    oracle_acii2uni: "ख\r"
+  - acii: b5
+    oracle_acii2uni: "ग\r"
+  - acii: b6
+    oracle_acii2uni: "घ\r"
+  - acii: b7
+    oracle_acii2uni: "ङ\r"
+  - acii: b8
+    oracle_acii2uni: "च\r"
+  - acii: b9
+    oracle_acii2uni: "छ\r"
+  - acii: ba
+    oracle_acii2uni: "ज\r"
+  - acii: bb
+    oracle_acii2uni: "झ\r"
+  - acii: bc
+    oracle_acii2uni: "ञ\r"
+  - acii: bd
+    oracle_acii2uni: "ट\r"
+  - acii: be
+    oracle_acii2uni: "ठ\r"
+  - acii: bf
+    oracle_acii2uni: "ड\r"
+  - acii: c0
+    oracle_acii2uni: "ढ\r"
+  - acii: c1
+    oracle_acii2uni: "ण\r"
+  - acii: c2
+    oracle_acii2uni: "त\r"
+  - acii: c3
+    oracle_acii2uni: "थ\r"
+  - acii: c4
+    oracle_acii2uni: "द\r"
+  - acii: c5
+    oracle_acii2uni: "ध\r"
+  - acii: c6
+    oracle_acii2uni: "न\r"
+  - acii: c7
+    oracle_acii2uni: "ऩ\r"
+  - acii: c8
+    oracle_acii2uni: "प\r"
+  - acii: c9
+    oracle_acii2uni: "फ\r"
+  - acii: ca
+    oracle_acii2uni: "ब\r"
+  - acii: cb
+    oracle_acii2uni: "भ\r"
+  - acii: cc
+    oracle_acii2uni: "म\r"
+  - acii: cd
+    oracle_acii2uni: "य\r"
+  - acii: cf
+    oracle_acii2uni: "र\r"
+  - acii: d1
+    oracle_acii2uni: "ल\r"
+  - acii: d4
+    oracle_acii2uni: "व\r"
+  - acii: d5
+    oracle_acii2uni: "श\r"
+  - acii: d6
+    oracle_acii2uni: "ष\r"
+  - acii: d7
+    oracle_acii2uni: "स\r"
+  - acii: d8
+    oracle_acii2uni: "ह\r"
+  - acii: a2
+    oracle_acii2uni: "ं\r"
+  - acii: a3
+    oracle_acii2uni: "ः\r"
+  - acii: a1
+    oracle_acii2uni: "ँ\r"
+  - acii: e9
+    oracle_acii2uni: "़\r"
+  - acii: a4
+    oracle_acii2uni: "अ\r"
+  - acii: e8
+    oracle_acii2uni: "्\r"
+  - acii: a5
+    oracle_acii2uni: "आ\r"
+  - acii: da
+    oracle_acii2uni: "ा\r"
+  - acii: a6
+    oracle_acii2uni: "इ\r"
+  - acii: db
+    oracle_acii2uni: "ि\r"
+  - acii: a7
+    oracle_acii2uni: "ई\r"
+  - acii: dc
+    oracle_acii2uni: "ी\r"
+  - acii: a8
+    oracle_acii2uni: "उ\r"
+  - acii: dd
+    oracle_acii2uni: "ु\r"
+  - acii: a9
+    oracle_acii2uni: "ऊ\r"
+  - acii: de
+    oracle_acii2uni: "ू\r"
+  - acii: aa
+    oracle_acii2uni: "ऋ\r"
+  - acii: df
+    oracle_acii2uni: "ृ\r"
+  - acii: ab
+    oracle_acii2uni: "ऎ\r"
+  - acii: e0
+    oracle_acii2uni: "ॆ\r"
+  - acii: ac
+    oracle_acii2uni: "ए\r"
+  - acii: e1
+    oracle_acii2uni: "े\r"
+  - acii: ad
+    oracle_acii2uni: "ऐ\r"
+  - acii: e2
+    oracle_acii2uni: "ै\r"
+  - acii: b0
+    oracle_acii2uni: "ओ\r"
+  - acii: e5
+    oracle_acii2uni: "ो\r"
+  - acii: b1
+    oracle_acii2uni: "औ\r"
+  - acii: e6
+    oracle_acii2uni: "ौ\r"
+  - acii: ae
+    oracle_acii2uni: "ऍ\r"
+  - acii: e3
+    oracle_acii2uni: "ॅ\r"
+  - acii: b2
+    oracle_acii2uni: "ऑ\r"
+  - acii: e7
+    oracle_acii2uni: "ॉ\r"
+  - acii: d2
+    oracle_acii2uni: "ळ\r"
+  - acii: ea
+    oracle_acii2uni: "।\r"
+  - acii: '80'
+    oracle_acii2uni: "ॹ\r"
+  - acii: eb
+    oracle_acii2uni: "ऽ\r"
+  - acii: af
+    oracle_acii2uni: "ऒ\r"
+  - acii: e4
+    oracle_acii2uni: "ॊ\r"
+  - acii: d0
+    oracle_acii2uni: "ऱ\r"
+  - acii: '81'
+    oracle_acii2uni: "ऌ\r"
+  - acii: '82'
+    oracle_acii2uni: "ॡ\r"
+  - acii: '83'
+    oracle_acii2uni: "ॠ\r"
+  - acii: '84'
+    oracle_acii2uni: "ॢ\r"
+  - acii: '85'
+    oracle_acii2uni: "ॣ\r"
+  - acii: '86'
+    oracle_acii2uni: "ॄ\r"
+  - acii: '87'
+    oracle_acii2uni: "॥\r"
+  - acii: '88'
+    oracle_acii2uni: "॑\r"
+  - acii: '89'
+    oracle_acii2uni: "॒\r"
+  - acii: 8a
+    oracle_acii2uni: "॓\r"
+  - acii: 8b
+    oracle_acii2uni: "॔\r"
+  - acii: 8c
+    oracle_acii2uni: "ॐ\r"
+  error_behaviour: 'As the oracle: uni2acii writes the low byte of any code point it has no row for (README ''What was found
+    on the way''); this specification does not cover those inputs.'
+semantics:
+  statement: Romenagri is defined by its implementation; each mapping here is what the oracle's filters output for the isolated
+    element, one per line.
+  reference_sources:
+  - reports/readings/romenagri.json
+  - repsynth/lanes/oracles.py
+  oracle_sources:
+  - project-ilm/romenagri2026.10@e9d762804feb0159c6739f242378d58286dbd3f0:Romenagri/uni2acii.c
+  - project-ilm/romenagri2026.10@e9d762804feb0159c6739f242378d58286dbd3f0:Romenagri/acii2uni.c
+  - project-ilm/romenagri2026.10@e9d762804feb0159c6739f242378d58286dbd3f0:Romenagri/acii2rmn.c
+  - project-ilm/romenagri2026.10@e9d762804feb0159c6739f242378d58286dbd3f0:Romenagri/rmn2acii.c
+  oracle: project-ilm/romenagri2026.10@e9d762804feb0159c6739f242378d58286dbd3f0, filters built with Romenagri/Makefile
+operations: []
+composition:
+  rule: Words compose by the parser of rmn2acii; its grammar is TRANSLITERATION.md section 5.3 of the oracle.
+transformations:
+- name: to_romenagri
+  to: romenagri_ascii
+  preserves: text, lossless on the domain where inverse_exact holds
+- name: to_unicode
+  to: unicode_devanagari
+  preserves: text, as observed in decoding
+constraints:
+- name: in_domain
+  statement: Only code points listed in encoding.unicode_to_acii are covered.
+substrate:
+  logical: other
+  register_widths: []
+interfaces:
+  imports: []
+  exports:
+  - Romenagri forms used by Hindawi's compiler front end
+verification:
+  properties:
+  - name: table_reproduced
+    method: 'python3 -m repsynth oracles check romenagri: executes uni2acii, acii2uni, rmn2acii and acii2rmn on every row
+      and compares with this file'
+  - name: corpus_round_trip
+    method: the oracle's own Hindi corpus through the whole chain and back; counts recorded in reports/readings/romenagri.json
+generation:
+  software: 'none: the legacy source stays the implementation (GEN-01)'
+evolution:
+  changes:
+  - version: 0.3.0
+    class: initial
+    summary: Extracted from Romenagri 2026.10
+provenance:
+  oracle:
+    value: project-ilm/romenagri2026.10@e9d762804feb0159c6739f242378d58286dbd3f0
+    evidence: measured
+    source: reports/readings/romenagri.json
+  extraction: Tables read with the oracle's own reader tools/rmn_tables.py; every row confirmed by executing the oracle's
+    filters; disagreements recorded in the reading, the oracle winning.
+  evidence_state: extracted

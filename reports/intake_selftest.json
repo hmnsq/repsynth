@@ -1,0 +1,145 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "generator": "repsynth.lanes.intake 0.3.0",
+  "checks": [
+    {
+      "check": "clone unchanged: clean tree passes",
+      "planted_defect": "none (control)",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "clone unchanged: edited tracked file",
+      "planted_defect": "a.txt rewritten",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "clone unchanged: untracked file",
+      "planted_defect": "build.o added",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "clone unchanged: mode change",
+      "planted_defect": "a.txt made executable",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "clone unchanged: restored tree passes again",
+      "planted_defect": "none (control)",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "invisible report: every planted character listed",
+      "planted_defect": "11 invisible characters",
+      "refused": true,
+      "detail": "reported ['U+0007', 'U+00A0', 'U+00AD', 'U+200B', 'U+200C', 'U+200D', 'U+202E', 'U+2060', 'U+E0041', 'U+FE0F', 'U+FEFF']"
+    },
+    {
+      "check": "invisible report: joiner inside Devanagari kept, ASCII-side ZWNJ removed",
+      "planted_defect": "ZWJ between DEVANAGARI letters; ZWNJ between H and I",
+      "refused": true,
+      "detail": "kept ['U+200D']"
+    },
+    {
+      "check": "cleaned copy: nothing removable remains",
+      "planted_defect": "the same text",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "originals byte-identical: control",
+      "planted_defect": "none (control)",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "originals byte-identical: tampered kept copy",
+      "planted_defect": "one byte of the kept original changed",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "invisible report: no false positive on plain text with a tab",
+      "planted_defect": "none (control)",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "RD4: 15.2 GiB on the reference unit",
+      "planted_defect": "measured value",
+      "refused": true,
+      "detail": "{'state': 'measured', 'measured_gib': 15.2, 'consistent_with': 'author_record', 'settled_value_gb': 16}"
+    },
+    {
+      "check": "RD4: 30.6 GiB on the reference unit",
+      "planted_defect": "measured value",
+      "refused": true,
+      "detail": "{'state': 'measured', 'measured_gib': 30.6, 'consistent_with': 'R2', 'settled_value_gb': 32}"
+    },
+    {
+      "check": "RD4: a cloud machine never settles RD4",
+      "planted_defect": "16 GB measured on another machine",
+      "refused": true,
+      "detail": "{'state': \"awaiting the author's run on the reference unit\", 'measured_here_gib': 15.7, 'machine': 'cloud-build-machine', 'note': 'This figure is the machine the run happened on, not the reference unit; it does not settle RD4.'}"
+    },
+    {
+      "check": "RD4: a figure matching neither is not forced",
+      "planted_defect": "24 GiB",
+      "refused": true,
+      "detail": "{'state': 'measured', 'measured_gib': 24.0, 'consistent_with': [], 'settled_value_gb': 'not established: the measured figure matches neither recorded capacity alone; the measured MemTotal stands as the figure'}"
+    },
+    {
+      "check": "licence: bare GPL-3 text is not -or-later",
+      "planted_defect": "the GPL text's own How-to-apply appendix",
+      "refused": true,
+      "detail": "['GPL-3.0 (version from the text; -only or -or-later not established from this file)']"
+    },
+    {
+      "check": "licence: MIT text",
+      "planted_defect": "MIT grant",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "licence: BSD without non-endorsement is not BSD-3",
+      "planted_defect": "BSD-2 text",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "licence: unrelated text gives nothing",
+      "planted_defect": "a README paragraph",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "redaction: a GitHub token in captured output",
+      "planted_defect": "token in stderr",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "redaction: proxy refusal naming the build host",
+      "planted_defect": "vendor name in a 403 body",
+      "refused": true,
+      "detail": ""
+    },
+    {
+      "check": "no token anywhere in the tree",
+      "planted_defect": "scan of every tracked-size file",
+      "refused": true,
+      "detail": "files with a token shape: []"
+    },
+    {
+      "check": "token scan sees a planted token",
+      "planted_defect": "token in a scratch file",
+      "refused": true,
+      "detail": ""
+    }
+  ],
+  "all_refused_or_passed_as_expected": true
+}

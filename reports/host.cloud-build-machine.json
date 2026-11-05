@@ -1,0 +1,94 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "generator": "repsynth.lanes.intake 0.3.0",
+  "machine_role": "cloud-build-machine",
+  "label": "Measured on the cloud build machine used for this iteration. It is NOT the reference unit.",
+  "memory": {
+    "source": "/proc/meminfo",
+    "mem_total_bytes": 16872804352,
+    "mem_available_bytes": 16092553216,
+    "swap_total_bytes": 0,
+    "mem_total_gib": 15.71,
+    "cgroup_memory_limit": "9223372036854771712"
+  },
+  "processors": {
+    "os_cpu_count": 4,
+    "usable_by_this_process": 4,
+    "model": "Intel(R) Xeon(R) Processor @ 2.10GHz",
+    "cgroup_cpu_max": "none found",
+    "machine": "x86_64"
+  },
+  "disk": {
+    "path": "/home/user/build/repsynth",
+    "total_bytes": 270553174016,
+    "used_bytes": 12728778752,
+    "free_bytes": 28554756096,
+    "free_gib": 26.59
+  },
+  "os": {
+    "system": "Linux",
+    "release": "6.18.44-fc-v233",
+    "pretty_name": "Ubuntu 24.04.5 LTS"
+  },
+  "container_storage": {
+    "docker_info": {
+      "command": "docker info --format {{json .DockerRootDir}}|{{json .Driver}}|{{json .ServerVersion}}|{{json .NCPU}}|{{json .MemTotal}}|{{json .Images}}",
+      "exit_code": 0
+    },
+    "docker_root_dir": "/var/lib/docker",
+    "storage_driver": "overlayfs",
+    "server_version": "29.9.2",
+    "docker_ncpu": 4,
+    "docker_mem_total_bytes": 16872804352,
+    "images": 2,
+    "docker_system_df": {
+      "command": "docker system df --format {{json .}}",
+      "exit_code": 0,
+      "rows": [
+        {
+          "Active": "0",
+          "Reclaimable": "298.8MB (99%)",
+          "Size": "298.9MB",
+          "TotalCount": "2",
+          "Type": "Images"
+        },
+        {
+          "Active": "0",
+          "Reclaimable": "0B",
+          "Size": "0B",
+          "TotalCount": "0",
+          "Type": "Containers"
+        },
+        {
+          "Active": "0",
+          "Reclaimable": "0B",
+          "Size": "0B",
+          "TotalCount": "0",
+          "Type": "Local Volumes"
+        },
+        {
+          "Active": "0",
+          "Reclaimable": "0B",
+          "Size": "0B",
+          "TotalCount": "0",
+          "Type": "Build Cache"
+        }
+      ]
+    },
+    "docker_root_filesystem": {
+      "path": "/var/lib/docker",
+      "total_bytes": 270553174016,
+      "free_bytes": 28554756096
+    }
+  },
+  "rd4": {
+    "state": "awaiting the author's run on the reference unit",
+    "measured_here_gib": 15.71,
+    "machine": "cloud-build-machine",
+    "note": "This figure is the machine the run happened on, not the reference unit; it does not settle RD4."
+  },
+  "derived": {
+    "max_jobs": 3,
+    "rule": "min(processors - 1, available memory / 2 GiB), at least 1"
+  }
+}

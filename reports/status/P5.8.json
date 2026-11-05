@@ -1,0 +1,9 @@
+{
+  "packet": "P5.8",
+  "state": "failed",
+  "evidence": [
+    "records/20261104T232413Z_P5.8_mutate.json"
+  ],
+  "summary": "Hardware mutation self-test: planted 14 (flipped bits and swapped ports, in SystemVerilog and VHDL), caught 0.",
+  "blocked_by": []
+}

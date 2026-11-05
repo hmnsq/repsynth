@@ -1,0 +1,52 @@
+{
+  "command": "python3 -m repsynth oracles extract romenagri",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:24:52Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Extraction only; acceptance is `oracles check`.",
+  "outputs": {
+    "reports/readings/romenagri.json": "5df19710c8d85977fb7a99fb9d8a7d9c5603c98e336637e55e89952103c6fe5c",
+    "spec/reps/transliteration/romenagri_devanagari.yaml": "e0b75b131bf41b6af51f67cccbf02b8b43144891395652578099d0c93cf28493"
+  },
+  "packet": "P1.5",
+  "results": {
+    "corpus": [
+      {
+        "file": "Romenagri/corp_hi.txt",
+        "lines": 71,
+        "note": "acii2uni ends each line with CR LF; the input lines were compared without their CR",
+        "round_trip_equal_apart_from_a_trailing_cr": 41,
+        "round_trip_exact": 0,
+        "sha256": "3a30627c450a17beb9d08d7ebc37885bc3cf1ec8843b5bb0b3db5ff2550cd772"
+      },
+      {
+        "file": "Romenagri/corp_hi_nums.txt",
+        "lines": 71,
+        "note": "acii2uni ends each line with CR LF; the input lines were compared without their CR",
+        "round_trip_equal_apart_from_a_trailing_cr": 43,
+        "round_trip_exact": 0,
+        "sha256": "97cd22094f5df83114b502cd9a96638429becf243ee7912b01ee8987c3c172e4"
+      },
+      {
+        "file": "Romenagri/test_hi.txt",
+        "lines": 71,
+        "note": "acii2uni ends each line with CR LF; the input lines were compared without their CR",
+        "round_trip_equal_apart_from_a_trailing_cr": 71,
+        "round_trip_exact": 0,
+        "sha256": "3172c0925b227895c510b2dd76c038e1b7db43c02e4fe6c796d063664a0673ab"
+      }
+    ],
+    "disagreements": 24,
+    "exit_codes": {
+      "acii2rmn": 0,
+      "acii2uni": 0,
+      "rmn2acii": 0,
+      "uni2acii": 0
+    }
+  },
+  "started_utc": "2026-11-04T23:24:52Z",
+  "state": "wired_unproven",
+  "step": "extract_romenagri",
+  "tool_versions": {}
+}

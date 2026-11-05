@@ -1,0 +1,1765 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "generator": "repsynth.lanes.oracles 0.3.0",
+  "oracle": {
+    "repository": "project-ilm/romenagri2026.10",
+    "commit": "e9d762804feb0159c6739f242378d58286dbd3f0",
+    "tree": "0405b06bbeb0486fd16e0b86853525ce0bff75f3",
+    "tables": {
+      "unicode.h": "c922097b00178c03c4f5eae727de7ccbcdc3c6d05f0ef64d9ae3a88a21e9c61e",
+      "acii.h": "93c7c1201e6ed04ae324804ae051cf53e3c3af85c785412fd79bb0ab339ea710",
+      "aciihin.h": "c9ffd3b720e8c388e416bcbd747ac588e23fce8675df6491fa3395826e734271"
+    },
+    "reader_reused": {
+      "path": "tools/rmn_tables.py",
+      "sha256": "7cee746b216b7dfe076e0842449b9981c59131027cd60511c241336b15357da7"
+    }
+  },
+  "exit_codes": {
+    "uni2acii": 0,
+    "acii2uni": 0,
+    "rmn2acii": 0,
+    "acii2rmn": 0
+  },
+  "unicode_to_acii": [
+    {
+      "unicode": "U+0915",
+      "name": "DEVANAGARI LETTER KA",
+      "acii": "b3",
+      "observed_uni2acii": "b3",
+      "observed_acii2uni": "क\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0916",
+      "name": "DEVANAGARI LETTER KHA",
+      "acii": "b4",
+      "observed_uni2acii": "b4",
+      "observed_acii2uni": "ख\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0917",
+      "name": "DEVANAGARI LETTER GA",
+      "acii": "b5",
+      "observed_uni2acii": "b5",
+      "observed_acii2uni": "ग\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0918",
+      "name": "DEVANAGARI LETTER GHA",
+      "acii": "b6",
+      "observed_uni2acii": "b6",
+      "observed_acii2uni": "घ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0919",
+      "name": "DEVANAGARI LETTER NGA",
+      "acii": "b7",
+      "observed_uni2acii": "b7",
+      "observed_acii2uni": "ङ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+091A",
+      "name": "DEVANAGARI LETTER CA",
+      "acii": "b8",
+      "observed_uni2acii": "b8",
+      "observed_acii2uni": "च\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+091B",
+      "name": "DEVANAGARI LETTER CHA",
+      "acii": "b9",
+      "observed_uni2acii": "b9",
+      "observed_acii2uni": "छ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+091C",
+      "name": "DEVANAGARI LETTER JA",
+      "acii": "ba",
+      "observed_uni2acii": "ba",
+      "observed_acii2uni": "ज\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+091D",
+      "name": "DEVANAGARI LETTER JHA",
+      "acii": "bb",
+      "observed_uni2acii": "bb",
+      "observed_acii2uni": "झ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+091E",
+      "name": "DEVANAGARI LETTER NYA",
+      "acii": "bc",
+      "observed_uni2acii": "bc",
+      "observed_acii2uni": "ञ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+091F",
+      "name": "DEVANAGARI LETTER TTA",
+      "acii": "bd",
+      "observed_uni2acii": "bd",
+      "observed_acii2uni": "ट\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0920",
+      "name": "DEVANAGARI LETTER TTHA",
+      "acii": "be",
+      "observed_uni2acii": "be",
+      "observed_acii2uni": "ठ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0921",
+      "name": "DEVANAGARI LETTER DDA",
+      "acii": "bf",
+      "observed_uni2acii": "bf",
+      "observed_acii2uni": "ड\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0922",
+      "name": "DEVANAGARI LETTER DDHA",
+      "acii": "c0",
+      "observed_uni2acii": "c0",
+      "observed_acii2uni": "ढ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0923",
+      "name": "DEVANAGARI LETTER NNA",
+      "acii": "c1",
+      "observed_uni2acii": "c1",
+      "observed_acii2uni": "ण\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0924",
+      "name": "DEVANAGARI LETTER TA",
+      "acii": "c2",
+      "observed_uni2acii": "c2",
+      "observed_acii2uni": "त\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0925",
+      "name": "DEVANAGARI LETTER THA",
+      "acii": "c3",
+      "observed_uni2acii": "c3",
+      "observed_acii2uni": "थ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0926",
+      "name": "DEVANAGARI LETTER DA",
+      "acii": "c4",
+      "observed_uni2acii": "c4",
+      "observed_acii2uni": "द\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0927",
+      "name": "DEVANAGARI LETTER DHA",
+      "acii": "c5",
+      "observed_uni2acii": "c5",
+      "observed_acii2uni": "ध\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0928",
+      "name": "DEVANAGARI LETTER NA",
+      "acii": "c6",
+      "observed_uni2acii": "c6",
+      "observed_acii2uni": "न\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0929",
+      "name": "DEVANAGARI LETTER NNNA",
+      "acii": "c7",
+      "observed_uni2acii": "c7",
+      "observed_acii2uni": "ऩ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+092A",
+      "name": "DEVANAGARI LETTER PA",
+      "acii": "c8",
+      "observed_uni2acii": "c8",
+      "observed_acii2uni": "प\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+092B",
+      "name": "DEVANAGARI LETTER PHA",
+      "acii": "c9",
+      "observed_uni2acii": "c9",
+      "observed_acii2uni": "फ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+092C",
+      "name": "DEVANAGARI LETTER BA",
+      "acii": "ca",
+      "observed_uni2acii": "ca",
+      "observed_acii2uni": "ब\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+092D",
+      "name": "DEVANAGARI LETTER BHA",
+      "acii": "cb",
+      "observed_uni2acii": "cb",
+      "observed_acii2uni": "भ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+092E",
+      "name": "DEVANAGARI LETTER MA",
+      "acii": "cc",
+      "observed_uni2acii": "cc",
+      "observed_acii2uni": "म\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+092F",
+      "name": "DEVANAGARI LETTER YA",
+      "acii": "cd",
+      "observed_uni2acii": "cd",
+      "observed_acii2uni": "य\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0930",
+      "name": "DEVANAGARI LETTER RA",
+      "acii": "cf",
+      "observed_uni2acii": "cf",
+      "observed_acii2uni": "र\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0932",
+      "name": "DEVANAGARI LETTER LA",
+      "acii": "d1",
+      "observed_uni2acii": "d1",
+      "observed_acii2uni": "ल\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0935",
+      "name": "DEVANAGARI LETTER VA",
+      "acii": "d4",
+      "observed_uni2acii": "d4",
+      "observed_acii2uni": "व\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0936",
+      "name": "DEVANAGARI LETTER SHA",
+      "acii": "d5",
+      "observed_uni2acii": "d5",
+      "observed_acii2uni": "श\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0937",
+      "name": "DEVANAGARI LETTER SSA",
+      "acii": "d6",
+      "observed_uni2acii": "d6",
+      "observed_acii2uni": "ष\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0938",
+      "name": "DEVANAGARI LETTER SA",
+      "acii": "d7",
+      "observed_uni2acii": "d7",
+      "observed_acii2uni": "स\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0939",
+      "name": "DEVANAGARI LETTER HA",
+      "acii": "d8",
+      "observed_uni2acii": "d8",
+      "observed_acii2uni": "ह\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0902",
+      "name": "DEVANAGARI SIGN ANUSVARA",
+      "acii": "a2",
+      "observed_uni2acii": "a2",
+      "observed_acii2uni": "ं\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0903",
+      "name": "DEVANAGARI SIGN VISARGA",
+      "acii": "a3",
+      "observed_uni2acii": "a3",
+      "observed_acii2uni": "ः\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0901",
+      "name": "DEVANAGARI SIGN CANDRABINDU",
+      "acii": "a1",
+      "observed_uni2acii": "a1",
+      "observed_acii2uni": "ँ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+093C",
+      "name": "DEVANAGARI SIGN NUKTA",
+      "acii": "e9",
+      "observed_uni2acii": "e9",
+      "observed_acii2uni": "़\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0905",
+      "name": "DEVANAGARI LETTER A",
+      "acii": "a4",
+      "observed_uni2acii": "a4",
+      "observed_acii2uni": "अ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+094D",
+      "name": "DEVANAGARI SIGN VIRAMA",
+      "acii": "e8",
+      "observed_uni2acii": "e8",
+      "observed_acii2uni": "्\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0906",
+      "name": "DEVANAGARI LETTER AA",
+      "acii": "a5",
+      "observed_uni2acii": "a5",
+      "observed_acii2uni": "आ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+093E",
+      "name": "DEVANAGARI VOWEL SIGN AA",
+      "acii": "da",
+      "observed_uni2acii": "da",
+      "observed_acii2uni": "ा\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0907",
+      "name": "DEVANAGARI LETTER I",
+      "acii": "a6",
+      "observed_uni2acii": "a6",
+      "observed_acii2uni": "इ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+093F",
+      "name": "DEVANAGARI VOWEL SIGN I",
+      "acii": "db",
+      "observed_uni2acii": "db",
+      "observed_acii2uni": "ि\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0908",
+      "name": "DEVANAGARI LETTER II",
+      "acii": "a7",
+      "observed_uni2acii": "a7",
+      "observed_acii2uni": "ई\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0940",
+      "name": "DEVANAGARI VOWEL SIGN II",
+      "acii": "dc",
+      "observed_uni2acii": "dc",
+      "observed_acii2uni": "ी\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0909",
+      "name": "DEVANAGARI LETTER U",
+      "acii": "a8",
+      "observed_uni2acii": "a8",
+      "observed_acii2uni": "उ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0941",
+      "name": "DEVANAGARI VOWEL SIGN U",
+      "acii": "dd",
+      "observed_uni2acii": "dd",
+      "observed_acii2uni": "ु\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+090A",
+      "name": "DEVANAGARI LETTER UU",
+      "acii": "a9",
+      "observed_uni2acii": "a9",
+      "observed_acii2uni": "ऊ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0942",
+      "name": "DEVANAGARI VOWEL SIGN UU",
+      "acii": "de",
+      "observed_uni2acii": "de",
+      "observed_acii2uni": "ू\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+090B",
+      "name": "DEVANAGARI LETTER VOCALIC R",
+      "acii": "aa",
+      "observed_uni2acii": "aa",
+      "observed_acii2uni": "ऋ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0943",
+      "name": "DEVANAGARI VOWEL SIGN VOCALIC R",
+      "acii": "df",
+      "observed_uni2acii": "df",
+      "observed_acii2uni": "ृ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+090E",
+      "name": "DEVANAGARI LETTER SHORT E",
+      "acii": "ab",
+      "observed_uni2acii": "ab",
+      "observed_acii2uni": "ऎ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0946",
+      "name": "DEVANAGARI VOWEL SIGN SHORT E",
+      "acii": "e0",
+      "observed_uni2acii": "e0",
+      "observed_acii2uni": "ॆ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+090F",
+      "name": "DEVANAGARI LETTER E",
+      "acii": "ac",
+      "observed_uni2acii": "ac",
+      "observed_acii2uni": "ए\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0947",
+      "name": "DEVANAGARI VOWEL SIGN E",
+      "acii": "e1",
+      "observed_uni2acii": "e1",
+      "observed_acii2uni": "े\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0910",
+      "name": "DEVANAGARI LETTER AI",
+      "acii": "ad",
+      "observed_uni2acii": "ad",
+      "observed_acii2uni": "ऐ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0948",
+      "name": "DEVANAGARI VOWEL SIGN AI",
+      "acii": "e2",
+      "observed_uni2acii": "e2",
+      "observed_acii2uni": "ै\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0913",
+      "name": "DEVANAGARI LETTER O",
+      "acii": "b0",
+      "observed_uni2acii": "b0",
+      "observed_acii2uni": "ओ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+094B",
+      "name": "DEVANAGARI VOWEL SIGN O",
+      "acii": "e5",
+      "observed_uni2acii": "e5",
+      "observed_acii2uni": "ो\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0914",
+      "name": "DEVANAGARI LETTER AU",
+      "acii": "b1",
+      "observed_uni2acii": "b1",
+      "observed_acii2uni": "औ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+094C",
+      "name": "DEVANAGARI VOWEL SIGN AU",
+      "acii": "e6",
+      "observed_uni2acii": "e6",
+      "observed_acii2uni": "ौ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+090D",
+      "name": "DEVANAGARI LETTER CANDRA E",
+      "acii": "ae",
+      "observed_uni2acii": "ae",
+      "observed_acii2uni": "ऍ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0945",
+      "name": "DEVANAGARI VOWEL SIGN CANDRA E",
+      "acii": "e3",
+      "observed_uni2acii": "e3",
+      "observed_acii2uni": "ॅ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0911",
+      "name": "DEVANAGARI LETTER CANDRA O",
+      "acii": "b2",
+      "observed_uni2acii": "b2",
+      "observed_acii2uni": "ऑ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0949",
+      "name": "DEVANAGARI VOWEL SIGN CANDRA O",
+      "acii": "e7",
+      "observed_uni2acii": "e7",
+      "observed_acii2uni": "ॉ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0933",
+      "name": "DEVANAGARI LETTER LLA",
+      "acii": "d2",
+      "observed_uni2acii": "d2",
+      "observed_acii2uni": "ळ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0964",
+      "name": "DEVANAGARI DANDA",
+      "acii": "ea",
+      "observed_uni2acii": "ea",
+      "observed_acii2uni": "।\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0979",
+      "name": "DEVANAGARI LETTER ZHA",
+      "acii": "80",
+      "observed_uni2acii": "80",
+      "observed_acii2uni": "ॹ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+093D",
+      "name": "DEVANAGARI SIGN AVAGRAHA",
+      "acii": "eb",
+      "observed_uni2acii": "eb",
+      "observed_acii2uni": "ऽ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0912",
+      "name": "DEVANAGARI LETTER SHORT O",
+      "acii": "af",
+      "observed_uni2acii": "af",
+      "observed_acii2uni": "ऒ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+094A",
+      "name": "DEVANAGARI VOWEL SIGN SHORT O",
+      "acii": "e4",
+      "observed_uni2acii": "e4",
+      "observed_acii2uni": "ॊ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0931",
+      "name": "DEVANAGARI LETTER RRA",
+      "acii": "d0",
+      "observed_uni2acii": "d0",
+      "observed_acii2uni": "ऱ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+090C",
+      "name": "DEVANAGARI LETTER VOCALIC L",
+      "acii": "81",
+      "observed_uni2acii": "81",
+      "observed_acii2uni": "ऌ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0961",
+      "name": "DEVANAGARI LETTER VOCALIC LL",
+      "acii": "82",
+      "observed_uni2acii": "82",
+      "observed_acii2uni": "ॡ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0960",
+      "name": "DEVANAGARI LETTER VOCALIC RR",
+      "acii": "83",
+      "observed_uni2acii": "83",
+      "observed_acii2uni": "ॠ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0962",
+      "name": "DEVANAGARI VOWEL SIGN VOCALIC L",
+      "acii": "84",
+      "observed_uni2acii": "84",
+      "observed_acii2uni": "ॢ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0963",
+      "name": "DEVANAGARI VOWEL SIGN VOCALIC LL",
+      "acii": "85",
+      "observed_uni2acii": "85",
+      "observed_acii2uni": "ॣ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0944",
+      "name": "DEVANAGARI VOWEL SIGN VOCALIC RR",
+      "acii": "86",
+      "observed_uni2acii": "86",
+      "observed_acii2uni": "ॄ\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0965",
+      "name": "DEVANAGARI DOUBLE DANDA",
+      "acii": "87",
+      "observed_uni2acii": "87",
+      "observed_acii2uni": "॥\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0951",
+      "name": "DEVANAGARI STRESS SIGN UDATTA",
+      "acii": "88",
+      "observed_uni2acii": "88",
+      "observed_acii2uni": "॑\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0952",
+      "name": "DEVANAGARI STRESS SIGN ANUDATTA",
+      "acii": "89",
+      "observed_uni2acii": "89",
+      "observed_acii2uni": "॒\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0953",
+      "name": "DEVANAGARI GRAVE ACCENT",
+      "acii": "8a",
+      "observed_uni2acii": "8a",
+      "observed_acii2uni": "॓\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0954",
+      "name": "DEVANAGARI ACUTE ACCENT",
+      "acii": "8b",
+      "observed_uni2acii": "8b",
+      "observed_acii2uni": "॔\r",
+      "inverse_exact": false
+    },
+    {
+      "unicode": "U+0950",
+      "name": "DEVANAGARI OM",
+      "acii": "8c",
+      "observed_uni2acii": "8c",
+      "observed_acii2uni": "ॐ\r",
+      "inverse_exact": false
+    }
+  ],
+  "acii_to_romenagri": [
+    {
+      "romenagri": "",
+      "acii": "ef42",
+      "observed_rmn2acii": "",
+      "observed_acii2rmn": "\"e_B\"",
+      "forward_exact": false,
+      "reverse_exact": false
+    },
+    {
+      "romenagri": "__",
+      "acii": "5f",
+      "observed_rmn2acii": "5f",
+      "observed_acii2rmn": "\"e__\"",
+      "forward_exact": true,
+      "reverse_exact": false
+    },
+    {
+      "romenagri": "_a",
+      "acii": "a4",
+      "observed_rmn2acii": "a4",
+      "observed_acii2rmn": "_a",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^a",
+      "acii": "",
+      "observed_rmn2acii": "5e61",
+      "observed_acii2rmn": "",
+      "forward_exact": false,
+      "reverse_exact": false
+    },
+    {
+      "romenagri": "_aa",
+      "acii": "a5",
+      "observed_rmn2acii": "a5",
+      "observed_acii2rmn": "_aa",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^aa",
+      "acii": "da",
+      "observed_rmn2acii": "5e6161",
+      "observed_acii2rmn": "^aa",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_i",
+      "acii": "a6",
+      "observed_rmn2acii": "a6",
+      "observed_acii2rmn": "_i",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^i",
+      "acii": "db",
+      "observed_rmn2acii": "5e69",
+      "observed_acii2rmn": "^i",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_ee",
+      "acii": "a7",
+      "observed_rmn2acii": "a7",
+      "observed_acii2rmn": "_ee",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^ee",
+      "acii": "dc",
+      "observed_rmn2acii": "5e6565",
+      "observed_acii2rmn": "^ee",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_u",
+      "acii": "a8",
+      "observed_rmn2acii": "a8",
+      "observed_acii2rmn": "_u",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^u",
+      "acii": "dd",
+      "observed_rmn2acii": "5e75",
+      "observed_acii2rmn": "^u",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_oo",
+      "acii": "a9",
+      "observed_rmn2acii": "a9",
+      "observed_acii2rmn": "_oo",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^oo",
+      "acii": "de",
+      "observed_rmn2acii": "5e6f6f",
+      "observed_acii2rmn": "^oo",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_ri",
+      "acii": "aa",
+      "observed_rmn2acii": "aa",
+      "observed_acii2rmn": "_ri",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^_ri",
+      "acii": "df",
+      "observed_rmn2acii": "5eaa",
+      "observed_acii2rmn": "^_ri",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_ae",
+      "acii": "ab",
+      "observed_rmn2acii": "ab",
+      "observed_acii2rmn": "_ae",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^ae",
+      "acii": "e0",
+      "observed_rmn2acii": "5e6165",
+      "observed_acii2rmn": "^ae",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_aee",
+      "acii": "ac",
+      "observed_rmn2acii": "ac",
+      "observed_acii2rmn": "_aee",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^aee",
+      "acii": "e1",
+      "observed_rmn2acii": "5e616565",
+      "observed_acii2rmn": "^aee",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_ai",
+      "acii": "ad",
+      "observed_rmn2acii": "ad",
+      "observed_acii2rmn": "_ai",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^ai",
+      "acii": "e2",
+      "observed_rmn2acii": "5e6169",
+      "observed_acii2rmn": "^ai",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_ow",
+      "acii": "af",
+      "observed_rmn2acii": "af",
+      "observed_acii2rmn": "_ow",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^ow",
+      "acii": "e4",
+      "observed_rmn2acii": "5e6fd4e8",
+      "observed_acii2rmn": "^ow",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_oa",
+      "acii": "b0",
+      "observed_rmn2acii": "b0",
+      "observed_acii2rmn": "_oa",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^oa",
+      "acii": "e5",
+      "observed_rmn2acii": "5e6f61",
+      "observed_acii2rmn": "^oa",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_ou",
+      "acii": "b1",
+      "observed_rmn2acii": "b1",
+      "observed_acii2rmn": "_ou",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^ou",
+      "acii": "e6",
+      "observed_rmn2acii": "5e6f75",
+      "observed_acii2rmn": "^ou",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_au",
+      "acii": "b2",
+      "observed_rmn2acii": "b2",
+      "observed_acii2rmn": "_au",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^au",
+      "acii": "e7",
+      "observed_rmn2acii": "5e6175",
+      "observed_acii2rmn": "^au",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_ao",
+      "acii": "ae",
+      "observed_rmn2acii": "ae",
+      "observed_acii2rmn": "_ao",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^ao",
+      "acii": "e3",
+      "observed_rmn2acii": "5e616f",
+      "observed_acii2rmn": "^ao",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "ka",
+      "acii": "b3",
+      "observed_rmn2acii": "b3",
+      "observed_acii2rmn": "ka",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "kha",
+      "acii": "b4",
+      "observed_rmn2acii": "b4",
+      "observed_acii2rmn": "kha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "ga",
+      "acii": "b5",
+      "observed_rmn2acii": "b5",
+      "observed_acii2rmn": "ga",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "gha",
+      "acii": "b6",
+      "observed_rmn2acii": "b6",
+      "observed_acii2rmn": "gha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_nga",
+      "acii": "b7",
+      "observed_rmn2acii": "b7",
+      "observed_acii2rmn": "_nga",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "cha",
+      "acii": "b8",
+      "observed_rmn2acii": "b8",
+      "observed_acii2rmn": "cha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "chha",
+      "acii": "b9",
+      "observed_rmn2acii": "b9",
+      "observed_acii2rmn": "chha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "ja",
+      "acii": "ba",
+      "observed_rmn2acii": "ba",
+      "observed_acii2rmn": "ja",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "jha",
+      "acii": "bb",
+      "observed_rmn2acii": "bb",
+      "observed_acii2rmn": "jha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_yna",
+      "acii": "bc",
+      "observed_rmn2acii": "bc",
+      "observed_acii2rmn": "_yna",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "ta",
+      "acii": "bd",
+      "observed_rmn2acii": "bd",
+      "observed_acii2rmn": "ta",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "tha",
+      "acii": "be",
+      "observed_rmn2acii": "be",
+      "observed_acii2rmn": "tha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "da",
+      "acii": "bf",
+      "observed_rmn2acii": "bf",
+      "observed_acii2rmn": "da",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "dha",
+      "acii": "c0",
+      "observed_rmn2acii": "c0",
+      "observed_acii2rmn": "dha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_nna",
+      "acii": "c1",
+      "observed_rmn2acii": "c1",
+      "observed_acii2rmn": "_nna",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_ta",
+      "acii": "c2",
+      "observed_rmn2acii": "c2",
+      "observed_acii2rmn": "_ta",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_tha",
+      "acii": "c3",
+      "observed_rmn2acii": "c3",
+      "observed_acii2rmn": "_tha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_da",
+      "acii": "c4",
+      "observed_rmn2acii": "c4",
+      "observed_acii2rmn": "_da",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_dha",
+      "acii": "c5",
+      "observed_rmn2acii": "c5",
+      "observed_acii2rmn": "_dha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "na",
+      "acii": "c6",
+      "observed_rmn2acii": "c6",
+      "observed_acii2rmn": "na",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "pa",
+      "acii": "c8",
+      "observed_rmn2acii": "c8",
+      "observed_acii2rmn": "pa",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "pha",
+      "acii": "c9",
+      "observed_rmn2acii": "c9",
+      "observed_acii2rmn": "pha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "ba",
+      "acii": "ca",
+      "observed_rmn2acii": "ca",
+      "observed_acii2rmn": "ba",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "bha",
+      "acii": "cb",
+      "observed_rmn2acii": "cb",
+      "observed_acii2rmn": "bha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "ma",
+      "acii": "cc",
+      "observed_rmn2acii": "cc",
+      "observed_acii2rmn": "ma",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "ya",
+      "acii": "cd",
+      "observed_rmn2acii": "cd",
+      "observed_acii2rmn": "ya",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "ra",
+      "acii": "cf",
+      "observed_rmn2acii": "cf",
+      "observed_acii2rmn": "ra",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_rra",
+      "acii": "d0",
+      "observed_rmn2acii": "d0",
+      "observed_acii2rmn": "_rra",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "la",
+      "acii": "d1",
+      "observed_rmn2acii": "d1",
+      "observed_acii2rmn": "la",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "wa",
+      "acii": "d4",
+      "observed_rmn2acii": "d4",
+      "observed_acii2rmn": "wa",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "lvra",
+      "acii": "d2",
+      "observed_rmn2acii": "d2",
+      "observed_acii2rmn": "lvra",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "sha",
+      "acii": "d5",
+      "observed_rmn2acii": "d5",
+      "observed_acii2rmn": "sha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "xa",
+      "acii": "d6",
+      "observed_rmn2acii": "d6",
+      "observed_acii2rmn": "xa",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "sa",
+      "acii": "d7",
+      "observed_rmn2acii": "d7",
+      "observed_acii2rmn": "sa",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_ha",
+      "acii": "d8",
+      "observed_rmn2acii": "d8",
+      "observed_acii2rmn": "_ha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_m",
+      "acii": "a2",
+      "observed_rmn2acii": "a2",
+      "observed_acii2rmn": "_m",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_hh",
+      "acii": "a3",
+      "observed_rmn2acii": "a3",
+      "observed_acii2rmn": "_hh",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_na",
+      "acii": "a1",
+      "observed_rmn2acii": "a1",
+      "observed_acii2rmn": "_na",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^za",
+      "acii": "e9",
+      "observed_rmn2acii": "5e7a61",
+      "observed_acii2rmn": "^za",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "|",
+      "acii": "ea",
+      "observed_rmn2acii": "7c",
+      "observed_acii2rmn": "|",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^",
+      "acii": "e8",
+      "observed_rmn2acii": "5e",
+      "observed_acii2rmn": "^",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_rda",
+      "acii": "bfe9",
+      "observed_rmn2acii": "bfe9",
+      "observed_acii2rmn": "_rda",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_rdha",
+      "acii": "c0e9",
+      "observed_rmn2acii": "c0e9",
+      "observed_acii2rmn": "_rdha",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^ra",
+      "acii": "e8cf",
+      "observed_rmn2acii": "5ecf",
+      "observed_acii2rmn": "^ra",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "r",
+      "acii": "cfe8",
+      "observed_rmn2acii": "cfe8",
+      "observed_acii2rmn": "r",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "kxa",
+      "acii": "b3e8d6",
+      "observed_rmn2acii": "b3e8d6",
+      "observed_acii2rmn": "kxa",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_tra",
+      "acii": "c2e8cf",
+      "observed_rmn2acii": "c2e8cf",
+      "observed_acii2rmn": "_tra",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "j_yna",
+      "acii": "bae8bc",
+      "observed_rmn2acii": "bae8bc",
+      "observed_acii2rmn": "j_yna",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "shra",
+      "acii": "d5e8cf",
+      "observed_rmn2acii": "d5e8cf",
+      "observed_acii2rmn": "shra",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_jza",
+      "acii": "80",
+      "observed_rmn2acii": "80",
+      "observed_acii2rmn": "_jza",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_nza",
+      "acii": "c7",
+      "observed_rmn2acii": "c7",
+      "observed_acii2rmn": "_nza",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_s",
+      "acii": "eb",
+      "observed_rmn2acii": "eb",
+      "observed_acii2rmn": "_s",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_li",
+      "acii": "81",
+      "observed_rmn2acii": "81",
+      "observed_acii2rmn": "_li",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_lee",
+      "acii": "82",
+      "observed_rmn2acii": "82",
+      "observed_acii2rmn": "_lee",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_ree",
+      "acii": "83",
+      "observed_rmn2acii": "83",
+      "observed_acii2rmn": "_ree",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^_li",
+      "acii": "84",
+      "observed_rmn2acii": "5e81",
+      "observed_acii2rmn": "^_li",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^_lee",
+      "acii": "85",
+      "observed_rmn2acii": "5e82",
+      "observed_acii2rmn": "^_lee",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "^_ree",
+      "acii": "86",
+      "observed_rmn2acii": "5e83",
+      "observed_acii2rmn": "^_ree",
+      "forward_exact": false,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_vd",
+      "acii": "87",
+      "observed_rmn2acii": "87",
+      "observed_acii2rmn": "_vd",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_vua",
+      "acii": "88",
+      "observed_rmn2acii": "88",
+      "observed_acii2rmn": "_vua",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_vna",
+      "acii": "89",
+      "observed_rmn2acii": "89",
+      "observed_acii2rmn": "_vna",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_vga",
+      "acii": "8a",
+      "observed_rmn2acii": "8a",
+      "observed_acii2rmn": "_vga",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_vca",
+      "acii": "8b",
+      "observed_rmn2acii": "8b",
+      "observed_acii2rmn": "_vca",
+      "forward_exact": true,
+      "reverse_exact": true
+    },
+    {
+      "romenagri": "_om",
+      "acii": "8c",
+      "observed_rmn2acii": "8c",
+      "observed_acii2rmn": "_om",
+      "forward_exact": true,
+      "reverse_exact": true
+    }
+  ],
+  "disagreements": [
+    {
+      "table": "acii.h",
+      "entry": "",
+      "table_value": "ef42",
+      "oracle_rmn2acii": "",
+      "oracle_acii2rmn": "\"e_B\"",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "__",
+      "table_value": "5f",
+      "oracle_rmn2acii": "5f",
+      "oracle_acii2rmn": "\"e__\"",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^a",
+      "table_value": "",
+      "oracle_rmn2acii": "5e61",
+      "oracle_acii2rmn": "",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^aa",
+      "table_value": "da",
+      "oracle_rmn2acii": "5e6161",
+      "oracle_acii2rmn": "^aa",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^i",
+      "table_value": "db",
+      "oracle_rmn2acii": "5e69",
+      "oracle_acii2rmn": "^i",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^ee",
+      "table_value": "dc",
+      "oracle_rmn2acii": "5e6565",
+      "oracle_acii2rmn": "^ee",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^u",
+      "table_value": "dd",
+      "oracle_rmn2acii": "5e75",
+      "oracle_acii2rmn": "^u",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^oo",
+      "table_value": "de",
+      "oracle_rmn2acii": "5e6f6f",
+      "oracle_acii2rmn": "^oo",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^_ri",
+      "table_value": "df",
+      "oracle_rmn2acii": "5eaa",
+      "oracle_acii2rmn": "^_ri",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^ae",
+      "table_value": "e0",
+      "oracle_rmn2acii": "5e6165",
+      "oracle_acii2rmn": "^ae",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^aee",
+      "table_value": "e1",
+      "oracle_rmn2acii": "5e616565",
+      "oracle_acii2rmn": "^aee",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^ai",
+      "table_value": "e2",
+      "oracle_rmn2acii": "5e6169",
+      "oracle_acii2rmn": "^ai",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^ow",
+      "table_value": "e4",
+      "oracle_rmn2acii": "5e6fd4e8",
+      "oracle_acii2rmn": "^ow",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^oa",
+      "table_value": "e5",
+      "oracle_rmn2acii": "5e6f61",
+      "oracle_acii2rmn": "^oa",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^ou",
+      "table_value": "e6",
+      "oracle_rmn2acii": "5e6f75",
+      "oracle_acii2rmn": "^ou",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^au",
+      "table_value": "e7",
+      "oracle_rmn2acii": "5e6175",
+      "oracle_acii2rmn": "^au",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^ao",
+      "table_value": "e3",
+      "oracle_rmn2acii": "5e616f",
+      "oracle_acii2rmn": "^ao",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^za",
+      "table_value": "e9",
+      "oracle_rmn2acii": "5e7a61",
+      "oracle_acii2rmn": "^za",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "|",
+      "table_value": "ea",
+      "oracle_rmn2acii": "7c",
+      "oracle_acii2rmn": "|",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^",
+      "table_value": "e8",
+      "oracle_rmn2acii": "5e",
+      "oracle_acii2rmn": "^",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^ra",
+      "table_value": "e8cf",
+      "oracle_rmn2acii": "5ecf",
+      "oracle_acii2rmn": "^ra",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^_li",
+      "table_value": "84",
+      "oracle_rmn2acii": "5e81",
+      "oracle_acii2rmn": "^_li",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^_lee",
+      "table_value": "85",
+      "oracle_rmn2acii": "5e82",
+      "oracle_acii2rmn": "^_lee",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    },
+    {
+      "table": "acii.h",
+      "entry": "^_ree",
+      "table_value": "86",
+      "oracle_rmn2acii": "5e83",
+      "oracle_acii2rmn": "^_ree",
+      "resolution": "recorded; the spec states the oracle's outputs as observed_*"
+    }
+  ],
+  "corpus": [
+    {
+      "file": "Romenagri/corp_hi.txt",
+      "sha256": "3a30627c450a17beb9d08d7ebc37885bc3cf1ec8843b5bb0b3db5ff2550cd772",
+      "lines": 71,
+      "round_trip_exact": 0,
+      "round_trip_equal_apart_from_a_trailing_cr": 41,
+      "note": "acii2uni ends each line with CR LF; the input lines were compared without their CR",
+      "first_differences": [
+        {
+          "in": "28 सितम्बर 1907[a] से 23 मार्च 1931 ई०",
+          "out": "28 सितम्बर 1907[a] से 23 मार्च 1931 ईf\r"
+        },
+        {
+          "in": "भगत सिंह 1929 ई० में",
+          "out": "भगत सिंह 1929 ईf में\r"
+        },
+        {
+          "in": "भगत सिंह (जन्म: 28 सितम्बर 1907[a] , मृत्यु: 23 मार्च 1931) भारत के एक महान स्वत",
+          "out": "भगत सिंह (जन्म: 28 सितम्बर 1907[a] , मृत्यु: 23 मार्च 1931) भारत के एक महान स्वत"
+        },
+        {
+          "in": "शहीद भगत सिंह, शहीद सुुुखदेव, शहीद राजगुरु को फांसी पर लटकाये जाने की ख़बर - लाह",
+          "out": "शहीद भगत सिंह, शहीद सुखदेव, शहीद राजगुरु को फांसी पर लटकाये जाने की ख़बर - लाहौर"
+        },
+        {
+          "in": "भगत सिंह का जन्म 24 सितंबर 1906 (अश्विन कृष्णपक्ष सप्तमी) को प्रचलित है परन्तु त",
+          "out": "भगत सिंह का जन्म 24 सितंबर 1906 (अश्विन कृष्णपक्ष सप्तमी) को प्रचलित है परन्तु त"
+        },
+        {
+          "in": "वर्ष 1922 में चौरी-चौरा हत्‍याकांड के बाद गाँधी जी ने जब किसानों का साथ नहीं दिय",
+          "out": "वर्ष 1922 में चौरी-चौरा हत्\rयाकांड के बाद गाँधी जी ने जब किसानों का साथ नहीं दिय"
+        },
+        {
+          "in": "भगत सिंह ने राजगुरु के साथ मिलकर १७ दिसम्बर १९२८ को लाहौर में सहायक पुलिस अधीक्ष",
+          "out": "भगत सिंह ने राजगुरु के साथ मिलकर gm दिसम्बर gohn को लाहौर में सहायक पुलिस अधीक्ष"
+        },
+        {
+          "in": "उस समय भगत सिंह करीब बारह वर्ष के थे जब जलियाँवाला बाग हत्याकाण्ड हुआ था। इसकी स",
+          "out": "उस समय भगत सिंह करीब बारह वर्ष के थे जब जलियाँवाला बाग हत्याकाण्ड हुआ था| इसकी स"
+        }
+      ]
+    },
+    {
+      "file": "Romenagri/corp_hi_nums.txt",
+      "sha256": "97cd22094f5df83114b502cd9a96638429becf243ee7912b01ee8987c3c172e4",
+      "lines": 71,
+      "round_trip_exact": 0,
+      "round_trip_equal_apart_from_a_trailing_cr": 43,
+      "note": "acii2uni ends each line with CR LF; the input lines were compared without their CR",
+      "first_differences": [
+        {
+          "in": "भगत सिंह (जन्म: 28 सितम्बर 1907[a] , मृत्यु: 23 मार्च 1931) भारत के एक महान स्वत",
+          "out": "भगत सिंह (जन्म: 28 सितम्बर 1907[a] , मृत्यु: 23 मार्च 1931) भारत के एक महान स्वत"
+        },
+        {
+          "in": "शहीद भगत सिंह, शहीद सुुुखदेव, शहीद राजगुरु को फांसी पर लटकाये जाने की ख़बर - लाह",
+          "out": "शहीद भगत सिंह, शहीद सुखदेव, शहीद राजगुरु को फांसी पर लटकाये जाने की ख़बर - लाहौर"
+        },
+        {
+          "in": "भगत सिंह का जन्म 24 सितंबर 1906 (अश्विन कृष्णपक्ष सप्तमी) को प्रचलित है परन्तु त",
+          "out": "भगत सिंह का जन्म 24 सितंबर 1906 (अश्विन कृष्णपक्ष सप्तमी) को प्रचलित है परन्तु त"
+        },
+        {
+          "in": "वर्ष 1922 में चौरी-चौरा हत्‍याकांड के बाद गाँधी जी ने जब किसानों का साथ नहीं दिय",
+          "out": "वर्ष 1922 में चौरी-चौरा हत्\rयाकांड के बाद गाँधी जी ने जब किसानों का साथ नहीं दिय"
+        },
+        {
+          "in": "भगत सिंह ने राजगुरु के साथ मिलकर 17 दिसम्बर 1928 को लाहौर में सहायक पुलिस अधीक्ष",
+          "out": "भगत सिंह ने राजगुरु के साथ मिलकर 17 दिसम्बर 1928 को लाहौर में सहायक पुलिस अधीक्ष"
+        },
+        {
+          "in": "उस समय भगत सिंह करीब बारह वर्ष के थे जब जलियाँवाला बाग हत्याकाण्ड हुआ था। इसकी स",
+          "out": "उस समय भगत सिंह करीब बारह वर्ष के थे जब जलियाँवाला बाग हत्याकाण्ड हुआ था| इसकी स"
+        },
+        {
+          "in": "1928 में साइमन कमीशन के बहिष्कार के लिए भयानक प्रदर्शन हुए। इन प्रदर्शनों में भा",
+          "out": "1928 में साइमन कमीशन के बहिष्कार के लिए भयानक प्रदर्शन हुए| इन प्रदर्शनों में भा"
+        },
+        {
+          "in": "17 दिसंबर 1928 को करीब सवा चार बजे, ए0 एस0 पी0 सॉण्डर्स के आते ही राजगुरु ने एक ",
+          "out": "17 दिसंबर 1928 को करीब सवा चार बजे, ए0 एस0 पी0 सॉण्डर्स के आते ही राजगुरु ने एक "
+        }
+      ]
+    },
+    {
+      "file": "Romenagri/test_hi.txt",
+      "sha256": "3172c0925b227895c510b2dd76c038e1b7db43c02e4fe6c796d063664a0673ab",
+      "lines": 71,
+      "round_trip_exact": 0,
+      "round_trip_equal_apart_from_a_trailing_cr": 71,
+      "note": "acii2uni ends each line with CR LF; the input lines were compared without their CR",
+      "first_differences": []
+    }
+  ]
+}

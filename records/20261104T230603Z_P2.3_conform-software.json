@@ -1,0 +1,1264 @@
+{
+  "command": "repsynth conform --lane software",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:06:03Z",
+  "image_digests": {},
+  "inputs": {
+    "conformance/vectors/balanced_ternary/add.16.vec": "ecf5dfc040d7a4e3b958e621d62ec48cd63654ce08fecb509b348725fb2f9ee0",
+    "conformance/vectors/balanced_ternary/add.32.vec": "65240f245825c6cbb5bcb83ad4fe60c799a6216cc5c577157fff41cb03f8991e",
+    "conformance/vectors/balanced_ternary/cmp.16.vec": "6f2c970c7ee84cfe097143a3215902e18b594b385cb39d4b56125d1c14daf7c0",
+    "conformance/vectors/balanced_ternary/cmp.32.vec": "6d190b4aec0f746029f04f5da86f05ca4c9dbc0e1f35c2599281f53df0bebdaf",
+    "conformance/vectors/balanced_ternary/from_int.16.vec": "c712f25267f8bc9565a3294673db5cd7d0fb2368237b93b0018bb86f5efbf5be",
+    "conformance/vectors/balanced_ternary/from_int.32.vec": "82602b705babef5758609d63357bfdcddebe5e79f0f909e9397489b6c5ec734b",
+    "conformance/vectors/balanced_ternary/mul.16.vec": "26b14e908c2a690cdcfd8b9cb992c3e55d7769ecafaf563174e327317e73ca35",
+    "conformance/vectors/balanced_ternary/mul.32.vec": "15699ff5bdf3bd1a40bff167e502220445ed65bd786b838ca5b2ac1f62a945d7",
+    "conformance/vectors/balanced_ternary/neg.16.vec": "1e54a059b0748bb02fa9949a23f1122d6f8433ab6be76419113fd3ad55a16616",
+    "conformance/vectors/balanced_ternary/neg.32.vec": "450073595d802fa76ddc08a2ec218727efda1a147579ff61057dfc4caf40c2d6",
+    "conformance/vectors/balanced_ternary/shl.16.vec": "221c2d15596613cdf30b149e5f3c94ee78342f345226dc650839c28b17b20626",
+    "conformance/vectors/balanced_ternary/shl.32.vec": "b1421156501ca137cab7490a949e05145cbd3a69a6dfae1f13cc7a092e02be06",
+    "conformance/vectors/balanced_ternary/shr.16.vec": "c695058fe36160783e1e3cd07b70b7630c920f0d86e1a2fc15ca07d623ad1ad6",
+    "conformance/vectors/balanced_ternary/shr.32.vec": "ee49df22b41b375d9462fde8aa294f41626760462adfb66b3e09053a84580063",
+    "conformance/vectors/balanced_ternary/sub.16.vec": "a9253627d64285342571d22c24d5853e2be71e78fb8d4fa3cd76ec147b510d01",
+    "conformance/vectors/balanced_ternary/sub.32.vec": "b14b5e91251dfaa003d82e1c61703891f7294bff77bbfacdce7014b7ba1c01ab",
+    "conformance/vectors/balanced_ternary/to_int.16.vec": "f99f2b47885d731ca4b2d7be3dd75c284c4c9537b75b0c58daa518568c270c8d",
+    "conformance/vectors/balanced_ternary/to_int.32.vec": "5e362bfeb5c8e35a02b944d794042b039b5f404323caa45ea0a91a1b065341bb",
+    "conformance/vectors/binary_integer/add.32.vec": "6bf5a3196c5301e5fc247af83d070209636e36bf42af916be75017ddb96ec5a7",
+    "conformance/vectors/binary_integer/add.64.vec": "4798a9def9e5188b1be6a3909f580c2ec63abab6523895cd859951ef4bce709b",
+    "conformance/vectors/binary_integer/cmp.32.vec": "e8839ec27223b6279db46a81c53f10085cc4211c36898b1d7743380d45d3266f",
+    "conformance/vectors/binary_integer/cmp.64.vec": "e3e2ff08f3a2764635edd76c824b53140a636865fcfbd19d46e26985c1c0e947",
+    "conformance/vectors/binary_integer/mul.32.vec": "bfa5ef8443362c9c8b104e50ca31bcf86c85f03596809a9fc22486e011229a46",
+    "conformance/vectors/binary_integer/mul.64.vec": "3e89bfea359796d0916a51c2f998039dc63a7b036a0f99b3623c5349ce271ebf",
+    "conformance/vectors/binary_integer/neg.32.vec": "eac9c90bf49546dc2e3038645d53b25b5877f259d8ef17e6cef43f1f02468b3a",
+    "conformance/vectors/binary_integer/neg.64.vec": "f02b7f872861bb7b2e0add000a8b84ab9f0b7f48b7b45e01b22476b426ad8ffa",
+    "conformance/vectors/binary_integer/shl.32.vec": "61528428a1b0c83f5d574c60b69599a423cbbb37b36b417379c04f40cd159f43",
+    "conformance/vectors/binary_integer/shl.64.vec": "a8f829786604d5c8d4cddc2cf1d0a7e4ee50c50c6a222c1e0004bf449d525fb0",
+    "conformance/vectors/binary_integer/shr.32.vec": "eb3841591da990fdaf949b7e409d36dd24f7efd2ff0bc0914bf7817947f18a64",
+    "conformance/vectors/binary_integer/shr.64.vec": "1f9e5a96566bff29860036a2e06ea9b34e6835ab859ec14dc502414137d1a7f9",
+    "conformance/vectors/binary_integer/sub.32.vec": "d76aadc18d820906de99372f9a59f995739c93605c740ec29ea36dc8ce4a50aa",
+    "conformance/vectors/binary_integer/sub.64.vec": "4917d28364204f38814c6e3618c763f8b529a7b4e450cb69c6210ec4ce692d16",
+    "conformance/vectors/packed_decimal/add.15.vec": "c46c33f024f389ed6b4b4e4ff5d76e4a91bd1320c26b33e41f2873e057081e36",
+    "conformance/vectors/packed_decimal/add.7.vec": "cf40e1aadf705255cf5bfa3610e1d9a6efab74186177e777eec7370f042cb400",
+    "conformance/vectors/packed_decimal/cmp.15.vec": "c32d78aa8f8d89e47cc9709633716ca3d57a4091fbdb5a66fc0c43925a68afb0",
+    "conformance/vectors/packed_decimal/cmp.7.vec": "650d90bd3b2e28e6e1d13bb5e75ec18f85fe0483ce18dfd0f73a3edd63592bfe",
+    "conformance/vectors/packed_decimal/from_int.15.vec": "60c7c36d5f4de4d6944a58941dd71fe2d3cfad625855a5fd67d70c872d7ca210",
+    "conformance/vectors/packed_decimal/from_int.7.vec": "057feea3707abc745b1010f9365e13662f20b0f6d8cf131da3262e1268b8191e",
+    "conformance/vectors/packed_decimal/mul.15.vec": "26ffc203aff19eb5e8cf03301918098f45fbc74095ef5d692670ee6d5ea0c301",
+    "conformance/vectors/packed_decimal/mul.7.vec": "d6804efb533c48b0f09876f7434cbb7c195c241fd0519329e04f24eb3645c6cd",
+    "conformance/vectors/packed_decimal/neg.15.vec": "e19fe43d39a53ed96b2d3c7b70c628b13661694e5711f47a3874ca79a59e1391",
+    "conformance/vectors/packed_decimal/neg.7.vec": "b466e64d57c6494ac4989b40bd8211c44050fa140bacfed2b59763f2e2b1331c",
+    "conformance/vectors/packed_decimal/sub.15.vec": "5720231d7f9709a40dcceb9804d91f4c9258e31969e68af2ff0a27933e72ad4b",
+    "conformance/vectors/packed_decimal/sub.7.vec": "a5f195407a410f36c42e67d466e89ee5c4899cf48f5031432aa1283b9bcc683f",
+    "conformance/vectors/packed_decimal/to_int.15.vec": "69c1b64278b74dccbe2e2b30f8e2d0de055e03b8db647d8336d2748967b979c8",
+    "conformance/vectors/packed_decimal/to_int.7.vec": "4e793ee51cb56ee19e9069a20b94c640d7f6572d37ab4c3f41b3b6f1adc02b48"
+  },
+  "notes": "",
+  "outputs": {},
+  "packet": "P2.3",
+  "results": {
+    "balanced_ternary/add.16": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_add16 cases=4321 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.add cases=4321 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_add16 cases=4321 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_add16 cases=4321 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/add.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_add32 cases=4321 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.add cases=4321 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_add32 cases=4321 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_add32 cases=4321 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/cmp.16": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_cmp16 cases=4321 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.cmp cases=4321 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_cmp16 cases=4321 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_cmp16 cases=4321 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/cmp.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_cmp32 cases=4321 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.cmp cases=4321 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_cmp32 cases=4321 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_cmp32 cases=4321 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/from_int.16": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_from_int16 cases=4111 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.from_int cases=4111 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_from_int16 cases=4111 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_from_int16 cases=4111 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/from_int.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_from_int32 cases=4111 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.from_int cases=4111 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_from_int32 cases=4111 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_from_int32 cases=4111 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/mul.16": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_mul16 cases=4321 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.mul cases=4321 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_mul16 cases=4321 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_mul16 cases=4321 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/mul.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_mul32 cases=4321 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.mul cases=4321 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_mul32 cases=4321 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_mul32 cases=4321 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/neg.16": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_neg16 cases=4111 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.neg cases=4111 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_neg16 cases=4111 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_neg16 cases=4111 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/neg.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_neg32 cases=4111 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.neg cases=4111 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_neg32 cases=4111 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_neg32 cases=4111 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/shl.16": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_shl16 cases=4741 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.shl cases=4741 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_shl16 cases=4741 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_shl16 cases=4741 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/shl.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_shl32 cases=5221 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.shl cases=5221 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_shl32 cases=5221 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_shl32 cases=5221 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/shr.16": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_shr16 cases=4741 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.shr cases=4741 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_shr16 cases=4741 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_shr16 cases=4741 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/shr.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_shr32 cases=5221 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.shr cases=5221 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_shr32 cases=5221 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_shr32 cases=5221 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/sub.16": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_sub16 cases=4321 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.sub cases=4321 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_sub16 cases=4321 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_sub16 cases=4321 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/sub.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_sub32 cases=4321 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.sub cases=4321 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_sub32 cases=4321 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_sub32 cases=4321 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/to_int.16": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_to_int16 cases=4111 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.to_int cases=4111 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_to_int16 cases=4111 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_to_int16 cases=4111 disagreements=0"
+        ]
+      }
+    },
+    "balanced_ternary/to_int.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bt_to_int32 cases=4111 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle balanced_ternary.to_int cases=4111 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bt_to_int32 cases=4111 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bt_to_int32 cases=4111 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/add.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_add32 cases=4196 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.add cases=4196 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_add32 cases=4196 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_add32 cases=4196 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/add.64": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_add64 cases=4196 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.add cases=4196 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_add64 cases=4196 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_add64 cases=4196 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/cmp.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_cmp32 cases=4196 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.cmp cases=4196 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_cmp32 cases=4196 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_cmp32 cases=4196 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/cmp.64": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_cmp64 cases=4196 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.cmp cases=4196 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_cmp64 cases=4196 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_cmp64 cases=4196 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/mul.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_mul32 cases=4196 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.mul cases=4196 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_mul32 cases=4196 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_mul32 cases=4196 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/mul.64": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_mul64 cases=4196 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.mul cases=4196 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_mul64 cases=4196 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_mul64 cases=4196 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/neg.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_neg32 cases=4106 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.neg cases=4106 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_neg32 cases=4106 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_neg32 cases=4106 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/neg.64": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_neg64 cases=4106 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.neg cases=4106 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_neg64 cases=4106 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_neg64 cases=4106 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/shl.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_shl32 cases=4476 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.shl cases=4476 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_shl32 cases=4476 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_shl32 cases=4476 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/shl.64": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_shl64 cases=4796 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.shl cases=4796 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_shl64 cases=4796 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_shl64 cases=4796 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/shr.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_shr32 cases=4476 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.shr cases=4476 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_shr32 cases=4476 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_shr32 cases=4476 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/shr.64": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_shr64 cases=4796 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.shr cases=4796 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_shr64 cases=4796 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_shr64 cases=4796 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/sub.32": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_sub32 cases=4196 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.sub cases=4196 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_sub32 cases=4196 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_sub32 cases=4196 disagreements=0"
+        ]
+      }
+    },
+    "binary_integer/sub.64": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native bin_sub64 cases=4196 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle binary_integer.sub cases=4196 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python bin_sub64 cases=4196 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm bin_sub64 cases=4196 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/add.15": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_add15 cases=4217 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.add cases=4217 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_add15 cases=4217 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_add15 cases=4217 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/add.7": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_add7 cases=4217 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.add cases=4217 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_add7 cases=4217 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_add7 cases=4217 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/cmp.15": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_cmp15 cases=4217 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.cmp cases=4217 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_cmp15 cases=4217 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_cmp15 cases=4217 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/cmp.7": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_cmp7 cases=4217 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.cmp cases=4217 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_cmp7 cases=4217 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_cmp7 cases=4217 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/from_int.15": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_from_int15 cases=4107 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.from_int cases=4107 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_from_int15 cases=4107 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_from_int15 cases=4107 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/from_int.7": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_from_int7 cases=4105 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.from_int cases=4105 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_from_int7 cases=4105 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_from_int7 cases=4105 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/mul.15": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_mul15 cases=4217 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.mul cases=4217 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_mul15 cases=4217 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_mul15 cases=4217 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/mul.7": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_mul7 cases=4217 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.mul cases=4217 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_mul7 cases=4217 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_mul7 cases=4217 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/neg.15": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_neg15 cases=4107 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.neg cases=4107 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_neg15 cases=4107 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_neg15 cases=4107 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/neg.7": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_neg7 cases=4107 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.neg cases=4107 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_neg7 cases=4107 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_neg7 cases=4107 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/sub.15": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_sub15 cases=4217 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.sub cases=4217 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_sub15 cases=4217 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_sub15 cases=4217 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/sub.7": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_sub7 cases=4217 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.sub cases=4217 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_sub7 cases=4217 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_sub7 cases=4217 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/to_int.15": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_to_int15 cases=4107 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.to_int cases=4107 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_to_int15 cases=4107 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_to_int15 cases=4107 disagreements=0"
+        ]
+      }
+    },
+    "packed_decimal/to_int.7": {
+      "native": {
+        "exit": 0,
+        "out": [
+          "native pd_to_int7 cases=4105 disagreements=0"
+        ]
+      },
+      "oracle": {
+        "exit": 0,
+        "out": [
+          "oracle packed_decimal.to_int cases=4105 disagreements=0"
+        ]
+      },
+      "python": {
+        "exit": 0,
+        "out": [
+          "python pd_to_int7 cases=4105 disagreements=0"
+        ]
+      },
+      "wasm": {
+        "exit": 0,
+        "out": [
+          "wasm pd_to_int7 cases=4105 disagreements=0"
+        ]
+      }
+    }
+  },
+  "started_utc": "2026-11-04T23:05:54Z",
+  "state": "done",
+  "step": "conform-software",
+  "tool_versions": {
+    "clang": "Ubuntu clang version 18.1.3 (1ubuntu1)",
+    "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "node": "v22.23.4",
+    "python": "Python 3.13.18"
+  }
+}

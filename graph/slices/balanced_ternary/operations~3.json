@@ -1,0 +1,1 @@
+{"arity":2,"candidate":true,"meaning":"a * b, low n trits (wrapping modulo 3^n)","name":"mul","reference":{"symbol_pattern":"bt_mul{width}"}}

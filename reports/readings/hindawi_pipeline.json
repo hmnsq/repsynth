@@ -1,0 +1,932 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "generator": "repsynth.lanes.oracles 0.3.0",
+  "oracle": {
+    "repository": "hindawiai/hindawi2026.10",
+    "commit": "b53530f624a0dd3065f9370ff439223a43d49994",
+    "tree": "0a1dd02d62d07b96eb87b294f21409d1d7730e64",
+    "chintamani_pinned_by_hindawi": "3ad87785a75dc2b18438a8b068807103cb920c81",
+    "fetched_by": "scripts/fetch.sh",
+    "built_by": "scripts/build.sh"
+  },
+  "descriptor": {
+    "shailis": [
+      {
+        "header": "praa_tha",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 54,
+            "command": "(echo \"<shailee praa_tha>\"; cat tempfil012345.temphin | h2b | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "h2b",
+              "source": "Hindawi/praatha/h2b.uhin, built by Hindawi/praatha/Makefile (flex)"
+            },
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 54,
+            "command": "(echo \"<shailee praa_tha>\"; cat tempfil012345.temphin | tr 'A-Z' 'a-z' | b2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16 -tutf8 > hin.uhin"
+          },
+          "transforms": [
+            {
+              "transform": "tr 'A-Z' 'a-z'",
+              "source": "POSIX tr, arguments as written"
+            },
+            {
+              "transform": "b2h",
+              "source": "Hindawi/praatha/b2h.uhin, built by Hindawi/praatha/Makefile (flex)"
+            },
+            {
+              "transform": "sed 's/_/__/g'",
+              "source": "POSIX sed, arguments as written"
+            }
+          ]
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 54,
+            "command": "praathacc tempfil012345.temphin"
+          }
+        }
+      },
+      {
+        "header": "praa_thamika",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 56,
+            "command": "(echo \"<shailee praa_thamika>\"; cat tempfil012345.temphin | h2b | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "h2b",
+              "source": "Hindawi/praatha/h2b.uhin, built by Hindawi/praatha/Makefile (flex)"
+            },
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 56,
+            "command": "(echo \"<shailee praa_thamika>\"; cat tempfil012345.temphin | tr 'A-Z' 'a-z' | b2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16 -tutf8 > hin.uhin"
+          },
+          "transforms": [
+            {
+              "transform": "tr 'A-Z' 'a-z'",
+              "source": "POSIX tr, arguments as written"
+            },
+            {
+              "transform": "b2h",
+              "source": "Hindawi/praatha/b2h.uhin, built by Hindawi/praatha/Makefile (flex)"
+            },
+            {
+              "transform": "sed 's/_/__/g'",
+              "source": "POSIX sed, arguments as written"
+            }
+          ]
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 56,
+            "command": "praathacc tempfil012345.temphin"
+          }
+        }
+      },
+      {
+        "header": "guru",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 58,
+            "command": "(echo \"<shailee guru>\"; cat tempfil012345.temphin | h2c | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "h2c",
+              "source": "Hindawi/guru/h2c.uhin, built by Hindawi/guru/Makefile (flex)"
+            },
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 58,
+            "command": "(echo \"<shailee guru>\"; cat tempfil012345.temphin | c2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16 -tutf8 > hin.uhin"
+          },
+          "transforms": [
+            {
+              "transform": "c2h",
+              "source": "Hindawi/guru/c2h.uhin, built by Hindawi/guru/Makefile (flex)"
+            },
+            {
+              "transform": "sed 's/_/__/g'",
+              "source": "POSIX sed, arguments as written"
+            }
+          ]
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 58,
+            "command": "gurucc tempfil012345.temphin"
+          }
+        }
+      },
+      {
+        "header": "guroo",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 60,
+            "command": "(echo \"<shailee guroo>\"; cat tempfil012345.temphin | h2c | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "h2c",
+              "source": "Hindawi/guru/h2c.uhin, built by Hindawi/guru/Makefile (flex)"
+            },
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 60,
+            "command": "(echo \"<shailee guroo>\"; cat tempfil012345.temphin | c2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16 -tutf8 > hin.uhin"
+          },
+          "transforms": [
+            {
+              "transform": "c2h",
+              "source": "Hindawi/guru/c2h.uhin, built by Hindawi/guru/Makefile (flex)"
+            },
+            {
+              "transform": "sed 's/_/__/g'",
+              "source": "POSIX sed, arguments as written"
+            }
+          ]
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 60,
+            "command": "gurucc tempfil012345.temphin"
+          }
+        }
+      },
+      {
+        "header": "shraee_nnee",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 62,
+            "command": "(echo \"<shailee shraee_nnee>\"; cat tempfil012345.temphin | h2cpp | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "h2cpp",
+              "source": "Hindawi/shraeni/h2cpp.uhin, built by Hindawi/shraeni/Makefile (flex)"
+            },
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 62,
+            "command": "(echo \"<shailee shraee_nnee>\"; cat tempfil012345.temphin | cpp2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16 -tutf8 > hin.uhin"
+          },
+          "transforms": [
+            {
+              "transform": "cpp2h",
+              "source": "Hindawi/shraeni/cpp2h.uhin, built by Hindawi/shraeni/Makefile (flex)"
+            },
+            {
+              "transform": "sed 's/_/__/g'",
+              "source": "POSIX sed, arguments as written"
+            }
+          ]
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 62,
+            "command": "shraenicc tempfil012345.temphin"
+          }
+        }
+      },
+      {
+        "header": "shraee_nneeba_d_dha",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 64,
+            "command": "(echo \"<shailee shraee_nneeba_d_dha>\"; cat tempfil012345.temphin | h2cpp | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "h2cpp",
+              "source": "Hindawi/shraeni/h2cpp.uhin, built by Hindawi/shraeni/Makefile (flex)"
+            },
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 64,
+            "command": "(echo \"<shailee shraee_nneeba_d_dha>\"; cat tempfil012345.temphin | cpp2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16 -tutf8 > hin.uhin"
+          },
+          "transforms": [
+            {
+              "transform": "cpp2h",
+              "source": "Hindawi/shraeni/cpp2h.uhin, built by Hindawi/shraeni/Makefile (flex)"
+            },
+            {
+              "transform": "sed 's/_/__/g'",
+              "source": "POSIX sed, arguments as written"
+            }
+          ]
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 64,
+            "command": "shraenicc tempfil012345.temphin"
+          }
+        }
+      },
+      {
+        "header": "shab_da",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 66,
+            "command": "(echo \"<shailee shab_da>\"; cat tempfil012345.temphin | h2l | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "h2l",
+              "source": "Hindawi/shabda/h2l.uhin, built by Hindawi/shabda/Makefile (flex)"
+            },
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 66,
+            "command": "(echo \"<shailee shab_da>\"; cat tempfil012345.temphin | l2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16 -tutf8 > hin.uhin"
+          },
+          "transforms": [
+            {
+              "transform": "l2h",
+              "source": "Hindawi/shabda/l2h.uhin, built by Hindawi/shabda/Makefile (flex)"
+            },
+            {
+              "transform": "sed 's/_/__/g'",
+              "source": "POSIX sed, arguments as written"
+            }
+          ]
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 66,
+            "command": "shabdacc tempfil012345.temphin"
+          }
+        }
+      },
+      {
+        "header": "soochee",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 68,
+            "command": "(echo \"<shailee soochee>\"; cat tempfil012345.temphin | h2py | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "h2py",
+              "source": "Hindawi/soochee/h2py.uhin, built by Hindawi/soochee/Makefile (flex)"
+            },
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 68,
+            "command": "(echo \"<shailee soochee>\"; cat tempfil012345.temphin | py2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16 -tutf8 > hin.uhin"
+          },
+          "transforms": [
+            {
+              "transform": "py2h",
+              "source": "Hindawi/soochee/py2h.uhin, built by Hindawi/soochee/Makefile (flex)"
+            },
+            {
+              "transform": "sed 's/_/__/g'",
+              "source": "POSIX sed, arguments as written"
+            }
+          ]
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 68,
+            "command": "soocheecc tempfil012345.temphin"
+          }
+        }
+      },
+      {
+        "header": "wyaaka",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 70,
+            "command": "(echo \"<shailee wyaaka>\"; cat tempfil012345.temphin | h2yacc | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "h2yacc",
+              "source": "Hindawi/wyaaka/h2yacc.uhin, built by Hindawi/wyaaka/Makefile (flex)"
+            },
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 70,
+            "command": "(echo \"<shailee wyaaka>\"; cat tempfil012345.temphin | yacc2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16 -tutf8 > hin.uhin"
+          },
+          "transforms": [
+            {
+              "transform": "yacc2h",
+              "source": "Hindawi/wyaaka/yacc2h.uhin, built by Hindawi/wyaaka/Makefile (flex)"
+            },
+            {
+              "transform": "sed 's/_/__/g'",
+              "source": "POSIX sed, arguments as written"
+            }
+          ]
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 70,
+            "command": "wyaakacc tempfil012345.temphin"
+          }
+        }
+      },
+      {
+        "header": "ya_m_tra",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 72,
+            "command": "(echo \"<shailee ya_m_tra>\"; cat tempfil012345.temphin | h2y | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "h2y",
+              "source": "Hindawi/yantra/h2y.uhin, built by Hindawi/yantra/Makefile (flex)"
+            },
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 72,
+            "command": "(echo \"<shailee ya_m_tra>\"; cat tempfil012345.temphin | y2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16 -tutf8 > hin.uhin"
+          },
+          "transforms": [
+            {
+              "transform": "y2h",
+              "source": "Hindawi/yantra/y2h.uhin, built by Hindawi/yantra/Makefile (flex)"
+            },
+            {
+              "transform": "sed 's/_/__/g'",
+              "source": "POSIX sed, arguments as written"
+            }
+          ]
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 72,
+            "command": "yantracc tempfil012345.temphin"
+          }
+        }
+      },
+      {
+        "header": "yaa_m_trika",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 74,
+            "command": "(echo \"<shailee yaa_m_trika>\"; cat tempfil012345.temphin | h2y | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "h2y",
+              "source": "Hindawi/yantra/h2y.uhin, built by Hindawi/yantra/Makefile (flex)"
+            },
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 74,
+            "command": "(echo \"<shailee yaa_m_trika>\"; cat tempfil012345.temphin | y2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16 -tutf8 > hin.uhin"
+          },
+          "transforms": [
+            {
+              "transform": "y2h",
+              "source": "Hindawi/yantra/y2h.uhin, built by Hindawi/yantra/Makefile (flex)"
+            },
+            {
+              "transform": "sed 's/_/__/g'",
+              "source": "POSIX sed, arguments as written"
+            }
+          ]
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 74,
+            "command": "yantracc tempfil012345.temphin"
+          }
+        }
+      },
+      {
+        "header": "roaboata",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 76,
+            "command": "(echo Not supported as yet. Raise ECR if needed; echo \"<shailee roaboata>\"; cat tempfil012345.temphin | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 76,
+            "command": "(echo Not supported as yet. Raise ECR if needed; (echo \"<shailee roaboata>\"; cat tempfil012345.temphin  > hin.uhin"
+          },
+          "transforms": []
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 76,
+            "command": "robotcc tempfil012345.temphin"
+          }
+        }
+      },
+      {
+        "header": "k_ri_trima",
+        "forward": {
+          "driver": "Hindawi/hindrv/hin2std",
+          "common_prefix": {
+            "command": "cat $1 | fixuninum | sed 's/\\\\न/\\\\n/g; s/\\%भ/\\%f/g; s/\\%प/\\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | hin2std.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/hin2std.awk",
+            "line": 78,
+            "command": "(echo \"<shailee k_ri_trima>\"; cat tempfil012345.temphin | h2j | acii2hin) > hin.std"
+          },
+          "transforms": [
+            {
+              "transform": "h2j",
+              "source": "Hindawi/kritrima/h2j.uhin, built by Hindawi/kritrima/Makefile (flex)"
+            },
+            {
+              "transform": "acii2hin",
+              "source": "Romenagri/acii2hin, built by Romenagri/Makefile"
+            }
+          ]
+        },
+        "reverse": {
+          "driver": "Hindawi/hindrv/std2hin",
+          "common_prefix": {
+            "command": "cat $1 | sed 's/\\\\n/\\\\न/g; s/\\%f/\\%भ/g; s/\\%d/\\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk",
+            "line": 36
+          },
+          "dispatch": {
+            "file": "Hindawi/hindrv/std2hin.awk",
+            "line": 78,
+            "command": "(echo \"<shailee k_ri_trima>\"; cat tempfil012345.temphin | j2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16 -tutf8 > hin.uhin"
+          },
+          "transforms": [
+            {
+              "transform": "j2h",
+              "source": "Hindawi/kritrima/j2h.uhin, built by Hindawi/kritrima/Makefile (flex)"
+            },
+            {
+              "transform": "sed 's/_/__/g'",
+              "source": "POSIX sed, arguments as written"
+            }
+          ]
+        },
+        "compile": {
+          "driver": "Hindawi/hindrv/hincc",
+          "dispatch": {
+            "file": "Hindawi/hindrv/hincc.awk",
+            "line": 78,
+            "command": "kritrimacc tempfil012345.temphin"
+          }
+        }
+      }
+    ],
+    "files": {
+      "hin2std": "4661cc9fb6c5eb5fd308be149e37d61207259458f58351fd960af561a9d97fc6",
+      "hin2std.awk": "5cac3606c74af37a67ae3e48947d50aee23d5429635821d2e32e5b146c81f1db",
+      "std2hin": "383b060546ca12bfde831bedf507c559d63d45c2155012cec66c909710e7ae6f",
+      "std2hin.awk": "e5c0e795eb390f7d2e651b12967712af60b83a85398d2155d392aa93a3fc9b09",
+      "hincc": "e86dd2b0b8669a010f7aeeb56671996196fec4a378e613069bf131ec24a7ceab",
+      "hincc.awk": "ff20407274cbc47ad691466475094dbea921ebc5a83fdf051a182c183cffe3c2"
+    }
+  },
+  "round_trip_runs": {
+    "record": "reports/oracles/hindawi.json, step shaili_round_trip",
+    "exit_code": 0,
+    "rows": [
+      {
+        "sample": "HindiASM",
+        "stage": "forward_hin2std",
+        "exit": "0",
+        "bytes_out": "338",
+        "sha256_out": "52e2c27a9968e1cdd77a76869e2d88003b8ba85a54bd68db3dd326ba3cd9301f",
+        "note": "-"
+      },
+      {
+        "sample": "HindiASM",
+        "stage": "reverse_std2hin",
+        "exit": "0",
+        "bytes_out": "730",
+        "sha256_out": "209714d8253c7938da016aa960e9a0d0aaec1b2409b692a8d854e6de1194ef4f",
+        "note": "no"
+      },
+      {
+        "sample": "HindiASM",
+        "stage": "compile_hincc",
+        "exit": "0",
+        "bytes_out": "133",
+        "sha256_out": "3b39fa8e41e08a1266ac63b4a35f6090481d42f82ea0cca67d452e33fd4c0f8c",
+        "note": "produced=hin.exe,tempfil0123.tmphin.asm,tempfil012345.temphin,"
+      },
+      {
+        "sample": "HindiBASIC",
+        "stage": "forward_hin2std",
+        "exit": "0",
+        "bytes_out": "321",
+        "sha256_out": "8d7509d8cbb50c61a8e4c680a5ba6d7a66c04d12b76a8224069f1a0694f95d35",
+        "note": "-"
+      },
+      {
+        "sample": "HindiBASIC",
+        "stage": "reverse_std2hin",
+        "exit": "0",
+        "bytes_out": "632",
+        "sha256_out": "1ae2ebd509173b438cb628a748e17e634acfc49c9b2dbad68474f3ce3fad2e5c",
+        "note": "no"
+      },
+      {
+        "sample": "HindiBASIC",
+        "stage": "compile_hincc",
+        "exit": "0",
+        "bytes_out": "154",
+        "sha256_out": "90534506b695f1cd245d3a208d96feacb71be677813d67ec5e5893d1abe672fe",
+        "note": "produced=hin.exe,tempfil0123.tmphin.bas,tempfil0123.tmphin.c,tempfil012345.temphin,"
+      },
+      {
+        "sample": "HindiBASICgraphics",
+        "stage": "forward_hin2std",
+        "exit": "0",
+        "bytes_out": "0",
+        "sha256_out": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "note": "-"
+      },
+      {
+        "sample": "HindiBASICgraphics",
+        "stage": "reverse_std2hin",
+        "exit": "0",
+        "bytes_out": "0",
+        "sha256_out": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "note": "no"
+      },
+      {
+        "sample": "HindiBASICgraphics",
+        "stage": "compile_hincc",
+        "exit": "0",
+        "bytes_out": "154",
+        "sha256_out": "0f804492cd3ade8796aa5b5299b91b9067680aac8c5e702d70ac704f7f02b6cf",
+        "note": "produced=hin.exe,tempfil0123.tmphin.bas,tempfil0123.tmphin.c,tempfil012345.temphin,"
+      },
+      {
+        "sample": "HindiC++",
+        "stage": "forward_hin2std",
+        "exit": "0",
+        "bytes_out": "561",
+        "sha256_out": "81cc247ce06d5c6e9fdb158a790d9fc1f8bf78baa0899da423e7637ed0efc8f2",
+        "note": "-"
+      },
+      {
+        "sample": "HindiC++",
+        "stage": "reverse_std2hin",
+        "exit": "0",
+        "bytes_out": "1119",
+        "sha256_out": "4fc7e6d18a5fa5182837b29d26a7d3f90ba7b8e6741c9c3cbc8c2ae8c9ed6067",
+        "note": "no"
+      },
+      {
+        "sample": "HindiC++",
+        "stage": "compile_hincc",
+        "exit": "0",
+        "bytes_out": "55",
+        "sha256_out": "19c019c2f83468b640dee8bd059a34fa6b6cfe22cc99df9533bdc34dccf19813",
+        "note": "produced=hin.exe,tempfil0123.tmphin.cpp,tempfil012345.temphin,"
+      },
+      {
+        "sample": "HindiC",
+        "stage": "forward_hin2std",
+        "exit": "0",
+        "bytes_out": "231",
+        "sha256_out": "d6b67a776fdfff1549bfb275793e8ddc67b5b064b69db05da4c0a0c0557bd399",
+        "note": "-"
+      },
+      {
+        "sample": "HindiC",
+        "stage": "reverse_std2hin",
+        "exit": "0",
+        "bytes_out": "493",
+        "sha256_out": "9075f2b86f16fe77af07c0bcf89d19f535ab5aad06fd6ba98213298a64961241",
+        "note": "no"
+      },
+      {
+        "sample": "HindiC",
+        "stage": "compile_hincc",
+        "exit": "0",
+        "bytes_out": "55",
+        "sha256_out": "19c019c2f83468b640dee8bd059a34fa6b6cfe22cc99df9533bdc34dccf19813",
+        "note": "produced=hin.exe,tempfil0123.tmphin.c,tempfil012345.temphin,"
+      },
+      {
+        "sample": "HindiJAVA",
+        "stage": "forward_hin2std",
+        "exit": "0",
+        "bytes_out": "145",
+        "sha256_out": "35fc85be89bbaac304e553586e327cd4af8f9c886422468dc55b5b0958035b21",
+        "note": "-"
+      },
+      {
+        "sample": "HindiJAVA",
+        "stage": "reverse_std2hin",
+        "exit": "0",
+        "bytes_out": "358",
+        "sha256_out": "74ff274caa7d8fd2262876816401879dbef2817de041f6e5f760001fe351bfb5",
+        "note": "no"
+      },
+      {
+        "sample": "HindiJAVA",
+        "stage": "compile_hincc",
+        "exit": "0",
+        "bytes_out": "55",
+        "sha256_out": "19c019c2f83468b640dee8bd059a34fa6b6cfe22cc99df9533bdc34dccf19813",
+        "note": "produced=hin.exe,pareekxa_nna.class,pareekxa_nna.java,tempfil0123.tmphin.java,tempfil012345.temphin,"
+      },
+      {
+        "sample": "HindiLEX",
+        "stage": "forward_hin2std",
+        "exit": "0",
+        "bytes_out": "83",
+        "sha256_out": "998fc4e58fef6f74d47a638d6e0699e3c81a635420fc60daa364713f5178197e",
+        "note": "-"
+      },
+      {
+        "sample": "HindiLEX",
+        "stage": "reverse_std2hin",
+        "exit": "0",
+        "bytes_out": "124",
+        "sha256_out": "d23141d09ca6df436c7edfa40ae67241c6c38d9d9b0598148ad6704071362523",
+        "note": "no"
+      },
+      {
+        "sample": "HindiLEX",
+        "stage": "compile_hincc",
+        "exit": "0",
+        "bytes_out": "55",
+        "sha256_out": "19c019c2f83468b640dee8bd059a34fa6b6cfe22cc99df9533bdc34dccf19813",
+        "note": "produced=hin.exe,lexyy.c,tempfil0123.tmphin.lex,tempfil012345.temphin,"
+      },
+      {
+        "sample": "HindiYACC",
+        "stage": "forward_hin2std",
+        "exit": "0",
+        "bytes_out": "1477",
+        "sha256_out": "d98d8de7ce9fd70c7379d219c4b2fa7dcdc78c6b5e3e7ca66fa32f59507342e0",
+        "note": "-"
+      },
+      {
+        "sample": "HindiYACC",
+        "stage": "reverse_std2hin",
+        "exit": "0",
+        "bytes_out": "2521",
+        "sha256_out": "3a60d3b07d7183f9720b57c2ac127982c6ffc38113863ad137df5770e58a4a55",
+        "note": "no"
+      },
+      {
+        "sample": "HindiYACC",
+        "stage": "compile_hincc",
+        "exit": "0",
+        "bytes_out": "55",
+        "sha256_out": "19c019c2f83468b640dee8bd059a34fa6b6cfe22cc99df9533bdc34dccf19813",
+        "note": "produced=hin.exe,tempfil0123.tmphin.yacc,tempfil012345.temphin,yytab.c,"
+      }
+    ]
+  }
+}

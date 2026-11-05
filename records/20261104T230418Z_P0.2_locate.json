@@ -1,0 +1,23 @@
+{
+  "command": "python3 -m repsynth intake locate",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:04:18Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Hit counts per asset; a hit is a mention, not the asset. Reading is recorded in the register.",
+  "outputs": {
+    "reports/asset_register.json": "a707940bb52b96227d14cdf20aabb87a60cb60d389eaaba5897b9be91e0644f0"
+  },
+  "packet": "P0.2",
+  "results": {
+    "APCISR WebAssembly trace": 110,
+    "AyeHandSum": 242,
+    "MSRR": 0,
+    "Machine-stack explainer": 2,
+    "NI2A2": 3
+  },
+  "started_utc": "2026-11-04T23:03:53Z",
+  "state": "wired_unproven",
+  "step": "locate",
+  "tool_versions": {}
+}

@@ -1,0 +1,20 @@
+{
+  "command": "repsynth.numeric.verify_reference('balanced_ternary')",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:18:26Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/numeric/balanced_ternary_reference_vs_oracle.json": "ac68a802e40456dcf29996d5ee1f868091bcb5f2c7d952aee06695b885ca9cc5"
+  },
+  "packet": "P1.3",
+  "results": {
+    "cases": 11403780,
+    "disagreements": 0
+  },
+  "started_utc": "2026-11-04T23:15:32Z",
+  "state": "done",
+  "step": "acceptance",
+  "tool_versions": {}
+}

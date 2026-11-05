@@ -1,0 +1,43 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "python3 -m repsynth.lanes.tiera binutils",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:36:52Z",
+    "image_digests": {},
+    "inputs": {
+      "gen/binutils/out/balanced_ternary/patches.json": "54f585e03f1b3969887302a6e2b9074ae489c149a36c58cc2ec35539bb004c0b",
+      "gen/binutils/out/packed_decimal/patches.json": "1454d4f751aeb42ebb06ab9a77a039774261a4aab6f32b3be60f4c20c53bbf4f"
+    },
+    "packet": "P4.5",
+    "started_utc": "2026-11-04T23:36:26Z",
+    "state": "done",
+    "step": "binutils",
+    "tool_versions": {
+      "binutils": "2.47 release tarball binutils_2.47.orig.tar.xz (archive.ubuntu.com), sha256 154ab23b60070e8f27013c22977f1129425d67d1e8acd6e13010e617811e4cff; bminor/binutils-gdb and hmnsq/binutils-gdb not reachable from here",
+      "dejagnu": "DejaGnu version\t1.6.3",
+      "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+    }
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "8c17bfd65e3fdc8f5e93e63c01c5b99d8a93e9d44ca1cadca20e7fa1f93e44fa"
+      },
+      "name": ".cache/binutils-build/binutils/objdump"
+    },
+    {
+      "digest": {
+        "sha256": "bfce5371ee62c9101c072b8f0e5a5af60c7668ce472dd72167f61fe1d942faeb"
+      },
+      "name": ".cache/binutils-build/gas/as-new"
+    },
+    {
+      "digest": {
+        "sha256": "56c3ef46caf226fcfbbdcfe788c37ab8ea676615503c69b2f7243c8902254423"
+      },
+      "name": "records/20261104T233652Z_P4.5_binutils.json"
+    }
+  ]
+}

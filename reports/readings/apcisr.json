@@ -1,0 +1,3774 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "generator": "repsynth.lanes.oracles 0.3.0",
+  "oracle": {
+    "repository": "hindawiai/chintamani",
+    "commit": "cf614ff2dd8da9e23f2f98c49686640e2ec2e181",
+    "tree": "c3f5dfa69d513c3f9afa0351a573731fcf41c3af",
+    "path": "APCISR/",
+    "apcisr_h_sha256": "2b0e9bc0ac2f06447e5e66041b8462951e09e4c6b86c30826503e1aea1659b11"
+  },
+  "traced_build": {
+    "repository": "hindawiai/hindawi2026.10",
+    "commit": "b53530f624a0dd3065f9370ff439223a43d49994",
+    "path": "docs/trace/apcisr/src",
+    "identical_to_pinned_apart_from_trace_lines": {
+      "apcisr.h": true,
+      "cisr2asc.h": true,
+      "acii2csr.h": true,
+      "acii2csr.c (trace lines removed, CR ignored)": true
+    },
+    "builds": [
+      {
+        "command": "gcc -w -O0 -I . -o dump_chart /home/user/build/repsynth/oracles/apcisr/dump_chart.c",
+        "exit_code": 0
+      },
+      {
+        "command": "gcc -w -O0 -I . -o trace_drv /home/user/build/repsynth/oracles/apcisr/trace_drv.c acii2csr.c",
+        "exit_code": 0
+      }
+    ],
+    "drivers": {
+      "oracles/apcisr/dump_chart.c": "0de86c2407a787976b232769d7a1712d8b4aaf5f1eadd6dd28302788f961718e",
+      "oracles/apcisr/trace_drv.c": "580e6f94d162a66009e482692d01c06b04642145de73cbbd9022343ccdce6abc"
+    }
+  },
+  "chart_rows": 82,
+  "rows": [
+    {
+      "index": 0,
+      "romenagri": "_hra",
+      "acii": "d8e8cf",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          103,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "d8e8cf",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          103,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 1,
+      "romenagri": "kxa",
+      "acii": "b3e8d6",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          40,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3e8d6",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          40,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 2,
+      "romenagri": "_tra",
+      "acii": "c2e8cf",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          41,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "c2e8cf",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          41,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 3,
+      "romenagri": "j_yna",
+      "acii": "bae8bc",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          42,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "bae8bc",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          42,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 4,
+      "romenagri": "_dya",
+      "acii": "c4e8cd",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          43,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "c4e8cd",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          43,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 5,
+      "romenagri": "_t_ta",
+      "acii": "c2e8c2",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          51,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "c2e8c2",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          51,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 6,
+      "romenagri": "k_ta",
+      "acii": "b3e8c2",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          48,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3e8c2",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          48,
+          129
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 7,
+      "romenagri": "shra",
+      "acii": "d5e8cf",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          44,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "d5e8cf",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          44,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 8,
+      "romenagri": "_ee_m",
+      "acii": "a7a2",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          1,
+          16
+        ],
+        [
+          0,
+          2,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "a7a2",
+      "observed_cells": [
+        [
+          0,
+          1,
+          16
+        ],
+        [
+          128,
+          2,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 9,
+      "romenagri": "_h_ri",
+      "acii": "d8df",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          104,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "d8df",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          104,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 10,
+      "romenagri": "_rda",
+      "acii": "bfe9",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          19,
+          32
+        ],
+        [
+          0,
+          32,
+          0
+        ]
+      ],
+      "run_input": "bfe9",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          19,
+          160
+        ],
+        [
+          0,
+          32,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 11,
+      "romenagri": "_rdha",
+      "acii": "c0e9",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          32
+        ],
+        [
+          0,
+          32,
+          0
+        ]
+      ],
+      "run_input": "c0e9",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          20,
+          160
+        ],
+        [
+          0,
+          32,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 12,
+      "romenagri": "ru",
+      "acii": "cfdd",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          46,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "cfdd",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          46,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 13,
+      "romenagri": "roo",
+      "acii": "cfde",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          47,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "cfde",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          47,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 14,
+      "romenagri": "r",
+      "acii": "cfe8",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          33,
+          32
+        ],
+        [
+          0,
+          64,
+          0
+        ]
+      ],
+      "run_input": "cfe8",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          33,
+          160
+        ],
+        [
+          0,
+          64,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 15,
+      "romenagri": "^ra",
+      "acii": "e8cf",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          64,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3e8cf",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          71,
+          129
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 16,
+      "romenagri": "_h",
+      "acii": "d8e8",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          39,
+          32
+        ],
+        [
+          0,
+          64,
+          0
+        ]
+      ],
+      "run_input": "d8e8",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          39,
+          160
+        ],
+        [
+          0,
+          64,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 17,
+      "romenagri": "_a",
+      "acii": "a4",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "a4",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          1,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 18,
+      "romenagri": "_aa",
+      "acii": "a5",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "a5",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          1,
+          134
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 19,
+      "romenagri": "^aa",
+      "acii": "da",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3da",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          7,
+          133
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 20,
+      "romenagri": "_i",
+      "acii": "a6",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "a6",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          2,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 21,
+      "romenagri": "^i",
+      "acii": "db",
+      "purna": 0,
+      "grid": [
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3db",
+      "observed_cells": [
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          136,
+          7,
+          129
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 22,
+      "romenagri": "_ee",
+      "acii": "a7",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "a7",
+      "observed_cells": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          128,
+          2,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 23,
+      "romenagri": "^ee",
+      "acii": "dc",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3dc",
+      "observed_cells": [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          128,
+          7,
+          133
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 24,
+      "romenagri": "_u",
+      "acii": "a8",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "a8",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          3,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 25,
+      "romenagri": "^u",
+      "acii": "dd",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "run_input": "b3dd",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "rule_governed": true
+    },
+    {
+      "index": 26,
+      "romenagri": "_oo",
+      "acii": "a9",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "a9",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          4,
+          129
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 27,
+      "romenagri": "^oo",
+      "acii": "de",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "run_input": "b3de",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "rule_governed": true
+    },
+    {
+      "index": 28,
+      "romenagri": "_ri",
+      "acii": "aa",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          32
+        ],
+        [
+          0,
+          16,
+          0
+        ]
+      ],
+      "run_input": "aa",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          6,
+          160
+        ],
+        [
+          0,
+          16,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 29,
+      "romenagri": "^_ri",
+      "acii": "df",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          0
+        ]
+      ],
+      "run_input": "b3df",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          16,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 30,
+      "romenagri": "_ae",
+      "acii": "ac",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "ac",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          5,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 31,
+      "romenagri": "^ae",
+      "acii": "e1",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3e1",
+      "observed_cells": [
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 32,
+      "romenagri": "_ai",
+      "acii": "ad",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          5,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "ad",
+      "observed_cells": [
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          128,
+          5,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 33,
+      "romenagri": "^ai",
+      "acii": "e2",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3e2",
+      "observed_cells": [
+        [
+          0,
+          8,
+          0
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 34,
+      "romenagri": "_oa",
+      "acii": "b0",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b0",
+      "observed_cells": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          128,
+          1,
+          134
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 35,
+      "romenagri": "^oa",
+      "acii": "e5",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3e5",
+      "observed_cells": [
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          128,
+          7,
+          133
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 36,
+      "romenagri": "_ou",
+      "acii": "b1",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b1",
+      "observed_cells": [
+        [
+          0,
+          0,
+          8
+        ],
+        [
+          128,
+          1,
+          134
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 37,
+      "romenagri": "^ou",
+      "acii": "e6",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          8
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3e6",
+      "observed_cells": [
+        [
+          0,
+          0,
+          8
+        ],
+        [
+          128,
+          7,
+          133
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 38,
+      "romenagri": "_au",
+      "acii": "b2",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          64
+        ],
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b2",
+      "observed_cells": [
+        [
+          0,
+          0,
+          64
+        ],
+        [
+          128,
+          1,
+          134
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 39,
+      "romenagri": "^au",
+      "acii": "e7",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          64
+        ],
+        [
+          0,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3e7",
+      "observed_cells": [
+        [
+          0,
+          0,
+          64
+        ],
+        [
+          128,
+          7,
+          133
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 40,
+      "romenagri": "_ao",
+      "acii": "ae",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          64,
+          0
+        ],
+        [
+          0,
+          5,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "ae",
+      "observed_cells": [
+        [
+          0,
+          64,
+          0
+        ],
+        [
+          128,
+          5,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 41,
+      "romenagri": "^ao",
+      "acii": "e3",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          64,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3e3",
+      "observed_cells": [
+        [
+          0,
+          64,
+          0
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 42,
+      "romenagri": "ka",
+      "acii": "b3",
+      "purna": 3,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          7,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 43,
+      "romenagri": "kha",
+      "acii": "b4",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b4",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          8,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 44,
+      "romenagri": "ga",
+      "acii": "b5",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          9,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b5",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          9,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 45,
+      "romenagri": "gha",
+      "acii": "b6",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          10,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b6",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          10,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 46,
+      "romenagri": "_nga",
+      "acii": "b7",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          11,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b7",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          11,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 47,
+      "romenagri": "cha",
+      "acii": "b8",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          12,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b8",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          12,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 48,
+      "romenagri": "chha",
+      "acii": "b9",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          13,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b9",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          13,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 49,
+      "romenagri": "ja",
+      "acii": "ba",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          14,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "ba",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          14,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 50,
+      "romenagri": "jha",
+      "acii": "bb",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          15,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "bb",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          15,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 51,
+      "romenagri": "_yna",
+      "acii": "bc",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          16,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "bc",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          16,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 52,
+      "romenagri": "ta",
+      "acii": "bd",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          17,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "bd",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          17,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 53,
+      "romenagri": "tha",
+      "acii": "be",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          18,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "be",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          18,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 54,
+      "romenagri": "da",
+      "acii": "bf",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          19,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "bf",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          19,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 55,
+      "romenagri": "dha",
+      "acii": "c0",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          20,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "c0",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          20,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 56,
+      "romenagri": "_nna",
+      "acii": "c1",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          21,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "c1",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          21,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 57,
+      "romenagri": "_ta",
+      "acii": "c2",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          22,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "c2",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          22,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 58,
+      "romenagri": "_tha",
+      "acii": "c3",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          23,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "c3",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          23,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 59,
+      "romenagri": "_da",
+      "acii": "c4",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          24,
+          32
+        ],
+        [
+          0,
+          128,
+          0
+        ]
+      ],
+      "run_input": "c4",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          24,
+          160
+        ],
+        [
+          0,
+          128,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 60,
+      "romenagri": "_dha",
+      "acii": "c5",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          25,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "c5",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          25,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 61,
+      "romenagri": "na",
+      "acii": "c6",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          26,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "c6",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          26,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 62,
+      "romenagri": "pa",
+      "acii": "c8",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          27,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "c8",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          27,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 63,
+      "romenagri": "pha",
+      "acii": "c9",
+      "purna": 3,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          28,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "c9",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          28,
+          129
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 64,
+      "romenagri": "ba",
+      "acii": "ca",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "ca",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          29,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 65,
+      "romenagri": "bha",
+      "acii": "cb",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "cb",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          30,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 66,
+      "romenagri": "ma",
+      "acii": "cc",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          31,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "cc",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          31,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 67,
+      "romenagri": "ya",
+      "acii": "cd",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "cd",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          32,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 68,
+      "romenagri": "ra",
+      "acii": "cf",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          33,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "cf",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          33,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 69,
+      "romenagri": "la",
+      "acii": "d1",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          34,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "d1",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          34,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 70,
+      "romenagri": "wa",
+      "acii": "d4",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          35,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "d4",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          35,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 71,
+      "romenagri": "lvra",
+      "acii": "d2",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          105,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "d2",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          105,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 72,
+      "romenagri": "sha",
+      "acii": "d5",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          36,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "d5",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          36,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 73,
+      "romenagri": "xa",
+      "acii": "d6",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          37,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "d6",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          37,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 74,
+      "romenagri": "sa",
+      "acii": "d7",
+      "purna": 2,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          38,
+          2
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "d7",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          38,
+          130
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 75,
+      "romenagri": "_ha",
+      "acii": "d8",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          39,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "d8",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          39,
+          160
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 76,
+      "romenagri": "_m",
+      "acii": "a2",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          16
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3a2",
+      "observed_cells": [
+        [
+          0,
+          0,
+          16
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 77,
+      "romenagri": "_hh",
+      "acii": "a3",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          16
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3a3",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          7,
+          145
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 78,
+      "romenagri": "_na",
+      "acii": "a1",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          32
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "b3a1",
+      "observed_cells": [
+        [
+          0,
+          0,
+          32
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 79,
+      "romenagri": "^za",
+      "acii": "e9",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          32,
+          0
+        ]
+      ],
+      "run_input": "b3e9",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          32,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 80,
+      "romenagri": "|",
+      "acii": "ea",
+      "purna": 1,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          50,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "run_input": "ea",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          50,
+          128
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "rule_governed": false
+    },
+    {
+      "index": 81,
+      "romenagri": "^",
+      "acii": "e8",
+      "purna": 0,
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          64
+        ]
+      ],
+      "run_input": "b3e8",
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          64,
+          0
+        ]
+      ],
+      "rule_governed": true
+    }
+  ],
+  "disagreements": [
+    {
+      "index": 25,
+      "romenagri": "^u",
+      "acii": "dd",
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          2,
+          0
+        ]
+      ],
+      "resolution": "a dynamic rule of acii2cisr() places this entry (grid_job = 0); the observed cells are the oracle's and stand"
+    },
+    {
+      "index": 27,
+      "romenagri": "^oo",
+      "acii": "de",
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "resolution": "a dynamic rule of acii2cisr() places this entry (grid_job = 0); the observed cells are the oracle's and stand"
+    },
+    {
+      "index": 81,
+      "romenagri": "^",
+      "acii": "e8",
+      "grid": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          64
+        ]
+      ],
+      "observed_cells": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          128,
+          7,
+          129
+        ],
+        [
+          0,
+          64,
+          0
+        ]
+      ],
+      "resolution": "a dynamic rule of acii2cisr() places this entry (grid_job = 0); the observed cells are the oracle's and stand"
+    }
+  ],
+  "corpus": [
+    {
+      "file": "APCISR/test.aci",
+      "sha256": "00f9e6f2416d9c2b31a20bb07278e6b51ed5727d1475b940666123d6ba78d323",
+      "lines": 15,
+      "token_steps": 160,
+      "grid_bits_present": 136,
+      "not_checked_rule_or_conjunct_context": 20,
+      "grid_bits_absent": 4,
+      "absent_steps": [
+        {
+          "input": "c220c320c42020c520c620202020202020202020202020b3df2020202020202020b8b3e8b3db20c8b3e8b3dc",
+          "step": 38,
+          "entry": 21,
+          "romenagri": "^i",
+          "grid": [
+            1,
+            2,
+            0,
+            8,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cells_at_cursors": [
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              138,
+              7,
+              129
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "cursors": [
+            46,
+            48,
+            49
+          ]
+        },
+        {
+          "input": "c820c920ca20cb20cc20202020202020202020202020b3e120b3e22020202020bae9ddcadac62dac2dd8dba2c420d8dba2c4d4dc",
+          "step": 44,
+          "entry": 76,
+          "romenagri": "_m",
+          "grid": [
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cells_at_cursors": [
+            [
+              1,
+              18,
+              0
+            ],
+            [
+              136,
+              39,
+              160
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "cursors": [
+            56,
+            57,
+            58
+          ]
+        },
+        {
+          "input": "c820c920ca20cb20cc20202020202020202020202020b3e120b3e22020202020bae9ddcadac62dac2dd8dba2c420d8dba2c4d4dc",
+          "step": 49,
+          "entry": 76,
+          "romenagri": "_m",
+          "grid": [
+            0,
+            0,
+            16,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "cells_at_cursors": [
+            [
+              1,
+              18,
+              0
+            ],
+            [
+              136,
+              39,
+              160
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "cursors": [
+            62,
+            63,
+            64
+          ]
+        },
+        {
+          "input": "cd20cf2020d120d420d520202020202020202020202020b3e520b3e62020202020c8b3e8d6db20cacfe8c920b3e8cfcc",
+          "step": 39,
+          "entry": 14,
+          "romenagri": "r",
+          "grid": [
+            0,
+            0,
+            0,
+            0,
+            33,
+            32,
+            0,
+            64,
+            0
+          ],
+          "cells_at_cursors": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              130,
+              0,
+              128
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "cursors": [
+            53,
+            54,
+            55
+          ]
+        }
+      ]
+    }
+  ]
+}

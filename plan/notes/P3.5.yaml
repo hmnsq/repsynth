@@ -1,0 +1,6 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC-BY-SA-4.0
+produced:
+- repsynth/impact_cases.py with the four DEP-05 changes; reports/impact/*.json
+not_done:
+- Change (a) waits on the AyeHandSum specification (P1.7), and change (b) on the APCISR grid specification and derived build
+  (P1.6, P6.3).

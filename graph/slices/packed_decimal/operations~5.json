@@ -1,0 +1,1 @@
+{"arity":1,"candidate":true,"meaning":"two's complement to packed decimal, truncated to d digits","name":"from_int","reference":{"symbol_pattern":"pd_from_int{width}"}}

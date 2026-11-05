@@ -1,0 +1,15 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Iteration I6, milestone M5 hardware lane: P5.1, P5.3, P5.8, P5.4, P5.2, P5.5, P5.11, P5.7.
+# P5.5 needs the Tier A patched QEMU (P4.2) and test program (P4.3); P5.11 needs the P4.13 binaries.
+# The first run clones cv32e40x, jugaad28 and zamin read-only under .cache/hdl (network needed once).
+repsynth-hdl | python3 -m repsynth hdl setup
+repsynth-hdl | python3 -m repsynth hdl gen
+repsynth-hdl | python3 -m repsynth hdl lint
+repsynth-hdl | python3 -m repsynth hdl sim
+repsynth-hdl | python3 -m repsynth hdl mutate
+repsynth-hdl | python3 -m repsynth hdl synth
+repsynth-hdl | python3 -m repsynth hdl hls
+repsynth-hdl | python3 -m repsynth hdl cosim
+repsynth-hdl | python3 -m repsynth hdl baseline
+repsynth-hdl | python3 -m repsynth hdl handoff

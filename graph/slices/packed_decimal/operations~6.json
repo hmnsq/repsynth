@@ -1,0 +1,1 @@
+{"arity":1,"candidate":true,"meaning":"packed decimal to two's complement (always representable)","name":"to_int","reference":{"symbol_pattern":"pd_to_int{width}"}}

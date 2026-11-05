@@ -1,0 +1,30 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "python3 -m repsynth intake locate",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:36:07Z",
+    "image_digests": {},
+    "inputs": {},
+    "packet": "P0.2",
+    "started_utc": "2026-11-04T23:34:58Z",
+    "state": "wired_unproven",
+    "step": "locate",
+    "tool_versions": {}
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "278eac4b0a128825e72b31ec0d3c421f465debc0e3364d4167d7f6c0a3a8c85d"
+      },
+      "name": "reports/asset_register.json"
+    },
+    {
+      "digest": {
+        "sha256": "8e3950a82c8c1eaf74a25a3690139febc5dee61c00346bf896ab110a2943a0aa"
+      },
+      "name": "records/20261104T233607Z_P0.2_locate.json"
+    }
+  ]
+}

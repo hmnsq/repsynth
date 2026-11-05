@@ -1,0 +1,26 @@
+{
+  "command": "python3 -m repsynth intake licences --only LLVM Yosys GMP Hypothesis libdecnumber Tok DOI",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:18:17Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/licences.json": "03fc194cc862d03b6d111ded0ae90885b6ff7b885d3b0e56b62c04540311afa3",
+    "reports/licences.md": "06957334546604185a30f94b8b9b3dd50de2922dd6db23cd7ed216c2c138610c"
+  },
+  "packet": "P0.4",
+  "results": {
+    "established": 5,
+    "not_established": [
+      "Tok DOI"
+    ],
+    "tools": 6
+  },
+  "started_utc": "2026-11-04T23:18:07Z",
+  "state": "wired_unproven",
+  "step": "licences",
+  "tool_versions": {
+    "git": "git version 2.43.0"
+  }
+}

@@ -1,0 +1,6 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
+# SPDX-License-Identifier: GPL-3.0-or-later
+# The spine's share of iteration I1: P0.1 doctor, P1.1 to P1.4, P2.1. Included by I1.steps.
+repsynth-base | python3 -m repsynth doctor
+repsynth-base | python3 -m repsynth gen
+repsynth-base | python3 -m repsynth.acceptance P1.1 P1.2 P1.3 P1.4 P2.1

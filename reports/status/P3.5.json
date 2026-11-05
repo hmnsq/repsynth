@@ -1,0 +1,12 @@
+{
+  "packet": "P3.5",
+  "state": "wired_unproven",
+  "evidence": [
+    "records/20261104T231532Z_P3.5_acceptance.json"
+  ],
+  "summary": "Changes (c) new operation and (d) trit encoding regenerate exactly their expected sets (predicted = observed = expected) and the baseline is restored; changes (a) and (b) are not run yet.",
+  "blocked_by": [
+    "P1.7 (AyeHandSum not located)",
+    "P1.6 and P6.3 (APCISR grid specification and derived build)"
+  ]
+}

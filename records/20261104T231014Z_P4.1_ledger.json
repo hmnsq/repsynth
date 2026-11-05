@@ -1,0 +1,55 @@
+{
+  "command": "python3 -m repsynth.lanes.tiera ledger",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:10:14Z",
+  "image_digests": {},
+  "inputs": {
+    "ledger/allocate.py": "bad674bd96e62366452292e0d75918f661fc3660c3e8a860c6a2d9f45d6f9635",
+    "spec/reps/numeric/balanced_ternary.yaml": "94d03744877f19bd8f4fb563ebbbeafca14e0e4bca2540891f6111efff4c2c64",
+    "spec/reps/numeric/binary_integer.yaml": "322191237cb8fddc33b65f0ac47f2c1c2013c8da0fc7e35171dba219ec8477b2",
+    "spec/reps/numeric/packed_decimal.yaml": "ef541ceb04d0443bb70a8eabd46e517c8819d6daee7b2ddb29dc7c5c6655d46c"
+  },
+  "notes": "Vendor overlaps are reported, not refused (ISA-04).",
+  "outputs": {
+    "ledger/allocations.yaml": "101541e0ac197f5860c4dfb6b7b34f1998e842e25afe94acb5939c50b84bfee7",
+    "ledger/collisions.json": "3f5e0de4cb1360b5378ea9037685a5b80d377b01bebd944a5f7e7052495eb7f7"
+  },
+  "packet": "P4.1",
+  "results": {
+    "allocate_exit": 0,
+    "planted_moved_exit": 3,
+    "planted_moved_refusal": [
+      "aye.bt.mul: funct7 moved from 63 to 3"
+    ],
+    "planted_standard_collision_exit": 2,
+    "planted_standard_collision_refusal": [
+      "aye.bt.add: collides with standard add (rv_i)",
+      "aye.bt.add: collides with standard ntl_p1 (rv_zihintntl)",
+      "aye.bt.add: collides with standard ntl_pall (rv_zihintntl)",
+      "aye.bt.add: collides with standard ntl_s1 (rv_zihintntl)",
+      "aye.bt.add: collides with standard ntl_all (rv_zihintntl)"
+    ],
+    "regenerate_exit": 0,
+    "regeneration_unchanged": true,
+    "vendor_collision_reported": true,
+    "vendor_overlaps_reported": 9,
+    "vendor_summary": [
+      "aye.bt.add ~ INSN_CLASS_XCVBI",
+      "aye.bt.cmp ~ INSN_CLASS_XCVBI",
+      "aye.bt.fromint ~ INSN_CLASS_XCVBI",
+      "aye.bt.mul ~ INSN_CLASS_XCVBI",
+      "aye.bt.neg ~ INSN_CLASS_XCVBI",
+      "aye.bt.shl ~ INSN_CLASS_XCVBI",
+      "aye.bt.shr ~ INSN_CLASS_XCVBI",
+      "aye.bt.sub ~ INSN_CLASS_XCVBI",
+      "aye.bt.toint ~ INSN_CLASS_XCVBI"
+    ]
+  },
+  "started_utc": "2026-11-04T23:10:10Z",
+  "state": "done",
+  "step": "ledger",
+  "tool_versions": {
+    "binutils": "binutils 2.47 release tarball (binutils_2.47.orig.tar.xz from archive.ubuntu.com, sha256 154ab23b60070e8f27013c22977f1129425d67d1e8acd6e13010e617811e4cff); github.com/bminor/binutils-gdb and hmnsq/binutils-gdb were not reachable",
+    "riscv-opcodes": "https://github.com/riscv/riscv-opcodes commit f24ac23ec9fa947011781a09cd6fd25a7c36dc45"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "command": "repsynth impact c --confirm",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:11:06Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/impact/dep05c_new_operation.json": "c369a289344b78e0c55a2190edf5db6d54079d8685b902b7bb4915a377070232"
+  },
+  "packet": "P3.5",
+  "results": {
+    "build_exit": 0,
+    "equal": true,
+    "restored_equal_to_baseline": true
+  },
+  "started_utc": "2026-11-04T23:11:00Z",
+  "state": "done",
+  "step": "impact-dep05c_new_operation",
+  "tool_versions": {}
+}

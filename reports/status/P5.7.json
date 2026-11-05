@@ -1,0 +1,9 @@
+{
+  "packet": "P5.7",
+  "state": "done",
+  "evidence": [
+    "records/20261104T233831Z_P5.7_handoff.json"
+  ],
+  "summary": "jugaad28 descriptors J28-101 at VERIFIED, J28-102 at VERIFIED pass jugaad28's own validation; the zamin boundary statement routes native ternary circuits to zamin.",
+  "blocked_by": []
+}

@@ -1,0 +1,11 @@
+{
+  "packet": "P5.10",
+  "state": "not_built",
+  "evidence": [
+    "records/20261104T233923Z_P5.10_procedure.json"
+  ],
+  "summary": "Procedure written for an iCE40 UP5K board; no on-board run, and the host front end for the serial wrapper is not built.",
+  "blocked_by": [
+    "needs:human, a board at hand"
+  ]
+}

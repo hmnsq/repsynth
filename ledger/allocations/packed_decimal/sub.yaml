@@ -1,0 +1,20 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
+# SPDX-License-Identifier: CC0-1.0
+# Allocation ledger entry (ISA-04). The encoding fields are never moved once written; the slice
+# hash records the operation semantics (including the active encoding) last checked against it.
+spec: packed_decimal
+op: sub
+extension: xayepd
+mnemonic: aye.pd.sub
+format: R
+operands: rd, rs1, rs2
+opcode_space: custom-1
+opcode: 43
+funct3: 4
+funct7: 2
+rs2: register
+match: '0x0400402b'
+mask: '0xfe00707f'
+allocated_in: 0.3.0
+semantics_slice_sha256: 6cbc98a8f3c66cc74998fe1298dbb9491fdfe0cff2815eda61c0a5aa778768a9
+generator: repsynth.ledger.allocate 0.3.0

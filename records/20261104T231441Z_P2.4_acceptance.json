@@ -1,0 +1,21 @@
+{
+  "command": "pytest tests/test_properties.py; python3 tests/prove_bounded.py; suites against planted mutants",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:14:41Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {},
+  "packet": "P2.4",
+  "results": {
+    "mutants_caught": {
+      "balanced_ternary_0": true,
+      "binary_integer_4": true,
+      "packed_decimal_5": true
+    }
+  },
+  "started_utc": "2026-11-04T23:14:22Z",
+  "state": "done",
+  "step": "acceptance",
+  "tool_versions": {}
+}

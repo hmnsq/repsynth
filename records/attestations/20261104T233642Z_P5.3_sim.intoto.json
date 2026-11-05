@@ -1,0 +1,59 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "repsynth hdl sim bt_shl16 bt_shl32 bt_shr16 bt_shr32 bt_from_int16 bt_from_int32 bt_to_int16 bt_to_int32",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:36:42Z",
+    "image_digests": {},
+    "inputs": {
+      "conformance/runners/hdl/test_unit.py": "b491ff529a27b48203a45ab9a49e5380a9fe5d108707ad516e213238e767def0",
+      "conformance/vectors/balanced_ternary/from_int.16.vec": "ed77fd1ccbd1ea52942615c0a05aae458a20c8f5895c874caa617910768d79ae",
+      "conformance/vectors/balanced_ternary/from_int.32.vec": "decf59ae111de957e6bcbac1ce1b677cada3a01c7696f4ccc9745b431622018b",
+      "conformance/vectors/balanced_ternary/shl.16.vec": "c3761f8c25a874925296f6d011e37e348f63e86e318f0611a3b97efbbcdd907a",
+      "conformance/vectors/balanced_ternary/shl.32.vec": "c1db620e1fec2525daf1ba7892e8652d6b73dd3aebd2f3c3265837856bd620bf",
+      "conformance/vectors/balanced_ternary/shr.16.vec": "a53637fc0fedd5f6555b1dda260c5079f7e3ecbee44f82409b15c0df62a5b533",
+      "conformance/vectors/balanced_ternary/shr.32.vec": "6b1aca16bf16a10a3b63dd6986271fce10dc7d6cd7a9ded2857070a75670ea14",
+      "conformance/vectors/balanced_ternary/to_int.16.vec": "f0e58f1bdbc752fd766d8bfce41a78f29459384a1ae4f110d0d8d6733611213e",
+      "conformance/vectors/balanced_ternary/to_int.32.vec": "56f5a6c669135951f02b9fc15b7299647670eb52a5b40c541159677d55f7967c",
+      "gen/hdl/units/balanced_ternary/sv/bt_from_int16.sv": "405abe26daa89b25a89c85524a3de31c6b14be15680ce195b2b905579726fe21",
+      "gen/hdl/units/balanced_ternary/sv/bt_from_int32.sv": "c534356ba5192246d479a9bcb4a7294c84a4bcf24ad775d86153f7f0628c3844",
+      "gen/hdl/units/balanced_ternary/sv/bt_shl16.sv": "83cacf0f209b025acdc2d241e0a1d215d1bc376c34ea885bb74a6db873b1fbd4",
+      "gen/hdl/units/balanced_ternary/sv/bt_shl32.sv": "24b3b193d75b35e29757f12351396c3fb6f66d670530cdda881eb8e0f1b5c1b6",
+      "gen/hdl/units/balanced_ternary/sv/bt_shr16.sv": "d2d6841f2c371b014bff8fbbfe625fe739432e7623c7a75f6a256e6e054dcfff",
+      "gen/hdl/units/balanced_ternary/sv/bt_shr32.sv": "8c6d3af6ebd85b7160cab6f6cf9901a1cc0f34451d6b9ad534f4c8575ccb2e2e",
+      "gen/hdl/units/balanced_ternary/sv/bt_to_int16.sv": "491f3b05f351ca059085b85874ef001c8cf4fd038b1b3344e761729dd82eb5e7",
+      "gen/hdl/units/balanced_ternary/sv/bt_to_int32.sv": "b7299c9b1bbce6934345512039bc564f7b7791e0079c34dd06c2bcdbdaa21b51",
+      "gen/hdl/units/balanced_ternary/vhdl/bt_from_int16.vhd": "49a97e3bcd3c259f8e9f1b427a28ad8a653050f31891b4cd04f319af41acfc77",
+      "gen/hdl/units/balanced_ternary/vhdl/bt_from_int32.vhd": "d86d9e65a954f63940ca0d5a0a7f60f79e4c4ea004a6cde738a8a9939b39e84c",
+      "gen/hdl/units/balanced_ternary/vhdl/bt_shl16.vhd": "0b5b838467312eff7e24d50a84f69c089ee1d786302e2fe51cd854756b86f08a",
+      "gen/hdl/units/balanced_ternary/vhdl/bt_shl32.vhd": "eca052b50038e342c04a3afb589274a37d19df29a84e4799f1701bf3b412712f",
+      "gen/hdl/units/balanced_ternary/vhdl/bt_shr16.vhd": "ac82b86bcfcfda9e3a871e4ccbdc79c43ef57d6fa9124a4e5ee78787ce5bf9e0",
+      "gen/hdl/units/balanced_ternary/vhdl/bt_shr32.vhd": "f03e27505d1896c27c1dbccce45abb1d8e4c403241a8a9dd62f8a3233d6bfb70",
+      "gen/hdl/units/balanced_ternary/vhdl/bt_to_int16.vhd": "8403035157c660123ec68deb76ae166004dacc921786cb3898b932d0ac904b9d",
+      "gen/hdl/units/balanced_ternary/vhdl/bt_to_int32.vhd": "27a5c41524e8d56ce01c380a166dc714fb80e6b6029f32714518423d8dad44a6"
+    },
+    "packet": "P5.3",
+    "started_utc": "2026-11-04T23:33:10Z",
+    "state": "done",
+    "step": "sim",
+    "tool_versions": {
+      "cocotb(host)": "2.1.0",
+      "cocotb(lane)": "1.9.2",
+      "ghdl": "GHDL 4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]",
+      "icepack": "fpga-icestorm 0~20230218gitd20a5e9-1",
+      "nextpnr-ice40": "\"nextpnr-ice40\" -- Next Generation Place and Route (Version 0.6-3build5)",
+      "python": "3.13.18",
+      "verilator": "Verilator 5.020 2024-01-01 rev (Debian 5.020-1)",
+      "yosys": "Yosys 0.33 (git sha1 2584903a060)"
+    }
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "3a94136e71eb8d15ede7c52cdeba655555241bfc9674308121588c86563fc088"
+      },
+      "name": "records/20261104T233642Z_P5.3_sim.json"
+    }
+  ]
+}

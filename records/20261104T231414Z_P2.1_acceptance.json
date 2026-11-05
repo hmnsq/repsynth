@@ -1,0 +1,19 @@
+{
+  "command": "rm -r conformance/vectors; repsynth vectors; compare digests",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:14:14Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {},
+  "packet": "P2.1",
+  "results": {
+    "after": "52d91aea88152b3e6731b32ab686d6f62016b9b22d7a3bf353c951786c3ffa79",
+    "before": "52d91aea88152b3e6731b32ab686d6f62016b9b22d7a3bf353c951786c3ffa79",
+    "headers_ok": true
+  },
+  "started_utc": "2026-11-04T23:14:12Z",
+  "state": "done",
+  "step": "acceptance",
+  "tool_versions": {}
+}

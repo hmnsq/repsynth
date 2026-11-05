@@ -1,0 +1,9 @@
+{
+  "packet": "P2.5",
+  "state": "done",
+  "evidence": [
+    "records/20261104T231442Z_P2.5_acceptance.json"
+  ],
+  "summary": "Seven planted defects (codec table entry, sign-nibble table entry, two off-by-ones, an off-by-one in decimal multiply, two swapped-operand defects) are each caught by the conformance runners.",
+  "blocked_by": []
+}

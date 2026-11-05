@@ -1,0 +1,17 @@
+{
+  "command": "repsynth selftest --lane software",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:14:42Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/mutation/selftest_software.json": "6be64438da5f47d11cf0cfc20fdec49b3b897be9ebc68fef57bbc091b8f050d9"
+  },
+  "packet": "P2.5",
+  "results": {},
+  "started_utc": "2026-11-04T23:14:41Z",
+  "state": "done",
+  "step": "acceptance",
+  "tool_versions": {}
+}

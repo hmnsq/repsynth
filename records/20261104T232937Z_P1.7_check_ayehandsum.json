@@ -1,0 +1,33 @@
+{
+  "command": "python3 -m repsynth oracles check ayehandsum",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:29:37Z",
+  "image_digests": {},
+  "inputs": {
+    "spec/reps/numeric/ayehandsum.yaml": "b3ea6d7d6537e6c3cd0307f66cdbaade8a64e840dbf1db78e3c60e6802d083db"
+  },
+  "notes": "Acceptance run: oracle executed on every extracted mapping.",
+  "outputs": {},
+  "packet": "P1.7",
+  "results": {
+    "mappings_checked": 33,
+    "mismatches": [],
+    "oracle_exit_codes": {},
+    "planted_defect": "alphabet alfox: symbols of index 0 and 1 swapped",
+    "planted_mismatches": [
+      "alfox ayeai: rules give QuebecYankeePapaPapaCharlieKiloHotelUnif..., oracle QuebecZuluPapaPapaCharlieKiloHotelUnifor...",
+      "alfox ayelearn: rules give PapaNovemberMikeUniformPapaVictorJuliett..., oracle PapaNovemberMikeUniformPapaVictorJuliett...",
+      "alfox ayevdi: rules give MikeZuluNovemberIndiaOscarQuebecVictorZu..., oracle MikeYankeeNovemberIndiaOscarQuebecVictor..."
+    ],
+    "planted_refused": true,
+    "spec_check": {
+      "command": "/usr/local/bin/python3 -m repsynth spec check /home/user/build/repsynth/spec/reps/numeric/ayehandsum.yaml",
+      "exit_code": 0,
+      "output": "VALID /home/user/build/repsynth/spec/reps/numeric/ayehandsum.yaml"
+    }
+  },
+  "started_utc": "2026-11-04T23:29:35Z",
+  "state": "done",
+  "step": "check_ayehandsum",
+  "tool_versions": {}
+}

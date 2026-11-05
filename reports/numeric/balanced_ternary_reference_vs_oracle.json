@@ -1,0 +1,92 @@
+{
+  "neg.32": {
+    "cases": 631458,
+    "disagreements": 0,
+    "first": null
+  },
+  "add.32": {
+    "cases": 634586,
+    "disagreements": 0,
+    "first": null
+  },
+  "sub.32": {
+    "cases": 634586,
+    "disagreements": 0,
+    "first": null
+  },
+  "mul.32": {
+    "cases": 634586,
+    "disagreements": 0,
+    "first": null
+  },
+  "cmp.32": {
+    "cases": 634586,
+    "disagreements": 0,
+    "first": null
+  },
+  "shl.32": {
+    "cases": 634586,
+    "disagreements": 0,
+    "first": null
+  },
+  "shr.32": {
+    "cases": 634586,
+    "disagreements": 0,
+    "first": null
+  },
+  "from_int.32": {
+    "cases": 631458,
+    "disagreements": 0,
+    "first": null
+  },
+  "to_int.32": {
+    "cases": 631458,
+    "disagreements": 0,
+    "first": null
+  },
+  "neg.16": {
+    "cases": 631458,
+    "disagreements": 0,
+    "first": null
+  },
+  "add.16": {
+    "cases": 634586,
+    "disagreements": 0,
+    "first": null
+  },
+  "sub.16": {
+    "cases": 634586,
+    "disagreements": 0,
+    "first": null
+  },
+  "mul.16": {
+    "cases": 634586,
+    "disagreements": 0,
+    "first": null
+  },
+  "cmp.16": {
+    "cases": 634586,
+    "disagreements": 0,
+    "first": null
+  },
+  "shl.16": {
+    "cases": 634586,
+    "disagreements": 0,
+    "first": null
+  },
+  "shr.16": {
+    "cases": 634586,
+    "disagreements": 0,
+    "first": null
+  },
+  "from_int.16": {
+    "cases": 631458,
+    "disagreements": 0,
+    "first": null
+  },
+  "to_int.16": {
+    "cases": 631458,
+    "disagreements": 0,
+    "first": null
+  }
+}

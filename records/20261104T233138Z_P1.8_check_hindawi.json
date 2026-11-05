@@ -1,0 +1,33 @@
+{
+  "command": "python3 -m repsynth oracles check hindawi",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:31:38Z",
+  "image_digests": {},
+  "inputs": {
+    "spec/reps/pipeline/hindawi_shaili_pipeline.yaml": "cfec2aa8ed7747e59a7d26bb73a54570d756a78c71852e54bca9d6caa7c9d981"
+  },
+  "notes": "Acceptance run: oracle executed on every extracted mapping.",
+  "outputs": {},
+  "packet": "P1.8",
+  "results": {
+    "mappings_checked": 7,
+    "mismatches": [],
+    "oracle_exit_codes": {
+      "shaili_round_trip": 0
+    },
+    "planted_defect": "guru forward dispatch names h2cpp instead of h2c",
+    "planted_mismatches": [
+      "shaili guru: the descriptor read from the drivers differs from the specification"
+    ],
+    "planted_refused": true,
+    "spec_check": {
+      "command": "/usr/local/bin/python3 -m repsynth spec check /home/user/build/repsynth/spec/reps/pipeline/hindawi_shaili_pipeline.yaml",
+      "exit_code": 0,
+      "output": "VALID /home/user/build/repsynth/spec/reps/pipeline/hindawi_shaili_pipeline.yaml"
+    }
+  },
+  "started_utc": "2026-11-04T23:31:37Z",
+  "state": "done",
+  "step": "check_hindawi",
+  "tool_versions": {}
+}

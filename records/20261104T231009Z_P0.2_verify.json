@@ -1,0 +1,21 @@
+{
+  "command": "python3 -m repsynth intake verify",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:10:09Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Tree states after the run compared with those at clone time.",
+  "outputs": {
+    "reports/asset_register.json": "73d863f32bd8c0793f74da74ac20cab8c3055b0cbbce954e8f051c0eae841fab",
+    "reports/asset_register.md": "ae8589a14eb5d11f2e9cc7609e43c349c2be93a4a799994621ed269b03412f79"
+  },
+  "packet": "P0.2",
+  "results": {
+    "changed": [],
+    "checked": 24
+  },
+  "started_utc": "2026-11-04T23:09:58Z",
+  "state": "wired_unproven",
+  "step": "verify",
+  "tool_versions": {}
+}

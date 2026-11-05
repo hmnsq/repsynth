@@ -1,0 +1,58 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "repsynth hdl handoff",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:38:31Z",
+    "image_digests": {},
+    "inputs": {},
+    "packet": "P5.7",
+    "started_utc": "2026-11-04T23:38:30Z",
+    "state": "done",
+    "step": "handoff",
+    "tool_versions": {
+      "jugaad28": "105edbfa5dcad04eaf1bafa89f6130591e0f775d tree 861ed996bf409e143652392103311b02a4e0fb76",
+      "python": "3.13.18",
+      "zamin": "b0ac0ebd27addc6214dc8afe31e6516be5ed22a9 tree 2fe68ae7b3bb700f44dce85c27f6f60edd5e5a84"
+    }
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "07781722176fcc505fc60abc6edf59c0aa1cd946a1f98e65f92fa4f1ca9b98a1"
+      },
+      "name": "handoff/jugaad28/j28_101.json"
+    },
+    {
+      "digest": {
+        "sha256": "99af5a991e59f17323e456a06de13fc8ea48f1db51afec9b597a0f38bf5b4f4e"
+      },
+      "name": "handoff/jugaad28/j28_101.json.license"
+    },
+    {
+      "digest": {
+        "sha256": "ba4b95ba7b99af2f57c1acad44b475eb0ae688b5cf8841766a97ee6b6d35ff44"
+      },
+      "name": "handoff/jugaad28/j28_102.json"
+    },
+    {
+      "digest": {
+        "sha256": "99af5a991e59f17323e456a06de13fc8ea48f1db51afec9b597a0f38bf5b4f4e"
+      },
+      "name": "handoff/jugaad28/j28_102.json.license"
+    },
+    {
+      "digest": {
+        "sha256": "e440febf6860e3e012966d98ce03d4addc50b39c2e4d83821bb679c7092fbb2a"
+      },
+      "name": "handoff/zamin/BOUNDARY.md"
+    },
+    {
+      "digest": {
+        "sha256": "5284051883d6852cc7044c6e04aaac9647b92adb1add47b722b10174faac5b26"
+      },
+      "name": "records/20261104T233831Z_P5.7_handoff.json"
+    }
+  ]
+}

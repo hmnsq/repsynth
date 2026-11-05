@@ -1,0 +1,79 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "generator": "repsynth.lanes.oracles 0.3.0",
+  "oracle": "apcisr",
+  "repository": "hindawiai/chintamani",
+  "commit": "cf614ff2dd8da9e23f2f98c49686640e2ec2e181",
+  "tree": "c3f5dfa69d513c3f9afa0351a573731fcf41c3af",
+  "dependencies": {},
+  "driver_source": "APCISR/Makefile (targets all, libapcisr, filters); APCISR/test.aci",
+  "export": {
+    "command": "bash -c git --no-optional-locks -C \"/home/user/build/repsynth/.cache/assets/hindawiai__chintamani\" archive --format=tar HEAD | tar -x -C \"/home/user/build/repsynth/.cache/oracles/apcisr/work\"",
+    "exit_code": 0,
+    "stderr_tail": ""
+  },
+  "clone_state_before": {
+    "hindawiai/chintamani": {
+      "commit": "cf614ff2dd8da9e23f2f98c49686640e2ec2e181",
+      "tree": "c3f5dfa69d513c3f9afa0351a573731fcf41c3af",
+      "status_exit": 0,
+      "status_clean": true,
+      "content": {
+        "files": 282,
+        "sha256": "8ee989777508ec016975b6fced12a201cd3d48f5ff30f651907de5120aa5be88"
+      }
+    }
+  },
+  "clone_state_after": {
+    "hindawiai/chintamani": {
+      "commit": "cf614ff2dd8da9e23f2f98c49686640e2ec2e181",
+      "tree": "c3f5dfa69d513c3f9afa0351a573731fcf41c3af",
+      "status_exit": 0,
+      "status_clean": true,
+      "content": {
+        "files": 282,
+        "sha256": "8ee989777508ec016975b6fced12a201cd3d48f5ff30f651907de5120aa5be88"
+      }
+    }
+  },
+  "clones_unchanged": {
+    "hindawiai/chintamani": true
+  },
+  "steps": [
+    {
+      "name": "make_all",
+      "command": "make -C APCISR all",
+      "cwd": "the exported work tree",
+      "exit_code": 0,
+      "started_utc": "2026-11-04T23:11:41Z",
+      "finished_utc": "2026-11-04T23:11:41Z",
+      "shows": "libapcisr.a and the acii2csr filter built with APCISR's own Makefile",
+      "log": ".cache/oracles/apcisr/logs/make_all.log",
+      "log_sha256": "cb6ea5c7ae86c307286900ccf6cd94ae4e324e2bf316670e077412e1eba4ab34",
+      "log_lines": 83,
+      "stdout_raw": ".cache/oracles/apcisr/logs/make_all.stdout",
+      "stdout_raw_sha256": "3f5ddf093cae2e00f5b3d1f3298e2bcff7f0e22476494073e5c08fbce927cf5f",
+      "stdout_encoding": "utf-8",
+      "stdout_tail": "make: Entering directory '/home/user/build/repsynth/.cache/oracles/apcisr/work/APCISR'\ngcc -Wall -Wno-unused -o acii2csr.o -c acii2csr.c\nar -cru libapcisr.a acii2csr.o\nflex -8 -olexyy.c acii2csr.lex\ngcc -Wall -Wno-unused -o acii2csr lexyy.c -lfl -lapcisr -L ./\nmake: Leaving directory '/home/user/build/repsynth/.cache/oracles/apcisr/work/APCISR'",
+      "stderr_tail": "      |                       ^~~\n      |                       |\n      |                       unsigned char *\n/usr/include/string.h:350:34: note: expected ‘const char *’ but argument is of type ‘unsigned char *’\n  350 | extern char *strstr (const char *__haystack, const char *__needle)\n      |                      ~~~~~~~~~~~~^~~~~~~~~~\nacii2csr.c:234:37: warning: pointer targets in passing argument 1 of ‘strlen’ differ in signedness [-Wpointer-sign]\n  234 |           if (lnfnd == 0 && strlen (aci) < l_aci)\n      |                                     ^~~\n      |                                     |\n      |                                     unsigned char *\n/usr/include/string.h:407:35: note: expected ‘const char *’ but argument is of type ‘unsigned char *’\n  407 | extern size_t strlen (const char *__s)\n      |                       ~~~~~~~~~~~~^~~\nar: `u' modifier ignored since `D' is the default (see `U')\nacii2csr.lex: In function ‘yylex’:\nacii2csr.lex:47:17: warning: pointer targets in passing argument 1 of ‘acii2cisr’ differ in signedness [-Wpointer-sign]\n   47 | .*      { dvn=acii2cisr(yytext,1); cisr_printf_con(dvn); }\n      |                 ^~~~~~\n      |                 |\n      |                 char *\nIn file included from acii2csr.lex:41:\nacii2csr.h:50:41: note: expected ‘unsigned char *’ but argument is of type ‘char *’\n   50 |   extern cisr acii2cisr (unsigned char *aci_in, int cpos);\n      |                          ~~~~~~~~~~~~~~~^~~~~~"
+    },
+    {
+      "name": "render_test_aci",
+      "command": "cd APCISR && ./acii2csr < test.aci",
+      "cwd": "the exported work tree",
+      "exit_code": 0,
+      "started_utc": "2026-11-04T23:11:41Z",
+      "finished_utc": "2026-11-04T23:11:41Z",
+      "shows": "the filter run on APCISR's own sample, test.aci",
+      "log": ".cache/oracles/apcisr/logs/render_test_aci.log",
+      "log_sha256": "62f58796488a45bb52a6cc24af4ffda19111e2dcbc3dae26798a10fc372d13a6",
+      "log_lines": 52,
+      "stdout_raw": ".cache/oracles/apcisr/logs/render_test_aci.stdout",
+      "stdout_raw_sha256": "db6a0f29dd88991c97942cc34664b53c4b0903b20814252180ad75c9e27a6e5c",
+      "stdout_encoding": "cp437 (not valid UTF-8; shown as code page 437)",
+      "stdout_tail": "                          ┌┐  ┌┐            \nè∩ ï  î∩ ì∩ Ä∩            Θà∞ àφ     ╧∞ ╓∩\n \n                                            \n                                          \nÅ  É  æ  Æ  ô∩             à∞ à∞     ≈ °\n \n                           ╘  ╙           \n                                      ┌┐      ┌┐  \nö∩ ò∩ û  ù∩ ÿ∩             à∞        è≡àà∞ Ö∩ààφ\n \n      ·                    ╫                      \n                           ⁿ  ²               ┌Σ  ┌Σ ┌┐  \nÖ∩ Ü∞ ¢∩ £∩ ¥∩             à∞ à∞     î∩¢≡ÿ∩-ä-ΘÑû ΘÑûí≡\n \n                                     ∙╘         ·   ·    \n                            ⁿ  ²      ┌┐    ┌        \n₧∩ ƒ  á∩ í∩ ó∩             àφ àφ     Ö≡╟∩ ¢∩Ü∞ ª∞¥∩\n \n                                                     \n                            .     ■  \nú∩ ñ∩ Ñ  æ  Æ              à∞ àΩ à∞\n \n         ∙  ∙                        \n          \n╟∩ ╡∩ ╩∩\n \n          \n       \n╗∩ ╦∩\n \n       \n   \n▓\n \n   \n   \n \n \n   ",
+      "stderr_tail": ""
+    }
+  ],
+  "machine": "cloud build machine, native run (ops/run.sh --native); the container run is the author's"
+}

@@ -1,0 +1,36 @@
+{
+  "planted": 7,
+  "caught": 7,
+  "lanes": {
+    "software": {
+      "table entry: codec lookup maps code 01 to 0 instead of +1": {
+        "caught": true,
+        "refusal": "failing runners: bt_neg32, bt_add32, bt_sub32, bt_mul32, bt_cmp32, bt_to_int32, bt_neg16, bt_add16, bt_sub16, bt_mul16, bt_cmp16, bt_to_int16"
+      },
+      "off-by-one: shl drops one trit too many": {
+        "caught": true,
+        "refusal": "failing runners: bt_shl32, bt_shl16"
+      },
+      "swapped operands: sub computes b - a": {
+        "caught": true,
+        "refusal": "failing runners: bt_sub32, bt_sub16"
+      },
+      "off-by-one: 32-bit shift mask 31 becomes 32": {
+        "caught": true,
+        "refusal": "failing runners: bin_shl32"
+      },
+      "swapped operands: sub64 computes b - a": {
+        "caught": true,
+        "refusal": "failing runners: bin_sub64"
+      },
+      "table entry: minus sign nibble D written as B": {
+        "caught": true,
+        "refusal": "failing runners: pd_neg15, pd_add15, pd_sub15, pd_mul15, pd_from_int15, pd_neg7, pd_add7, pd_sub7, pd_mul7, pd_from_int7"
+      },
+      "off-by-one: multiplication skips the top digit": {
+        "caught": true,
+        "refusal": "failing runners: pd_mul15, pd_mul7"
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"arity":1,"candidate":false,"meaning":"-a modulo 2^w","name":"neg","reference":{"symbol_pattern":"bin_neg{width}"}}

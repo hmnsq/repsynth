@@ -1,0 +1,33 @@
+{
+  "command": "python3 -m repsynth intake licences",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:20:30Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/licences.json": "a9cdbb2442c352c573e5e40689459a925c320de5786a55566e63cb8981f7d94d",
+    "reports/licences.md": "7eb4b1328d896d3aa76ad12d6136abba9ab5e6132ca51b788fc5e37e7727b4e6"
+  },
+  "packet": "P0.4",
+  "results": {
+    "established": 60,
+    "not_established": [
+      "xv6-riscv",
+      "Unicode Character Database",
+      "HarfBuzz",
+      "FreeType",
+      "MPFR",
+      "cffi",
+      "OpenModelica",
+      "Candor"
+    ],
+    "tools": 68
+  },
+  "started_utc": "2026-11-04T23:18:48Z",
+  "state": "wired_unproven",
+  "step": "licences",
+  "tool_versions": {
+    "git": "git version 2.43.0"
+  }
+}

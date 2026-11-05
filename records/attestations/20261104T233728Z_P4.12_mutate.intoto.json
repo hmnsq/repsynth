@@ -1,0 +1,48 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "python3 -m repsynth.lanes.tiera mutate",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:37:28Z",
+    "image_digests": {},
+    "inputs": {
+      ".cache/qemu-patched/PIN": "7e7e5b10e5c6f51ca2a30d0e471b9b5891b1348663ece268b7b0502cf795aca4",
+      ".cache/qemu-patched/libinsn.so": "5e6a28dcb7e452ae98521e3743af76785f68133bae78b4ebdf5c65ab1b8f34a9",
+      ".cache/qemu-patched/qemu-riscv32": "731ef8e7d08928817c0d6307f584fc70e6bab95d5774b7fb61657fe9dcabbf4b",
+      ".cache/qemu-patched/qemu-riscv64": "a16116166c2b5be9002e9ffa426c1d36e805828b556d83fb0d01987b7e04c2dd",
+      ".cache/qemu-patched/qemu-system-riscv32": "1206e5aaefb5c92c3200eedad0db1101f9d936f5950c475a1e02c8cdd15d8e83",
+      ".cache/qemu-patched/qemu-system-riscv64": "a2f8caa9f342584e755b4fd80b8936bdc9b6584863336f8d4dbea3f0e4327dff",
+      "gen/insn/out/balanced_ternary/ops/add.h": "e60a4588f4be0e8319453b1ca93b0b277aaa627ed2feece2f209e250f24b0851",
+      "gen/insn/out/balanced_ternary/ops/cmp.h": "16a8ea8783fadfb34f4d26069bbdc111ba79b3489cb26712761c0adbb644619e",
+      "gen/insn/out/balanced_ternary/ops/from_int.h": "586462a215662e9c99612ade6c911e4f43ee9414be46c64dd6f88ac9a43e9fd3",
+      "gen/insn/out/balanced_ternary/ops/mul.h": "830149ffd55f53b487b83430420f2d609c007bbcb0fd4d1c50182455e3f9378f",
+      "gen/insn/out/balanced_ternary/ops/neg.h": "85e704d080432de54d7f907886585b3bdea4d619aef160398faee1d48528e846",
+      "gen/insn/out/balanced_ternary/ops/shl.h": "aa06e2c670b6ad7b389f021826d908716e51d786c4a912070ce81ca8c7b97f3d",
+      "gen/insn/out/balanced_ternary/ops/shr.h": "849f7cd84892882d28baf428a5c80b5096dce9d48a3b37f9d5ccd00d9da8c4a3",
+      "gen/insn/out/balanced_ternary/ops/sub.h": "4fbf777bc353fcb05e773f1aedbf7cd462e9d315c3e2f03d41d55be823f73079",
+      "gen/insn/out/balanced_ternary/ops/to_int.h": "821d294223f6bb5eb7550ea92cea6a1573bf700860584904604a922ed6a5c252",
+      "gen/insn/out/balanced_ternary/test_xayebt.c": "398254106e0615ff5d5a6d5f06627dfade72d4a3273ae4a337c221889d227986",
+      "gen/insn/out/balanced_ternary/xayebt.h": "b2fb4922b2d5b9f3cdae10f5f097c1c346d483636994e502826a0b61a97dc6ce"
+    },
+    "packet": "P4.12",
+    "started_utc": "2026-11-04T23:37:18Z",
+    "state": "done",
+    "step": "mutate",
+    "tool_versions": {}
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "c1c0660846866be944acebdb2330b28f895120a4448989c4f93b5753d4aa2aee"
+      },
+      "name": "reports/mutation/tiera.json"
+    },
+    {
+      "digest": {
+        "sha256": "426a4f4370cfb1ce4d486ed4b2e7d4b7302bc25a184a8b1339f95783d47aaa63"
+      },
+      "name": "records/20261104T233728Z_P4.12_mutate.json"
+    }
+  ]
+}

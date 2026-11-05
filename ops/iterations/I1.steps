@@ -1,0 +1,19 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Iteration I1: P0.1 to P0.6, P1.1 to P1.4, P2.1 (code for P0.2 and P0.3 run here as well).
+# Intake steps need the network on the first run and the GitHub CLI login handed in (GH_TOKEN), never written.
+repsynth-base | python3 -m repsynth doctor
+repsynth-base | python3 -m repsynth intake host
+repsynth-base | python3 -m repsynth intake received
+repsynth-base | python3 -m repsynth intake clone
+repsynth-base | python3 -m repsynth intake locate
+repsynth-base | python3 -m repsynth intake names
+repsynth-base | python3 -m repsynth intake licences
+repsynth-base | python3 -m repsynth oracles run apcisr
+repsynth-base | python3 -m repsynth oracles run romenagri
+repsynth-base | python3 -m repsynth oracles run hindawi
+repsynth-base | python3 -m repsynth oracles run ayehandsum
+repsynth-base | python3 -m repsynth intake verify
+repsynth-base | python3 -m repsynth intake selftest
+repsynth-base | python3 -m repsynth gen
+repsynth-base | python3 -m repsynth.acceptance P1.1 P1.2 P1.3 P1.4 P2.1

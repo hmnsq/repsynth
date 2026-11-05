@@ -1,0 +1,7 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC-BY-SA-4.0
+produced:
+- conformance/runners/native_runner.c (dlopen), wasm_runner.mjs (Node.js), Python (cffi) runner and oracle runner in repsynth/conformance.py
+not_done:
+- Legacy runners (Romenagri, APCISR, Hindawi) join when P2.2's legacy builds exist; QEMU, Verilator and GHDL runners belong
+  to their lanes.
+failed_first: 'See P1.4: the run caught a defect in the packed decimal oracle before passing.'

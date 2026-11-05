@@ -1,0 +1,1 @@
+{"note":"Stored files hold 4096 seeded cases per operation to keep the tree small; runners regenerate the full 100000 from the seed.","seed":20261104,"stored_cases":4096,"working_value":100000}

@@ -1,0 +1,34 @@
+{
+  "command": "python3 -m repsynth oracles run ayehandsum --only activate_and_test",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:15:04Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Exit codes are the oracle's own; a non-zero code is reported with its output, not interpreted.",
+  "outputs": {
+    "reports/oracles/ayehandsum.json": "efe7881c567e5875be0da28b360caba81467697729c3c35436c8ad78c95790dc",
+    "reports/oracles/ayehandsum.md": "cb89cbe78ff7f7065068262273e5ffbedf042e63ee235d1080640acadadf6360"
+  },
+  "packet": "P0.3",
+  "results": {
+    "clones_unchanged": {
+      "ayehandsum/ayehandsum": true,
+      "ayevdi/ayevdi": true
+    },
+    "commit": "f338cba829c8ab0b1707e7ae25fb9d121356976a",
+    "steps": {
+      "activate_and_test": 0
+    }
+  },
+  "started_utc": "2026-11-04T23:14:53Z",
+  "state": "wired_unproven",
+  "step": "oracle_ayehandsum",
+  "tool_versions": {
+    "awk": "GNU Awk 5.2.1, API 3.2, PMA Avon 8-g1, (GNU MPFR 4.2.1, GNU MP 6.3.0)",
+    "bash": "GNU bash, version 5.2.21(1)-release (x86_64-pc-linux-gnu)",
+    "flex": "flex 2.6.4",
+    "gcc": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0",
+    "make": "GNU Make 4.3",
+    "python": "3.13.18"
+  }
+}

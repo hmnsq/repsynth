@@ -1,0 +1,17 @@
+iteration,packets,closes_with
+I1,"P0.1, P0.4, P0.5, P0.6, P1.1 to P1.4, P2.1, and the code for P0.2 and P0.3",Intake run; specifications without legacy code validated
+I2,"P1.5 to P1.8, P2.2 to P2.5",D1
+I3,P3.1 to P3.6,D2 over software artefacts
+I4,"P4.1 to P4.4, P4.12",Tier A in user mode; promotion report
+I5,"P4.5 to P4.9, P4.13","D3, D5; binary baseline counts"
+I6,"P5.1 to P5.9, P5.11",D4; D2 over instruction and hardware artefacts; D14
+I7,P6.1 to P6.7,D6
+I8,P7.1 to P7.5,D7
+I9,"P8.1 to P8.5, P4.10, P4.11, P5.10",Release readiness
+S1,"P9.1 to P9.4, P9.6, P9.7",BURP probe recorded; core parity and accuracy
+S2,"P9.5, P10.1 to P10.3, P11.1 to P11.3",Reference containers; ideal mechanical and analogue models
+S3,"P11.4 to P11.7, P11.9",Analogue references agree
+S4,"P10.4 to P10.8, P10.10",Mechanical references agree
+S5,"P10.9, P11.8, P9.8, P10.11, P11.10","D8, D9, D12; three repositories ready for seeding"
+J1,P12.1 to P12.6 (needs M4 of Track H),"D10, D11"
+S6,P13.1 (later),D13

@@ -1,0 +1,72 @@
+{
+  "neg.15": {
+    "cases": 102014,
+    "disagreements": 0,
+    "first": null
+  },
+  "add.15": {
+    "cases": 4112130,
+    "disagreements": 0,
+    "first": null
+  },
+  "sub.15": {
+    "cases": 4112130,
+    "disagreements": 0,
+    "first": null
+  },
+  "mul.15": {
+    "cases": 4112130,
+    "disagreements": 0,
+    "first": null
+  },
+  "cmp.15": {
+    "cases": 4112130,
+    "disagreements": 0,
+    "first": null
+  },
+  "from_int.15": {
+    "cases": 102014,
+    "disagreements": 0,
+    "first": null
+  },
+  "to_int.15": {
+    "cases": 102014,
+    "disagreements": 0,
+    "first": null
+  },
+  "neg.7": {
+    "cases": 102014,
+    "disagreements": 0,
+    "first": null
+  },
+  "add.7": {
+    "cases": 4112130,
+    "disagreements": 0,
+    "first": null
+  },
+  "sub.7": {
+    "cases": 4112130,
+    "disagreements": 0,
+    "first": null
+  },
+  "mul.7": {
+    "cases": 4112130,
+    "disagreements": 0,
+    "first": null
+  },
+  "cmp.7": {
+    "cases": 4112130,
+    "disagreements": 0,
+    "first": null
+  },
+  "from_int.7": {
+    "cases": 102014,
+    "disagreements": 0,
+    "first": null
+  },
+  "to_int.7": {
+    "cases": 102014,
+    "disagreements": 0,
+    "first": null
+  }
+}

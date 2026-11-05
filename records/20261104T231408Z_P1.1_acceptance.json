@@ -1,0 +1,20 @@
+{
+  "command": "repsynth spec check spec/reps/numeric/*.yaml; repsynth selftest --lane spec",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:14:08Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/mutation/selftest_spec.json": "8dfe2819714a05ebe230f3a42573afe640ec3d935b7021e8c2187fd04d0be8b8"
+  },
+  "packet": "P1.1",
+  "results": {
+    "check": "VALID spec/reps/numeric/balanced_ternary.yaml\nVALID spec/reps/numeric/binary_integer.yaml\nVALID spec/reps/numeric/packed_decimal.yaml\n",
+    "selftest": "  spec mutant CAUGHT: missing section (evolution) -> /: 'evolution' is a required property\n  spec mutant CAUGHT: guessed value where not_established stood (/substrate/limits/hardware_area) -> /substrate/limits/hardware_area: 1200 is not valid under any of the given schemas (closest: 1200 is not of type 'object')\n  spec mutant CAUGHT: bare not_established without reason (/provenance/oracle) -> /provenance/oracle: 'not_established' is not valid under any of the given schemas (closest: 'not_established' is not of type 'object'); /provenance/oracle: value 'not_established' is not allowed: write {not_established: <reason>}\n  spec mutant CAUGHT: undefined reference function (bt_addx32) -> /operations/1/reference/symbol_pattern: reference function bt_addx32 is not defined in any reference source; /operations/1/reference/symbol_pattern: reference function bt_addx16 is not defined in any reference source\n  spec mutant CAUGHT: duplicate operation -> /operations: operation neg is defined twice\nselftest spec: planted 5, caught 5, exit 0\n"
+  },
+  "started_utc": "2026-11-04T23:14:08Z",
+  "state": "done",
+  "step": "acceptance",
+  "tool_versions": {}
+}

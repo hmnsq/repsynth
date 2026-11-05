@@ -1,0 +1,26 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "python3 -m repsynth oracles check hindawi",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:31:38Z",
+    "image_digests": {},
+    "inputs": {
+      "spec/reps/pipeline/hindawi_shaili_pipeline.yaml": "cfec2aa8ed7747e59a7d26bb73a54570d756a78c71852e54bca9d6caa7c9d981"
+    },
+    "packet": "P1.8",
+    "started_utc": "2026-11-04T23:31:37Z",
+    "state": "done",
+    "step": "check_hindawi",
+    "tool_versions": {}
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "bddd7fc55b3800cec8b1588fef6cbf47d3599599c9e86c41238a9e44ed43dcec"
+      },
+      "name": "records/20261104T233138Z_P1.8_check_hindawi.json"
+    }
+  ]
+}

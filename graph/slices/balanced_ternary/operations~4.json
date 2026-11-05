@@ -1,0 +1,1 @@
+{"arity":2,"candidate":true,"meaning":"-1, 0 or +1 as a two's complement integer of the register width, by comparing values; 2 if either operand is invalid","name":"cmp","reference":{"symbol_pattern":"bt_cmp{width}"}}

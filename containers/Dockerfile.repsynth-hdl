@@ -1,0 +1,20 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
+# SPDX-License-Identifier: GPL-3.0-or-later
+# repsynth-hdl (MRD 9.7): Verilator, GHDL, cocotb, Yosys, nextpnr-ice40 with icestorm, iverilog, and the
+# RISC-V bare-metal cross tools for the co-simulation program. Upstream image: docker.io/library/ubuntu:24.04.
+# Pinned to the versions the hardware lane was measured with: Verilator 5.020, GHDL 4.1, Yosys 0.33,
+# nextpnr-ice40 0.6, cocotb 1.9.2 (cocotb 2.x needs Verilator 5.036 or later; Ubuntu 24.04 ships 5.020).
+# QEMU for P5.5 comes from the Tier A lane's patched build (repsynth-qemu), not from this image.
+ARG BASE=mirror.gcr.io/library/ubuntu:24.04
+FROM ${BASE}
+ENV DEBIAN_FRONTEND=noninteractive PIP_BREAK_SYSTEM_PACKAGES=1
+COPY extra-ca/ /usr/local/share/ca-certificates/extra/
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      python3 python3-pip python3-venv python3-dev build-essential make git ca-certificates curl \
+      verilator ghdl yosys nextpnr-ice40 fpga-icestorm iverilog \
+      gcc-riscv64-unknown-elf picolibc-riscv64-unknown-elf binutils-riscv64-unknown-elf \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -f /usr/local/share/ca-certificates/extra/README.md && update-ca-certificates
+RUN pip3 install --no-cache-dir --cert /etc/ssl/certs/ca-certificates.crt pyyaml==6.0.2 jsonschema==4.23.0 cffi==1.17.1 \
+      cocotb==1.9.2
+WORKDIR /work

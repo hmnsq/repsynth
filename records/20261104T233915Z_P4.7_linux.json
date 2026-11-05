@@ -1,0 +1,89 @@
+{
+  "command": "python3 -m repsynth.lanes.tiera linux",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:39:15Z",
+  "image_digests": {},
+  "inputs": {
+    ".cache/linux-build/.config": "7daed55d02a843d12f92f5b6ffc7f4f9212a8eb03819d894f17503527ccc5054",
+    "lanes/os/linux/repsynth-tiny.config": "c59a991e18b03bcf76fc12ad1d03622cc145eecd8121bf1b4b30007bbb577809"
+  },
+  "notes": "With the property off, /init dies of SIGILL and the kernel reports init killed with exit code 4 (the trap path of ISA-06).",
+  "outputs": {
+    ".cache/linux-build/arch/riscv/boot/Image": "2481699a2f4b21a158568318b4b9e672a1fa920ccc33490d5b725471225fe584",
+    ".cache/tiera/linux/initramfs.cpio": "cb368892c1de140e493a75ce7a244c54996dd1e508fc77dd0d75d863fa1a8c01"
+  },
+  "packet": "P4.7",
+  "results": {
+    "initramfs": {
+      "exit": 0,
+      "sha256": "cb368892c1de140e493a75ce7a244c54996dd1e508fc77dd0d75d863fa1a8c01"
+    },
+    "xayebt/off": {
+      "command": "/home/user/build/repsynth/.cache/qemu-patched/qemu-system-riscv64 -M virt -cpu rv64,x-xayebt=off,x-xayepd=off -m 256M -smp 1 -nographic -no-reboot -bios /home/user/build/repsynth/.cache/qemu-derived/pc-bios/opensbi-riscv64-generic-fw_dynamic.bin -kernel /home/user/build/repsynth/.cache/linux-build/arch/riscv/boot/Image -initrd /home/user/build/repsynth/.cache/tiera/linux/initramfs.cpio -append console=ttyS0 panic=-1 rdinit=/test_xayebt -- --one add",
+      "kernel": "6.12.0",
+      "lines": [],
+      "ok": true,
+      "opensbi": "v1.7",
+      "panic": "Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000004",
+      "qemu_exit": 0
+    },
+    "xayebt/on": {
+      "command": "/home/user/build/repsynth/.cache/qemu-patched/qemu-system-riscv64 -M virt -cpu rv64,x-xayebt=on,x-xayepd=on -m 256M -smp 1 -nographic -no-reboot -bios /home/user/build/repsynth/.cache/qemu-derived/pc-bios/opensbi-riscv64-generic-fw_dynamic.bin -kernel /home/user/build/repsynth/.cache/linux-build/arch/riscv/boot/Image -initrd /home/user/build/repsynth/.cache/tiera/linux/initramfs.cpio -append console=ttyS0 panic=-1 rdinit=/test_xayebt -- /v/bt0.v /v/bt1.v /v/bt2.v /v/bt3.v /v/bt4.v /v/bt5.v /v/bt6.v /v/bt7.v /v/bt8.v",
+      "kernel": "6.12.0",
+      "lines": [
+        "PASS neg.32 cases 4111 mismatches 0",
+        "PASS add.32 cases 4321 mismatches 0",
+        "PASS sub.32 cases 4321 mismatches 0",
+        "PASS mul.32 cases 4321 mismatches 0",
+        "PASS cmp.32 cases 4321 mismatches 0",
+        "PASS shl.32 cases 5221 mismatches 0",
+        "PASS shr.32 cases 5221 mismatches 0",
+        "PASS from_int.32 cases 4111 mismatches 0",
+        "PASS to_int.32 cases 4111 mismatches 0",
+        "RESULT PASS",
+        "INIT EXIT 0"
+      ],
+      "ok": true,
+      "opensbi": "v1.7",
+      "panic": null,
+      "qemu_exit": 0
+    },
+    "xayepd/off": {
+      "command": "/home/user/build/repsynth/.cache/qemu-patched/qemu-system-riscv64 -M virt -cpu rv64,x-xayebt=off,x-xayepd=off -m 256M -smp 1 -nographic -no-reboot -bios /home/user/build/repsynth/.cache/qemu-derived/pc-bios/opensbi-riscv64-generic-fw_dynamic.bin -kernel /home/user/build/repsynth/.cache/linux-build/arch/riscv/boot/Image -initrd /home/user/build/repsynth/.cache/tiera/linux/initramfs.cpio -append console=ttyS0 panic=-1 rdinit=/test_xayepd -- --one add",
+      "kernel": "6.12.0",
+      "lines": [],
+      "ok": true,
+      "opensbi": "v1.7",
+      "panic": "Kernel panic - not syncing: Attempted to kill init! exitcode=0x00000004",
+      "qemu_exit": 0
+    },
+    "xayepd/on": {
+      "command": "/home/user/build/repsynth/.cache/qemu-patched/qemu-system-riscv64 -M virt -cpu rv64,x-xayebt=on,x-xayepd=on -m 256M -smp 1 -nographic -no-reboot -bios /home/user/build/repsynth/.cache/qemu-derived/pc-bios/opensbi-riscv64-generic-fw_dynamic.bin -kernel /home/user/build/repsynth/.cache/linux-build/arch/riscv/boot/Image -initrd /home/user/build/repsynth/.cache/tiera/linux/initramfs.cpio -append console=ttyS0 panic=-1 rdinit=/test_xayepd -- /v/pd0.v /v/pd1.v /v/pd2.v /v/pd3.v /v/pd4.v /v/pd5.v /v/pd6.v",
+      "kernel": "6.12.0",
+      "lines": [
+        "PASS neg.15 cases 4107 mismatches 0",
+        "PASS add.15 cases 4217 mismatches 0",
+        "PASS sub.15 cases 4217 mismatches 0",
+        "PASS mul.15 cases 4217 mismatches 0",
+        "PASS cmp.15 cases 4217 mismatches 0",
+        "PASS from_int.15 cases 4107 mismatches 0",
+        "PASS to_int.15 cases 4107 mismatches 0",
+        "RESULT PASS",
+        "INIT EXIT 0"
+      ],
+      "ok": true,
+      "opensbi": "v1.7",
+      "panic": null,
+      "qemu_exit": 0
+    }
+  },
+  "started_utc": "2026-11-04T23:39:11Z",
+  "state": "done",
+  "step": "linux",
+  "tool_versions": {
+    "firmware": "OpenSBI bundled with the pinned QEMU v10.2.4 (pc-bios/opensbi-riscv64-generic-fw_dynamic.bin, sha256 49bdf7b939bda11321132d1042bf99d7324fb190f1feef423171fed3573f8705); no Parashakti firmware available here",
+    "linux": "https://github.com/hmnsq/linux tag v6.12 commit adc218676eef25575469234709c2d87185ca223a (paras fork)",
+    "qemu": "hmnsq/qemu tag v10.2.4 commit 3e0bcba1ca7d6607ca49a988d165f052a3a53323 tree e0af1c7de4b0c7979bab82927f61d7c28e6f1964 (fork tag object b4263afc equals upstream qemu/qemu v10.2.4); stock build, configure --target-list=riscv64-linux-user,riscv32-linux-user,riscv64-softmmu,riscv32-softmmu --enable-plugins; patched with gen/qemu/out/balanced_ternary/patches.json, gen/qemu/out/packed_decimal/patches.json",
+    "riscv64-linux-gnu-gcc": "riscv64-linux-gnu-gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+  }
+}

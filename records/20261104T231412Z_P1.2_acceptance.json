@@ -1,0 +1,17 @@
+{
+  "command": "pytest tests/test_canonical.py",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:14:12Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {},
+  "packet": "P1.2",
+  "results": {
+    "pytest": "..                                                                       [100%]\n2 passed in 3.92s\n"
+  },
+  "started_utc": "2026-11-04T23:14:08Z",
+  "state": "done",
+  "step": "acceptance",
+  "tool_versions": {}
+}

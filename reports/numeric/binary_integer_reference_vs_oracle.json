@@ -1,0 +1,72 @@
+{
+  "neg.64": {
+    "cases": 1148586,
+    "disagreements": 0,
+    "first": null
+  },
+  "add.64": {
+    "cases": 1148676,
+    "disagreements": 0,
+    "first": null
+  },
+  "sub.64": {
+    "cases": 1148676,
+    "disagreements": 0,
+    "first": null
+  },
+  "mul.64": {
+    "cases": 1148676,
+    "disagreements": 0,
+    "first": null
+  },
+  "cmp.64": {
+    "cases": 1148676,
+    "disagreements": 0,
+    "first": null
+  },
+  "shl.64": {
+    "cases": 1148676,
+    "disagreements": 0,
+    "first": null
+  },
+  "shr.64": {
+    "cases": 1148676,
+    "disagreements": 0,
+    "first": null
+  },
+  "neg.32": {
+    "cases": 1148586,
+    "disagreements": 0,
+    "first": null
+  },
+  "add.32": {
+    "cases": 1148676,
+    "disagreements": 0,
+    "first": null
+  },
+  "sub.32": {
+    "cases": 1148676,
+    "disagreements": 0,
+    "first": null
+  },
+  "mul.32": {
+    "cases": 1148676,
+    "disagreements": 0,
+    "first": null
+  },
+  "cmp.32": {
+    "cases": 1148676,
+    "disagreements": 0,
+    "first": null
+  },
+  "shl.32": {
+    "cases": 1148676,
+    "disagreements": 0,
+    "first": null
+  },
+  "shr.32": {
+    "cases": 1148676,
+    "disagreements": 0,
+    "first": null
+  }
+}

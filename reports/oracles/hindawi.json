@@ -1,0 +1,130 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "generator": "repsynth.lanes.oracles 0.3.0",
+  "oracle": "hindawi",
+  "repository": "hindawiai/hindawi2026.10",
+  "commit": "b53530f624a0dd3065f9370ff439223a43d49994",
+  "tree": "0a1dd02d62d07b96eb87b294f21409d1d7730e64",
+  "dependencies": {},
+  "driver_source": "README.md 'Start here'; VERIFY.md steps 1 to 3; scripts/build.sh; scripts/fetch.sh",
+  "export": {
+    "command": "bash -c git --no-optional-locks -C \"/home/user/build/repsynth/.cache/assets/hindawiai__hindawi2026.10\" archive --format=tar HEAD | tar -x -C \"/home/user/build/repsynth/.cache/oracles/hindawi/work\"",
+    "exit_code": 0,
+    "stderr_tail": ""
+  },
+  "clone_state_before": {
+    "hindawiai/hindawi2026.10": {
+      "commit": "b53530f624a0dd3065f9370ff439223a43d49994",
+      "tree": "0a1dd02d62d07b96eb87b294f21409d1d7730e64",
+      "status_exit": 0,
+      "status_clean": true,
+      "content": {
+        "files": 5873,
+        "sha256": "02b0b56bc4cca64d2e943d25f2e58af4281b42d66f967b32a57156033fc55912"
+      }
+    }
+  },
+  "clone_state_after": {
+    "hindawiai/hindawi2026.10": {
+      "commit": "b53530f624a0dd3065f9370ff439223a43d49994",
+      "tree": "0a1dd02d62d07b96eb87b294f21409d1d7730e64",
+      "status_exit": 0,
+      "status_clean": true,
+      "content": {
+        "files": 5873,
+        "sha256": "02b0b56bc4cca64d2e943d25f2e58af4281b42d66f967b32a57156033fc55912"
+      }
+    }
+  },
+  "clones_unchanged": {
+    "hindawiai/hindawi2026.10": true
+  },
+  "steps": [
+    {
+      "name": "install",
+      "command": "bash install.sh --prefix \"$ORACLE_PREFIX\"",
+      "cwd": "the exported work tree",
+      "exit_code": 0,
+      "started_utc": "2026-11-04T23:31:56Z",
+      "finished_utc": "2026-11-04T23:32:22Z",
+      "shows": "the toolchain built from the pinned Chintamani the original way, and Urdu and Telugu quick_sort.c compiled and run",
+      "log": ".cache/oracles/hindawi/logs/install.log",
+      "log_sha256": "1009be25c273a7018db8b72ee4780499ec144e9bc19d1bb43a75c5aaf1dcc5c9",
+      "log_lines": 67,
+      "stdout_raw": ".cache/oracles/hindawi/logs/install.stdout",
+      "stdout_raw_sha256": "e61714a65fef0911304c5434c540ef5a808eeb132f6ad4cff7dd1b634150059c",
+      "stdout_encoding": "utf-8",
+      "stdout_tail": "  ok       flex\n  ok       make\n  ok       iconv\n  ok       git\n  ok       g++\n  ok       bison\n  ok       docker\n  absent   arduino-cli (optional)\n== the Hindawi toolchain, from the pinned source (the first run fetches it from GitHub)\nfetch: chintamani 3ad8778, seabios rel-1.16.3\nbuild: guru      ok\nbuild: shraeni   ok\nbuild: yantra    ok\nbuild: kritrima  ok\nbuild: praatha   ok\nbuild: soochee   ok\nbuild: wyaaka    ok\nbuild: shabda    ok\n== the commands\n  /home/user/build/repsynth/.cache/oracles/hindawi/prefix/bin/hindawi -> /home/user/build/repsynth/.cache/oracles/hindawi/work/bin/hindawi\n  /home/user/build/repsynth/.cache/oracles/hindawi/prefix/bin/hindawicc -> /home/user/build/repsynth/.cache/oracles/hindawi/work/lang/hindawi/hindawicc\n  /home/user/build/repsynth/.cache/oracles/hindawi/prefix/share/man/man1/hindawi.1\n== proof: a GATE program compiled from Urdu and from Telugu, run, and compared with English\nhindawi 2026.10.4\n  ok    python3      \n  ok    gcc          \n  ok    g++          \n  ok    flex         \n  ok    make         \n  ok    iconv        \n  ok    git          \n  ok    bison        \n  ok    docker       \n  absent  arduino-cli  (optional)\n  ok    Chintamani toolchain in .build/chintamani \ndoctor: ready\n  urdu: quick_sort.c compiles from urdu and prints: 1 3 8 14 29 40 55 72 \n  telugu: quick_sort.c compiles from telugu and prints: 1 3 8 14 29 40 55 72 \ninstall.sh: add /home/user/build/repsynth/.cache/oracles/hindawi/prefix/bin to PATH, for example: echo 'export PATH=\"/home/user/build/repsynth/.cache/oracles/hindawi/prefix/bin:$PATH\"' >> ~/.bashrc\ninstall.sh: installed. Start with: hindawi --help, man hindawi, and docs/hindawi/MANUAL.md",
+      "stderr_tail": "Note: switching to 'a6ed6b701f0a57db0569ab98b0661c12a6ec3ff8'.\n\nYou are in 'detached HEAD' state. You can look around, make experimental\nchanges and commit them, and you can discard any commits you make in this\nstate without impacting any branches by switching back to a branch.\n\nIf you want to create a new branch to retain commits you create, you may\ndo so (now or later) by using -c with the switch command. Example:\n\n  git switch -c <new-branch-name>\n\nOr undo this operation with:\n\n  git switch -\n\nTurn off this advice by setting config variable advice.detachedHead to false"
+    },
+    {
+      "name": "doctor",
+      "command": "python3 bin/hindawi doctor",
+      "cwd": "the exported work tree",
+      "exit_code": 0,
+      "started_utc": "2026-11-04T23:32:22Z",
+      "finished_utc": "2026-11-04T23:32:22Z",
+      "shows": "every required tool and the Chintamani toolchain",
+      "log": ".cache/oracles/hindawi/logs/doctor.log",
+      "log_sha256": "8bcf383faa13d66456ee6e5802292188bad73769b7bf1ef162618105b4b60ad2",
+      "log_lines": 20,
+      "stdout_raw": ".cache/oracles/hindawi/logs/doctor.stdout",
+      "stdout_raw_sha256": "e04a866de37fc2c7349604cd3f9ff32219415c398c80faa35d28f2356330cb11",
+      "stdout_encoding": "utf-8",
+      "stdout_tail": "hindawi 2026.10.4\n  ok    python3      \n  ok    gcc          \n  ok    g++          \n  ok    flex         \n  ok    make         \n  ok    iconv        \n  ok    git          \n  ok    bison        \n  ok    docker       \n  absent  arduino-cli  (optional)\n  ok    Chintamani toolchain in .build/chintamani \ndoctor: ready",
+      "stderr_tail": ""
+    },
+    {
+      "name": "test",
+      "command": "python3 bin/hindawi test",
+      "cwd": "the exported work tree",
+      "exit_code": 1,
+      "started_utc": "2026-11-04T23:32:22Z",
+      "finished_utc": "2026-11-04T23:33:51Z",
+      "shows": "the repository's own regression suite (VERIFY.md step 3)",
+      "log": ".cache/oracles/hindawi/logs/test.log",
+      "log_sha256": "c88db4824239f42ee1f29bc9dc6480b4943efa296908f970f37efce799fc0f24",
+      "log_lines": 763,
+      "stdout_raw": ".cache/oracles/hindawi/logs/test.stdout",
+      "stdout_raw_sha256": "f3361a2821c7c9f91e4dd5abb9a477adecbc1037998d7d010c4c386034b19730",
+      "stdout_encoding": "utf-8",
+      "stdout_tail": "  PASS  T-47 has a work package carrying the originator's credit\n  PASS  T-52 has a work package carrying the originator's credit\n  PASS  T-54 has a work package carrying the originator's credit\n  PASS  T-62 has a work package carrying the originator's credit\n  FAIL  T-63 has a work package carrying the originator's credit\n  FAIL  T-64 has a work package carrying the originator's credit\n  FAIL  T-68 has a work package carrying the originator's credit\n  FAIL  T-69 has a work package carrying the originator's credit\n== the compilation path shows every stage, and compiles what it shows\n  PASS  Urdu shows source, script filter, Romenagri and C\n  PASS  to_c is the last stage shown\n  PASS  a whole tree lowered at once gives, file for file, what each file gives alone\n162 passed, 5 failed\n\n== fundamental regression\nHindawi fundamental regression\n  PASS  F1  the Chintamani copy is Chintamani\n  PASS  F2  Wave 0: 8 of 8 samples reach their host source\n  PASS  F3  guru: HindiC.uhin to host and back\n  PASS  F3  shraeni: HindiC++.uhin to host and back\n  NOTE  F3  yantra: HindiASM.uhin: the original Hindawi h2y and y2h are not round-trip stable on its own assembly sample\n  PASS  F3  kritrima: HindiJAVA.uhin to host and back\n  PASS  F3  praatha: HindiBASIC.uhin to host and back\n  PASS  F3  wyaaka: HindiYACC.uhin to host and back\n  PASS  F3  shabda: HindiLEX.uhin to host and back\n  PASS  F4  ingestion (BURP) puts the project's keywords in Hindi, with one dictionary for both files\n  PASS  F4  hindawicc compiles both native files with gcc's flags passed through\n  PASS  F4  the project comes back to its original C through the same dictionary\n  PASS  F5  योगफल becomes the ELF symbol yoagaphala and comes back through Romenagri\n  12 passed, 0 failed\n\n== notebooks: structure, and demos built through the original pipeline\nnotebooks: 288 passed, 0 failed\n\n== summary\n   PASS  originals byte for byte\n   PASS  the build's own suite\n   FAIL  standards, review data, trademarks, register, stages\n   PASS  fundamental regression\n   PASS  notebooks: structure, and demos built through the original pipeline",
+      "stderr_tail": "test_no_json_in_multilingual_payload (test_hindawi_multilingual.HindawiMultilingualTests.test_no_json_in_multilingual_payload) ... ok\ntest_registry_is_csv_and_profiles_are_distinct (test_hindawi_multilingual.HindawiMultilingualTests.test_registry_is_csv_and_profiles_are_distinct) ... ok\ntest_sanskrit_keyword_inventory_is_csv_and_source_is_preserved (test_hindawi_multilingual.HindawiMultilingualTests.test_sanskrit_keyword_inventory_is_csv_and_source_is_preserved) ... ok\ntest_duplicate_surface_requires_explicit_policy (test_nirgundi_baseline.NirgundiBaselineTests.test_duplicate_surface_requires_explicit_policy) ... ok\ntest_empty_form_rejected (test_nirgundi_baseline.NirgundiBaselineTests.test_empty_form_rejected) ... ok\ntest_longest_first_and_stable_ids (test_nirgundi_baseline.NirgundiBaselineTests.test_longest_first_and_stable_ids) ... ok\ntest_longest_first_prevents_short_form_stealing_longer_form (test_nirgundi_baseline.NirgundiBaselineTests.test_longest_first_prevents_short_form_stealing_longer_form) ... ok\ntest_occurrences_only_report_matches_that_actually_fire (test_nirgundi_baseline.NirgundiBaselineTests.test_occurrences_only_report_matches_that_actually_fire) ... ok\ntest_residual_is_preserved (test_nirgundi_baseline.NirgundiBaselineTests.test_residual_is_preserved) ... ok\ntest_shorter_form_does_not_match_inside_longer_token (test_nirgundi_baseline.NirgundiBaselineTests.test_shorter_form_does_not_match_inside_longer_token) ... ok\ntest_evam_does_not_consume_devam_and_vichheda_can (test_nirgundi_cycle.CycleTests.test_evam_does_not_consume_devam_and_vichheda_can) ... ok\ntest_next_rules_consume_only_listed_stems (test_nirgundi_cycle.CycleTests.test_next_rules_consume_only_listed_stems) ... ok\ntest_stops_when_no_rule_consumes (test_nirgundi_cycle.CycleTests.test_stops_when_no_rule_consumes) ... ok\ntest_residual_agrees_with_statistics (test_nirgundi_experiment.ExperimentArtifactTests.test_residual_agrees_with_statistics) ... skipped 'the external Cologne MW lexicon and prior RV experiment artifacts are not bundled; see docs/nirgundi/source-gaps.md'\ntest_sutra_conversion_covers_every_record (test_nirgundi_experiment.ExperimentArtifactTests.test_sutra_conversion_covers_every_record) ... ok\ntest_extract_deduplicates_and_sorts_longest_first (test_observed_form_bootstrap.ObservedFormBootstrapTests.test_extract_deduplicates_and_sorts_longest_first) ... ok\ntest_full_corpus_run_is_repeatable_and_keeps_all_records (test_observed_form_bootstrap.ObservedFormBootstrapTests.test_full_corpus_run_is_repeatable_and_keeps_all_records) ... ok\n\n----------------------------------------------------------------------\nRan 26 tests in 3.503s\n\nOK (skipped=1)\n+ /usr/local/bin/python3 /home/user/build/repsynth/.cache/oracles/hindawi/work/tests/check_standards_register.py\n+ /usr/local/bin/python3 /home/user/build/repsynth/.cache/oracles/hindawi/work/tests/fundamental.py\n+ /usr/local/bin/python3 /home/user/build/repsynth/.cache/oracles/hindawi/work/tests/check_notebooks.py"
+    },
+    {
+      "name": "chintamani_others",
+      "command": "for d in fasm qb2c; do echo \"== $d\"; make -C .build/chintamani/Hindawi/others/$d all || exit $?; done",
+      "cwd": "the exported work tree",
+      "exit_code": 0,
+      "started_utc": "2026-11-04T23:33:51Z",
+      "finished_utc": "2026-11-04T23:33:53Z",
+      "shows": "fasm and qb2c built with their own Makefiles, as Chintamani's install script does (lines 108 to 118); Hindawi's build.sh does not build them",
+      "log": ".cache/oracles/hindawi/logs/chintamani_others.log",
+      "log_sha256": "d15e2faf7aa51af1e9cc3a6c5a53fa19e5f02a83678edc69051f503f906ec14e",
+      "log_lines": 16,
+      "stdout_raw": ".cache/oracles/hindawi/logs/chintamani_others.stdout",
+      "stdout_raw_sha256": "3f4dc7b13d3ecbd96cb6227a0e902c132de5ca24ab6de0f55c9b0972151e2bdb",
+      "stdout_encoding": "utf-8",
+      "stdout_tail": "== fasm\nmake: Entering directory '/home/user/build/repsynth/.cache/oracles/hindawi/work/.build/chintamani/Hindawi/others/fasm'\nmake: Nothing to be done for 'all'.\nmake: Leaving directory '/home/user/build/repsynth/.cache/oracles/hindawi/work/.build/chintamani/Hindawi/others/fasm'\n== qb2c\nmake: Entering directory '/home/user/build/repsynth/.cache/oracles/hindawi/work/.build/chintamani/Hindawi/others/qb2c'\ngcc -std=gnu89 -c -ansi -w -O2 x11int.c rotated.c gifencode.c gifdecode.c pickpalette.c\nar -cr libqbX11.a x11int.o rotated.o gifencode.o gifdecode.o pickpalette.o\nmake: Leaving directory '/home/user/build/repsynth/.cache/oracles/hindawi/work/.build/chintamani/Hindawi/others/qb2c'",
+      "stderr_tail": ""
+    },
+    {
+      "name": "shaili_round_trip",
+      "command": "bash \"$ORACLE_RUNNERS/hindawi/shaili_round_trip.sh\"",
+      "cwd": "the exported work tree",
+      "exit_code": 0,
+      "started_utc": "2026-11-04T23:33:53Z",
+      "finished_utc": "2026-11-04T23:33:58Z",
+      "shows": "each built Chintamani shaili transducer, forward (h2X) and reverse (X2h), on the shaili's own Hindi samples",
+      "log": ".cache/oracles/hindawi/logs/shaili_round_trip.log",
+      "log_sha256": "6a17a04219e37e30a8e69edece07b48b0f1a6fcfade614444aff59441e12c340",
+      "log_lines": 120,
+      "stdout_raw": ".cache/oracles/hindawi/logs/shaili_round_trip.stdout",
+      "stdout_raw_sha256": "46ef4fd4ca42e820a05aab74518606a4cfdcdc889870ac07e01f7434ce84e25a",
+      "stdout_encoding": "utf-8",
+      "stdout_tail": "< %%\n< \"अ\"a+\"अ\"\t{म_लिखो(\"ओ\");}\n## HindiYACC: 59 lines differ\n1,59c1,59\n< <शैली व्याक>\n< %अणु\n< #समावेश <प्रकार.स>\n< #समावेश <मानकपन.स>\n< #घोषणा व्याक_ढेर_प्रकार द्विगुन\n--- compile output (hincc)\n## HindiASM\nसंकलन के परिणाम\n============\nflat assembler  version 1.67.7  (16384 kilobytes memory)\n3 passes, 244 bytes.\n## HindiBASIC\nसंकलन के परिणाम\n============\nqb2c: translating  tempfil0123.tmphin.bas  -->  tempfil0123.tmphin.c\nTranslation done in 0.02 sec.\n## HindiBASICgraphics\nसंकलन के परिणाम\n============\nqb2c: translating  tempfil0123.tmphin.bas  -->  tempfil0123.tmphin.c\nTranslation done in 0.05 sec.\n## HindiC++\nसंकलन के परिणाम\n============\n## HindiC\nसंकलन के परिणाम\n============\n## HindiJAVA\nसंकलन के परिणाम\n============\n## HindiLEX\nसंकलन के परिणाम\n============\n## HindiYACC\nसंकलन के परिणाम\n============",
+      "stderr_tail": ""
+    }
+  ],
+  "machine": "cloud build machine, native run (ops/run.sh --native); the container run is the author's"
+}

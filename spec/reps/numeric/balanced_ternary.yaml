@@ -1,0 +1,95 @@
+_notice: "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0"
+identity:
+  id: balanced_ternary
+  version: 0.3.0
+  family: numeric
+  title: Balanced ternary integers on a binary host (NUM-02, NUM-03, RD5)
+  equality: Two words are equal when every trit is equal; a valid word has exactly one code per value.
+  canonical_form: The low 2n bits of the register hold the word; bits above them are zero on output and ignored on input.
+domain:
+  description: Integers from -(3^n - 1)/2 to (3^n - 1)/2 for n trits, plus words holding an invalid code.
+  finite: true
+  enumerator: Every trit vector over {-1, 0, +1} of length n; runners restrict operands to the low 12 trits (unary) or the low 6 trits (binary) for exhaustive checks (P1.3, CNF-03).
+  widths:
+    - {digits: 32, register_bits: 64}
+    - {digits: 16, register_bits: 32}
+structure:
+  digits: Trit i has weight 3^i, i from 0 (least significant) to n - 1.
+  trit_values: [-1, 0, 1]
+encoding:
+  active: pair
+  encodings:
+    pair:
+      description: Two bits per trit; trit i occupies bits 2i+1..2i (NUM-02).
+      bits_per_trit: 2
+      layout: interleaved
+      codes: {"0": "00", "1": "01", "-1": "10"}
+      invalid_codes: ["11"]
+    planes:
+      description: Two bit-planes; bit i of the plus plane (bits n-1..0) and bit i of the minus plane (bits 2n-1..n) give trit i as plus minus minus (NUM-03).
+      bits_per_trit: 2
+      layout: planes
+      codes: {"0": "00", "1": "01", "-1": "10"}
+      code_bit_order: "minus plane bit, plus plane bit"
+      invalid_codes: ["11"]
+  invalid_word: All 2n bits set. Every operation that receives an operand holding an invalid code returns the invalid word, except compare and to_int (see their meanings).
+decoding:
+  rule: The value is the sum of trit_i times 3^i. A word holding an invalid code has no value.
+  error_behaviour: Operations return the invalid word, compare returns 2, to_int returns the most negative integer of the register width.
+semantics:
+  statement: >-
+    Arithmetic is integer arithmetic on the represented values, reduced into the balanced range modulo 3^n.
+    Overflow wraps modulo 3^n (the result is the unique value in range congruent to the true result).
+    Out-of-range conversion from two's complement wraps the same way.
+  reference_sources:
+    - spec/ref/balanced_ternary/balanced_ternary.c
+  oracle: Python arbitrary-precision integers, repsynth/oracles_num/balanced_ternary.py, written from this specification independently of the C reference (NUM-04).
+operations:
+  - {name: neg, arity: 1, meaning: "-a, modulo 3^n", reference: {symbol_pattern: "bt_neg{width}"}, candidate: true}
+  - {name: add, arity: 2, meaning: "a + b, wrapping modulo 3^n", reference: {symbol_pattern: "bt_add{width}"}, candidate: true}
+  - {name: sub, arity: 2, meaning: "a - b, wrapping modulo 3^n", reference: {symbol_pattern: "bt_sub{width}"}, candidate: true}
+  - {name: mul, arity: 2, meaning: "a * b, low n trits (wrapping modulo 3^n)", reference: {symbol_pattern: "bt_mul{width}"}, candidate: true}
+  - {name: cmp, arity: 2, meaning: "-1, 0 or +1 as a two's complement integer of the register width, by comparing values; 2 if either operand is invalid", reference: {symbol_pattern: "bt_cmp{width}"}, candidate: true}
+  - {name: shl, arity: 2, meaning: "a times 3^k modulo 3^n, k = b modulo the register width in bits; k >= n gives 0", reference: {symbol_pattern: "bt_shl{width}"}, candidate: true}
+  - {name: shr, arity: 2, meaning: "drop the low k trits (division by 3^k rounding to nearest), k = b modulo the register width in bits; k >= n gives 0", reference: {symbol_pattern: "bt_shr{width}"}, candidate: true}
+  - {name: from_int, arity: 1, meaning: "a read as a two's complement integer of the register width, wrapped modulo 3^n into range", reference: {symbol_pattern: "bt_from_int{width}"}, candidate: true}
+  - {name: to_int, arity: 1, meaning: "the value as a two's complement integer of the register width (always representable); invalid gives the most negative integer", reference: {symbol_pattern: "bt_to_int{width}"}, candidate: true}
+composition:
+  words: Wider values are not composed in the first build.
+transformations:
+  - {name: to_twos_complement, to: binary_integer, preserves: "value, lossless for every valid word"}
+  - {name: from_twos_complement, to: binary_integer, preserves: "value modulo 3^n; lossless inside the balanced range"}
+constraints:
+  - {name: valid, statement: "No trit holds an invalid code; enforced by bt_valid_word in the generated codec"}
+substrate:
+  logical: ternary
+  register_widths:
+    - {digits: 32, register_bits: 64}
+    - {digits: 16, register_bits: 32}
+  limits:
+    hardware_area: {not_established: "measured at P5.4 from Yosys and nextpnr runs"}
+interfaces:
+  imports: []
+  exports: [binary_integer conversions]
+verification:
+  properties:
+    - {name: round_trip, method: "to_int(from_int(x)) = x for x in range; exhaustive at reduced width, seeded random at full width"}
+    - {name: homomorphism, method: "to_int(op(a, b)) = op on integers reduced modulo 3^n; against the Python oracle"}
+    - {name: canonical, method: "every valid word decodes to one value and re-encodes to itself"}
+  exhaustive: {unary_low_digits: 12, binary_low_digits: 6, bound: 1048576}
+  random: {seed: 20261104, stored_cases: 4096, working_value: 100000, note: "Stored files hold 4096 seeded cases per operation to keep the tree small; runners regenerate the full 100000 from the seed."}
+generation:
+  software: {targets: [native, wasm32, python]}
+  codec: {generator: gen/software/codec.py, output: spec/ref/balanced_ternary/bt_codec.h}
+  tier_a: {opcode_space: custom-0, profiles: [RV64GC, RV32IMAC]}
+  hardware: {route: direct}
+evolution:
+  changes:
+    - {version: 0.3.0, class: initial, summary: "Pair encoding active; planes encoding specified beside it (NUM-03)"}
+  ordering: Operations are addressed by index in stable paths; a new operation is appended, and reordering or removing one is a breaking change.
+  retirement: An encoding is retired only by a breaking version; the allocation ledger never moves an allocated instruction.
+provenance:
+  oracle: {not_established: "balanced ternary has no legacy implementation in the estate; PEDLER shares the number system only (MRD 7.1)"}
+  extraction: Written from NUM-02 and NUM-03 as decided (RD5).
+  evidence_state: decided
+  decided_by: RD5, 4 November 2026

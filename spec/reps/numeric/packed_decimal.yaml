@@ -1,0 +1,65 @@
+_notice: "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0"
+identity:
+  id: packed_decimal
+  version: 0.3.0
+  family: numeric
+  title: Packed decimal, sign-magnitude BCD (NUM-01)
+  equality: Equal values are equal; -0 equals +0 and is returned as +0.
+  canonical_form: Sign nibble 0xC for plus and zero, 0xD for minus; digit nibbles 0 to 9.
+domain:
+  description: Integers with |x| < 10^d, d = 15 in a 64-bit register, d = 7 in a 32-bit register.
+  finite: true
+  enumerator: Every signed integer with at most d digits; exhaustive checks use all signed 3-digit operand pairs (P1.4).
+  widths:
+    - {digits: 15, register_bits: 64}
+    - {digits: 7, register_bits: 32}
+structure:
+  digits: Nibble 0 is the sign; nibble i (1 to d) is the digit of weight 10^(i-1).
+encoding:
+  active: bcd_trailing_sign
+  encodings:
+    bcd_trailing_sign: {description: "Low nibble sign (C plus, D minus), digits above, least significant first", digit_codes: "0000 to 1001", sign_codes: {plus: "1100", minus: "1101"}}
+  invalid_word: All bits of the word set (the low 4(d+1) bits).
+decoding:
+  rule: Sign times the decimal digits. Any other sign nibble, or a digit nibble above 9, is invalid.
+  error_behaviour: Arithmetic returns the invalid word; cmp returns 2; to_int returns the most negative integer of the register width.
+semantics:
+  statement: Integer arithmetic on the values; overflow keeps the low d digits of the magnitude with the sign of the true result (decimal truncation); conversions from two's complement truncate the same way.
+  reference_sources: [spec/ref/packed_decimal/packed_decimal.c]
+  oracle: Python's decimal module with integer arithmetic, repsynth/oracles_num/packed_decimal.py (NUM-04).
+operations:
+  - {name: neg, arity: 1, meaning: "-a", reference: {symbol_pattern: "pd_neg{width}"}, candidate: true}
+  - {name: add, arity: 2, meaning: "a + b, truncated to d digits", reference: {symbol_pattern: "pd_add{width}"}, candidate: true}
+  - {name: sub, arity: 2, meaning: "a - b, truncated to d digits", reference: {symbol_pattern: "pd_sub{width}"}, candidate: true}
+  - {name: mul, arity: 2, meaning: "a * b, low d digits", reference: {symbol_pattern: "pd_mul{width}"}, candidate: true}
+  - {name: cmp, arity: 2, meaning: "-1, 0 or +1 by value; 2 if either is invalid", reference: {symbol_pattern: "pd_cmp{width}"}, candidate: true}
+  - {name: from_int, arity: 1, meaning: "two's complement to packed decimal, truncated to d digits", reference: {symbol_pattern: "pd_from_int{width}"}, candidate: true}
+  - {name: to_int, arity: 1, meaning: "packed decimal to two's complement (always representable)", reference: {symbol_pattern: "pd_to_int{width}"}, candidate: true}
+composition:
+  words: Not composed in the first build.
+transformations:
+  - {name: to_twos_complement, to: binary_integer, preserves: value}
+constraints:
+  - {name: valid, statement: "Sign nibble C or D, digit nibbles at most 9"}
+substrate:
+  logical: decimal
+  register_widths:
+    - {digits: 15, register_bits: 64}
+    - {digits: 7, register_bits: 32}
+interfaces:
+  exports: [binary_integer conversions]
+verification:
+  properties:
+    - {name: homomorphism, method: "agreement with Python's decimal module and integers; exhaustive over signed 3-digit pairs"}
+  exhaustive: {operand_digits: 3}
+  random: {seed: 20261104, stored_cases: 4096, working_value: 100000, note: "As balanced_ternary."}
+generation:
+  software: {targets: [native, wasm32, python]}
+  tier_a: {opcode_space: custom-1, state: "candidate; promoted only by measured benefit (ISA-03)"}
+evolution:
+  changes:
+    - {version: 0.3.0, class: initial, summary: "Initial specification"}
+provenance:
+  oracle: {value: "Python decimal module", evidence: decided, source: "NUM-04"}
+  extraction: Written from NUM-01; no legacy implementation in the estate.
+  evidence_state: decided

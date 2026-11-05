@@ -1,0 +1,79 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "generator": "repsynth.lanes.oracles 0.3.0",
+  "oracle": "romenagri",
+  "repository": "project-ilm/romenagri2026.10",
+  "commit": "e9d762804feb0159c6739f242378d58286dbd3f0",
+  "tree": "0405b06bbeb0486fd16e0b86853525ce0bff75f3",
+  "dependencies": {},
+  "driver_source": "README.md 'Checking it'; tests/run_all.sh",
+  "export": {
+    "command": "bash -c git --no-optional-locks -C \"/home/user/build/repsynth/.cache/assets/project-ilm__romenagri2026.10\" archive --format=tar HEAD | tar -x -C \"/home/user/build/repsynth/.cache/oracles/romenagri/work\"",
+    "exit_code": 0,
+    "stderr_tail": ""
+  },
+  "clone_state_before": {
+    "project-ilm/romenagri2026.10": {
+      "commit": "e9d762804feb0159c6739f242378d58286dbd3f0",
+      "tree": "0405b06bbeb0486fd16e0b86853525ce0bff75f3",
+      "status_exit": 0,
+      "status_clean": true,
+      "content": {
+        "files": 234,
+        "sha256": "8f62f9c19e08c783c22d7666d15a79fa0c1853824068c3e5a93ed0f46afb627a"
+      }
+    }
+  },
+  "clone_state_after": {
+    "project-ilm/romenagri2026.10": {
+      "commit": "e9d762804feb0159c6739f242378d58286dbd3f0",
+      "tree": "0405b06bbeb0486fd16e0b86853525ce0bff75f3",
+      "status_exit": 0,
+      "status_clean": true,
+      "content": {
+        "files": 234,
+        "sha256": "8f62f9c19e08c783c22d7666d15a79fa0c1853824068c3e5a93ed0f46afb627a"
+      }
+    }
+  },
+  "clones_unchanged": {
+    "project-ilm/romenagri2026.10": true
+  },
+  "steps": [
+    {
+      "name": "make_all",
+      "command": "make -C Romenagri all",
+      "cwd": "the exported work tree",
+      "exit_code": 0,
+      "started_utc": "2026-11-04T23:15:20Z",
+      "finished_utc": "2026-11-04T23:15:21Z",
+      "shows": "the patched Romenagri built with its own Makefile",
+      "log": ".cache/oracles/romenagri/logs/make_all.log",
+      "log_sha256": "0766883c10ccf5e68af907e6d8c0fbfa2e88abe231054d92e9b55b3db2c52f91",
+      "log_lines": 30,
+      "stdout_raw": ".cache/oracles/romenagri/logs/make_all.stdout",
+      "stdout_raw_sha256": "a6619f16d389c34b2b630c54a7e770d1757acd8796220322eae8d370f83aadf5",
+      "stdout_encoding": "utf-8",
+      "stdout_tail": "make: Entering directory '/home/user/build/repsynth/.cache/oracles/romenagri/work/Romenagri'\ngcc -Wall -Wno-unused -o rmn2acii.o -c rmn2acii.c\ngcc -Wall -Wno-unused -o acii2rmn.o -c acii2rmn.c\ngcc -Wall -Wno-unused -o acii2hin.o -c acii2hin.c\ngcc -Wall -Wno-unused -o stack.o -c stack.c\nar -cr librmnagri.a rmn2acii.o acii2rmn.o acii2hin.o stack.o \nflex -8 -olexyy.c acii2cf.lex\ngcc -Wall -Wno-unused -o acii2cf lexyy.c -lfl -lrmnagri -L ./\nflex -8 -olexyy.c acii2pcf.lex\ngcc -Wall -Wno-unused -o acii2pcf lexyy.c -lfl -lrmnagri -L ./\nflex -8 -olexyy.c acii2hin.lex\ngcc -Wall -Wno-unused -o acii2hin lexyy.c -lfl -lrmnagri -L ./\nflex -8 -olexyy.c acii2rmn.lex\ngcc -Wall -Wno-unused -o acii2rmn lexyy.c -lfl -lrmnagri -L ./\nflex -8 -olexyy.c fixuninum.lex\ngcc -Wall -Wno-unused -o fixuninum lexyy.c -lfl -lrmnagri -L ./\nflex -8 -olexyy.c rmn2acii.lex\ngcc -Wall -Wno-unused -o rmn2acii lexyy.c -lfl -lrmnagri -L ./\ngcc -Wall -Wno-unused -o main.o -c main.c\ngcc -o testme main.o -lrmnagri -L ./\ngcc -Wall -Wno-unused -o acii2uni acii2uni.c\ngcc -Wall -Wno-unused -o uni2acii uni2acii.c\nmake: Leaving directory '/home/user/build/repsynth/.cache/oracles/romenagri/work/Romenagri'",
+      "stderr_tail": ""
+    },
+    {
+      "name": "run_all",
+      "command": "RMN_BUILD=\"$ORACLE_SCRATCH/rmn_build\" bash tests/run_all.sh",
+      "cwd": "the exported work tree",
+      "exit_code": 0,
+      "started_utc": "2026-11-04T23:15:21Z",
+      "finished_utc": "2026-11-04T23:15:41Z",
+      "shows": "the package's own quick test suite",
+      "log": ".cache/oracles/romenagri/logs/run_all.log",
+      "log_sha256": "1033cec9373a03c53e22fd304b0b3c3aad24e386857fdea6def167e58426c006",
+      "log_lines": 241,
+      "stdout_raw": ".cache/oracles/romenagri/logs/run_all.stdout",
+      "stdout_raw_sha256": "0e92f3f79497b08e169c7a22428c007cad5d0dac1eef80fbc5a4d81be5057fa4",
+      "stdout_encoding": "utf-8",
+      "stdout_tail": "     11.6  old: U+2190 comes back as a control character                                          ok\n     11.6  old: U+1F600 gives the bytes 3D 00                                                     ok\n     11.6  new: U+00A0 comes back as ' '                                                          ok\n     11.6  new: U+00AD comes back as 'ऐ'                                                          ok\n     11.6  new: U+00B7 comes back as 'ङ'                                                          ok\n     11.6  new: U+00D7 comes back as 'स'                                                          ok\n     11.6  new: U+00E9 comes back as '़'                                                          ok\n     11.6  new: U+20B9 comes back as 'छ'                                                          ok\n     11.6  new: U+2022 comes back as '\"'                                                          ok\n     11.6  new: U+2122 comes back as '\"'                                                          ok\n     11.6  new: U+2026 comes back as '&'                                                          ok\n     11.6  new: U+2020 comes back as ' '                                                          ok\n     11.6  new: U+FFFD comes back as '}'                                                          ok\n     11.6  new: U+0934 comes back as '4'                                                          ok\n     11.6  new: U+1CD0 comes back as 'ऱ'                                                          ok\n     11.6  new: U+2002-U+2019, U+201C, U+201D (including ZWNJ U+200C and ZWJ U+200D) all come back as control characters ok\n     11.6  new: ZWNJ comes back as U+000C (form feed) and ZWJ as U+000D (carriage return)         ok\n     11.6  new: U+2190 comes back as a control character                                          ok\n     11.6  new: U+1F600 gives the bytes 3D 00                                                     ok\n     11.6  the double danda U+0965 came back as `e` before the patch and comes back as itself now ok\n   RESULT: PASS\n== doc_tables_in_sync\n   generated blocks: 12, out of date or missing: 0\n== table_lint_old (informational: the unpatched tables)\n   ERROR  T7 X+C ebb8 does not survive acii2rmn + rmn2acii:  -> '_3cha' -> e833b8\n   T7: 37 consonants x 53 letters, both orders: 74 failures\n   14 error(s)\n== end-to-end: skipped (hincc not on PATH)\n\n================ SUMMARY\n  table_lint_new         PASS\n  unicode                PASS\n  saral                  PASS\n  parser_vs_model        PASS\n  roundtrip              PASS\n  corpus                 PASS\n  recipes                PASS\n  limitations            PASS\n  doc_tables_in_sync     PASS\n  logs: /home/user/build/repsynth/.cache/oracles/romenagri/scratch/rmn_build/logs",
+      "stderr_tail": ""
+    }
+  ],
+  "machine": "cloud build machine, native run (ops/run.sh --native); the container run is the author's"
+}

@@ -1,0 +1,15 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC-BY-SA-4.0
+produced:
+- 'spec/schema/representation.schema.json: the sixteen-section meta-model in JSON Schema 2020-12, with not_established and
+  evidenced-value definitions'
+- 'repsynth/spec.py: YAML loader refusing duplicate keys, validator, reference-function resolution against the C sources,
+  consume() refusing not_established values'
+- repsynth spec check (CLI)
+not_done:
+- The script, transliteration, pipeline and machine families are validated as their specifications arrive from other packets
+  (P1.5 to P1.8, P7.1).
+failed_first: Five planted defects (missing section, guessed value, bare not_established, undefined reference function, duplicate
+  operation) each refused with its path (reports/mutation/selftest_spec.json and selftest_software.json). The earlier attempt's
+  validator accepted the guessed value and the undefined reference function; both are now refused.
+reused:
+- jsonschema (Draft202012Validator), PyYAML

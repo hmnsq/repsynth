@@ -1,0 +1,9 @@
+{
+  "packet": "P3.3",
+  "state": "done",
+  "evidence": [
+    "records/20261104T231510Z_P3.3_acceptance.json"
+  ],
+  "summary": "graph/edges.txt holds typed edges; every artefact has an implements or validates edge, and graph/edges.dot regenerates identically from the list.",
+  "blocked_by": []
+}

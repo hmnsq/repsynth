@@ -1,0 +1,31 @@
+{
+  "command": "python3 -m repsynth oracles check apcisr",
+  "exit_code": 1,
+  "finished_utc": "2026-11-04T23:27:03Z",
+  "image_digests": {},
+  "inputs": {
+    "spec/reps/script/apcisr_devanagari.yaml": "9a3b697725866706b955d4cb722b70af8b72078ad36169ef8743c4f7a77452e2"
+  },
+  "notes": "Acceptance run: oracle executed on every extracted mapping.",
+  "outputs": {},
+  "packet": "P1.6",
+  "results": {
+    "mappings_checked": 738,
+    "mismatches": [],
+    "oracle_exit_codes": {},
+    "planted_defect": "entry 0 madhya-lipik changed to 102",
+    "planted_mismatches": [
+      "entry 0 (_hra): spec differs from the oracle's chart"
+    ],
+    "planted_refused": true,
+    "spec_check": {
+      "command": "/usr/local/bin/python3 -m repsynth spec check /home/user/build/repsynth/spec/reps/script/apcisr_devanagari.yaml",
+      "exit_code": 1,
+      "output": "REFUSED /home/user/build/repsynth/spec/reps/script/apcisr_devanagari.yaml at /decoding: {'not_established': 'APCISR renders and does not decode; the inverse is outside the oracle'} is valid under each of {'type': 'object', 'minProperties': 1}, {'$ref': '#/$defs/notEstablished'}"
+    }
+  },
+  "started_utc": "2026-11-04T23:27:01Z",
+  "state": "failed",
+  "step": "check_apcisr",
+  "tool_versions": {}
+}

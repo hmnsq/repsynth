@@ -1,0 +1,38 @@
+{
+  "command": "repsynth selftest --lane spec",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:14:08Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/mutation/selftest_spec.json": "8dfe2819714a05ebe230f3a42573afe640ec3d935b7021e8c2187fd04d0be8b8"
+  },
+  "packet": "P1.1",
+  "results": {
+    "bare not_established without reason (/provenance/oracle)": {
+      "caught": true,
+      "refusal": "/provenance/oracle: 'not_established' is not valid under any of the given schemas (closest: 'not_established' is not of type 'object'); /provenance/oracle: value 'not_established' is not allowed: write {not_established: <reason>}"
+    },
+    "duplicate operation": {
+      "caught": true,
+      "refusal": "/operations: operation neg is defined twice"
+    },
+    "guessed value where not_established stood (/substrate/limits/hardware_area)": {
+      "caught": true,
+      "refusal": "/substrate/limits/hardware_area: 1200 is not valid under any of the given schemas (closest: 1200 is not of type 'object')"
+    },
+    "missing section (evolution)": {
+      "caught": true,
+      "refusal": "/: 'evolution' is a required property"
+    },
+    "undefined reference function (bt_addx32)": {
+      "caught": true,
+      "refusal": "/operations/1/reference/symbol_pattern: reference function bt_addx32 is not defined in any reference source; /operations/1/reference/symbol_pattern: reference function bt_addx16 is not defined in any reference source"
+    }
+  },
+  "started_utc": "2026-11-04T23:14:08Z",
+  "state": "done",
+  "step": "selftest-spec",
+  "tool_versions": {}
+}

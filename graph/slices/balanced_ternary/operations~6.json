@@ -1,0 +1,1 @@
+{"arity":2,"candidate":true,"meaning":"drop the low k trits (division by 3^k rounding to nearest), k = b modulo the register width in bits; k >= n gives 0","name":"shr","reference":{"symbol_pattern":"bt_shr{width}"}}

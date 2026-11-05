@@ -1,0 +1,1 @@
+{"arity":2,"candidate":false,"meaning":"a shifted left by b modulo w","name":"shl","reference":{"symbol_pattern":"bin_shl{width}"}}

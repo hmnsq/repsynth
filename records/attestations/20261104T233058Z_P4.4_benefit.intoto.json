@@ -1,0 +1,61 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "python3 -m repsynth.lanes.tiera benefit",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:30:58Z",
+    "image_digests": {},
+    "inputs": {
+      ".cache/qemu-patched/libinsn.so": "5e6a28dcb7e452ae98521e3743af76785f68133bae78b4ebdf5c65ab1b8f34a9",
+      "gen/insn/out/balanced_ternary/ops/add.h": "e60a4588f4be0e8319453b1ca93b0b277aaa627ed2feece2f209e250f24b0851",
+      "gen/insn/out/balanced_ternary/ops/cmp.h": "16a8ea8783fadfb34f4d26069bbdc111ba79b3489cb26712761c0adbb644619e",
+      "gen/insn/out/balanced_ternary/ops/from_int.h": "586462a215662e9c99612ade6c911e4f43ee9414be46c64dd6f88ac9a43e9fd3",
+      "gen/insn/out/balanced_ternary/ops/mul.h": "830149ffd55f53b487b83430420f2d609c007bbcb0fd4d1c50182455e3f9378f",
+      "gen/insn/out/balanced_ternary/ops/neg.h": "85e704d080432de54d7f907886585b3bdea4d619aef160398faee1d48528e846",
+      "gen/insn/out/balanced_ternary/ops/shl.h": "aa06e2c670b6ad7b389f021826d908716e51d786c4a912070ce81ca8c7b97f3d",
+      "gen/insn/out/balanced_ternary/ops/shr.h": "849f7cd84892882d28baf428a5c80b5096dce9d48a3b37f9d5ccd00d9da8c4a3",
+      "gen/insn/out/balanced_ternary/ops/sub.h": "4fbf777bc353fcb05e773f1aedbf7cd462e9d315c3e2f03d41d55be823f73079",
+      "gen/insn/out/balanced_ternary/ops/to_int.h": "821d294223f6bb5eb7550ea92cea6a1573bf700860584904604a922ed6a5c252",
+      "gen/insn/out/balanced_ternary/test_xayebt.c": "398254106e0615ff5d5a6d5f06627dfade72d4a3273ae4a337c221889d227986",
+      "gen/insn/out/balanced_ternary/xayebt.h": "b2fb4922b2d5b9f3cdae10f5f097c1c346d483636994e502826a0b61a97dc6ce",
+      "gen/insn/out/packed_decimal/ops/add.h": "a31c18006593b0896cf83495830da87eaee98e5f2ae9f3eceb179e0e4aed5246",
+      "gen/insn/out/packed_decimal/ops/cmp.h": "40983da33ea30139838802ccb9755e46b40fd976b674398123c21ed686c58dd7",
+      "gen/insn/out/packed_decimal/ops/from_int.h": "d3c49ae8edb32beb1910286a5b74353d97a237ee984fa92c7c1ae85f86be8a85",
+      "gen/insn/out/packed_decimal/ops/mul.h": "bdc1c60b684f83583b02acae92e0b0b2c93ace1ac283b0b929053baad3548931",
+      "gen/insn/out/packed_decimal/ops/neg.h": "0cf57b4116477e92a8e8807889799372652148def9d0ee213f6ac00f1f988144",
+      "gen/insn/out/packed_decimal/ops/sub.h": "1323995f8f5a3dba38d93957f691f25c3fec280cf0cf970280adc2b09fac04b5",
+      "gen/insn/out/packed_decimal/ops/to_int.h": "de2283c4cd04fb6595044268c4f6f50972890038d2f0d6c993f437d63818ab29",
+      "gen/insn/out/packed_decimal/test_xayepd.c": "f606a9ab248d13a5c89cae200815500ece039af35cc2b8f4013bdf56d921d1a4",
+      "gen/insn/out/packed_decimal/xayepd.h": "edf5e2785cb44b49ae67a5c8327f5a44d3494f8f99f072cc219a3b76eb26d221"
+    },
+    "packet": "P4.4",
+    "started_utc": "2026-11-04T23:30:23Z",
+    "state": "done",
+    "step": "benefit",
+    "tool_versions": {
+      "qemu": "hmnsq/qemu tag v10.2.4 commit 3e0bcba1ca7d6607ca49a988d165f052a3a53323 tree e0af1c7de4b0c7979bab82927f61d7c28e6f1964 (fork tag object b4263afc equals upstream qemu/qemu v10.2.4); stock build, configure --target-list=riscv64-linux-user,riscv32-linux-user,riscv64-softmmu,riscv32-softmmu --enable-plugins; patched with gen/qemu/out/balanced_ternary/patches.json, gen/qemu/out/packed_decimal/patches.json",
+      "riscv64-unknown-elf-gcc": "riscv64-unknown-elf-gcc (13.2.0-11ubuntu1+12) 13.2.0"
+    }
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "458950f35335df33e0e95a714e8357af2b434ebf2655b719263744e87b29294d"
+      },
+      "name": "reports/promotion/promotion.json"
+    },
+    {
+      "digest": {
+        "sha256": "af1cbd129b318c9d85fed74ade917e2e56a6e0af7d0a9c4ee84e9097baac946e"
+      },
+      "name": "reports/promotion/promotion.md"
+    },
+    {
+      "digest": {
+        "sha256": "7331e51fd7236b5157047a801a2049e9539ea8fb0c328f6c27233d7549343ce4"
+      },
+      "name": "records/20261104T233058Z_P4.4_benefit.json"
+    }
+  ]
+}

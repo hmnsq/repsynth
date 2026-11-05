@@ -1,0 +1,81 @@
+{
+  "_notice": "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0",
+  "generator": "repsynth.ledger.allocate 0.3.0",
+  "databases": {
+    "riscv-opcodes": "https://github.com/riscv/riscv-opcodes commit f24ac23ec9fa947011781a09cd6fd25a7c36dc45",
+    "binutils": "binutils 2.47 release tarball (binutils_2.47.orig.tar.xz from archive.ubuntu.com, sha256 154ab23b60070e8f27013c22977f1129425d67d1e8acd6e13010e617811e4cff); github.com/bminor/binutils-gdb and hmnsq/binutils-gdb were not reachable"
+  },
+  "standard_instructions": 1755,
+  "vendor_instructions": 1177,
+  "entries": 16,
+  "refused": [],
+  "moved": [],
+  "reported_unratified": [],
+  "reported_vendor": [
+    {
+      "allocation": "aye.bt.add",
+      "vendor": "cv.bneimm",
+      "class": "INSN_CLASS_XCVBI",
+      "xlen": 0
+    },
+    {
+      "allocation": "aye.bt.cmp",
+      "vendor": "cv.bneimm",
+      "class": "INSN_CLASS_XCVBI",
+      "xlen": 0
+    },
+    {
+      "allocation": "aye.bt.fromint",
+      "vendor": "cv.bneimm",
+      "class": "INSN_CLASS_XCVBI",
+      "xlen": 0
+    },
+    {
+      "allocation": "aye.bt.mul",
+      "vendor": "cv.bneimm",
+      "class": "INSN_CLASS_XCVBI",
+      "xlen": 0
+    },
+    {
+      "allocation": "aye.bt.neg",
+      "vendor": "cv.bneimm",
+      "class": "INSN_CLASS_XCVBI",
+      "xlen": 0
+    },
+    {
+      "allocation": "aye.bt.shl",
+      "vendor": "cv.bneimm",
+      "class": "INSN_CLASS_XCVBI",
+      "xlen": 0
+    },
+    {
+      "allocation": "aye.bt.shr",
+      "vendor": "cv.bneimm",
+      "class": "INSN_CLASS_XCVBI",
+      "xlen": 0
+    },
+    {
+      "allocation": "aye.bt.sub",
+      "vendor": "cv.bneimm",
+      "class": "INSN_CLASS_XCVBI",
+      "xlen": 0
+    },
+    {
+      "allocation": "aye.bt.toint",
+      "vendor": "cv.bneimm",
+      "class": "INSN_CLASS_XCVBI",
+      "xlen": 0
+    }
+  ],
+  "vendor_summary": [
+    "aye.bt.add ~ INSN_CLASS_XCVBI",
+    "aye.bt.cmp ~ INSN_CLASS_XCVBI",
+    "aye.bt.fromint ~ INSN_CLASS_XCVBI",
+    "aye.bt.mul ~ INSN_CLASS_XCVBI",
+    "aye.bt.neg ~ INSN_CLASS_XCVBI",
+    "aye.bt.shl ~ INSN_CLASS_XCVBI",
+    "aye.bt.shr ~ INSN_CLASS_XCVBI",
+    "aye.bt.sub ~ INSN_CLASS_XCVBI",
+    "aye.bt.toint ~ INSN_CLASS_XCVBI"
+  ]
+}

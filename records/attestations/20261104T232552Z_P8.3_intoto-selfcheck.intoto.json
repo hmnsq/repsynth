@@ -1,0 +1,30 @@
+{
+  "_type": "https://in-toto.io/Statement/v1",
+  "predicate": {
+    "command": "records.write_statement smoke",
+    "exit_code": 0,
+    "finished_utc": "2026-11-04T23:25:52Z",
+    "image_digests": {},
+    "inputs": {},
+    "packet": "P8.3",
+    "started_utc": "2026-11-04T23:25:52Z",
+    "state": "done",
+    "step": "intoto-selfcheck",
+    "tool_versions": {}
+  },
+  "predicateType": "https://hmnsq.github.io/repsynth/run-record/v1",
+  "subject": [
+    {
+      "digest": {
+        "sha256": "d915cc95d6ca8f47ae297713ed46d4e5c5d99ddd29fc3c61e263bdf305f2b5b0"
+      },
+      "name": "VERSION"
+    },
+    {
+      "digest": {
+        "sha256": "ccb645122310546b496157fca0f96a0c827af2e468f6fca7b9d8b42d5b0e237b"
+      },
+      "name": "records/20261104T232552Z_P8.3_intoto-selfcheck.json"
+    }
+  ]
+}

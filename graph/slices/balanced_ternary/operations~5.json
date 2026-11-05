@@ -1,0 +1,1 @@
+{"arity":2,"candidate":true,"meaning":"a times 3^k modulo 3^n, k = b modulo the register width in bits; k >= n gives 0","name":"shl","reference":{"symbol_pattern":"bt_shl{width}"}}

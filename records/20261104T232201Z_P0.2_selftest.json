@@ -1,0 +1,20 @@
+{
+  "command": "python3 -m repsynth intake selftest",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:22:01Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Planted defects for the clone check (P0.2), received material (P0.5), RD4 (P0.6), licence classification (P0.4) and redaction; controls must pass and plants must be refused.",
+  "outputs": {
+    "reports/intake_selftest.json": "fc668410beadea9b97e40f94b737a64b587e19aa628c7ee0c71ec3618f99e530"
+  },
+  "packet": "P0.2",
+  "results": {
+    "as_expected": 23,
+    "checks": 23
+  },
+  "started_utc": "2026-11-04T23:21:55Z",
+  "state": "done",
+  "step": "selftest",
+  "tool_versions": {}
+}

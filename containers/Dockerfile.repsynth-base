@@ -1,0 +1,24 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
+# SPDX-License-Identifier: GPL-3.0-or-later
+# repsynth-base (MRD 9.7): Python, build tools, Ninja, the JSON Schema validator, Hypothesis, Z3,
+# clang and lld for WebAssembly, Node.js for the WebAssembly runner, and the Docker client so the
+# runner can start the other kept containers as siblings. Upstream image: docker.io/library/ubuntu:24.04.
+ARG BASE=mirror.gcr.io/library/ubuntu:24.04
+FROM ${BASE}
+ENV DEBIAN_FRONTEND=noninteractive PIP_BREAK_SYSTEM_PACKAGES=1
+COPY extra-ca/ /usr/local/share/ca-certificates/extra/
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      python3 python3-pip python3-dev build-essential ninja-build git ca-certificates \
+      clang lld nodejs docker.io \
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -f /usr/local/share/ca-certificates/extra/README.md && update-ca-certificates
+RUN pip3 install --no-cache-dir --cert /etc/ssl/certs/ca-certificates.crt jsonschema==4.23.0 pyyaml==6.0.2 hypothesis==6.112.1 z3-solver==4.13.0.0 \
+      mpmath==1.3.0 cffi==1.17.1 pytest==8.3.3
+WORKDIR /work
+# Intake and oracle lanes (P0.2, P0.3): the GitHub CLI for the handed-in login, and what the oracles' own
+# drivers call: flex and libfl, bison, gawk (AyeHandSum's strtonum; Hindawi's #!/usr/bin/gawk scripts),
+# bc, sha3sum, tempfile (debianutils), patch, a Java compiler for the kritrima shaili.
+COPY extra-ca/ /usr/local/share/ca-certificates/extra/
+RUN apt-get update && apt-get install -y --no-install-recommends \
+      gh flex libfl-dev bison gawk bc libdigest-sha3-perl debianutils patch default-jdk-headless \
+    && rm -rf /var/lib/apt/lists/*

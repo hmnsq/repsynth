@@ -1,0 +1,1 @@
+{"arity":1,"candidate":true,"meaning":"a read as a two's complement integer of the register width, wrapped modulo 3^n into range","name":"from_int","reference":{"symbol_pattern":"bt_from_int{width}"}}

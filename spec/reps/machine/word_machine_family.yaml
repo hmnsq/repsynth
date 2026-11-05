@@ -1,0 +1,117 @@
+_notice: "© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0"
+identity:
+  id: word_machine_family
+  version: 0.3.0
+  family: machine
+  title: Parametric word machine family for the Tier B standalone machines (ISB-01, RD5)
+  equality: Two machine states are equal when the program counter, every register's host bits and every memory byte are equal.
+  canonical_form: Register 0 reads as the all-zero host word, which is the numeric zero of every instance's representation.
+domain:
+  description: >-
+    The family is a load/store register machine with a fixed 32-bit binary instruction encoding and a data word
+    whose meaning is delegated to one numeric specification. An instance is fixed by its parameters in
+    /generation/isb/instances: the numeric specification, the digit count of the word and the host register width.
+    The family itself defines no executable operation; every instance's operations are derived from this file.
+  finite: true
+  widths: []
+structure:
+  parameters:
+    numeric: identifier of the numeric specification whose reference functions give the arithmetic (binary_integer or balanced_ternary)
+    digits: digits of the data word (the numeric specification's width; 64 bits or 32 trits)
+    register_bits: host register width in bits (64 for both first-build instances)
+    prefix: lower-case name of the instance; it names the QEMU target, its reference functions and its files
+  registers: {count: 16, names: "r0 to r15", zero_register: r0, width: register_bits}
+  program_counter: {unit: byte, alignment: 4, reset: 0}
+  memory: {addressing: byte, byte_order: little, word_bytes: 8}
+  data_word: >-
+    A register holds one data word in the numeric specification's active encoding, in the low bits of the host
+    register. Addresses, branch targets and device bytes are binary host integers obtained from a word by the
+    instance's val function and turned back into words by its word function.
+encoding:
+  active: fixed32
+  encodings:
+    fixed32:
+      description: Every instruction is one 32-bit little-endian binary word; field positions are bit ranges [high, low].
+      word_bits: 32
+      byte_order: little
+      formats:
+        R: {op: [31, 26], rd: [25, 22], ra: [21, 18], rb: [17, 14], zero: [13, 0]}
+        U: {op: [31, 26], rd: [25, 22], ra: [21, 18], zero: [17, 0]}
+        I: {op: [31, 26], rd: [25, 22], ra: [21, 18], imm: [17, 0, signed]}
+        B: {op: [31, 26], ra: [25, 22], rb: [21, 18], imm: [17, 0, signed]}
+        J: {op: [31, 26], rd: [25, 22], imm: [21, 0, signed]}
+      opcode_rule:
+        alu: >-
+          Operation i (from 0) of the numeric specification's operations list has opcode alu_base + i, format R
+          when its arity is 2 and U when it is 1. Operations are appended in the numeric specification, so opcodes
+          never move.
+        alu_base: 1
+        illegal: [0]
+      instructions:
+        - {name: li, opcode: 32, format: J, syntax: "li rd, imm", semantics: "rd = imm(sext(imm))", uses: [imm]}
+        - {name: ld, opcode: 33, format: I, syntax: "ld rd, imm(ra)", semantics: "rd = mem64[ea(ra, imm)]", uses: [ea]}
+        - {name: st, opcode: 34, format: I, syntax: "st rd, imm(ra)", semantics: "mem64[ea(ra, imm)] = rd", uses: [ea]}
+        - {name: sb, opcode: 35, format: I, syntax: "sb rd, imm(ra)", semantics: "mem8[ea(ra, imm)] = val(rd) modulo 2^8", uses: [ea, val]}
+        - {name: sw, opcode: 36, format: I, syntax: "sw rd, imm(ra)", semantics: "mem32[ea(ra, imm)] = val(rd) modulo 2^32", uses: [ea, val]}
+        - {name: lb, opcode: 37, format: I, syntax: "lb rd, imm(ra)", semantics: "rd = word(mem8[ea(ra, imm)])", uses: [ea, word]}
+        - {name: beq, opcode: 40, format: B, syntax: "beq ra, rb, target", semantics: "if beq(ra, rb) then pc = pc + 4 imm", uses: [beq]}
+        - {name: bne, opcode: 41, format: B, syntax: "bne ra, rb, target", semantics: "if bne(ra, rb) then pc = pc + 4 imm", uses: [bne]}
+        - {name: blt, opcode: 42, format: B, syntax: "blt ra, rb, target", semantics: "if blt(ra, rb) then pc = pc + 4 imm", uses: [blt]}
+        - {name: bge, opcode: 43, format: B, syntax: "bge ra, rb, target", semantics: "if bge(ra, rb) then pc = pc + 4 imm", uses: [bge]}
+        - {name: jal, opcode: 48, format: J, syntax: "jal rd, target", semantics: "rd = word(pc + 4); pc = pc + 4 imm", uses: [word]}
+        - {name: jalr, opcode: 49, format: I, syntax: "jalr rd, imm(ra)", semantics: "t = ea(ra, imm); rd = word(pc + 4); pc = t", uses: [ea, word]}
+decoding:
+  rule: >-
+    The opcode field selects the instruction. A word whose opcode is unassigned, or whose zero field is not zero,
+    is illegal. An illegal instruction, a misaligned jump target or an access outside the memory map stops the
+    machine with exit code 99 (the fault rule).
+  register_zero: Writes to r0 are discarded.
+semantics:
+  statement: >-
+    Every instruction's data effect is one of the instance's semantic functions, each a reference function with
+    the uniform signature uint64_t f(uint64_t a, uint64_t b). The arithmetic functions call the numeric
+    specification's reference functions unchanged. The machine functions are: imm(a) the word of the sign-extended
+    immediate a; ea(a, b) the address val(a) + b modulo 2^64; val(a) the two's complement integer of word a;
+    word(a) the word of the host integer a; beq and bne host-bit identity of the two registers (the numeric
+    specification's equality); blt(a, b) taken when cmp(a, b) is -1; bge(a, b) taken when cmp(a, b) is not -1.
+  reference_sources:
+    - spec/ref/machine_family/word_machine_family.h
+  oracle: Each instance's ALU functions are checked against the numeric specification's vectors, which come from its independent Python oracle (NUM-04).
+operations: []
+composition:
+  words: One data word per register; no multi-word arithmetic in the first build.
+transformations:
+  - {name: instantiate, to: machine instance, preserves: "instruction encodings and the delegation of arithmetic to the numeric reference functions"}
+constraints:
+  - {name: zero_word, statement: "The all-zero host word is numeric zero in every instance's encoding, so r0 is zero in every instance"}
+  - {name: word_fits, statement: "2 digits fit in register_bits for balanced ternary (two bits per trit) and digits = register_bits for binary"}
+substrate:
+  logical: other
+  register_widths: []
+interfaces:
+  memory_map:
+    ram: {base: 0x00000000, size: 0x01000000, note: "16 MiB; the image is loaded at 0 and execution starts at 0"}
+    uart: {base: 0x10000000, device: "16550 compatible UART of the pinned QEMU (serial-mm), register shift 0, byte access", chardev: "serial 0"}
+    exit: {base: 0x10100000, device: "sifive_test finisher of the pinned QEMU", pass: "32-bit write of 0x5555 exits 0", fail: "32-bit write of 0x3333 + (code << 16) exits with code"}
+  fault_exit_code: 99
+  boot: Raw binary image given with -kernel, loaded at 0.
+verification:
+  properties:
+    - {name: instance_derivation, method: "every instance specification equals the derivation from this family and its parameters (gen/isb/instantiate.py --check)"}
+    - {name: encoding_round_trip, method: "encode then decode every instruction over every register and boundary immediates, and decode then encode random words; customasm output decoded against the table"}
+    - {name: homomorphism, method: "every ALU semantic function of an instance equals the numeric reference function on every stored vector case; val, word, imm, ea and branch functions checked against Python integers and the numeric oracle"}
+generation:
+  isb:
+    generator: gen/isb
+    instances:
+      bwm: {numeric: binary_integer, digits: 64, register_bits: 64, title: "Binary word machine: 64-bit two's complement words"}
+      twm: {numeric: balanced_ternary, digits: 32, register_bits: 64, title: "Balanced ternary word machine: 32 trits in a 64-bit host word"}
+evolution:
+  changes:
+    - {version: 0.3.0, class: initial, summary: "Family with two instances, binary and balanced ternary (RD5)"}
+  ordering: Instructions and opcodes are appended; an opcode is never reassigned.
+provenance:
+  oracle: {not_established: "no legacy machine of this family exists in the estate; instances are checked against the numeric oracles"}
+  extraction: Written from ISB-01 to ISB-03, NUM-02 and RD5.
+  evidence_state: decided
+  decided_by: RD5, 4 November 2026 (both machines run); the machine shape is a working decision of the Tier B lane

@@ -1,0 +1,26 @@
+{
+  "command": "python3 -m repsynth intake licences --only GCC Node.js Unicode Character Database ICU GNU binutils",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:22:33Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/licences.json": "0b34232b53b2e087d97c85013446adfef02da620257263f4488bca19f6656d3b",
+    "reports/licences.md": "de2af254aabcd6b90084d8dbab29154e4d74d8825ac2d4e8616fc12ceb428d7a"
+  },
+  "packet": "P0.4",
+  "results": {
+    "established": 67,
+    "not_established": [
+      "Candor"
+    ],
+    "tools": 68
+  },
+  "started_utc": "2026-11-04T23:22:31Z",
+  "state": "wired_unproven",
+  "step": "licences",
+  "tool_versions": {
+    "git": "git version 2.43.0"
+  }
+}

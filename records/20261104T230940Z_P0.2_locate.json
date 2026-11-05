@@ -1,0 +1,52 @@
+{
+  "command": "python3 -m repsynth intake locate",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:09:40Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "A mention is not the asset; reading of each mention is in the register.",
+  "outputs": {
+    "reports/asset_register.json": "77837321348c070b92f71bb5777f47fab4870cbdd1acc16ba240b36a399c1977"
+  },
+  "packet": "P0.2",
+  "results": {
+    "APCISR WebAssembly trace": {
+      "estate_name_matches": [],
+      "mentions": 156,
+      "state": "located inside another repository (candidate): R2's description is not yet confirmed against it; the author confirms"
+    },
+    "AyeHandSum": {
+      "estate_name_matches": [
+        "ayehandsum/ayehandsum"
+      ],
+      "mentions": 409,
+      "state": "found"
+    },
+    "MSRR": {
+      "estate_name_matches": [],
+      "mentions": 0,
+      "state": "not found"
+    },
+    "Machine-stack explainer": {
+      "estate_name_matches": [],
+      "mentions": 34,
+      "state": "located inside another repository (candidate): R2's description is not yet confirmed against it; the author confirms"
+    },
+    "NI2A2": {
+      "estate_name_matches": [
+        "ayeai/ni2a2"
+      ],
+      "mentions": 4,
+      "state": "found"
+    },
+    "SHAKTI sources (for P5.6)": {
+      "estate_name_matches": [],
+      "mentions": 239,
+      "state": "found"
+    }
+  },
+  "started_utc": "2026-11-04T23:09:02Z",
+  "state": "wired_unproven",
+  "step": "locate",
+  "tool_versions": {}
+}

@@ -1,0 +1,22 @@
+{
+  "command": "python3 -m repsynth oracles extract hindawi",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:31:37Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Extraction only; acceptance is `oracles check`.",
+  "outputs": {
+    "/home/user/build/repsynth/reports/readings/hindawi.json": "absent",
+    "spec/reps/pipeline/hindawi_shaili_pipeline.yaml": "cfec2aa8ed7747e59a7d26bb73a54570d756a78c71852e54bca9d6caa7c9d981"
+  },
+  "packet": "P1.8",
+  "results": {
+    "corpus": [],
+    "disagreements": 0,
+    "exit_codes": {}
+  },
+  "started_utc": "2026-11-04T23:31:37Z",
+  "state": "wired_unproven",
+  "step": "extract_hindawi",
+  "tool_versions": {}
+}

@@ -1,0 +1,46 @@
+{
+  "command": "python3 -m repsynth oracles extract romenagri",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:24:25Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Extraction only; acceptance is `oracles check`.",
+  "outputs": {
+    "reports/readings/romenagri.json": "f768252678e0665b874e1f4b3ff685988c204ae81d9e8ea0df095a33159adf83",
+    "spec/reps/transliteration/romenagri_devanagari.yaml": "091532744e77c9da366fd777b4a6557c4f5285caaa78a13324c3e1ce5c13778a"
+  },
+  "packet": "P1.5",
+  "results": {
+    "corpus": [
+      {
+        "file": "Romenagri/corp_hi.txt",
+        "lines": 71,
+        "round_trip_exact": 0,
+        "sha256": "3a30627c450a17beb9d08d7ebc37885bc3cf1ec8843b5bb0b3db5ff2550cd772"
+      },
+      {
+        "file": "Romenagri/corp_hi_nums.txt",
+        "lines": 71,
+        "round_trip_exact": 0,
+        "sha256": "97cd22094f5df83114b502cd9a96638429becf243ee7912b01ee8987c3c172e4"
+      },
+      {
+        "file": "Romenagri/test_hi.txt",
+        "lines": 71,
+        "round_trip_exact": 0,
+        "sha256": "3172c0925b227895c510b2dd76c038e1b7db43c02e4fe6c796d063664a0673ab"
+      }
+    ],
+    "disagreements": 24,
+    "exit_codes": {
+      "acii2rmn": 0,
+      "acii2uni": 0,
+      "rmn2acii": 0,
+      "uni2acii": 0
+    }
+  },
+  "started_utc": "2026-11-04T23:24:25Z",
+  "state": "wired_unproven",
+  "step": "extract_romenagri",
+  "tool_versions": {}
+}

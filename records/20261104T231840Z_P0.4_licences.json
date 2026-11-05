@@ -1,0 +1,24 @@
+{
+  "command": "python3 -m repsynth intake licences --only libdecnumber Tok DOI",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:18:40Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    "reports/licences.json": "aebd9de797a581cd045d1fd8416c0bc6943f6a83ee2a497f25f513bbac9e6f92",
+    "reports/licences.md": "cb4a3615cffd49b22c683af4b88fd97e985f1dccb571cd5837b00be06d1de3c9"
+  },
+  "packet": "P0.4",
+  "results": {
+    "established": 6,
+    "not_established": [],
+    "tools": 6
+  },
+  "started_utc": "2026-11-04T23:18:40Z",
+  "state": "wired_unproven",
+  "step": "licences",
+  "tool_versions": {
+    "git": "git version 2.43.0"
+  }
+}

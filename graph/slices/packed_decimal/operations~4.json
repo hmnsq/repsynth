@@ -1,0 +1,1 @@
+{"arity":2,"candidate":true,"meaning":"-1, 0 or +1 by value; 2 if either is invalid","name":"cmp","reference":{"symbol_pattern":"pd_cmp{width}"}}

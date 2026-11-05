@@ -1,0 +1,9 @@
+{
+  "packet": "P1.2",
+  "state": "done",
+  "evidence": [
+    "records/20261104T231412Z_P1.2_acceptance.json"
+  ],
+  "summary": "Hypothesis property tests (500 examples) show slice hashes unchanged by key order and whitespace and changed by any change of value.",
+  "blocked_by": []
+}

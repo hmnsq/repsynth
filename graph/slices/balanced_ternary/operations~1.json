@@ -1,0 +1,1 @@
+{"arity":2,"candidate":true,"meaning":"a + b, wrapping modulo 3^n","name":"add","reference":{"symbol_pattern":"bt_add{width}"}}

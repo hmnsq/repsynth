@@ -1,0 +1,559 @@
+_notice: '© 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC0-1.0'
+identity:
+  id: hindawi_shaili_pipeline
+  version: 0.3.0
+  family: symbolic_pipeline
+  title: Hindawi's composing pipeline per shaili, as opaque transforms run by Chintamani's drivers
+  equality: Two pipelines are equal when every stage names the same transform with the same arguments in the same order.
+  canonical_form: Stages in the order the driver applies them.
+domain:
+  description: Hindawi programs in UTF-8 whose first line names a shaili (<शैली ...>).
+  finite: false
+structure:
+  stages:
+  - common prefix of the driver (Unicode to ACII)
+  - header split (the awk driver)
+  - the shaili's transducer and its post-processing (dispatched by header)
+  transducers: 'Opaque: each is the shaili''s flex program built from its .uhin file; the harness never reads or regenerates
+    them (GOV-03, GOV-17).'
+encoding:
+  shailis:
+  - header: praa_tha
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 54
+        command: (echo "<shailee praa_tha>"; cat tempfil012345.temphin | h2b | acii2hin) > hin.std
+      transforms:
+      - transform: h2b
+        source: Hindawi/praatha/h2b.uhin, built by Hindawi/praatha/Makefile (flex)
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 54
+        command: (echo "<shailee praa_tha>"; cat tempfil012345.temphin | tr 'A-Z' 'a-z' | b2h | sed 's/_/__/g') | rmn2acii
+          | acii2uni | iconv -futf16 -tutf8 > hin.uhin
+      transforms:
+      - transform: tr 'A-Z' 'a-z'
+        source: POSIX tr, arguments as written
+      - transform: b2h
+        source: Hindawi/praatha/b2h.uhin, built by Hindawi/praatha/Makefile (flex)
+      - transform: sed 's/_/__/g'
+        source: POSIX sed, arguments as written
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 54
+        command: praathacc tempfil012345.temphin
+  - header: praa_thamika
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 56
+        command: (echo "<shailee praa_thamika>"; cat tempfil012345.temphin | h2b | acii2hin) > hin.std
+      transforms:
+      - transform: h2b
+        source: Hindawi/praatha/h2b.uhin, built by Hindawi/praatha/Makefile (flex)
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 56
+        command: (echo "<shailee praa_thamika>"; cat tempfil012345.temphin | tr 'A-Z' 'a-z' | b2h | sed 's/_/__/g') | rmn2acii
+          | acii2uni | iconv -futf16 -tutf8 > hin.uhin
+      transforms:
+      - transform: tr 'A-Z' 'a-z'
+        source: POSIX tr, arguments as written
+      - transform: b2h
+        source: Hindawi/praatha/b2h.uhin, built by Hindawi/praatha/Makefile (flex)
+      - transform: sed 's/_/__/g'
+        source: POSIX sed, arguments as written
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 56
+        command: praathacc tempfil012345.temphin
+  - header: guru
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 58
+        command: (echo "<shailee guru>"; cat tempfil012345.temphin | h2c | acii2hin) > hin.std
+      transforms:
+      - transform: h2c
+        source: Hindawi/guru/h2c.uhin, built by Hindawi/guru/Makefile (flex)
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 58
+        command: (echo "<shailee guru>"; cat tempfil012345.temphin | c2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv -futf16
+          -tutf8 > hin.uhin
+      transforms:
+      - transform: c2h
+        source: Hindawi/guru/c2h.uhin, built by Hindawi/guru/Makefile (flex)
+      - transform: sed 's/_/__/g'
+        source: POSIX sed, arguments as written
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 58
+        command: gurucc tempfil012345.temphin
+  - header: guroo
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 60
+        command: (echo "<shailee guroo>"; cat tempfil012345.temphin | h2c | acii2hin) > hin.std
+      transforms:
+      - transform: h2c
+        source: Hindawi/guru/h2c.uhin, built by Hindawi/guru/Makefile (flex)
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 60
+        command: (echo "<shailee guroo>"; cat tempfil012345.temphin | c2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv
+          -futf16 -tutf8 > hin.uhin
+      transforms:
+      - transform: c2h
+        source: Hindawi/guru/c2h.uhin, built by Hindawi/guru/Makefile (flex)
+      - transform: sed 's/_/__/g'
+        source: POSIX sed, arguments as written
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 60
+        command: gurucc tempfil012345.temphin
+  - header: shraee_nnee
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 62
+        command: (echo "<shailee shraee_nnee>"; cat tempfil012345.temphin | h2cpp | acii2hin) > hin.std
+      transforms:
+      - transform: h2cpp
+        source: Hindawi/shraeni/h2cpp.uhin, built by Hindawi/shraeni/Makefile (flex)
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 62
+        command: (echo "<shailee shraee_nnee>"; cat tempfil012345.temphin | cpp2h | sed 's/_/__/g') | rmn2acii | acii2uni
+          | iconv -futf16 -tutf8 > hin.uhin
+      transforms:
+      - transform: cpp2h
+        source: Hindawi/shraeni/cpp2h.uhin, built by Hindawi/shraeni/Makefile (flex)
+      - transform: sed 's/_/__/g'
+        source: POSIX sed, arguments as written
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 62
+        command: shraenicc tempfil012345.temphin
+  - header: shraee_nneeba_d_dha
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 64
+        command: (echo "<shailee shraee_nneeba_d_dha>"; cat tempfil012345.temphin | h2cpp | acii2hin) > hin.std
+      transforms:
+      - transform: h2cpp
+        source: Hindawi/shraeni/h2cpp.uhin, built by Hindawi/shraeni/Makefile (flex)
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 64
+        command: (echo "<shailee shraee_nneeba_d_dha>"; cat tempfil012345.temphin | cpp2h | sed 's/_/__/g') | rmn2acii | acii2uni
+          | iconv -futf16 -tutf8 > hin.uhin
+      transforms:
+      - transform: cpp2h
+        source: Hindawi/shraeni/cpp2h.uhin, built by Hindawi/shraeni/Makefile (flex)
+      - transform: sed 's/_/__/g'
+        source: POSIX sed, arguments as written
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 64
+        command: shraenicc tempfil012345.temphin
+  - header: shab_da
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 66
+        command: (echo "<shailee shab_da>"; cat tempfil012345.temphin | h2l | acii2hin) > hin.std
+      transforms:
+      - transform: h2l
+        source: Hindawi/shabda/h2l.uhin, built by Hindawi/shabda/Makefile (flex)
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 66
+        command: (echo "<shailee shab_da>"; cat tempfil012345.temphin | l2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv
+          -futf16 -tutf8 > hin.uhin
+      transforms:
+      - transform: l2h
+        source: Hindawi/shabda/l2h.uhin, built by Hindawi/shabda/Makefile (flex)
+      - transform: sed 's/_/__/g'
+        source: POSIX sed, arguments as written
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 66
+        command: shabdacc tempfil012345.temphin
+  - header: soochee
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 68
+        command: (echo "<shailee soochee>"; cat tempfil012345.temphin | h2py | acii2hin) > hin.std
+      transforms:
+      - transform: h2py
+        source: Hindawi/soochee/h2py.uhin, built by Hindawi/soochee/Makefile (flex)
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 68
+        command: (echo "<shailee soochee>"; cat tempfil012345.temphin | py2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv
+          -futf16 -tutf8 > hin.uhin
+      transforms:
+      - transform: py2h
+        source: Hindawi/soochee/py2h.uhin, built by Hindawi/soochee/Makefile (flex)
+      - transform: sed 's/_/__/g'
+        source: POSIX sed, arguments as written
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 68
+        command: soocheecc tempfil012345.temphin
+  - header: wyaaka
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 70
+        command: (echo "<shailee wyaaka>"; cat tempfil012345.temphin | h2yacc | acii2hin) > hin.std
+      transforms:
+      - transform: h2yacc
+        source: Hindawi/wyaaka/h2yacc.uhin, built by Hindawi/wyaaka/Makefile (flex)
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 70
+        command: (echo "<shailee wyaaka>"; cat tempfil012345.temphin | yacc2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv
+          -futf16 -tutf8 > hin.uhin
+      transforms:
+      - transform: yacc2h
+        source: Hindawi/wyaaka/yacc2h.uhin, built by Hindawi/wyaaka/Makefile (flex)
+      - transform: sed 's/_/__/g'
+        source: POSIX sed, arguments as written
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 70
+        command: wyaakacc tempfil012345.temphin
+  - header: ya_m_tra
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 72
+        command: (echo "<shailee ya_m_tra>"; cat tempfil012345.temphin | h2y | acii2hin) > hin.std
+      transforms:
+      - transform: h2y
+        source: Hindawi/yantra/h2y.uhin, built by Hindawi/yantra/Makefile (flex)
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 72
+        command: (echo "<shailee ya_m_tra>"; cat tempfil012345.temphin | y2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv
+          -futf16 -tutf8 > hin.uhin
+      transforms:
+      - transform: y2h
+        source: Hindawi/yantra/y2h.uhin, built by Hindawi/yantra/Makefile (flex)
+      - transform: sed 's/_/__/g'
+        source: POSIX sed, arguments as written
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 72
+        command: yantracc tempfil012345.temphin
+  - header: yaa_m_trika
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 74
+        command: (echo "<shailee yaa_m_trika>"; cat tempfil012345.temphin | h2y | acii2hin) > hin.std
+      transforms:
+      - transform: h2y
+        source: Hindawi/yantra/h2y.uhin, built by Hindawi/yantra/Makefile (flex)
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 74
+        command: (echo "<shailee yaa_m_trika>"; cat tempfil012345.temphin | y2h | sed 's/_/__/g') | rmn2acii | acii2uni |
+          iconv -futf16 -tutf8 > hin.uhin
+      transforms:
+      - transform: y2h
+        source: Hindawi/yantra/y2h.uhin, built by Hindawi/yantra/Makefile (flex)
+      - transform: sed 's/_/__/g'
+        source: POSIX sed, arguments as written
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 74
+        command: yantracc tempfil012345.temphin
+  - header: roaboata
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 76
+        command: (echo Not supported as yet. Raise ECR if needed; echo "<shailee roaboata>"; cat tempfil012345.temphin | acii2hin)
+          > hin.std
+      transforms:
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 76
+        command: (echo Not supported as yet. Raise ECR if needed; (echo "<shailee roaboata>"; cat tempfil012345.temphin  >
+          hin.uhin
+      transforms: []
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 76
+        command: robotcc tempfil012345.temphin
+  - header: k_ri_trima
+    forward:
+      driver: Hindawi/hindrv/hin2std
+      common_prefix:
+        command: cat $1 | fixuninum | sed 's/\\न/\\n/g; s/\%भ/\%f/g; s/\%प/\%d/g;' | iconv -f utf-8 -t utf-16 | uni2acii |
+          acii2cf | hin2std.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/hin2std.awk
+        line: 78
+        command: (echo "<shailee k_ri_trima>"; cat tempfil012345.temphin | h2j | acii2hin) > hin.std
+      transforms:
+      - transform: h2j
+        source: Hindawi/kritrima/h2j.uhin, built by Hindawi/kritrima/Makefile (flex)
+      - transform: acii2hin
+        source: Romenagri/acii2hin, built by Romenagri/Makefile
+    reverse:
+      driver: Hindawi/hindrv/std2hin
+      common_prefix:
+        command: cat $1 | sed 's/\\n/\\न/g; s/\%f/\%भ/g; s/\%d/\%प/g;' | iconv -f utf-8 -t utf-16 | uni2acii | acii2cf | std2hin.awk
+        line: 36
+      dispatch:
+        file: Hindawi/hindrv/std2hin.awk
+        line: 78
+        command: (echo "<shailee k_ri_trima>"; cat tempfil012345.temphin | j2h | sed 's/_/__/g') | rmn2acii | acii2uni | iconv
+          -futf16 -tutf8 > hin.uhin
+      transforms:
+      - transform: j2h
+        source: Hindawi/kritrima/j2h.uhin, built by Hindawi/kritrima/Makefile (flex)
+      - transform: sed 's/_/__/g'
+        source: POSIX sed, arguments as written
+    compile:
+      driver: Hindawi/hindrv/hincc
+      dispatch:
+        file: Hindawi/hindrv/hincc.awk
+        line: 78
+        command: kritrimacc tempfil012345.temphin
+decoding:
+  rule: The reverse pipeline of each shaili (encoding.shailis[*].reverse), run by std2hin.
+semantics:
+  statement: The pipeline composes transforms as the drivers do; their meanings are the transducers' own.
+  reference_sources:
+  - reports/readings/hindawi_pipeline.json
+  - repsynth/lanes/oracles.py
+  oracle_sources:
+  - hindawiai/chintamani@3ad87785a75dc2b18438a8b068807103cb920c81:Hindawi/hindrv/hin2std
+  - hindawiai/chintamani@3ad87785a75dc2b18438a8b068807103cb920c81:Hindawi/hindrv/hin2std.awk
+  - hindawiai/chintamani@3ad87785a75dc2b18438a8b068807103cb920c81:Hindawi/hindrv/std2hin
+  - hindawiai/chintamani@3ad87785a75dc2b18438a8b068807103cb920c81:Hindawi/hindrv/std2hin.awk
+  - hindawiai/chintamani@3ad87785a75dc2b18438a8b068807103cb920c81:Hindawi/hindrv/hincc
+  - hindawiai/chintamani@3ad87785a75dc2b18438a8b068807103cb920c81:Hindawi/hindrv/hincc.awk
+  oracle: hindawiai/hindawi2026.10@b53530f624a0dd3065f9370ff439223a43d49994 scripts/build.sh, which builds hindawiai/chintamani@3ad87785a75dc2b18438a8b068807103cb920c81
+operations: []
+composition:
+  rule: Unix pipes, in driver order; the awk driver writes the body to tempfil012345.temphin and runs the dispatched command
+    with system().
+transformations:
+- name: to_host_language
+  to: host source (C, C++, Java, BASIC, assembly, Python, yacc, lex)
+  preserves: program text as the transducer maps it; the round trip is measured, not assumed
+constraints:
+- name: header_first
+  statement: The shaili line must be first (hincc.awk prints an error otherwise).
+substrate:
+  logical: other
+  register_widths: []
+interfaces:
+  imports:
+  - romenagri_devanagari
+  exports:
+  - host-language sources for the host compilers
+verification:
+  properties:
+  - name: descriptor_from_drivers
+    method: 'python3 -m repsynth oracles check hindawi: the descriptor is read again from the driver files and must equal
+      this file'
+  - name: recomposed_forward
+    method: each sample is run through the descriptor's forward stages and must give the driver's own hin2std output byte
+      for byte
+  - name: round_trips_recorded
+    method: forward and reverse runs on every sample, with exit codes, in reports/oracles/hindawi.json
+generation:
+  construct_lists:
+    not_established: new mnemonics go to Hindawi as construct lists (ISA-11), not built here
+evolution:
+  changes:
+  - version: 0.3.0
+    class: initial
+    summary: Read from Chintamani's drivers as Hindawi 2026.10 builds them
+provenance:
+  oracle:
+    value: hindawiai/hindawi2026.10@b53530f624a0dd3065f9370ff439223a43d49994; hindawiai/chintamani@3ad87785a75dc2b18438a8b068807103cb920c81
+    evidence: measured
+    source: reports/readings/hindawi_pipeline.json
+  extraction: Dispatch branches parsed from the hindrv awk drivers; transforms named with file and line.
+  evidence_state: extracted

@@ -1,0 +1,31 @@
+{
+  "command": "python3 -m repsynth oracles check apcisr",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:27:17Z",
+  "image_digests": {},
+  "inputs": {
+    "spec/reps/script/apcisr_devanagari.yaml": "403872a4470214598de73585cbc96a78019003b2d0d6f7a0177df1397849cedd"
+  },
+  "notes": "Acceptance run: oracle executed on every extracted mapping.",
+  "outputs": {},
+  "packet": "P1.6",
+  "results": {
+    "mappings_checked": 738,
+    "mismatches": [],
+    "oracle_exit_codes": {},
+    "planted_defect": "entry 0 madhya-lipik changed to 102",
+    "planted_mismatches": [
+      "entry 0 (_hra): spec differs from the oracle's chart"
+    ],
+    "planted_refused": true,
+    "spec_check": {
+      "command": "/usr/local/bin/python3 -m repsynth spec check /home/user/build/repsynth/spec/reps/script/apcisr_devanagari.yaml",
+      "exit_code": 0,
+      "output": "VALID /home/user/build/repsynth/spec/reps/script/apcisr_devanagari.yaml"
+    }
+  },
+  "started_utc": "2026-11-04T23:27:15Z",
+  "state": "done",
+  "step": "check_apcisr",
+  "tool_versions": {}
+}

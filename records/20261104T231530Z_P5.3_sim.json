@@ -1,0 +1,92 @@
+{
+  "command": "repsynth hdl sim bt_sub16 bin_add32",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:15:30Z",
+  "image_digests": {},
+  "inputs": {
+    "conformance/runners/hdl/test_unit.py": "b491ff529a27b48203a45ab9a49e5380a9fe5d108707ad516e213238e767def0",
+    "conformance/vectors/balanced_ternary/sub.16.vec": "5f1940fb71cdb539e4ce0fb4aa9afc069d4d193f6f15e8ceaa60c7fd63310f1a",
+    "conformance/vectors/binary_integer/add.32.vec": "67d73ac32539ecdee3eaf2238e30b86248553d8553f4fac61f1a7252aedbdd16",
+    "gen/hdl/units/balanced_ternary/sv/bt_sub16.sv": "2c40b4d370f9357f8ac67986a5a0f00c73910bea76deae480f61ea666892b110",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_sub16.vhd": "64b6d845c56d7693cd9c014134e71dcffe8ce151b3f802e5abd6f54a1da51900",
+    "gen/hdl/units/binary_integer/sv/bin_add32.sv": "4a41f3e67ab4f296c518e4156115ccc6cb40acc1542d5bb0188784b932038776",
+    "gen/hdl/units/binary_integer/vhdl/bin_add32.vhd": "200aa4e39ec65f945c9380212320e9856fedfd63c467d7b5f4e7bd20614bcfdc"
+  },
+  "notes": "cocotb test reads the shared vector files; Verilator runs the SystemVerilog units, GHDL the VHDL-2008 units.",
+  "outputs": {},
+  "packet": "P5.3",
+  "results": {
+    "runs": {
+      "bin_add32:ghdl": {
+        "cases": 4196,
+        "cocotb": "1.9.2",
+        "exit_code": 0,
+        "failures": 0,
+        "first_failures": [],
+        "log": ".cache/hdl/sim/ghdl/bin_add32/run.log",
+        "passed": true,
+        "simulator": "ghdl",
+        "simulator_version": "4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]",
+        "unit": "bin_add32",
+        "vectors": "conformance/vectors/binary_integer/add.32.vec",
+        "vectors_sha256": "67d73ac32539ecdee3eaf2238e30b86248553d8553f4fac61f1a7252aedbdd16"
+      },
+      "bin_add32:verilator": {
+        "cases": 4196,
+        "cocotb": "1.9.2",
+        "exit_code": 0,
+        "failures": 0,
+        "first_failures": [],
+        "log": ".cache/hdl/sim/verilator/bin_add32/run.log",
+        "passed": true,
+        "simulator": "verilator",
+        "simulator_version": "5.020 2024-01-01",
+        "unit": "bin_add32",
+        "vectors": "conformance/vectors/binary_integer/add.32.vec",
+        "vectors_sha256": "67d73ac32539ecdee3eaf2238e30b86248553d8553f4fac61f1a7252aedbdd16"
+      },
+      "bt_sub16:ghdl": {
+        "cases": 4321,
+        "cocotb": "1.9.2",
+        "exit_code": 0,
+        "failures": 0,
+        "first_failures": [],
+        "log": ".cache/hdl/sim/ghdl/bt_sub16/run.log",
+        "passed": true,
+        "simulator": "ghdl",
+        "simulator_version": "4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]",
+        "unit": "bt_sub16",
+        "vectors": "conformance/vectors/balanced_ternary/sub.16.vec",
+        "vectors_sha256": "5f1940fb71cdb539e4ce0fb4aa9afc069d4d193f6f15e8ceaa60c7fd63310f1a"
+      },
+      "bt_sub16:verilator": {
+        "cases": 4321,
+        "cocotb": "1.9.2",
+        "exit_code": 0,
+        "failures": 0,
+        "first_failures": [],
+        "log": ".cache/hdl/sim/verilator/bt_sub16/run.log",
+        "passed": true,
+        "simulator": "verilator",
+        "simulator_version": "5.020 2024-01-01",
+        "unit": "bt_sub16",
+        "vectors": "conformance/vectors/balanced_ternary/sub.16.vec",
+        "vectors_sha256": "5f1940fb71cdb539e4ce0fb4aa9afc069d4d193f6f15e8ceaa60c7fd63310f1a"
+      }
+    },
+    "total_cases": 17034
+  },
+  "started_utc": "2026-11-04T23:14:54Z",
+  "state": "done",
+  "step": "sim",
+  "tool_versions": {
+    "cocotb(host)": "2.1.0",
+    "cocotb(lane)": "1.9.2",
+    "ghdl": "GHDL 4.1.0 (Ubuntu 4.1.0+dfsg-0ubuntu2.1) [Dunoon edition]",
+    "icepack": "fpga-icestorm 0~20230218gitd20a5e9-1",
+    "nextpnr-ice40": "\"nextpnr-ice40\" -- Next Generation Place and Route (Version 0.6-3build5)",
+    "python": "3.13.18",
+    "verilator": "Verilator 5.020 2024-01-01 rev (Debian 5.020-1)",
+    "yosys": "Yosys 0.33 (git sha1 2584903a060)"
+  }
+}

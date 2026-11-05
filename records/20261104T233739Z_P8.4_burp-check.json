@@ -1,0 +1,26 @@
+{
+  "command": "burp check /home/user/build/repsynth/.cache/p84/src --langs <76>",
+  "exit_code": 1,
+  "finished_utc": "2026-11-04T23:37:39Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "",
+  "outputs": {
+    ".cache/p84/burp_check.log": "075d80fab615e1edc4bb0daeb97d20fe58b46dd543886fb04018b2357c6b31a7",
+    "reports/paras_roundtrip.md": "ea2b5ea1641a15decb64ede0b2b43022f4eff695b7d27b5214b933c5c08c5e84"
+  },
+  "packet": "P8.4",
+  "results": {
+    "exact": 75,
+    "languages": 76,
+    "paras_secondary": "no summary line",
+    "total": 76
+  },
+  "started_utc": "2026-11-04T23:35:56Z",
+  "state": "failed",
+  "step": "burp-check",
+  "tool_versions": {
+    "burp": "2026.10.1",
+    "paras": "2026.10.2"
+  }
+}

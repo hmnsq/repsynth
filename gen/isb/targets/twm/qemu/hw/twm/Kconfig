@@ -1,0 +1,8 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
+# SPDX-License-Identifier: GPL-2.0-or-later
+config TWM_BOARD
+    bool
+    default y
+    depends on TWM
+    select SERIAL_MM
+    select SIFIVE_TEST

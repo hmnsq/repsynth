@@ -1,0 +1,4 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC-BY-SA-4.0
+produced:
+- repsynth/selftest.py with seven software mutants across three specifications
+failed_first: 'All seven mutants are caught: every one makes at least one runner exit non-zero.'

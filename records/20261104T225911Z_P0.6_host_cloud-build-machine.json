@@ -1,0 +1,31 @@
+{
+  "command": "python3 -m repsynth intake host --role cloud-build-machine",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T22:59:11Z",
+  "image_digests": {},
+  "inputs": {},
+  "notes": "Measured on the cloud build machine used for this iteration. It is NOT the reference unit.",
+  "outputs": {
+    "reports/host.cloud-build-machine.json": "4704dd5949915fa33d072120b1ccbadf4c52048be45a2a69ab7dea810d7e9a29",
+    "reports/host.md": "1233db1e2525c4d6ab2effe5b21d4db3a43d7a68ca37e0b2b41ba8b1dbfc3f4e"
+  },
+  "packet": "P0.6",
+  "results": {
+    "free_disk_bytes": 28554756096,
+    "mem_total_bytes": 16872804352,
+    "processors": 4,
+    "rd4": {
+      "machine": "cloud-build-machine",
+      "measured_here_gib": 15.71,
+      "note": "This figure is the machine the run happened on, not the reference unit; it does not settle RD4.",
+      "state": "awaiting the author's run on the reference unit"
+    }
+  },
+  "started_utc": "2026-11-04T22:59:11Z",
+  "state": "wired_unproven",
+  "step": "host_cloud-build-machine",
+  "tool_versions": {
+    "docker": "29.9.2",
+    "python": "3.13.18"
+  }
+}

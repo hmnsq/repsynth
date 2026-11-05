@@ -1,0 +1,520 @@
+{
+  "command": "repsynth hdl gen",
+  "exit_code": 0,
+  "finished_utc": "2026-11-04T23:32:55Z",
+  "image_digests": {},
+  "inputs": {
+    "gen/hdl/hdl.py": "9d3ebb90e774de2fce53b9d59344c4ddeb4f55ab6346a2c948f97e1510926dcd",
+    "repsynth/lanes/graph_hdl.py": "a78a5d6dd39a47a908b991e2d186f3d29fff54567566689d759bd7ce44d04d5e",
+    "spec/reps/numeric/balanced_ternary.yaml": "55f0f7dd9e79d62cc07537f7cf3f7f191d810876215f96b9131c662f96272cd8",
+    "spec/reps/numeric/binary_integer.yaml": "322191237cb8fddc33b65f0ac47f2c1c2013c8da0fc7e35171dba219ec8477b2"
+  },
+  "notes": "Generation ran; acceptance of P5.1 is the lint step.",
+  "outputs": {
+    "conformance/runners/hdl/manifests/balanced_ternary/add.json": "2201838457ad7aea99e009b9af798c08278e48d07d88a6ae64e240996967d146",
+    "conformance/runners/hdl/manifests/balanced_ternary/cmp.json": "807d50cfcb43cfa273b80b16912f96999dc90e51d18a20b57af3d81018f7eef9",
+    "conformance/runners/hdl/manifests/balanced_ternary/from_int.json": "7fc8f0e20aadd24148634fe76a56338f9d4827590eded8097166ceaefab8fb34",
+    "conformance/runners/hdl/manifests/balanced_ternary/mul.json": "2636e23d57979febed6f2352056ce35a93b3f7da003030127f9a3bbcccc9c12c",
+    "conformance/runners/hdl/manifests/balanced_ternary/neg.json": "83382b7fe6c16426c9baf759320f2ef74f119ae5417782b3f150b229a1e7720d",
+    "conformance/runners/hdl/manifests/balanced_ternary/shl.json": "cf0310c0aa501fc1084eb84f3844e6f5c9b59a9c2fdfb666735a8e51aed177a8",
+    "conformance/runners/hdl/manifests/balanced_ternary/shr.json": "c00faeecfd7cec927cc29ec8cb5aa0f258582011db00597a04eafde4b5bc457d",
+    "conformance/runners/hdl/manifests/balanced_ternary/sub.json": "48ece302d4e0ce2572a2cd903b5eaf1d06705af8530528196adf490874c2db3f",
+    "conformance/runners/hdl/manifests/balanced_ternary/to_int.json": "d61c2ba00f084db8c36cc0f082825cafa51e67154b1568e64ad35e4687e1c489",
+    "conformance/runners/hdl/manifests/binary_integer/add.json": "0473c83f5cf8300fc2d22d521445276ec705f8e5b479f56b598217ec783b9fba",
+    "conformance/runners/hdl/manifests/binary_integer/mul.json": "e55c8565b69eab43cb5f41a5730966c6245ed7a81d46da1e2552284a82e65b5e",
+    "gen/hdl/units/balanced_ternary/sv/bt_add16.sv": "b01fbc622ca36a81dc88375c365a873b5b10705963bbd41d4e5c11273b018c08",
+    "gen/hdl/units/balanced_ternary/sv/bt_add32.sv": "7e1baf27b085b626c9336b27d8b2d9b7db7dbf36dfcaaa66a2c9dc5584fb7f38",
+    "gen/hdl/units/balanced_ternary/sv/bt_cmp16.sv": "7fa940d3dda436f7052e2ba43ff1987c96289ef2cabe106443657b9732e2d781",
+    "gen/hdl/units/balanced_ternary/sv/bt_cmp32.sv": "b9c9ae904fe1604f76f0edb61beebfb02def88d5937ff1787ce3ce402ef4af68",
+    "gen/hdl/units/balanced_ternary/sv/bt_from_int16.sv": "405abe26daa89b25a89c85524a3de31c6b14be15680ce195b2b905579726fe21",
+    "gen/hdl/units/balanced_ternary/sv/bt_from_int32.sv": "c534356ba5192246d479a9bcb4a7294c84a4bcf24ad775d86153f7f0628c3844",
+    "gen/hdl/units/balanced_ternary/sv/bt_mul16.sv": "d4565d7e42e1482ce706fb7908f481f62035323953a0ac29c7fc97b2f5804d24",
+    "gen/hdl/units/balanced_ternary/sv/bt_mul32.sv": "5ef94dc92182050887e626945f2b62ba6c300b75e034f35e925aedbb99000461",
+    "gen/hdl/units/balanced_ternary/sv/bt_neg16.sv": "714524dfc3dc343d6818f5252ec61647ddf86dfc2f245c976f6e1daf11d89326",
+    "gen/hdl/units/balanced_ternary/sv/bt_neg32.sv": "82ff58305a05ff6f18465a8ac85e7dd0f592256eb8e33551f34e4f3b0237d5a2",
+    "gen/hdl/units/balanced_ternary/sv/bt_shl16.sv": "83cacf0f209b025acdc2d241e0a1d215d1bc376c34ea885bb74a6db873b1fbd4",
+    "gen/hdl/units/balanced_ternary/sv/bt_shl32.sv": "24b3b193d75b35e29757f12351396c3fb6f66d670530cdda881eb8e0f1b5c1b6",
+    "gen/hdl/units/balanced_ternary/sv/bt_shr16.sv": "d2d6841f2c371b014bff8fbbfe625fe739432e7623c7a75f6a256e6e054dcfff",
+    "gen/hdl/units/balanced_ternary/sv/bt_shr32.sv": "8c6d3af6ebd85b7160cab6f6cf9901a1cc0f34451d6b9ad534f4c8575ccb2e2e",
+    "gen/hdl/units/balanced_ternary/sv/bt_sub16.sv": "2c40b4d370f9357f8ac67986a5a0f00c73910bea76deae480f61ea666892b110",
+    "gen/hdl/units/balanced_ternary/sv/bt_sub32.sv": "37d6e08f11180082fc8dd9c6af356df9e662f616d4b1b242fc46b995948a32cf",
+    "gen/hdl/units/balanced_ternary/sv/bt_to_int16.sv": "491f3b05f351ca059085b85874ef001c8cf4fd038b1b3344e761729dd82eb5e7",
+    "gen/hdl/units/balanced_ternary/sv/bt_to_int32.sv": "b7299c9b1bbce6934345512039bc564f7b7791e0079c34dd06c2bcdbdaa21b51",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_add16.vhd": "ba118af8e30754419b27019bf83521eeb53fc4acd63c4b7ae99bf25707955f0d",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_add32.vhd": "d76470aa8f66f6bdb10b1c3c260959a057603fe70d4c3a7c8beb6ab9c5648737",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_cmp16.vhd": "624b28d1f6b953c4d220c87de05928ea423b85efc9d7c160fd48566551e9bed5",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_cmp32.vhd": "2380512da2911a381fa642c4b5574767e6876a70696824f2bce70afaf33adf95",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_from_int16.vhd": "49a97e3bcd3c259f8e9f1b427a28ad8a653050f31891b4cd04f319af41acfc77",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_from_int32.vhd": "d86d9e65a954f63940ca0d5a0a7f60f79e4c4ea004a6cde738a8a9939b39e84c",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_mul16.vhd": "0576aa747055782e1f8b9f25e04b3ea43fb8e8f2b2c2d79ed409e1200fc63160",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_mul32.vhd": "af4bc01e38b8c796d9073f6a11c775b6efe86bef914073293a238b166a641db4",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_neg16.vhd": "791afe1d0add815094e3ccc1b0abed7a15e8e9e68b22052b92bc7ad07024c2a8",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_neg32.vhd": "1a6218db63717c33cf8a806aa4c608c5cebad8f321e0cabad56b24202e35eddf",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_shl16.vhd": "0b5b838467312eff7e24d50a84f69c089ee1d786302e2fe51cd854756b86f08a",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_shl32.vhd": "eca052b50038e342c04a3afb589274a37d19df29a84e4799f1701bf3b412712f",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_shr16.vhd": "ac82b86bcfcfda9e3a871e4ccbdc79c43ef57d6fa9124a4e5ee78787ce5bf9e0",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_shr32.vhd": "f03e27505d1896c27c1dbccce45abb1d8e4c403241a8a9dd62f8a3233d6bfb70",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_sub16.vhd": "64b6d845c56d7693cd9c014134e71dcffe8ce151b3f802e5abd6f54a1da51900",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_sub32.vhd": "cbb569be8aa306cf99122dffa3bf00a954a640e858508158d72ca02cc479ad0b",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_to_int16.vhd": "8403035157c660123ec68deb76ae166004dacc921786cb3898b932d0ac904b9d",
+    "gen/hdl/units/balanced_ternary/vhdl/bt_to_int32.vhd": "27a5c41524e8d56ce01c380a166dc714fb80e6b6029f32714518423d8dad44a6",
+    "gen/hdl/units/binary_integer/sv/bin_add32.sv": "4a41f3e67ab4f296c518e4156115ccc6cb40acc1542d5bb0188784b932038776",
+    "gen/hdl/units/binary_integer/sv/bin_add64.sv": "8bddbe83e44dc7bb39a014a0adff48e8584a31fcb9086d26150bd8b6383d4b22",
+    "gen/hdl/units/binary_integer/sv/bin_mul32.sv": "9f58ad4e33bdcca0cbe711d683bbcdff347ea65440db6b3856e2c9126670ca83",
+    "gen/hdl/units/binary_integer/sv/bin_mul64.sv": "bc8857649a7b0cb32d37e30d9dc39934478c019591e900b4a326dc0db46f0a0c",
+    "gen/hdl/units/binary_integer/vhdl/bin_add32.vhd": "200aa4e39ec65f945c9380212320e9856fedfd63c467d7b5f4e7bd20614bcfdc",
+    "gen/hdl/units/binary_integer/vhdl/bin_add64.vhd": "5c219dee8a8aea769470ad9226afc827b41951fb9208230dd67bd10d2a0f4f79",
+    "gen/hdl/units/binary_integer/vhdl/bin_mul32.vhd": "3b117c97a8dfd52a45e82ee338a1d0577b5ea6206f71dc4ec29f7a1efd54db05",
+    "gen/hdl/units/binary_integer/vhdl/bin_mul64.vhd": "95d18b91c9d22955f0d64fbe28b4abe12bb4a08080e7bb5aa7d611902dc6481c"
+  },
+  "packet": "P5.1",
+  "results": {
+    "nodes": {
+      "hdl:balanced_ternary:add:cocotb": {
+        "outputs": [
+          "conformance/runners/hdl/manifests/balanced_ternary/add.json"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/1",
+          "/domain/widths"
+        ]
+      },
+      "hdl:balanced_ternary:add:sv": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/sv/bt_add16.sv",
+          "gen/hdl/units/balanced_ternary/sv/bt_add32.sv"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/1",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:add:vhdl": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/vhdl/bt_add16.vhd",
+          "gen/hdl/units/balanced_ternary/vhdl/bt_add32.vhd"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/1",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:cmp:cocotb": {
+        "outputs": [
+          "conformance/runners/hdl/manifests/balanced_ternary/cmp.json"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/4",
+          "/domain/widths"
+        ]
+      },
+      "hdl:balanced_ternary:cmp:sv": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/sv/bt_cmp16.sv",
+          "gen/hdl/units/balanced_ternary/sv/bt_cmp32.sv"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/4",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:cmp:vhdl": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/vhdl/bt_cmp16.vhd",
+          "gen/hdl/units/balanced_ternary/vhdl/bt_cmp32.vhd"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/4",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:from_int:cocotb": {
+        "outputs": [
+          "conformance/runners/hdl/manifests/balanced_ternary/from_int.json"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/7",
+          "/domain/widths"
+        ]
+      },
+      "hdl:balanced_ternary:from_int:sv": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/sv/bt_from_int16.sv",
+          "gen/hdl/units/balanced_ternary/sv/bt_from_int32.sv"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/7",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:from_int:vhdl": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/vhdl/bt_from_int16.vhd",
+          "gen/hdl/units/balanced_ternary/vhdl/bt_from_int32.vhd"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/7",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:mul:cocotb": {
+        "outputs": [
+          "conformance/runners/hdl/manifests/balanced_ternary/mul.json"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/3",
+          "/domain/widths"
+        ]
+      },
+      "hdl:balanced_ternary:mul:sv": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/sv/bt_mul16.sv",
+          "gen/hdl/units/balanced_ternary/sv/bt_mul32.sv"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/3",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:mul:vhdl": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/vhdl/bt_mul16.vhd",
+          "gen/hdl/units/balanced_ternary/vhdl/bt_mul32.vhd"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/3",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:neg:cocotb": {
+        "outputs": [
+          "conformance/runners/hdl/manifests/balanced_ternary/neg.json"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/0",
+          "/domain/widths"
+        ]
+      },
+      "hdl:balanced_ternary:neg:sv": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/sv/bt_neg16.sv",
+          "gen/hdl/units/balanced_ternary/sv/bt_neg32.sv"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/0",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:neg:vhdl": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/vhdl/bt_neg16.vhd",
+          "gen/hdl/units/balanced_ternary/vhdl/bt_neg32.vhd"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/0",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:shl:cocotb": {
+        "outputs": [
+          "conformance/runners/hdl/manifests/balanced_ternary/shl.json"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/5",
+          "/domain/widths"
+        ]
+      },
+      "hdl:balanced_ternary:shl:sv": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/sv/bt_shl16.sv",
+          "gen/hdl/units/balanced_ternary/sv/bt_shl32.sv"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/5",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:shl:vhdl": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/vhdl/bt_shl16.vhd",
+          "gen/hdl/units/balanced_ternary/vhdl/bt_shl32.vhd"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/5",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:shr:cocotb": {
+        "outputs": [
+          "conformance/runners/hdl/manifests/balanced_ternary/shr.json"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/6",
+          "/domain/widths"
+        ]
+      },
+      "hdl:balanced_ternary:shr:sv": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/sv/bt_shr16.sv",
+          "gen/hdl/units/balanced_ternary/sv/bt_shr32.sv"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/6",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:shr:vhdl": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/vhdl/bt_shr16.vhd",
+          "gen/hdl/units/balanced_ternary/vhdl/bt_shr32.vhd"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/6",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:sub:cocotb": {
+        "outputs": [
+          "conformance/runners/hdl/manifests/balanced_ternary/sub.json"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/2",
+          "/domain/widths"
+        ]
+      },
+      "hdl:balanced_ternary:sub:sv": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/sv/bt_sub16.sv",
+          "gen/hdl/units/balanced_ternary/sv/bt_sub32.sv"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/2",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:sub:vhdl": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/vhdl/bt_sub16.vhd",
+          "gen/hdl/units/balanced_ternary/vhdl/bt_sub32.vhd"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/2",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:to_int:cocotb": {
+        "outputs": [
+          "conformance/runners/hdl/manifests/balanced_ternary/to_int.json"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/8",
+          "/domain/widths"
+        ]
+      },
+      "hdl:balanced_ternary:to_int:sv": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/sv/bt_to_int16.sv",
+          "gen/hdl/units/balanced_ternary/sv/bt_to_int32.sv"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/8",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:balanced_ternary:to_int:vhdl": {
+        "outputs": [
+          "gen/hdl/units/balanced_ternary/vhdl/bt_to_int16.vhd",
+          "gen/hdl/units/balanced_ternary/vhdl/bt_to_int32.vhd"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/8",
+          "/domain/widths",
+          "/encoding/active",
+          "/encoding/encodings"
+        ]
+      },
+      "hdl:binary_integer:add:cocotb": {
+        "outputs": [
+          "conformance/runners/hdl/manifests/binary_integer/add.json"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/1",
+          "/domain/widths"
+        ]
+      },
+      "hdl:binary_integer:add:sv": {
+        "outputs": [
+          "gen/hdl/units/binary_integer/sv/bin_add32.sv",
+          "gen/hdl/units/binary_integer/sv/bin_add64.sv"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/1",
+          "/domain/widths"
+        ]
+      },
+      "hdl:binary_integer:add:vhdl": {
+        "outputs": [
+          "gen/hdl/units/binary_integer/vhdl/bin_add32.vhd",
+          "gen/hdl/units/binary_integer/vhdl/bin_add64.vhd"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/1",
+          "/domain/widths"
+        ]
+      },
+      "hdl:binary_integer:mul:cocotb": {
+        "outputs": [
+          "conformance/runners/hdl/manifests/binary_integer/mul.json"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/3",
+          "/domain/widths"
+        ]
+      },
+      "hdl:binary_integer:mul:sv": {
+        "outputs": [
+          "gen/hdl/units/binary_integer/sv/bin_mul32.sv",
+          "gen/hdl/units/binary_integer/sv/bin_mul64.sv"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/3",
+          "/domain/widths"
+        ]
+      },
+      "hdl:binary_integer:mul:vhdl": {
+        "outputs": [
+          "gen/hdl/units/binary_integer/vhdl/bin_mul32.vhd",
+          "gen/hdl/units/binary_integer/vhdl/bin_mul64.vhd"
+        ],
+        "reads": [
+          "/identity/id",
+          "/identity/version",
+          "/operations/3",
+          "/domain/widths"
+        ]
+      }
+    },
+    "promoted_set": {
+      "balanced_ternary": [
+        "add",
+        "sub",
+        "neg",
+        "mul",
+        "cmp",
+        "shl",
+        "shr",
+        "from_int",
+        "to_int"
+      ],
+      "binary_integer": [
+        "add",
+        "mul"
+      ]
+    },
+    "promotion_state": "from reports/promotion/promotion.json (sha256 458950f35335df33e0e95a714e8357af2b434ebf2655b719263744e87b29294d)"
+  },
+  "started_utc": "2026-11-04T23:32:54Z",
+  "state": "done",
+  "step": "gen",
+  "tool_versions": {
+    "python": "3.13.18"
+  }
+}

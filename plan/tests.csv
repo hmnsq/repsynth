@@ -1,0 +1,62 @@
+id,level,item,oracle,pass_condition,packets
+T-01,L0,Specification validator refuses planted defects,Planted defects,Each refused with its path,P1.1
+T-02,L1,Canonical hash invariance,Property tests,Unchanged by reordering and whitespace; changed by any value change,P1.2
+T-03,L1,Balanced ternary reference functions,Arbitrary-precision integers,Exact on reduced-width exhaustive domains and seeded full-width cases,P1.3
+T-04,L1,Packed decimal reference functions,Python decimal module,Exact,P1.4
+T-05,L2,Romenagri extraction,Romenagri,Every mapping reproduced,P1.5
+T-06,L2,APCISR Devanagari extraction,APCISR,Every cell assignment reproduced,P1.6
+T-07,L2,AyeHandSum extraction,AyeHandSum,Every rule reproduced,P1.7
+T-08,L3,Hindawi pipeline through its drivers,Hindawi's own samples,Forward and reverse runs recorded as Hindawi produces them,P1.8
+T-09,L4,Software differential run,Oracles and reference functions,Every runner agrees on every vector,P2.3
+T-10,L7,Software mutation,Planted defects,Every planted defect caught,P2.5
+T-11,L2,Undeclared read detection,A planted generator,"Fails, naming the path",P3.1
+T-12,L3,Exact regeneration under four changes,Expected sets,"Predicted, observed and expected sets equal","P3.5, P5.9"
+T-13,L3,Expected divergence,Expected sets,Passes on equal sets; fails on any other difference,P3.6
+T-14,L2,Encoding allocation and collisions,RISC-V opcode database,Refused or reported as specified,P4.1
+T-15,L3,QEMU user mode and the illegal-instruction guard,Reference functions,Equal results; SIGILL with the property off,P4.3
+T-16,L3,Instruction counts,QEMU counting plugin,Recorded for every candidate,P4.4
+T-17,L2,Assembler and disassembler round trip,Specification encodings,Every mnemonic assembles and disassembles,P4.5
+T-18,L3,xv6-riscv boot and test program,Vectors,Equal results,P4.6
+T-19,L3,Linux boot and test binary,Vectors,Equal results,P4.7
+T-20,L3,Program in a Hindawi language,Vectors,"Equal results, or the issue text recorded",P4.9
+T-21,L7,Instruction mutation,Planted defects,Every planted defect caught,P4.12
+T-22,L4,Hardware units on Verilator and GHDL,Vectors,Every vector passes,P5.3
+T-23,L4,Core co-simulation,QEMU,Equal results,P5.5
+T-24,L7,Hardware mutation,Planted defects,Every planted defect caught,P5.8
+T-25,L5,Script conformance,HarfBuzz and Unicode rules,Status recorded per script,P6.4
+T-26,L8,Native-reader reviews,Readers,Recorded with role and date,P6.6
+T-27,L3,"Tier B boots, binary and balanced ternary machines",Vectors,Every vector passes on both,P7.4
+T-28,L3,Binary baseline instruction counts,QEMU counting plugin,Recorded with tool versions; identical on rerun,P4.13
+T-29,L3,Binary baseline cycles and synthesis figures,Verilated core; Yosys and nextpnr,Recorded with tool versions; identical on rerun,P5.11
+T-30,L0,BURP round trip per file and library,BURP,"Byte-identical, or the gap recorded",P9.1
+T-31,L0,Substrate specifications and planted defects,Planted defects,Valid specifications pass; defects refused,P9.2
+T-32,L1,Expression grammar round trip through Modelica and SPICE forms,Re-parse,Identical syntax trees,P9.3
+T-33,L1,"Node.js and browser parity, fixed step",Itself,Byte-identical on Chromium; within the cross-engine bound elsewhere,P9.4
+T-34,L1,Integrators against analytic solutions,Analytic solutions,Within the tolerance table,"P9.4, P9.6"
+T-35,L1,"Lorenz system, short horizon",mpmath reference,Within the tolerance table up to t = 5,P9.6
+T-36,L1,Lorenz attractor statistics,Long reference run,Within 2 per cent,P9.6
+T-37,L7,Core mutation,Planted defects,Every planted defect caught,P9.7
+T-40,L0,Mechanism configurations and planted defects,Planted defects,Valid configurations pass; defects refused,P10.1
+T-41,L1,Gear trains and differentials,Algebra,Exact ratios; differential means within 1e-12,P10.2
+T-42,L1,Wheel-and-disc integrator,Analytic solutions,Within the tolerance table,P10.2
+T-43,L1,Mechanical binary and balanced ternary adders,Reference functions,Exact on every vector,P10.3
+T-44,L5,Lumped dynamics against Modelica,OpenModelica,Within the tolerance table; backlash dead band exact,"P10.4, P10.7"
+T-45,L1,Involute geometry and meshes,Gear geometry relations,Within the tolerance table; watertight meshes,P10.6
+T-46,L5,Gear train and differential in Chrono,Project Chrono,Ratio and phase within the tolerance table,P10.8
+T-47,L6,Differential analyser solves the CMS-03 models,Analytic and mpmath references,Within the tolerance table,P10.9
+T-48,L7,Mechanical mutation,Planted defects,Every planted defect caught,P10.10
+T-49,L8,Mechanism views on phone and desktop,Visual check,Every element drawn; frame times recorded,P10.5
+T-50,L0,Patches and planted defects,Planted defects,Valid patches pass; defects refused,P11.1
+T-51,L1,Scaling and overload prediction,Simulation,Predicted overloads equal simulated overloads,P11.2
+T-52,L1,Ideal patches against analytic solutions,Analytic and mpmath references,Within the tolerance table,P11.3
+T-53,L1,Non-ideal effects against first-order theory,Theory,Within the tolerance table; seeds reproduce runs,P11.4
+T-54,L5,Patches against ngspice,ngspice,Within the tolerance table; overloads agree,P11.5
+T-55,L5,Patches against OpenModelica,OpenModelica,Within the tolerance table,P11.6
+T-56,L7,Analogue mutation,Planted defects,Every planted defect caught,P11.9
+T-57,L8,Patch views on phone and desktop,Visual check,Renders; works offline after first load,P11.7
+T-60,L3,Cross-substrate compilation of the harmonic oscillator,Analytic solution,Every cell classed with its record,"P12.1, P12.5"
+T-61,L5,Quantum circuit set across simulators,Qiskit Aer; Panini Q; QuTiP,Within the tolerance table,P12.4
+T-62,L1,Qubit-ordering and phase conventions,Constructed circuits,Every mapping test passes,P12.4
+T-63,L7,Cross-substrate mutation,Planted defects,Every planted defect caught,P12.6
+T-64,L0,Ingestibility of every substrate repository,BURP,"Byte-identical, or the gap recorded","P9.1, P9.8, P10.11, P11.10"
+T-70,L5,Optical meshes against matrix products,Direct products; photonic reference,Within the tolerance table,P13.1

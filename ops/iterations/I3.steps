@@ -1,0 +1,5 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI.
+# SPDX-License-Identifier: GPL-3.0-or-later
+# Iteration I3 (closes with D2 over software artefacts): P3.1 to P3.6.
+repsynth-base | python3 -m repsynth gen
+repsynth-base | python3 -m repsynth.acceptance P3.1 P3.2 P3.3 P3.5

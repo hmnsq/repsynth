@@ -1,0 +1,34 @@
+{
+  "case": "dep05c_new_operation",
+  "predicted": [
+    "conformance/vectors/balanced_ternary/abs.16.vec",
+    "conformance/vectors/balanced_ternary/abs.32.vec",
+    "out/software/balanced_ternary/balanced_ternary.mjs",
+    "out/software/balanced_ternary/balanced_ternary.wasm",
+    "out/software/balanced_ternary/balanced_ternary_glue.py",
+    "out/software/balanced_ternary/libbalanced_ternary.so"
+  ],
+  "observed": [
+    "conformance/vectors/balanced_ternary/abs.16.vec",
+    "conformance/vectors/balanced_ternary/abs.32.vec",
+    "out/software/balanced_ternary/balanced_ternary.mjs",
+    "out/software/balanced_ternary/balanced_ternary.wasm",
+    "out/software/balanced_ternary/balanced_ternary_glue.py",
+    "out/software/balanced_ternary/libbalanced_ternary.so"
+  ],
+  "expected": [
+    "conformance/vectors/balanced_ternary/abs.16.vec",
+    "conformance/vectors/balanced_ternary/abs.32.vec",
+    "out/software/balanced_ternary/balanced_ternary.mjs",
+    "out/software/balanced_ternary/balanced_ternary.wasm",
+    "out/software/balanced_ternary/balanced_ternary_glue.py",
+    "out/software/balanced_ternary/libbalanced_ternary.so"
+  ],
+  "predicted_minus_observed": [],
+  "observed_minus_predicted": [],
+  "expected_minus_observed": [],
+  "observed_minus_expected": [],
+  "build_exit": 0,
+  "equal": true,
+  "restored_equal_to_baseline": true
+}

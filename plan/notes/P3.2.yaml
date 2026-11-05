@@ -1,0 +1,4 @@
+# © 1993–2026 Abhishek Choudhary. All rights reserved. AyeAI. SPDX-License-Identifier: CC-BY-SA-4.0
+produced:
+- Slices in graph/slices/, written on change only; graph/build.ninja with restat
+failed_first: A change of one operation's text regenerates exactly its two vector files, judged by hashes.
